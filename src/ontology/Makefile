@@ -67,7 +67,7 @@ build/construct.rq: build/catalog-v001.xml
 	echo "WHERE { ?ont a owl:Ontology }" >> $@
 
 # Creates a catalog file with all imports
-build/catalog-v001.xml: #modules full_imports
+build/catalog-v001.xml: modules full_imports
 	echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" > $@ && \
 	echo "<catalog prefer=\"public\" xmlns=\"urn:oasis:names:tc:entity:xmlns:xml:catalog\">"\
 	 >> $@ && \
