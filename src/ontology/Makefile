@@ -45,7 +45,7 @@ ROBOT := java -jar build/robot.jar
 # Top-level targets
 # ----------------------------------------
 
-all: $(ONT).owl clean
+all: | imports $(ONT).owl
 test: all #sparql_test
 
 # ----------------------------------------
@@ -53,13 +53,15 @@ test: all #sparql_test
 # ----------------------------------------
 
 # Builds the ontology from the template and imports
-.PRECIOUS: $(ONT).owl
-$(ONT).owl: $(ONT)-template.ttl build/construct.rq build/catalog-v001.xml | build/robot.jar
-	@$(ROBOT) query --input $< --query $(word 2,$^) build/imports.ttl \
-	&& $(ROBOT) merge --input $< --input build/imports.ttl \
+.PHONY: $(ONT).owl
+$(ONT).owl: build/construct.rq build/catalog-v001.xml | build/robot.jar
+	@echo "Generating obo-core.owl" && \
+	$(ROBOT) query --input $(ONT)-template.ttl --query $< build/imports.ttl \
+	&& $(ROBOT) merge --input $(ONT)-template.ttl --input build/imports.ttl \
 	 annotate --version-iri $(BASE)/$(TODAY)/$@ --output $@
 
 # Creates a construct query to add import statements
+.PHONY: build/construct.rq
 build/construct.rq: build/catalog-v001.xml
 	@echo "PREFIX owl: <http://www.w3.org/2002/07/owl#>" > $@ && \
 	echo "CONSTRUCT {" >> $@ && \
@@ -68,7 +70,8 @@ build/construct.rq: build/catalog-v001.xml
 	echo "WHERE { ?ont a owl:Ontology }" >> $@
 
 # Creates a catalog file with all imports
-build/catalog-v001.xml: modules full_imports
+.PHONY: build/catalog-v001.xml
+build/catalog-v001.xml: #$(MODS) full_imports
 	@echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" > $@ && \
 	echo "<catalog prefer=\"public\" xmlns=\"urn:oasis:names:tc:entity:xmlns:xml:catalog\">"\
 	 >> $@ && \
@@ -79,14 +82,17 @@ build/catalog-v001.xml: modules full_imports
 # Dynamic Imports
 # ----------------------------------------
 
+imports: build/core-terms.tsv build/ontologies.txt $(IMPORTS) $(MODS) full_imports
+
 # Retrieves the spreadsheet from the Google doc
 .PHONY: build/core-terms.tsv
 build/core-terms.tsv:
-	@mkdir -p build && curl -L -o $@ $(SHEET)
+	mkdir -p build && curl -L -o $@ $(SHEET)
 
 # Builds a list of the ontologies to import
 # Ignores BFO, and RO as we import larger parts of these
 # We import all annotation props from IAO, but need add. classes
+.PHONY: build/ontologies.txt
 build/ontologies.txt: build/core-terms.tsv
 	@cat $< | \
 	tail -n +2 | \
@@ -97,7 +103,7 @@ build/ontologies.txt: build/core-terms.tsv
 	awk '!seen[$$0]++' > $@
 
 # Builds a list of the terms to import
-terms: $(IMPORTS)
+.PHONY: $(IMPORTS)
 $(IMPORTS): build/core-terms.tsv build/ontologies.txt
 	@cat $< | \
 	tail -n +2 | \
@@ -107,21 +113,21 @@ $(IMPORTS): build/core-terms.tsv build/ontologies.txt
 	awk '!seen[$$0]++' > build/$@-terms.txt
 
 # Extracts the terms from terms.txt based on list of ontologies
-# Use "lite" versions: GO, ChEBI, DO, DrOn, NCBITaxon (UPHENO if possible?)
+# Use "lite" versions: GO, ChEBI, DO, DrOn, NCBITaxon, UPHENO
 # (Rogue version of ROBOT can handle zip & gzip files)
-modules: $(MODS)
-$(MODS): terms | build/robot.jar
+.PHONY: $(MODS)
+$(MODS): $(IMPORTS) | build/robot.jar
 	@IRI=$(OBO)/$@.owl && \
 	if [ $@ = go ]; then\
 		IRI=$(OBO)/$@/subsets/goslim_generic.owl; \
 	elif [ $@ = chebi ]; then\
 		IRI=ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.owl.gz; \
-	elif [ $@ = doid ]; then\
-		IRI=http://purl.obolibrary.org/obo/doid/doid-non-classified.owl; \
 	elif [ $@ = dron ]; then\
 		IRI=http://purl.obolibrary.org/obo/dron/dron-upper.owl; \
 	elif [ $@ = ncbitaxon ]; then\
 		IRI=$(OBO)/$@/subsets/taxslim.owl; \
+	elif [ $@ = upheno ]; then\
+		IRI=$(OBO)/upheno/imports/extra.owl; \
 	fi && \
 	echo "Extracting from $$IRI" && \
 	$(ROBOT) extract --input-iri $$IRI\
@@ -134,7 +140,7 @@ $(MODS): terms | build/robot.jar
 # ----------------------------------------
 
 # Imports all BFO classes, all RO object properties, and all IAO annotation properties
-full_imports: imports/bfo-cls-import.owl imports/ro-ob-import.owl imports/iao-ap-import.owl
+full_imports: imports/bfo-cls-import.owl imports/ro-op-import.owl imports/iao-ap-import.owl
 
 .PHONY: imports/bfo-cls-import.owl
 imports/bfo-cls-import.owl: | build/robot.jar
@@ -155,5 +161,5 @@ imports/iao-ap-import.owl: | build/robot.jar
 # Post-build tasks
 # ----------------------------------------
 
-clean: $(ONT).owl
-	cd build && rm *.tsv *.txt *.rq *.xml *.ttl
+clean:
+	cd build && rm -f *.tsv *.txt *.rq *.xml *.ttl
