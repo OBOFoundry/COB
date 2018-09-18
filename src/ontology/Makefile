@@ -23,10 +23,8 @@ SHEET = http://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q6
 # Dynamic vars
 IMPORTS := $(shell cat build/ontologies.txt | awk '{print $$1}')
 MODS := $(shell cat build/ontologies.txt | awk '{print $$1}' | tr A-Z a-z)
-IMP_FILES := $(wildcard imports/*-import.owl)
-BUILD_CATALOG := $(foreach I,$(IMP_FILES), " <uri name=\"$(BASE)/$(I)\" uri=\"../$(I)\"/>")
-CATALOG := $(foreach I,$(IMP_FILES), " <uri name=\"$(BASE)/$(I)\" uri=\"$(I)\"/>")
-QUERY := $(foreach I,$(IMP_FILES), " ?ont owl:imports <$(BASE)/$(I)> . ")
+
+
 
 # ----------------------------------------
 # ROBOT
@@ -47,8 +45,8 @@ ROBOT := java -jar build/robot.jar
 # Top-level targets
 # ----------------------------------------
 
-all: | imports $(ONT).owl
-test: all #sparql_test
+all: $(ONT).owl
+#test: all sparql_test
 
 # ----------------------------------------
 # Main release targets
@@ -61,23 +59,18 @@ $(ONT).owl: $(EDIT).owl
 	$(ROBOT) merge --input $< \
 	 annotate --version-iri $(BASE)/$(TODAY)/$@ --output $@
 
+# Creates an edit file with import statements
 .PHONY: $(EDIT).owl
 $(EDIT).owl: build/construct.rq catalog-v001.xml build/catalog-v001.xml | build/robot.jar
 	@echo "Generating $(EDIT).owl" && \
 	$(ROBOT) query --input $(ONT)-template.ttl --query $< build/imports.ttl && \
 	$(ROBOT) convert --input build/imports.ttl --format ofn --output $@
 
-.PHONY: catalog-v001.xml
-catalog-v001.xml:
-	@echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" > $@ && \
-	echo "<catalog prefer=\"public\" xmlns=\"urn:oasis:names:tc:entity:xmlns:xml:catalog\">"\
-	 >> $@ && \
-	echo $(CATALOG) >> $@ && \
-	echo "</catalog>" >> $@
-
 # Creates a construct query to add import statements
 .PHONY: build/construct.rq
-build/construct.rq: catalog-v001.xml
+build/construct.rq:
+	$(eval IMP_FILES := $(wildcard imports/*-import.owl))
+	$(eval QUERY := $(foreach I,$(IMP_FILES), " ?ont owl:imports <$(BASE)/$(I)> . "))
 	@echo "PREFIX owl: <http://www.w3.org/2002/07/owl#>" > $@ && \
 	echo "CONSTRUCT {" >> $@ && \
 	echo $(QUERY) >> $@ && \
@@ -85,8 +78,21 @@ build/construct.rq: catalog-v001.xml
 	echo "WHERE { ?ont a owl:Ontology }" >> $@
 
 # Creates a catalog file with all imports
+.PHONY: catalog-v001.xml
+catalog-v001.xml:
+	$(eval IMP_FILES := $(wildcard imports/*-import.owl))
+	$(eval CATALOG := $(foreach I,$(IMP_FILES), " <uri name=\"$(BASE)/$(I)\" uri=\"$(I)\"/>"))
+	@echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" > $@ && \
+	echo "<catalog prefer=\"public\" xmlns=\"urn:oasis:names:tc:entity:xmlns:xml:catalog\">"\
+	 >> $@ && \
+	echo $(CATALOG) >> $@ && \
+	echo "</catalog>" >> $@
+
+# Creates a catalog file with all imports in the build dir
 .PHONY: build/catalog-v001.xml
 build/catalog-v001.xml: $(MODS) full_imports
+	$(eval IMP_FILES := $(wildcard imports/*-import.owl))
+	$(eval BUILD_CATALOG := $(foreach I,$(IMP_FILES), " <uri name=\"$(BASE)/$(I)\" uri=\"../$(I)\"/>"))
 	@echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>" > $@ && \
 	echo "<catalog prefer=\"public\" xmlns=\"urn:oasis:names:tc:entity:xmlns:xml:catalog\">"\
 	 >> $@ && \
@@ -99,10 +105,10 @@ build/catalog-v001.xml: $(MODS) full_imports
 
 imports: build/core-terms.tsv build/ontologies.txt $(IMPORTS) $(MODS) full_imports
 
-# Retrieves the spreadsheet from the Google doc
+# Retrieves the spreadsheet from the Google doc and regenerates imports folder
 .PHONY: build/core-terms.tsv
 build/core-terms.tsv:
-	mkdir -p build && curl -L -o $@ $(SHEET)
+	mkdir -p build && curl -L -o $@ $(SHEET) && rm -rf imports && mkdir imports
 
 # Builds a list of the ontologies to import
 # Ignores BFO, and RO as we import larger parts of these
@@ -117,7 +123,7 @@ build/ontologies.txt: build/core-terms.tsv
 	sed '/^[[:space:]]*$$/d' | \
 	awk '!seen[$$0]++' > $@
 
-# Builds a list of the terms to import
+# Builds a list of the terms to import and creates a new import folder
 .PHONY: $(IMPORTS)
 $(IMPORTS): build/core-terms.tsv build/ontologies.txt
 	@cat $< | \
@@ -160,17 +166,17 @@ full_imports: imports/bfo-cls-import.owl imports/ro-op-import.owl imports/iao-ap
 .PHONY: imports/bfo-cls-import.owl
 imports/bfo-cls-import.owl: | build/robot.jar
 	$(ROBOT) filter --input-iri $(OBO)/bfo.owl --select classes\
-	 --ontology-iri $(BASE)/imports/$@ --output $@
+	 --ontology-iri $(BASE)/$@ --output $@
 
 .PHONY: imports/ro-op-import.owl
 imports/ro-op-import.owl: | build/robot.jar
 	$(ROBOT) filter --input-iri $(OBO)/ro.owl --select object-properties\
-	 --ontology-iri $(BASE)/imports/$@ --output $@
+	 --ontology-iri $(BASE)/$@ --output $@
 
 .PHONY: imports/iao-ap-import.owl
 imports/iao-ap-import.owl: | build/robot.jar
 	$(ROBOT) filter --input-iri $(OBO)/iao.owl --select annotation-properties\
-	 --ontology-iri $(BASE)/imports/$@ --output $@
+	 --ontology-iri $(BASE)/$@ --output $@
 
 # ----------------------------------------
 # Post-build tasks

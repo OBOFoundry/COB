@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obo-core/imports/imports/iao-ap-import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/obo-core/imports/imports/iao-ap-import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obo-core/imports/iao-ap-import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obo-core/imports/iao-ap-import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obo-core/imports/imports/iao-ap-import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obo-core/imports/iao-ap-import.owl"/>
     
 
 
