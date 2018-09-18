@@ -13,7 +13,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
+    // Annotation properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -21,9 +21,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UPHENO_0000001 -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/UPHENO_0000001"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -41,12 +41,7 @@
     <!-- http://purl.obolibrary.org/obo/UPHENO_0001001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0000001"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">Phenotype</rdfs:label>
     </owl:Class>
 </rdf:RDF>
