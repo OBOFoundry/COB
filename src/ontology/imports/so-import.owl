@@ -131,7 +131,6 @@
     <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any extent of continuous biological sequence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INSDC_feature:misc_feature</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INSDC_note:other</oboInOwl:hasExactSynonym>

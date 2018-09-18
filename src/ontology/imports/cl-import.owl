@@ -102,9 +102,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
     
 
 
@@ -212,9 +210,7 @@
 
     <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575"/>
     
 
 

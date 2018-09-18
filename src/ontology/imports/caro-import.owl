@@ -88,9 +88,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
     
 
 

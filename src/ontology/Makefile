@@ -153,6 +153,7 @@ $(MODS): $(IMPORTS) | build/robot.jar
 	echo "Extracting from $$IRI" && \
 	$(ROBOT) extract --input-iri $$IRI\
 	 --method MIREOT --lower-terms build/$@-terms.txt \
+	remove --term owl:Thing --trim true \
 	annotate --ontology-iri $(BASE)/imports/$@-import.owl\
 	 --output imports/$@-import.owl
 
@@ -165,17 +166,17 @@ full_imports: imports/bfo-cls-import.owl imports/ro-op-import.owl imports/iao-ap
 
 .PHONY: imports/bfo-cls-import.owl
 imports/bfo-cls-import.owl: | build/robot.jar
-	$(ROBOT) filter --input-iri $(OBO)/bfo.owl --select classes\
+	$(ROBOT) filter --input-iri $(OBO)/bfo.owl --select "annotations classes"\
 	 --ontology-iri $(BASE)/$@ --output $@
 
 .PHONY: imports/ro-op-import.owl
 imports/ro-op-import.owl: | build/robot.jar
-	$(ROBOT) filter --input-iri $(OBO)/ro.owl --select object-properties\
+	$(ROBOT) filter --input-iri $(OBO)/ro.owl --select "annotations object-properties"\
 	 --ontology-iri $(BASE)/$@ --output $@
 
 .PHONY: imports/iao-ap-import.owl
 imports/iao-ap-import.owl: | build/robot.jar
-	$(ROBOT) filter --input-iri $(OBO)/iao.owl --select annotation-properties\
+	$(ROBOT) filter --input-iri $(OBO)/iao.owl --select "annotations annotation-properties"\
 	 --ontology-iri $(BASE)/$@ --output $@
 
 # ----------------------------------------
