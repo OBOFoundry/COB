@@ -49,7 +49,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/CORE_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optionally - NCIT:C63850 (&apos;particle&apos;) exists (temporary ID)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optionally - NCIT:C63850 &apos;particle&apos; exists (temporary ID)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elementary particle</rdfs:label>
     </owl:Class>
     

@@ -153,7 +153,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Could be from OGMS or DOID (DOID:4)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</rdfs:label>
     </owl:Class>
     

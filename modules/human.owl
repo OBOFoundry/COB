@@ -67,7 +67,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superprop (&apos;has participant&apos;) will not work with current ROBOT template</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subproperty of &apos;has participant&apos;, not supported by template</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -77,7 +77,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superprop (&apos;has participant&apos;) will not work with current ROBOT template</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subproperty of &apos;has participant&apos;, not supported by template</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has specified output</rdfs:label>
     </owl:ObjectProperty>
     

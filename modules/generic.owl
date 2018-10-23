@@ -84,7 +84,7 @@
     <!-- http://purl.obolibrary.org/CORE_0000005 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/CORE_0000005">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;is concretized as&apos; exists, but that is GDC -&gt; SDC</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is concretized as&apos; exists, but that is GDC -&gt; SDC</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concretized in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -133,7 +133,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000091">
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should be subproperty of &apos;bearer of&apos;, not supported in template</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subproperty of &apos;bearer of&apos; (not supported in template)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has disposition</rdfs:label>
     </owl:ObjectProperty>
     
