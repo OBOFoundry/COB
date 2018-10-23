@@ -1,0 +1,8 @@
+Ontology ID	Label	Type	Parent	Logic	Domain	Range	Source Ontology	Note
+ID	A rdfs:label	TYPE	C %	C %			AI dc11:source	A rdfs:comment
+OBI:0000066	investigation	owl:Class	planned process				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0000070	assay	owl:Class	planned process				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0200000	data transformation	owl:Class	planned process				http://purl.obolibrary.org/obo/obi.owl	
+IAO:0000104	plan specification	owl:Class	directive information entity				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0500000	study design	owl:Class	plan specification				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0001909	conclusion based on data	owl:Class	information content entity				http://purl.obolibrary.org/obo/obi.owl	

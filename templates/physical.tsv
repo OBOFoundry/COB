@@ -1,0 +1,7 @@
+Ontology ID	Label	Type	Parent	Logic	Domain	Range	Source Ontology	Note
+ID	A rdfs:label	TYPE	C %	C %			AI dc11:source	A rdfs:comment
+CORE:0000006	elementary particle	owl:Class	material entity					"Optionally - NCIT:C63850 ('particle') exists (temporary ID)"
+CHEBI:33250	atom	owl:Class	material entity				http://purl.obolibrary.org/obo/chebi.owl	
+CHEBI:25367	molecule	owl:Class	material entity				http://purl.obolibrary.org/obo/chebi.owl	
+CORE:0000007	microscopic material entity	owl:Class	material entity					temporary ID
+CORE:0000008	macroscopic material entity	owl:Class	material entity					temporary ID

@@ -1,0 +1,13 @@
+Ontology ID	Label	Type	Parent	Logic	Domain	Range	Source Ontology	Note
+ID	A rdfs:label	TYPE	C %	C %			AI dc11:source	A rdfs:comment
+CL:0000000	cell	owl:Class	material entity				http://purl.obolibrary.org/obo/cl.owl	
+UBERON:0000465	material anatomical entity	owl:Class	material entity				http://purl.obolibrary.org/obo/uberon.owl	
+OBI:0100026	organism	owl:Class	material entity				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0000181	population	owl:Class	material entity				http://purl.obolibrary.org/obo/obi.owl	
+UBERON:0000466	immaterial anatomical entity	owl:Class	immaterial entity				http://purl.obolibrary.org/obo/uberon.owl	
+GO:0008150	biological process	owl:Class	process				http://purl.obolibrary.org/obo/go.owl	
+BFO:0000034	function	owl:Class	disposition				http://purl.obolibrary.org/obo/bfo.owl	
+OGMS:0000031	disease	owl:Class	disposition				http://purl.obolibrary.org/obo/ogms.owl	"Could be from OGMS or DOID (DOID:4)"
+OGMS:0000063	disease course	owl:Class	biological process				http://purl.obolibrary.org/obo/ogms.owl	
+RO:0000085	has function	owl:ObjectProperty			material entity	function	http://purl.obolibrary.org/obo/ro.owl	
+RO:0002162	in taxon	owl:ObjectProperty				organism	http://purl.obolibrary.org/obo/ro.owl	

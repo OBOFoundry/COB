@@ -1,0 +1,22 @@
+Ontology ID	Label	Type	Parent	Logic	Domain	Range	Source Ontology	Note
+ID	A rdfs:label	TYPE	C %	C %			AI dc11:source	A rdfs:comment
+OBI:0000245	organization	owl:Class	material entity				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0000047	processed material	owl:Class	material entity				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0000968	device	owl:Class	processed material				http://purl.obolibrary.org/obo/obi.owl	
+NCBITaxon:9606	Homo sapiens	owl:Class	organism				http://purl.obolibrary.org/obo/ncbitaxon.owl	
+IAO:0000178	material information bearer	owl:Class	material entity				http://purl.obolibrary.org/obo/iao.owl	
+BFO:0000023	role	owl:Class	realizable entity				http://purl.obolibrary.org/obo/bfo.owl	
+OBI:0000260	plan	owl:Class	realizable entity				http://purl.obolibrary.org/obo/obi.owl	
+IAO:0000030	information content entity	owl:Class	generically dependent continuant				http://purl.obolibrary.org/obo/iao.owl	
+IAO:0000310	document	owl:Class	information content entity				http://purl.obolibrary.org/obo/iao.owl	
+IAO:0000033	directive information entity	owl:Class	information content entity				http://purl.obolibrary.org/obo/iao.owl	
+IAO:0000104	plan specification	owl:Class	directive information entity				http://purl.obolibrary.org/obo/obi.owl	
+IAO:0000005	objective specification	owl:Class	directive information entity				http://purl.obolibrary.org/obo/iao.owl	
+IAO:0000015	information carrier	owl:Class	quality				http://purl.obolibrary.org/obo/iao.owl	
+OBI:0000011	planned process	owl:Class	process				http://purl.obolibrary.org/obo/obi.owl	
+OBI:0000094	material processing	owl:Class	planned process				http://purl.obolibrary.org/obo/obi.owl	
+IAO:0000136	is about	owl:ObjectProperty			information content entity		http://purl.obolibrary.org/obo/iao.owl	
+IAO:0000219	denotes	owl:ObjectProperty			information content entity		http://purl.obolibrary.org/obo/iao.owl	
+OBI:0000293	has specified input	owl:ObjectProperty			process		http://purl.obolibrary.org/obo/obi.owl	Superprop ('has participant') will not work with current ROBOT template
+OBI:0000299	has specified output	owl:ObjectProperty			process		http://purl.obolibrary.org/obo/obi.owl	Superprop ('has participant') will not work with current ROBOT template
+OBI:0000417	achieves planned objective	owl:ObjectProperty			process	objective specification	http://purl.obolibrary.org/obo/obi.owl	
