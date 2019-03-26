@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528#"
+     xml:base="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/core.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000039">
+        <rdfs:label xml:lang="en">has specified input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000040 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000040">
+        <rdfs:label xml:lang="en">has specified output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000041 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000041">
+        <rdfs:label xml:lang="en">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000001">
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000001"/>
+        <rdfs:label xml:lang="en">mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000001"/>
+        <rdfs:label xml:lang="en">charge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+        <rdfs:label xml:lang="en">elementary charge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000006">
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">elementary particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000007"/>
+        <rdfs:label xml:lang="en">proton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000007"/>
+        <rdfs:label xml:lang="en">neutron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000007"/>
+        <rdfs:label xml:lang="en">electron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">atom or ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
+        <rdfs:label xml:lang="en">atomic nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">macromolecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:label xml:lang="en">protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:label xml:lang="en">DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000017"/>
+        <rdfs:label xml:lang="en">native cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000017"/>
+        <rdfs:label xml:lang="en">cell in vitro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">cellular component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
+        <rdfs:label xml:lang="en">human</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label xml:lang="en">processed material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">reagent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">vaccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">drug product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000031">
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000031"/>
+        <rdfs:label xml:lang="en">geographical location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000033">
+        <rdfs:label xml:lang="en">realizable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000034">
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000035"/>
+        <rdfs:label xml:lang="en">informed consent process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:label xml:lang="en">biological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:label xml:lang="en">molecular function</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
