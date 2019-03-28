@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://purl.obolibrary.org/obo/obo-core.owl" uri="obo-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://purl.obolibrary.org/obo/obo-core/modules/biological.owl" uri="modules/biological.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://purl.obolibrary.org/obo/obo-core/modules/generic.owl" uri="modules/generic.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://purl.obolibrary.org/obo/obo-core/modules/human.owl" uri="modules/human.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://purl.obolibrary.org/obo/obo-core/modules/physical.owl" uri="modules/physical.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://purl.obolibrary.org/obo/obo-core/modules/science.owl" uri="modules/science.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553804231012" name="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528" uri="manual-core.owl"/>
+    </group>
+</catalog>
