@@ -1,12 +1,32 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528#"
      xml:base="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/core.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -41,6 +61,14 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000041">
         <rdfs:label xml:lang="en">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000047 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000047">
+        <rdfs:label>has part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -94,6 +122,12 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000006">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000003"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     
@@ -139,7 +173,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-        <rdfs:label xml:lang="en">atom or ion</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
+        <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electrons orbiting it.</obo:IAO_0000115>
+        <rdfs:comment>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</rdfs:comment>
+        <rdfs:label xml:lang="en">atom</rdfs:label>
     </owl:Class>
     
 
@@ -148,6 +191,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000007"/>
+        <rdfs:comment>Some people may be uncomfortable calling every proton an atomic nucleus</rdfs:comment>
+        <rdfs:comment>This is equivalent to CHEBI:33252</rdfs:comment>
         <rdfs:label xml:lang="en">atomic nucleus</rdfs:label>
     </owl:Class>
     
@@ -157,6 +202,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material entity that consists of two or more atoms that are covalently bound.</obo:IAO_0000115>
+        <rdfs:comment>The identity of a molecular entity is exactly defined by its atomic compositions and bond formation. If an atom is added or lost, or bond formation is changed, it is no longer the same molecular entity. For example, if you remove the hydrogen from H2O, it is no longer a water molecule.</rdfs:comment>
+        <rdfs:comment>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">molecular entity</rdfs:label>
     </owl:Class>
     
@@ -166,6 +220,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <obo:IAO_0000115>A material entity consisting of multiple atoms that are structured in subunits and where identity of the macromolecule is not necessarily changed based on addition or subtraction of atoms or bonds.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">macromolecular entity</rdfs:label>
     </owl:Class>
     
@@ -183,8 +238,8 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
-        <rdfs:label xml:lang="en">DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000049"/>
+        <rdfs:label xml:lang="en">DNA polymer</rdfs:label>
     </owl:Class>
     
 
@@ -372,9 +427,168 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
         <rdfs:label xml:lang="en">molecular function</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000042">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
+        <rdfs:label>monoatomic ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000043">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000011"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
+        <rdfs:label>uncharged atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>nickel atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>nickel ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>uncharged nickel atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000015"/>
+        <rdfs:label>glycosylated protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>nucleic acid polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000049"/>
+        <rdfs:label>RNA polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>nucleotide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000051"/>
+        <rdfs:label>adenine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000051"/>
+        <rdfs:label>guanine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>salicylic acid</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
