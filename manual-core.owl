@@ -248,6 +248,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:comment>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">cell</rdfs:label>
     </owl:Class>
     
@@ -275,7 +276,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-        <rdfs:label xml:lang="en">cellular component</rdfs:label>
+        <rdfs:comment>Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome.</rdfs:comment>
+        <rdfs:comment>Overlaps with some cellular components from GO</rdfs:comment>
+        <rdfs:label xml:lang="en">cell component</rdfs:label>
     </owl:Class>
     
 
@@ -284,6 +287,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <obo:IAO_0000115>A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.</obo:IAO_0000115>
+        <rdfs:comment>Bodily fluids, such as urine, are currently defined as anatomical entities in UBERON. We should make sure there is a proper home for these here.</rdfs:comment>
         <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
     </owl:Class>
     
@@ -293,6 +298,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:comment>Includes virus - we will later have a class for cellular organisms.</rdfs:comment>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
@@ -320,6 +326,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <obo:IAO_0000115>A material entity processed by human activity with an intent to produce</obo:IAO_0000115>
         <rdfs:label xml:lang="en">processed material entity</rdfs:label>
     </owl:Class>
     
@@ -585,6 +592,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
         <rdfs:comment>This is an example</rdfs:comment>
         <rdfs:label>salicylic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label>collection of organisms</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
