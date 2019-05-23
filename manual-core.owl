@@ -317,6 +317,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:comment>Should revisit if we can place outside of material entity - a collection of roles.</rdfs:comment>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -601,6 +602,51 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
         <rdfs:label>collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000021"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000061">
+        <rdfs:label>information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000061"/>
+        <rdfs:label>disease diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000061"/>
+        <rdfs:label>phenotypic finding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:label>disease course</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
