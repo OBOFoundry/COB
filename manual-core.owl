@@ -424,6 +424,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000038"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000065"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000066"/>
         <rdfs:label xml:lang="en">biological process</rdfs:label>
     </owl:Class>
     
@@ -433,7 +436,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
-        <rdfs:label xml:lang="en">molecular function</rdfs:label>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000065"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000066"/>
+        <rdfs:comment>This is the same as GO molecular function</rdfs:comment>
+        <rdfs:label xml:lang="en">macromolecular activity</rdfs:label>
     </owl:Class>
     
 
@@ -647,6 +653,44 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
         <rdfs:label>disease course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000066"/>
+        <rdfs:label>environmental process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:comment>This is meant to capture processes that are more fundamental than macromolecular activities</rdfs:comment>
+        <rdfs:label>physico-chemical process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label>ecosystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:label>geophysical entity</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
