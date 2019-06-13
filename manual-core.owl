@@ -68,7 +68,41 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000047 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000047">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000072"/>
         <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000070 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000070">
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000071 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000071">
+        <rdfs:label>occurs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000072 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000072">
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000074 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CORE_0000074">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000070"/>
+        <rdfs:label>enabled by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -424,9 +458,41 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000070"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000070"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000072"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000071"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CORE_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000038"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000065"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000066"/>
+        <obo:IAO_0000115>A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.</obo:IAO_0000115>
+        <rdfs:comment>A biological process is an evolved process</rdfs:comment>
         <rdfs:label xml:lang="en">biological process</rdfs:label>
     </owl:Class>
     
@@ -436,10 +502,23 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000074"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000073"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000075"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000065"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000066"/>
         <rdfs:comment>This is the same as GO molecular function</rdfs:comment>
-        <rdfs:label xml:lang="en">macromolecular activity</rdfs:label>
+        <rdfs:label xml:lang="en">gene product or complex activity</rdfs:label>
     </owl:Class>
     
 
@@ -691,6 +770,38 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
         <rdfs:label>geophysical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000050"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>gene product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>protein-containing macromolecular complex</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
