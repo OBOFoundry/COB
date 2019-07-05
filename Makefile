@@ -82,3 +82,19 @@ templates/human.tsv:
 .PHONY: templates/science.tsv
 templates/science.tsv:
 	curl "$(SCIENCE_SHEET)" > $@
+
+# ---------- ALIGNMENT ---------- #
+# Currentlh this requires installing some tools - I will set up a docker for running these...
+
+XONTS = ro sio biotop bfoc mesh chebi blmod common_core
+all_matches: $(patsubst %, matches/matches-%.tsv, $(XONTS))
+
+matches/matches-%.tsv: manual-core.owl
+	rdfmatch -d rdf_matcher -G imports/matches-$*.owl --predicate skos:exactMatch --prefix CORE -f tsv -l -A ~/repos/onto-mirror/void.ttl -i prefixes.ttl -i $< -i $* new_match > $@.tmp &&   cut -f1-4 $@.tmp | sort -u > $@
+
+# match to wikidata
+matches/wd-closematches.ttl: manual-core.owl
+	wd-ontomatch -d ontomatcher -i $< -a wikidata_ontomatcher:cached_db_file=$@ -e match_classes
+
+matches/wd-align.tsv: manual-core.owl matches/wd-closematches.ttl
+	rdfmatch -d rdf_matcher -G imports/matches-wd.owl --predicate skos:closeMatch --prefix CORE -f tsv -l -A ~/repos/onto-mirror/void.ttl -i prefixes.ttl -i $< -i wd-closematches.ttl exact > $@.tmp &&  cut -f1-9,11,15-19 $@.tmp > $@

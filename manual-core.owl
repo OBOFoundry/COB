@@ -7,7 +7,19 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/core.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/core.owl">
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-bfoc.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-sio.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-mesh.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-chebi.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-ro.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-blmod.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-biotop.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-common_core.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-obi.owl"/>
+       <owl:imports rdf:resource="http://purl.obolibrary.org/obo/core/imports/matches-ogms.owl"/>
+        
+    </owl:Ontology>
     
 
 

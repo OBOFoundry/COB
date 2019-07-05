@@ -1,0 +1,10 @@
+CORE:0000013	molecular entity	biolink:MolecularEntity	molecular entity
+CORE:0000015	protein	biolink:Protein	protein
+CORE:0000017	cell	biolink:Cell	cell
+CORE:0000037	biological process	biolink:BiologicalProcess	biological process
+CORE:0000047	has part	biolink:has_part	has part
+CORE:0000065	environmental process	biolink:EnvironmentalProcess	environmental process
+CORE:0000070	has participant	biolink:has_participant	has participant
+CORE:0000071	occurs in	biolink:occurs_in	occurs in
+CORE:0000072	part of	biolink:part_of	part of
+CORE:0000073	gene product	biolink:GeneProduct	gene product
