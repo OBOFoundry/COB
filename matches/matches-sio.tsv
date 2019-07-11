@@ -1,0 +1,17 @@
+CORE:0000001	quality	SIO:000005	quality
+CORE:0000003	mass	SIO:000279	mass
+CORE:0000004	charge	SIO:000805	charged
+CORE:0000006	material entity	SIO:000004	material entity
+CORE:0000011	atom	SIO:010044	atom
+CORE:0000015	protein	SIO:010043	protein
+CORE:0000017	cell	SIO:010001	cell
+CORE:0000022	organism	SIO:000012	organization
+CORE:0000023	human	SIO:000485	human
+CORE:0000025	organization	SIO:010000	organism
+CORE:0000028	reagent	SIO:010411	reagent
+CORE:0000033	realizable	SIO:000355	realizes
+CORE:0000034	process	SIO:000006	process
+CORE:0000041	has quality	SIO:000217	has quality
+CORE:0000044	nickel atom	SIO:011027	nickel atom
+CORE:0000047	has part	SIO:000028	has part
+CORE:0000070	has participant	SIO:000132	has participant

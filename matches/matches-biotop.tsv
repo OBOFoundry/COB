@@ -1,0 +1,14 @@
+CORE:0000001	quality	btl:Quality	quality
+CORE:0000007	subatomic particle	btl:SubAtomicParticle	subatomic particle
+CORE:0000008	proton	biotop:Proton	proton
+CORE:0000009	neutron	biotop:Neutron	neutron
+CORE:0000010	electron	biotop:Electron	electron
+CORE:0000011	atom	btl:Atom	atom
+CORE:0000017	cell	btl:Cell	cell
+CORE:0000022	organism	biotop:Organ	organ
+CORE:0000022	organism	btl:Organism	organism
+CORE:0000023	human	biotop:Human	human
+CORE:0000025	organization	biotop:Organization	organization
+CORE:0000034	process	btl:Process	process
+CORE:0000047	has part	btl:hasPart	has part
+CORE:0000070	has participant	btl:hasParticipant	has participant

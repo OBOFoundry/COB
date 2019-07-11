@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+]>
+
+<rdf:RDF
+    xmlns:rdf="&rdf;"
+    xmlns:skos="&skos;"
+>
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000001">
+  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000006">
+  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000031">
+  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000034">
+  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+</rdf:Description>
+
+</rdf:RDF>

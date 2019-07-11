@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY biolink 'https://w3id.org/biolink/vocab/'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+]>
+
+<rdf:RDF
+    xmlns:biolink="&biolink;"
+    xmlns:rdf="&rdf;"
+    xmlns:skos="&skos;"
+>
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000013">
+  <skos:exactMatch rdf:resource="&biolink;MolecularEntity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000015">
+  <skos:exactMatch rdf:resource="&biolink;Protein"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
+  <skos:exactMatch rdf:resource="&biolink;Cell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000037">
+  <skos:exactMatch rdf:resource="&biolink;BiologicalProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000047">
+  <skos:exactMatch rdf:resource="&biolink;has_part"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000065">
+  <skos:exactMatch rdf:resource="&biolink;EnvironmentalProcess"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000070">
+  <skos:exactMatch rdf:resource="&biolink;has_participant"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000071">
+  <skos:exactMatch rdf:resource="&biolink;occurs_in"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000072">
+  <skos:exactMatch rdf:resource="&biolink;part_of"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000073">
+  <skos:exactMatch rdf:resource="&biolink;GeneProduct"/>
+</rdf:Description>
+
+</rdf:RDF>
