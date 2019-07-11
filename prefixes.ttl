@@ -1,0 +1,56 @@
+@prefix sh:	<http://www.w3.org/ns/shacl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+[
+ sh:declare
+  [
+    sh:prefix "CORE" ; 
+    sh:namespace "http://purl.obolibrary.org/obo/CORE_"
+  ] ,
+  [
+    sh:prefix "RO" ; 
+    sh:namespace "http://purl.obolibrary.org/obo/RO_"
+  ] ,
+  [
+    sh:prefix "CHEBI" ; 
+    sh:namespace "http://purl.obolibrary.org/obo/CHEBI_"
+  ] ,
+  [
+    sh:prefix "PATO" ; 
+    sh:namespace "http://purl.obolibrary.org/obo/PATO_"
+  ] ,
+  [
+    sh:prefix "BFO" ; 
+    sh:namespace "http://purl.obolibrary.org/obo/BFO_"
+  ] ,
+  [
+    sh:prefix "biotop" ; 
+    sh:namespace "http://purl.org/biotop/biotop.owl#"
+  ] ,
+  [
+    sh:prefix "SIO" ; 
+    sh:namespace "http://semanticscience.org/resource/SIO_"
+  ] ,
+  [
+    sh:prefix "CCO" ; 
+    sh:namespace "http://www.ontologyrepository.com/CommonCoreOntologies/"
+  ] ,
+  [
+    sh:prefix "Wikidata" ; 
+    sh:namespace "http://www.wikidata.org/entity/"
+  ] ,
+  [
+    sh:prefix "btl" ; 
+    sh:namespace "http://purl.org/biotop/btl2.owl#"
+  ] ,
+  [
+    sh:prefix "biolink" ; 
+    sh:namespace "https://w3id.org/biolink/vocab/"
+  ] ,
+  [
+    sh:prefix "MESH" ;
+    sh:namespace "http://id.nlm.nih.gov/mesh/"
+  ] 
+].
+    
+    

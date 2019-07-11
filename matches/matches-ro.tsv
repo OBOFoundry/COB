@@ -1,0 +1,13 @@
+CORE:0000001	quality	BFO:0000019	quality
+CORE:0000001	quality	PATO:0000001	quality
+CORE:0000006	material entity	BFO:0000040	material entity
+CORE:0000017	cell	http://purl.obolibrary.org/obo/CL_0000000	cell
+CORE:0000031	immaterial entity	BFO:0000141	immaterial entity
+CORE:0000033	realizable	BFO:0000055	realizes
+CORE:0000034	process	BFO:0000015	process
+CORE:0000041	has quality	RO:0000086	has quality
+CORE:0000047	has part	BFO:0000051	has part
+CORE:0000070	has participant	RO:0000057	has participant
+CORE:0000071	occurs in	BFO:0000066	occurs in
+CORE:0000072	part of	BFO:0000050	part of
+CORE:0000074	enabled by	RO:0002333	enabled by
