@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.obolibrary.org/obo/core.owl" uri="core-edit.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/core/core-external.owl" uri="core-external.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://purl.obolibrary.org/obo/obo-core.owl" uri="obo-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://purl.obolibrary.org/obo/obo-core/modules/biological.owl" uri="modules/biological.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://purl.obolibrary.org/obo/obo-core/modules/generic.owl" uri="modules/generic.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://purl.obolibrary.org/obo/obo-core/modules/human.owl" uri="modules/human.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://purl.obolibrary.org/obo/obo-core/modules/physical.owl" uri="modules/physical.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://purl.obolibrary.org/obo/obo-core/modules/science.owl" uri="modules/science.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1562295109044" name="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528" uri="manual-core.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-bfoc.owl" uri="./imports/matches-bfoc.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-biotop.owl" uri="./imports/matches-biotop.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-blmod.owl" uri="./imports/matches-blmod.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-chebi.owl" uri="./imports/matches-chebi.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-common_core.owl" uri="./imports/matches-common_core.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-mesh.owl" uri="./imports/matches-mesh.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-ro.owl" uri="./imports/matches-ro.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-sio.owl" uri="./imports/matches-sio.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-obi.owl" uri="./imports/matches-obi.owl"/>
-        <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/core/imports/matches-ogms.owl" uri="./imports/matches-ogms.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-bfoc.owl" uri="./imports/matches-bfoc.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-biotop.owl" uri="./imports/matches-biotop.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-blmod.owl" uri="./imports/matches-blmod.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-chebi.owl" uri="./imports/matches-chebi.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-common_core.owl" uri="./imports/matches-common_core.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-mesh.owl" uri="./imports/matches-mesh.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-ro.owl" uri="./imports/matches-ro.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-sio.owl" uri="./imports/matches-sio.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-obi.owl" uri="./imports/matches-obi.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/core/imports/matches-ogms.owl" uri="./imports/matches-ogms.owl"/>
     </group>
 </catalog>
