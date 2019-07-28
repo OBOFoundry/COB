@@ -14,7 +14,13 @@ We recommend using Protege.
 
 You can also look at pre-rendered PNGs (made using [obographviz](https://www.npmjs.com/package/obographviz)):
 
+Full ontology:
+
 ![img](core.png)
+
+SubClassOf only:
+
+![img](core-subclass.png)
 
 With nesting over `levels` relationship:
 

@@ -101,6 +101,9 @@ core.dot: core.json $(OGSTYLE)
 core-n.dot: core.json $(OGSTYLE)
 	og2dot.js $(OGARGS) -I $(INVERSE_NEST_RELATION) $< > $@.tmp && mv $@.tmp $@
 
+core-subclass.dot: core.json $(OGSTYLE)
+	og2dot.js $(OGARGS) $< > $@.tmp && mv $@.tmp $@
+
 %.png: %.dot
 	dot $< -Grankdir=BT -Tpng -o $@.tmp && mv $@.tmp $@
 
