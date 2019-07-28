@@ -7,7 +7,7 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-OBO = http://purl.obolibrary.org/obo/
+OBO = http://purl.obolibrary.org/obo
 
 CORE = obo-core.owl
 MODULES = generic physical biological human science
@@ -83,6 +83,27 @@ templates/human.tsv:
 templates/science.tsv:
 	curl "$(SCIENCE_SHEET)" > $@
 
+
+# ---------- RELEASE ---------- #
+core.owl: core-edit.owl
+	robot merge -i $< -o $@
+
+%.json: %.owl
+	robot convert -i $< -o $@
+
+INVERSE_NEST_RELATION = $(OBO)/CORE_0003000
+OGSTYLE = obograph-style.json
+OGARGS = -s $(OGSTYLE)
+core.dot: core.json $(OGSTYLE)
+	og2dot.js $(OGARGS) $< > $@.tmp && mv $@.tmp $@
+
+# nest has-part
+core-n.dot: core.json $(OGSTYLE)
+	og2dot.js $(OGARGS) -I $(INVERSE_NEST_RELATION) $< > $@.tmp && mv $@.tmp $@
+
+%.png: %.dot
+	dot $< -Grankdir=BT -Tpng -o $@.tmp && mv $@.tmp $@
+
 # ---------- ALIGNMENT ---------- #
 # Currentlh this requires installing some tools - I will set up a docker for running these...
 
@@ -98,3 +119,7 @@ matches/wd-closematches.ttl: manual-core.owl
 
 matches/wd-align.tsv: manual-core.owl matches/wd-closematches.ttl
 	rdfmatch -d rdf_matcher -G imports/matches-wd.owl --predicate skos:closeMatch --prefix CORE -f tsv -l -A ~/repos/onto-mirror/void.ttl -i prefixes.ttl -i $< -i wd-closematches.ttl exact > $@.tmp &&  cut -f1-9,11,15-19 $@.tmp > $@
+
+
+usage.tsv:
+	pl2sparql -f tsv -l -e -i core.owl -c util/core-usage.pro core_term_usage  > $@

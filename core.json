@@ -1,0 +1,1157 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000032",
+      "type" : "CLASS",
+      "lbl" : "geographical location"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000031",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000141"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "immaterial entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000075",
+      "type" : "CLASS",
+      "lbl" : "protein-containing macromolecular complex"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000030",
+      "type" : "CLASS",
+      "lbl" : "drug product"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000074",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002333"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "enabled by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000073",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/GeneProduct"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "gene product"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000072",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000050"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/part_of"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "part of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000071",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000066"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/occurs_in"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "occurs in"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000070",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/RO_0000057"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/has_participant"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000132"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#hasParticipant"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has participant"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000029",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/C050598"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/VO_0000001"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "vaccine"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000028",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_010411"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/M0011227"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_33893"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OBI_0001879"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "reagent"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000027",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/M0030489"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "instrument"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000026",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity processed by human activity with an intent to produce",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "processed material entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000025",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/biotop.owl#Organization"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/M0015415"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Should revisit if we can place outside of material entity - a collection of roles."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_010000"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OBI_0100026"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "organization"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000068",
+      "type" : "CLASS",
+      "lbl" : "geophysical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000023",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000485"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D006801"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/biotop.owl#Human"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "human"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000067",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D017753"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "ecosystem"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000022",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/biotop.owl#Organ"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000012"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Includes virus - we will later have a class for cellular organisms."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.ontologyrepository.com/CommonCoreOntologies/Organization"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D009938"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OBI_0000245"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#Organism"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "organism"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000066",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is meant to capture processes that are more fundamental than macromolecular activities"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "physico-chemical process"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "lbl" : "definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000043",
+      "type" : "CLASS",
+      "lbl" : "uncharged atom"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000042",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_24867"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "monoatomic ion"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000041",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000217"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/RO_0000086"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.ontologyrepository.com/CommonCoreOntologies/has_quality"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has quality"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000040",
+      "type" : "PROPERTY",
+      "lbl" : "has specified output"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000039",
+      "type" : "PROPERTY",
+      "lbl" : "has specified input"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000038",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is the same as GO molecular function"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "gene product or complex activity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000037",
+      "meta" : {
+        "definition" : {
+          "val" : "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/BiologicalProcess"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "A biological process is an evolved process"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D055694"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "biological process"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000036",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OBI_0000810"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "informed consent process"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000035",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OBI_0000011"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "planned process"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000034",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#Process"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000006"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000015"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "process"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000033",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000355"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000055"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.ontologyrepository.com/CommonCoreOntologies/realizes"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OGMS_0000071"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "realizable"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This relation is intended for connecting classes at one level of organization to the next lower level of organization.\n\nThere is an argument that this should be made an annotation property, since it does not relate individuals. However, it is useful having it as a logical axiom that can be axiomatized.\n\nIf x > y, then:\nx DisjointWith part_of some y\nhas-part some x DisjointWith y"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "is level of organization above"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000010",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D004581"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/biotop.owl#Electron"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_10545"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "electron"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000054",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_16914"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is an example"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D020156"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "salicylic acid"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000053",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D006147"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_16235"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "guanine"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000052",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_16708"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D000225"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "adenine"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000051",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is an example"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D009711"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_36976"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "nucleotide"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000050",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_83400"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "RNA polymer"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000007",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#SubAtomicParticle"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_36342"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "subatomic particle"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000006",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000004"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000040"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "material entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000005",
+      "type" : "CLASS",
+      "lbl" : "elementary charge"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000049",
+      "type" : "CLASS",
+      "lbl" : "nucleic acid polymer"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000004",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000805"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/M0008290"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "charge"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000048",
+      "type" : "CLASS",
+      "lbl" : "glycosylated protein"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000003",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/PATO_0000125"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.ontologyrepository.com/CommonCoreOntologies/Mass"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000279"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "mass"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000047",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#hasPart"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/has_part"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000028"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000051"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has part"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000046",
+      "type" : "CLASS",
+      "lbl" : "uncharged nickel atom"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000045",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_60248"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "nickel ion"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000001",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/PATO_0000001"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#Quality"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_000005"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000019"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "quality"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000044",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_011027"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is an example"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_28112"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "nickel atom"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000009",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/biotop.owl#Neutron"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_30222"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D009502"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neutron"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000008",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/biotop.owl#Proton"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_24636"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D011522"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "proton"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000021",
+      "meta" : {
+        "definition" : {
+          "val" : "A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Bodily fluids, such as urine, are currently defined as anatomical entities in UBERON. We should make sure there is a proper home for these here."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "gross anatomical part"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000065",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/EnvironmentalProcess"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "environmental process"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000020",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Components are larger than individual macromolecular entities. It is tricky to define distinction between 'cell component' and 'macromolecular entity', e.g. ribosome."
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Overlaps with some cellular components from GO"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D022082"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell component"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000064",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/OGMS_0000063"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "disease course"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000063",
+      "type" : "CLASS",
+      "lbl" : "phenotypic finding"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000062",
+      "type" : "CLASS",
+      "lbl" : "disease diagnosis"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000061",
+      "type" : "CLASS",
+      "lbl" : "information"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000060",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D009369"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is an example"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "tumor"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000018",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CL_0000003"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "native cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000017",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_010001"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D002477"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/Cell"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CL_0000000"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#Cell"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000016",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_83828"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "DNA polymer"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000015",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_16541"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/PR_000000001"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/D011506"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/Protein"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_010043"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "protein"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000014",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity consisting of multiple atoms that are structured in subunits and where identity of the macromolecule is not necessarily changed based on addition or subtraction of atoms or bonds.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "CLASS",
+      "lbl" : "macromolecular entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000013",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity that consists of two or more atoms that are covalently bound.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_23367"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "The identity of a molecular entity is exactly defined by its atomic compositions and bond formation. If an atom is added or lost, or bond formation is changed, it is no longer the same molecular entity. For example, if you remove the hydrogen from H2O, it is no longer a water molecule."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "https://w3id.org/biolink/vocab/MolecularEntity"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This molecular entity is different than ChEBI's 'molecular entity'."
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "molecular entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000012",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This is equivalent to CHEBI:33252"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Some people may be uncomfortable calling every proton an atomic nucleus"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_33252"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "atomic nucleus"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000011",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity consisting of exactly one atomic nucleus and the electrons orbiting it.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://id.nlm.nih.gov/mesh/M0014533"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "This atom is closely related to ChEBI's atom, but not exactly equivalent to."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/CHEBI_33250"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://semanticscience.org/resource/SIO_010044"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.org/biotop/btl2.owl#Atom"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "atom"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000055",
+      "type" : "CLASS",
+      "lbl" : "collection of organisms"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CORE_0000019",
+      "type" : "CLASS",
+      "lbl" : "cell in vitro"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000067",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000042",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000021",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000049"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000028",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000018",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000054",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000064",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000068",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000037",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000067",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000055",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000038",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000066"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000055",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000036",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000035"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000049",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000046",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000044"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000017",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000035",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000075",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000013",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0000047",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000045",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000044"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000060",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000021"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000021"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000053",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000049"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000011",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0000047",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000063",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000061"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000065",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000073",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000075",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0000047",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000073"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000020",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000011",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000052",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000045",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0000041",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000049",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0000047",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000062",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000061"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000044",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000074",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000070"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000066",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000043",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000047",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000072"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000029",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000013",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000014",
+      "pred" : "http://purl.obolibrary.org/obo/CORE_0003000",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CORE_0000065",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CORE_0000034"
+    } ],
+    "id" : "http://purl.obolibrary.org/obo/core.owl",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ ]
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CORE_0000042",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/CORE_0000011" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/CORE_0000041",
+        "fillerId" : "http://purl.obolibrary.org/obo/CORE_0000004"
+      } ]
+    } ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}

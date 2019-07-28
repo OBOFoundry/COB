@@ -7,3 +7,15 @@ Our current list of OBO Core terms is work in progress: [OBO Core Term Discussio
 We use [ROBOT](http://robot.obolibrary.org) to build extract those terms and build an experimental OWL file.
 
 To suggest adding a term to OBO Core, please submit an issue to our tracker.
+
+## Viewing OBO-Core
+
+We recommend using Protege.
+
+You can also look at pre-rendered PNGs (made using [obographviz](https://www.npmjs.com/package/obographviz)):
+
+![img](core.png)
+
+With nesting over `levels` relationship:
+
+![img](core-n.png) 
