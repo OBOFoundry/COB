@@ -515,7 +515,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
         <rdfs:comment>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</rdfs:comment>
+        <rdfs:comment>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</rdfs:comment>
         <rdfs:label xml:lang="en">cell</rdfs:label>
         <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D002477"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
@@ -603,6 +611,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.</obo:IAO_0000115>
+        <rdfs:comment>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</rdfs:comment>
         <rdfs:comment>Includes virus - we will later have a class for cellular organisms.</rdfs:comment>
         <rdfs:label xml:lang="en">organism</rdfs:label>
         <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009938"/>
@@ -642,7 +652,7 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000118"/>
         <rdfs:label xml:lang="en">human</rdfs:label>
         <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006801"/>
         <skos:exactMatch rdf:resource="http://purl.org/biotop/biotop.owl#Human"/>
@@ -1460,6 +1470,33 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
         <rdfs:label xml:lang="en">device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000020"/>
+        <rdfs:label xml:lang="en">cellular membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000116"/>
+        <rdfs:label xml:lang="en">plasma membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
+        <rdfs:label xml:lang="en">cellular organism</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
