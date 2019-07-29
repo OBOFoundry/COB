@@ -397,7 +397,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
-        <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electrons orbiting it.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
         <rdfs:comment>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</rdfs:comment>
         <rdfs:label xml:lang="en">atom</rdfs:label>
         <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0014533"/>
@@ -451,6 +451,7 @@
         <obo:IAO_0000115>A material entity that consists of two or more atoms that are covalently bound.</obo:IAO_0000115>
         <rdfs:comment>The identity of a molecular entity is exactly defined by its atomic compositions and bond formation. If an atom is added or lost, or bond formation is changed, it is no longer the same molecular entity. For example, if you remove the hydrogen from H2O, it is no longer a water molecule.</rdfs:comment>
         <rdfs:comment>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</rdfs:comment>
+        <rdfs:comment>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</rdfs:comment>
         <rdfs:label xml:lang="en">molecular entity</rdfs:label>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/MolecularEntity"/>
@@ -468,7 +469,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-        <obo:IAO_0000115>A material entity consisting of multiple atoms that are structured in subunits and where identity of the macromolecule is not necessarily changed based on addition or subtraction of atoms or bonds.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">macromolecular entity</rdfs:label>
     </owl:Class>
     
@@ -572,9 +573,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-        <rdfs:comment>Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.</obo:IAO_0000115>
+        <rdfs:comment>Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome. We would like to exclude most protein complexes.</rdfs:comment>
         <rdfs:comment>Overlaps with some cellular components from GO</rdfs:comment>
-        <rdfs:label xml:lang="en">cell component</rdfs:label>
+        <rdfs:label xml:lang="en">subcellular structure</rdfs:label>
         <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D022082"/>
     </owl:Class>
     
@@ -1288,6 +1296,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This is not covalently bonded, which conflicts with changes to the parent definition.</rdfs:comment>
         <rdfs:label>protein-containing macromolecular complex</rdfs:label>
     </owl:Class>
     
