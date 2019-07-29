@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY CCO 'http://www.ontologyrepository.com/CommonCoreOntologies/'>
+    <!ENTITY inca 'https://w3id.org/inca/'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+    <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+
+<rdf:RDF
+    xmlns:CCO="&CCO;"
+    xmlns:inca="&inca;"
+    xmlns:owl="&owl;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xmlns:skos="&skos;"
+    xmlns:xsd="&xsd;"
+>
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000101">
+  <skos:exactMatch rdf:resource="&CCO;Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="&inca;sourceLabel">
+  <rdfs:type rdf:resource="&owl;AnnotationProperty"/>
+</rdf:Description>
+
+<owl:Axiom>
+  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000101"/>
+  <owl:annotatedTarget rdf:resource="&CCO;Document"/>
+  <inca:sourceLabel xml:lang="en">document</inca:sourceLabel>
+</owl:Axiom>
+
+<rdf:Description rdf:about="&inca;targetLabel">
+  <rdfs:type rdf:resource="&owl;AnnotationProperty"/>
+</rdf:Description>
+
+<owl:Axiom>
+  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000101"/>
+  <owl:annotatedTarget rdf:resource="&CCO;Document"/>
+  <inca:targetLabel rdf:datatype="&xsd;string">Document</inca:targetLabel>
+</owl:Axiom>
+
+<owl:Axiom>
+  <rdfs:comment rdf:datatype="&xsd;string">Info: [document,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000101,http://www.w3.org/2000/01/rdf-schema#label,document@en)-rdf(http://www.ontologyrepository.com/CommonCoreOntologies/Document,http://www.w3.org/2000/01/rdf-schema#label,Document^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000101"/>
+  <owl:annotatedTarget rdf:resource="&CCO;Document"/>
+</owl:Axiom>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000113">
+  <skos:exactMatch rdf:resource="&CCO;PlanSpecification"/>
+</rdf:Description>
+
+<owl:Axiom>
+  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000113"/>
+  <owl:annotatedTarget rdf:resource="&CCO;PlanSpecification"/>
+  <inca:sourceLabel xml:lang="en">plan</inca:sourceLabel>
+</owl:Axiom>
+
+<owl:Axiom>
+  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000113"/>
+  <owl:annotatedTarget rdf:resource="&CCO;PlanSpecification"/>
+  <inca:targetLabel rdf:datatype="&xsd;string">Plan</inca:targetLabel>
+</owl:Axiom>
+
+<owl:Axiom>
+  <rdfs:comment rdf:datatype="&xsd;string">Info: [plan,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000113,http://www.w3.org/2000/01/rdf-schema#label,plan@en)-rdf(http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification,http://www.w3.org/2000/01/rdf-schema#label,Plan^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
+  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000113"/>
+  <owl:annotatedTarget rdf:resource="&CCO;PlanSpecification"/>
+</owl:Axiom>
+
+</rdf:RDF>
