@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528#"
      xml:base="http://www.semanticweb.org/tauber/ontologies/2019/2/untitled-ontology-528"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/core.owl"/>
     
 
@@ -198,6 +198,117 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>guanine</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006147"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16235"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>adenine</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000225"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16708"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16914">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>salicylic acid</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D020156"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16914"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_ex_1"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>uncharged nickel atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36976 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>nucleotide</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009711"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60248">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_ex_1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>nickel ion</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_83400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000049"/>
+        <rdfs:label>RNA polymer</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83400"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_83828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83828">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000049"/>
+        <rdfs:label xml:lang="en">DNA polymer</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83828"/>
+    </owl:Class>
     
 
 
@@ -448,8 +559,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that consists of two or more atoms that are covalently bound.</obo:IAO_0000115>
-        <rdfs:comment>The identity of a molecular entity is exactly defined by its atomic compositions and bond formation. If an atom is added or lost, or bond formation is changed, it is no longer the same molecular entity. For example, if you remove the hydrogen from H2O, it is no longer a water molecule.</rdfs:comment>
+        <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
         <rdfs:comment>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</rdfs:comment>
         <rdfs:comment>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</rdfs:comment>
         <rdfs:label xml:lang="en">molecular entity</rdfs:label>
@@ -468,10 +578,11 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
         <obo:IAO_0000115>A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.</obo:IAO_0000115>
+        <rdfs:comment>Terms moved to &apos;molecular entity&apos;, see https://github.com/OBOFoundry/Experimental-OBO-Core/issues/33</rdfs:comment>
         <rdfs:label xml:lang="en">macromolecular entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
@@ -485,7 +596,7 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
         <rdfs:label xml:lang="en">protein</rdfs:label>
         <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D011506"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16541"/>
@@ -508,16 +619,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CORE_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000049"/>
-        <rdfs:label xml:lang="en">DNA polymer</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83828"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CORE_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
@@ -525,7 +626,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005886"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
@@ -662,30 +763,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CORE_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000118"/>
-        <rdfs:label xml:lang="en">human</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006801"/>
-        <skos:exactMatch rdf:resource="http://purl.org/biotop/biotop.owl#Human"/>
-        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_000485"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000023"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://purl.org/biotop/biotop.owl#Human"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [human,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000023,http://www.w3.org/2000/01/rdf-schema#label,human@en)-rdf(http://purl.org/biotop/biotop.owl#Human,http://www.w3.org/2000/01/rdf-schema#label,human^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000023"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/SIO_000485"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [human,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000023,http://www.w3.org/2000/01/rdf-schema#label,human@en)-rdf(http://semanticscience.org/resource/SIO_000485,http://www.w3.org/2000/01/rdf-schema#label,human@en),downcase)]</rdfs:comment>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CORE_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000025">
@@ -724,67 +801,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
         <obo:IAO_0000115>A material entity processed by human activity with an intent to produce</obo:IAO_0000115>
         <rdfs:label xml:lang="en">processed material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
-        <rdfs:label xml:lang="en">instrument</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0030489"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000028 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
-        <rdfs:label xml:lang="en">reagent</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0011227"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33893"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
-        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_010411"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000028"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [reagent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000028,http://www.w3.org/2000/01/rdf-schema#label,reagent@en)-rdf(http://purl.obolibrary.org/obo/OBI_0001879,http://www.w3.org/2000/01/rdf-schema#label,reagent@en),downcase)]</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000028"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/SIO_010411"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [reagent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000028,http://www.w3.org/2000/01/rdf-schema#label,reagent@en)-rdf(http://semanticscience.org/resource/SIO_010411,http://www.w3.org/2000/01/rdf-schema#label,reagent@en),downcase)]</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
-        <rdfs:label xml:lang="en">vaccine</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/C050598"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000029"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [vaccin,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000029,http://www.w3.org/2000/01/rdf-schema#label,vaccine@en)-rdf(http://purl.obolibrary.org/obo/VO_0000001,http://www.w3.org/2000/01/rdf-schema#label,vaccine^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
-        <rdfs:label xml:lang="en">drug product</rdfs:label>
     </owl:Class>
     
 
@@ -884,22 +900,6 @@
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [planned process,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000035,http://www.w3.org/2000/01/rdf-schema#label,planned process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000011,http://www.w3.org/2000/01/rdf-schema#label,planned process@en),downcase)]</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000036 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000035"/>
-        <rdfs:label xml:lang="en">informed consent process</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000036"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [informed consent process,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000036,http://www.w3.org/2000/01/rdf-schema#label,informed consent process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000810,http://www.w3.org/2000/01/rdf-schema#label,informed consent process^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
     </owl:Axiom>
     
 
@@ -1020,143 +1020,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CORE_0000044 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>nickel atom</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
-        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_011027"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000044"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/SIO_011027"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [nickel atom,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000044,http://www.w3.org/2000/01/rdf-schema#label,nickel atom^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://semanticscience.org/resource/SIO_011027,http://www.w3.org/2000/01/rdf-schema#label,nickel atom@en),downcase)]</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000045">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000044"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label>nickel ion</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60248"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000046 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000046">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000044"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000004"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label>uncharged nickel atom</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000015"/>
-        <rdfs:label>glycosylated protein</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CORE_0000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CORE_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>nucleic acid polymer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000049"/>
-        <rdfs:label>RNA polymer</rdfs:label>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83400"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>nucleotide</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009711"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000052 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000051"/>
-        <rdfs:label>adenine</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000225"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16708"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000053 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000051"/>
-        <rdfs:label>guanine</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006147"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16235"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000054 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>salicylic acid</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D020156"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16914"/>
     </owl:Class>
     
 
@@ -1193,17 +1067,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000061"/>
         <rdfs:label>conclusion based on data</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000021"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>tumor</rdfs:label>
-        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009369"/>
     </owl:Class>
     
 
@@ -1302,12 +1165,12 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_83400"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000050"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -1320,7 +1183,7 @@
     <!-- http://purl.obolibrary.org/obo/CORE_0000075 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000080"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
@@ -1351,11 +1214,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CORE_0000100 -->
+    <!-- http://purl.obolibrary.org/obo/CORE_0000080 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000079"/>
-        <rdfs:label xml:lang="en">study design</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
+        <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
+        <rdfs:comment>We would like to add cardinality but cannot do this with &apos;has part&apos;.</rdfs:comment>
+        <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
     
 
@@ -1383,33 +1248,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000020"/>
         <rdfs:label xml:lang="en">cell nucleus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000021"/>
-        <rdfs:label xml:lang="en">lung</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000105 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000068"/>
-        <rdfs:label xml:lang="en">mountain</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000106 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000067"/>
-        <rdfs:label xml:lang="en">tidal pool</rdfs:label>
     </owl:Class>
     
 
@@ -1486,29 +1324,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CORE_0000115 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
-        <rdfs:label xml:lang="en">device</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CORE_0000116 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000020"/>
         <rdfs:label xml:lang="en">cellular membrane</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CORE_0000117 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_0000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000116"/>
-        <rdfs:label xml:lang="en">plasma membrane</rdfs:label>
     </owl:Class>
     
 
@@ -1519,6 +1339,196 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
         <rdfs:label xml:lang="en">cellular organism</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_ex_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_ex_1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60248"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>nickel atom</rdfs:label>
+        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_011027"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_ex_1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/SIO_011027"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [nickel atom,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000044,http://www.w3.org/2000/01/rdf-schema#label,nickel atom^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://semanticscience.org/resource/SIO_011027,http://www.w3.org/2000/01/rdf-schema#label,nickel atom@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_ex_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_ex_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000021"/>
+        <rdfs:comment>This is an example</rdfs:comment>
+        <rdfs:label>tumor</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009369"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_ex_3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_ex_3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000015"/>
+        <rdfs:label>glycosylated protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CORE_ex_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CORE_ex_4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">drug product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000068"/>
+        <rdfs:label xml:lang="en">mountain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000067"/>
+        <rdfs:label xml:lang="en">tidal pool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005886 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005886">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000116"/>
+        <rdfs:label xml:lang="en">plasma membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000118"/>
+        <rdfs:label xml:lang="en">human</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006801"/>
+        <skos:exactMatch rdf:resource="http://purl.org/biotop/biotop.owl#Human"/>
+        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_000485"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/biotop/biotop.owl#Human"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [human,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000023,http://www.w3.org/2000/01/rdf-schema#label,human@en)-rdf(http://purl.org/biotop/biotop.owl#Human,http://www.w3.org/2000/01/rdf-schema#label,human^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/SIO_000485"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [human,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000023,http://www.w3.org/2000/01/rdf-schema#label,human@en)-rdf(http://semanticscience.org/resource/SIO_000485,http://www.w3.org/2000/01/rdf-schema#label,human@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000035"/>
+        <rdfs:label xml:lang="en">informed consent process</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [informed consent process,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000036,http://www.w3.org/2000/01/rdf-schema#label,informed consent process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000810,http://www.w3.org/2000/01/rdf-schema#label,informed consent process^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001879">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">reagent</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0011227"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33893"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
+        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_010411"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [reagent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000028,http://www.w3.org/2000/01/rdf-schema#label,reagent@en)-rdf(http://purl.obolibrary.org/obo/OBI_0001879,http://www.w3.org/2000/01/rdf-schema#label,reagent@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://semanticscience.org/resource/SIO_010411"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [reagent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000028,http://www.w3.org/2000/01/rdf-schema#label,reagent@en)-rdf(http://semanticscience.org/resource/SIO_010411,http://www.w3.org/2000/01/rdf-schema#label,reagent@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000079"/>
+        <rdfs:label xml:lang="en">study design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000021"/>
+        <rdfs:label xml:lang="en">lung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CORE_0000026"/>
+        <rdfs:label xml:lang="en">vaccine</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/C050598"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [vaccin,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000029,http://www.w3.org/2000/01/rdf-schema#label,vaccine@en)-rdf(http://purl.obolibrary.org/obo/VO_0000001,http://www.w3.org/2000/01/rdf-schema#label,vaccine^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
+    </owl:Axiom>
 </rdf:RDF>
 
 
