@@ -1,97 +1,108 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE rdf:RDF [
-    <!ENTITY MESH 'http://id.nlm.nih.gov/mesh/'>
-    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
-    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
-]>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/imports/matches-mesh.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/imports/matches-mesh.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:MESH="http://id.nlm.nih.gov/mesh/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/imports/matches-mesh.owl"/>
+    
 
-<rdf:RDF
-    xmlns:MESH="&MESH;"
-    xmlns:rdf="&rdf;"
-    xmlns:skos="&skos;"
->
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000004">
-  <skos:exactMatch rdf:resource="&MESH;M0008290"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000008">
-  <skos:exactMatch rdf:resource="&MESH;D011522"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000009">
-  <skos:exactMatch rdf:resource="&MESH;D009502"/>
-</rdf:Description>
+    
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000010">
-  <skos:exactMatch rdf:resource="&MESH;D004581"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000011">
-  <skos:exactMatch rdf:resource="&MESH;M0014533"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000015">
-  <skos:exactMatch rdf:resource="&MESH;D011506"/>
-</rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
-  <skos:exactMatch rdf:resource="&MESH;D002477"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000020">
-  <skos:exactMatch rdf:resource="&MESH;D022082"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000022">
-  <skos:exactMatch rdf:resource="&MESH;D009938"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000023">
-  <skos:exactMatch rdf:resource="&MESH;D006801"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000025">
-  <skos:exactMatch rdf:resource="&MESH;M0015415"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000027">
-  <skos:exactMatch rdf:resource="&MESH;M0030489"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000028">
-  <skos:exactMatch rdf:resource="&MESH;M0011227"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000029">
-  <skos:exactMatch rdf:resource="&MESH;C050598"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000037">
-  <skos:exactMatch rdf:resource="&MESH;D055694"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000051">
-  <skos:exactMatch rdf:resource="&MESH;D009711"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000052">
-  <skos:exactMatch rdf:resource="&MESH;D000225"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000053">
-  <skos:exactMatch rdf:resource="&MESH;D006147"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000054">
-  <skos:exactMatch rdf:resource="&MESH;D020156"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000060">
-  <skos:exactMatch rdf:resource="&MESH;D009369"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000067">
-  <skos:exactMatch rdf:resource="&MESH;D017753"/>
-</rdf:Description>
-
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000004">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0008290"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000008">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D011522"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000009">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009502"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000010">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D004581"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0014533"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000015">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D011506"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D002477"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000020">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D022082"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009938"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000023">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006801"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0015415"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000027">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0030489"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000028">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/M0011227"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000029">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/C050598"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000037">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D055694"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000051">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009711"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000052">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000225"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000053">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D006147"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000054">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D020156"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000060">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D009369"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000067">
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D017753"/>
+    </rdf:Description>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,627 +1,261 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE rdf:RDF [
-    <!ENTITY inca 'https://w3id.org/inca/'>
-    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
-    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
-    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
-    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
-    <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
-]>
-
-<rdf:RDF
-    xmlns:inca="&inca;"
-    xmlns:owl="&owl;"
-    xmlns:rdf="&rdf;"
-    xmlns:rdfs="&rdfs;"
-    xmlns:skos="&skos;"
-    xmlns:xsd="&xsd;"
->
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000001">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="&inca;sourceLabel">
-  <rdfs:type rdf:resource="&owl;AnnotationProperty"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000001"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-  <inca:sourceLabel xml:lang="en">quality</inca:sourceLabel>
-</owl:Axiom>
-
-<rdf:Description rdf:about="&inca;targetLabel">
-  <rdfs:type rdf:resource="&owl;AnnotationProperty"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000001"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-  <inca:targetLabel xml:lang="en">quality</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [qualiti,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000001,http://www.w3.org/2000/01/rdf-schema#label,quality@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000019,http://www.w3.org/2000/01/rdf-schema#label,quality@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000001"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000003">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000003"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-  <inca:sourceLabel xml:lang="en">mass</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000003"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">mass</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [mass,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000003,http://www.w3.org/2000/01/rdf-schema#label,mass@en)-rdf(http://purl.obolibrary.org/obo/PATO_0000125,http://www.w3.org/2000/01/rdf-schema#label,mass^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000003"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000006">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-  <inca:sourceLabel xml:lang="en">material entity</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-  <inca:targetLabel xml:lang="en">material entity</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [material ent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000006,http://www.w3.org/2000/01/rdf-schema#label,material entity@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000040,http://www.w3.org/2000/01/rdf-schema#label,material entity@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000006"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000008">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000008"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
-  <inca:sourceLabel xml:lang="en">proton</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000008"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">proton</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [proton,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000008,http://www.w3.org/2000/01/rdf-schema#label,proton@en)-rdf(http://purl.obolibrary.org/obo/CHEBI_24636,http://www.w3.org/2000/01/rdf-schema#label,proton^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000008"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000011">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-  <inca:sourceLabel xml:lang="en">atom</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">atom</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [atom,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000011,http://www.w3.org/2000/01/rdf-schema#label,atom@en)-rdf(http://purl.obolibrary.org/obo/CHEBI_33250,http://www.w3.org/2000/01/rdf-schema#label,atom^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000011"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000013">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-  <inca:sourceLabel xml:lang="en">molecular entity</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">molecular entity</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [molecular ent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000013,http://www.w3.org/2000/01/rdf-schema#label,molecular entity@en)-rdf(http://purl.obolibrary.org/obo/CHEBI_23367,http://www.w3.org/2000/01/rdf-schema#label,molecular entity^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000013"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000015">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000015"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-  <inca:sourceLabel xml:lang="en">protein</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000015"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">protein</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [protein,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000015,http://www.w3.org/2000/01/rdf-schema#label,protein@en)-rdf(http://purl.obolibrary.org/obo/PR_000000001,http://www.w3.org/2000/01/rdf-schema#label,protein^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000015"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000017"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-  <inca:sourceLabel xml:lang="en">cell</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000017"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-  <inca:targetLabel xml:lang="en">cell</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [cell,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000017,http://www.w3.org/2000/01/rdf-schema#label,cell@en)-rdf(http://purl.obolibrary.org/obo/CL_0000000,http://www.w3.org/2000/01/rdf-schema#label,cell@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000017"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000018">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000018"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-  <inca:sourceLabel xml:lang="en">native cell</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000018"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">native cell</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [native cel,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000018,http://www.w3.org/2000/01/rdf-schema#label,native cell@en)-rdf(http://purl.obolibrary.org/obo/CL_0000003,http://www.w3.org/2000/01/rdf-schema#label,native cell^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000018"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000022">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-  <inca:sourceLabel xml:lang="en">organism</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-  <inca:targetLabel xml:lang="en">organization</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [organ,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000022,http://www.w3.org/2000/01/rdf-schema#label,organism@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000245,http://www.w3.org/2000/01/rdf-schema#label,organization@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000022"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000025">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000025"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-  <inca:sourceLabel xml:lang="en">organization</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000025"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-  <inca:targetLabel xml:lang="en">organism</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [organ,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000025,http://www.w3.org/2000/01/rdf-schema#label,organization@en)-rdf(http://purl.obolibrary.org/obo/OBI_0100026,http://www.w3.org/2000/01/rdf-schema#label,organism@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000025"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000028">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000028"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
-  <inca:sourceLabel xml:lang="en">reagent</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000028"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
-  <inca:targetLabel xml:lang="en">reagent</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [reagent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000028,http://www.w3.org/2000/01/rdf-schema#label,reagent@en)-rdf(http://purl.obolibrary.org/obo/OBI_0001879,http://www.w3.org/2000/01/rdf-schema#label,reagent@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000028"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000029">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000029"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-  <inca:sourceLabel xml:lang="en">vaccine</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000029"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">vaccine</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [vaccin,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000029,http://www.w3.org/2000/01/rdf-schema#label,vaccine@en)-rdf(http://purl.obolibrary.org/obo/VO_0000001,http://www.w3.org/2000/01/rdf-schema#label,vaccine^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000029"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000031">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000031"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-  <inca:sourceLabel xml:lang="en">immaterial entity</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000031"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-  <inca:targetLabel xml:lang="en">immaterial entity</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [immaterial ent,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000031,http://www.w3.org/2000/01/rdf-schema#label,immaterial entity@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000141,http://www.w3.org/2000/01/rdf-schema#label,immaterial entity@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000031"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000033">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000033"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-  <inca:sourceLabel xml:lang="en">realizable</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000033"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-  <inca:targetLabel xml:lang="en">realizes</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [realiz,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000033,http://www.w3.org/2000/01/rdf-schema#label,realizable@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000055,http://www.w3.org/2000/01/rdf-schema#label,realizes@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000033"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000034">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-  <inca:sourceLabel xml:lang="en">process</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-  <inca:targetLabel xml:lang="en">process</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [process,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000034,http://www.w3.org/2000/01/rdf-schema#label,process@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000015,http://www.w3.org/2000/01/rdf-schema#label,process@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000034"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000035">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000035"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-  <inca:sourceLabel xml:lang="en">planned process</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000035"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-  <inca:targetLabel xml:lang="en">planned process</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [planned process,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000035,http://www.w3.org/2000/01/rdf-schema#label,planned process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000011,http://www.w3.org/2000/01/rdf-schema#label,planned process@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000035"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000036">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000036"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
-  <inca:sourceLabel xml:lang="en">informed consent process</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000036"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">informed consent process</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [informed consent process,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000036,http://www.w3.org/2000/01/rdf-schema#label,informed consent process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000810,http://www.w3.org/2000/01/rdf-schema#label,informed consent process^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000036"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000041">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-  <inca:sourceLabel xml:lang="en">has quality</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-  <inca:targetLabel xml:lang="en">has quality</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [has qual,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000041,http://www.w3.org/2000/01/rdf-schema#label,has quality@en)-rdf(http://purl.obolibrary.org/obo/RO_0000086,http://www.w3.org/2000/01/rdf-schema#label,has quality@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000041"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000047">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-  <inca:sourceLabel rdf:datatype="&xsd;string">has part</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-  <inca:targetLabel xml:lang="en">has part</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [has part,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000047,http://www.w3.org/2000/01/rdf-schema#label,has part^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/BFO_0000051,http://www.w3.org/2000/01/rdf-schema#label,has part@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000047"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000064">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000064"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-  <inca:sourceLabel rdf:datatype="&xsd;string">disease course</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000064"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-  <inca:targetLabel rdf:datatype="&xsd;string">disease course</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [disease cours,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000064,http://www.w3.org/2000/01/rdf-schema#label,disease course^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/OGMS_0000063,http://www.w3.org/2000/01/rdf-schema#label,disease course^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000064"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000070">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000070"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-  <inca:sourceLabel rdf:datatype="&xsd;string">has participant</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000070"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-  <inca:targetLabel xml:lang="en">has participant</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [has particip,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000070,http://www.w3.org/2000/01/rdf-schema#label,has participant^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/RO_0000057,http://www.w3.org/2000/01/rdf-schema#label,has participant@en),stem)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000070"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000071">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000071"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-  <inca:sourceLabel rdf:datatype="&xsd;string">occurs in</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000071"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-  <inca:targetLabel xml:lang="en">occurs in</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [occurs in,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000071,http://www.w3.org/2000/01/rdf-schema#label,occurs in^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/BFO_0000066,http://www.w3.org/2000/01/rdf-schema#label,occurs in@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000071"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-</owl:Axiom>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000072">
-  <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-</rdf:Description>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000072"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-  <inca:sourceLabel rdf:datatype="&xsd;string">part of</inca:sourceLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000072"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-  <inca:targetLabel xml:lang="en">part of</inca:targetLabel>
-</owl:Axiom>
-
-<owl:Axiom>
-  <rdfs:comment rdf:datatype="&xsd;string">Info: [part of,info(label-label,rdf(http://purl.obolibrary.org/obo/CORE_0000072,http://www.w3.org/2000/01/rdf-schema#label,part of^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/BFO_0000050,http://www.w3.org/2000/01/rdf-schema#label,part of@en),downcase)]</rdfs:comment>
-  <owl:annotatedProperty rdf:resource="&skos;exactMatch"/>
-  <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CORE_0000072"/>
-  <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-</owl:Axiom>
-
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/imports/matches-obi.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/imports/matches-obi.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:inca="https://w3id.org/inca/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/imports/matches-obi.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000001">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [qualiti,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000001,http://www.w3.org/2000/01/rdf-schema#label,quality@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000019,http://www.w3.org/2000/01/rdf-schema#label,quality@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000003">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [mass,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000003,http://www.w3.org/2000/01/rdf-schema#label,mass@en)-rdf(http://purl.obolibrary.org/obo/PATO_0000125,http://www.w3.org/2000/01/rdf-schema#label,mass^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000006">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [material ent,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000006,http://www.w3.org/2000/01/rdf-schema#label,material entity@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000040,http://www.w3.org/2000/01/rdf-schema#label,material entity@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000008">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [proton,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000008,http://www.w3.org/2000/01/rdf-schema#label,proton@en)-rdf(http://purl.obolibrary.org/obo/CHEBI_24636,http://www.w3.org/2000/01/rdf-schema#label,proton^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [atom,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000011,http://www.w3.org/2000/01/rdf-schema#label,atom@en)-rdf(http://purl.obolibrary.org/obo/CHEBI_33250,http://www.w3.org/2000/01/rdf-schema#label,atom^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [molecular ent,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000013,http://www.w3.org/2000/01/rdf-schema#label,molecular entity@en)-rdf(http://purl.obolibrary.org/obo/CHEBI_23367,http://www.w3.org/2000/01/rdf-schema#label,molecular entity^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000015">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [protein,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000015,http://www.w3.org/2000/01/rdf-schema#label,protein@en)-rdf(http://purl.obolibrary.org/obo/PR_000000001,http://www.w3.org/2000/01/rdf-schema#label,protein^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [cell,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000017,http://www.w3.org/2000/01/rdf-schema#label,cell@en)-rdf(http://purl.obolibrary.org/obo/CL_0000000,http://www.w3.org/2000/01/rdf-schema#label,cell@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000018">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [native cel,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000018,http://www.w3.org/2000/01/rdf-schema#label,native cell@en)-rdf(http://purl.obolibrary.org/obo/CL_0000003,http://www.w3.org/2000/01/rdf-schema#label,native cell^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [organ,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000022,http://www.w3.org/2000/01/rdf-schema#label,organism@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000245,http://www.w3.org/2000/01/rdf-schema#label,organization@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000025"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [organ,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000025,http://www.w3.org/2000/01/rdf-schema#label,organization@en)-rdf(http://purl.obolibrary.org/obo/OBI_0100026,http://www.w3.org/2000/01/rdf-schema#label,organism@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000028">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [reagent,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000028,http://www.w3.org/2000/01/rdf-schema#label,reagent@en)-rdf(http://purl.obolibrary.org/obo/OBI_0001879,http://www.w3.org/2000/01/rdf-schema#label,reagent@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000029">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [vaccin,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000029,http://www.w3.org/2000/01/rdf-schema#label,vaccine@en)-rdf(http://purl.obolibrary.org/obo/VO_0000001,http://www.w3.org/2000/01/rdf-schema#label,vaccine^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000031">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [immaterial ent,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000031,http://www.w3.org/2000/01/rdf-schema#label,immaterial entity@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000141,http://www.w3.org/2000/01/rdf-schema#label,immaterial entity@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000033">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [realiz,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000033,http://www.w3.org/2000/01/rdf-schema#label,realizable@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000055,http://www.w3.org/2000/01/rdf-schema#label,realizes@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000034">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [process,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000034,http://www.w3.org/2000/01/rdf-schema#label,process@en)-rdf(http://purl.obolibrary.org/obo/BFO_0000015,http://www.w3.org/2000/01/rdf-schema#label,process@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [planned process,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000035,http://www.w3.org/2000/01/rdf-schema#label,planned process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000011,http://www.w3.org/2000/01/rdf-schema#label,planned process@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000036">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000036"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000810"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [informed consent process,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000036,http://www.w3.org/2000/01/rdf-schema#label,informed consent process@en)-rdf(http://purl.obolibrary.org/obo/OBI_0000810,http://www.w3.org/2000/01/rdf-schema#label,informed consent process^^http://www.w3.org/2001/XMLSchema#string),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000041">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [has qual,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000041,http://www.w3.org/2000/01/rdf-schema#label,has quality@en)-rdf(http://purl.obolibrary.org/obo/RO_0000086,http://www.w3.org/2000/01/rdf-schema#label,has quality@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000047">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [has part,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000047,http://www.w3.org/2000/01/rdf-schema#label,has part^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/BFO_0000051,http://www.w3.org/2000/01/rdf-schema#label,has part@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000064">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000064"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [disease cours,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000064,http://www.w3.org/2000/01/rdf-schema#label,disease course^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/OGMS_0000063,http://www.w3.org/2000/01/rdf-schema#label,disease course^^http://www.w3.org/2001/XMLSchema#string),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000070">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [has particip,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000070,http://www.w3.org/2000/01/rdf-schema#label,has participant^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/RO_0000057,http://www.w3.org/2000/01/rdf-schema#label,has participant@en),stem)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000071">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [occurs in,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000071,http://www.w3.org/2000/01/rdf-schema#label,occurs in^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/BFO_0000066,http://www.w3.org/2000/01/rdf-schema#label,occurs in@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000072">
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Info: [part of,info(label-label,rdf(http://purl.obolibrary.org/obo/COB_0000072,http://www.w3.org/2000/01/rdf-schema#label,part of^^http://www.w3.org/2001/XMLSchema#string)-rdf(http://purl.obolibrary.org/obo/BFO_0000050,http://www.w3.org/2000/01/rdf-schema#label,part of@en),downcase)]</rdfs:comment>
+    </owl:Axiom>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

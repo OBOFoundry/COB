@@ -1,53 +1,75 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE rdf:RDF [
-    <!ENTITY biolink 'https://w3id.org/biolink/vocab/'>
-    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
-    <!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
-]>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/imports/matches-blmod.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/imports/matches-blmod.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:biolink="https://w3id.org/biolink/vocab/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/imports/matches-blmod.owl"/>
+    
 
-<rdf:RDF
-    xmlns:biolink="&biolink;"
-    xmlns:rdf="&rdf;"
-    xmlns:skos="&skos;"
->
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000013">
-  <skos:exactMatch rdf:resource="&biolink;MolecularEntity"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000015">
-  <skos:exactMatch rdf:resource="&biolink;Protein"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000017">
-  <skos:exactMatch rdf:resource="&biolink;Cell"/>
-</rdf:Description>
+    
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000037">
-  <skos:exactMatch rdf:resource="&biolink;BiologicalProcess"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000047">
-  <skos:exactMatch rdf:resource="&biolink;has_part"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000065">
-  <skos:exactMatch rdf:resource="&biolink;EnvironmentalProcess"/>
-</rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000070">
-  <skos:exactMatch rdf:resource="&biolink;has_participant"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000071">
-  <skos:exactMatch rdf:resource="&biolink;occurs_in"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000072">
-  <skos:exactMatch rdf:resource="&biolink;part_of"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.obolibrary.org/obo/CORE_0000073">
-  <skos:exactMatch rdf:resource="&biolink;GeneProduct"/>
-</rdf:Description>
-
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/MolecularEntity"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000015">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/Protein"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/Cell"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000037">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/BiologicalProcess"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000047">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/has_part"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000065">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/EnvironmentalProcess"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000070">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/has_participant"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000071">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/occurs_in"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000072">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/part_of"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000073">
+        <skos:exactMatch rdf:resource="https://w3id.org/biolink/vocab/GeneProduct"/>
+    </rdf:Description>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
