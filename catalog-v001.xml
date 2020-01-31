@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/cob/imports/matches-wd.owl" uri="imports/matches-wd.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-bfoc.owl" uri="./imports/matches-bfoc.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-biotop.owl" uri="./imports/matches-biotop.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-blmod.owl" uri="./imports/matches-blmod.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-chebi.owl" uri="./imports/matches-chebi.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-common_core.owl" uri="./imports/matches-common_core.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-mesh.owl" uri="./imports/matches-mesh.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-ro.owl" uri="./imports/matches-ro.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-sio.owl" uri="./imports/matches-sio.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-obi.owl" uri="./imports/matches-obi.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/cob/imports/matches-ogms.owl" uri="./imports/matches-ogms.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/cob/cob-edit.owl" uri="cob-edit.owl"/>
 </catalog>
