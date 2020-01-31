@@ -15,7 +15,7 @@ build/robot.jar:
 OBO = http://purl.obolibrary.org/obo/
 COB = cob.owl
 MODULES = generic physical biological human science
-PREFIX = 'COB: http://purl.obolibrary.org/COB_'
+PREFIX = 'COB: http://purl.obolibrary.org/obo/COB_'
 DATE = $(shell date +'%Y-%m-%d')
 
 $(COB): cob-edit.owl | build/robot.jar

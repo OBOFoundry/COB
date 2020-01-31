@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/core/cob-to-external.owl#"
-     xml:base="http://purl.obolibrary.org/obo/core/cob-to-external.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-to-external.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/cob-to-external.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <Ontology rdf:about="http://purl.obolibrary.org/obo/core/cob-to-external.owl">
+    <Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-to-external.owl">
         <imports rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
         <imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-external.owl"/>
     </Ontology>

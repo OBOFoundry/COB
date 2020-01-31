@@ -8,7 +8,7 @@ To suggest adding a term to COB, please submit an issue to our tracker.
 
 ## Files
 
-- `cob-edit.owl`: the *current version* of COB containing new terms in the CORE namespace.
+- `cob-edit.owl`: the *current version* of COB containing new terms in the COB namespace.
 - `cob-external.owl`: the original terms considered for COB from other OBO Foundry ontologies.
-- `cob-to-external.owl`: CORE terms from `cob-edit.owl` and OBO Foundry counterparts in `cob-external.owl` with proposed equivalencies.
+- `cob-to-external.owl`: COB terms from `cob-edit.owl` and OBO Foundry counterparts in `cob-external.owl` with proposed equivalencies.
 - `modules/`: the existing OBO Foundry terms from `cob-external.owl` split into different categories (generic, biological, human, physical, and science modules).

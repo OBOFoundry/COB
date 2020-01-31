@@ -4,8 +4,8 @@
 [
  sh:declare
   [
-    sh:prefix "CORE" ; 
-    sh:namespace "http://purl.obolibrary.org/obo/CORE_"
+    sh:prefix "COB" ; 
+    sh:namespace "http://purl.obolibrary.org/obo/COB_"
   ] ,
   [
     sh:prefix "RO" ; 
