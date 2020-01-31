@@ -125,106 +125,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_16235 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16235">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>guanine</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_16708 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16708">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>adenine</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_16914 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16914">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>salicylic acid</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_28112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_ex_1"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label>uncharged nickel atom</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_36976 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36976">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>nucleotide</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_60248 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60248">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_ex_1"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label>nickel ion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_83400 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83400">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-        <rdfs:label>RNA polymer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_83828 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83828">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-        <rdfs:label xml:lang="en">DNA polymer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000001">
@@ -381,12 +281,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005886"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
         <rdfs:comment>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</rdfs:comment>
         <rdfs:comment>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</rdfs:comment>
@@ -632,12 +526,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>nucleic acid polymer</rdfs:label>
     </owl:Class>
     
@@ -765,14 +653,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_83400"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000015"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:label>gene product</rdfs:label>
     </owl:Class>
     
@@ -936,142 +816,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <rdfs:label xml:lang="en">cellular organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_ex_1 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_ex_1">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_60248"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>nickel atom</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_ex_2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_ex_2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <rdfs:comment>This is an example</rdfs:comment>
-        <rdfs:label>tumor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_ex_3 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_ex_3">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
-        <rdfs:label>glycosylated protein</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_ex_4 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_ex_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:label xml:lang="en">drug product</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000081 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
-        <rdfs:label xml:lang="en">mountain</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000317 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000317">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000067"/>
-        <rdfs:label xml:lang="en">tidal pool</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0005886 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005886">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000116"/>
-        <rdfs:label xml:lang="en">plasma membrane</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <rdfs:label xml:lang="en">human</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000810 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000810">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:label xml:lang="en">informed consent process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:label xml:lang="en">device</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001879 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001879">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:label xml:lang="en">reagent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
-        <rdfs:label xml:lang="en">study design</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <rdfs:label xml:lang="en">lung</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:label xml:lang="en">vaccine</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

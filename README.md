@@ -8,5 +8,6 @@ To suggest adding a term to COB, please submit an issue to our tracker.
 
 ## Files
 
-- `cob-edit.owl`: the *current version* of COB containing new terms in the COB namespace.
-- `cob-to-external.owl`: COB terms and OBO Foundry counterparts with proposed equivalencies.
+- `cob-edit.owl`: the *current version* of COB containing new terms in the COB namespace
+- `cob-to-external.owl`: COB terms and OBO Foundry counterparts with proposed equivalencies
+- `cob-example.owl`: examples of usages for COB terms
