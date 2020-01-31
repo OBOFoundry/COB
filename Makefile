@@ -13,28 +13,24 @@ build/robot.jar:
 	curl -Lk -o $@ https://github.com/ontodev/robot/releases/download/v1.4.3/robot.jar
 
 OBO = http://purl.obolibrary.org/obo/
-
 COB = cob.owl
 MODULES = generic physical biological human science
-
 PREFIX = 'COB: http://purl.obolibrary.org/COB_'
-
-GENERIC_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1709706289&single=true&output=tsv
-PHYSICAL_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=2144007357&single=true&output=tsv
-BIOLOGICAL_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=663651851&single=true&output=tsv
-HUMAN_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1499631141&single=true&output=tsv
-SCIENCE_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1951374411&single=true&output=tsv
+DATE = $(shell date +'%Y-%m-%d')
 
 $(COB): cob-edit.owl | build/robot.jar
-	$(ROBOT) reason \
+	$(ROBOT) merge \
 	 --input $< \
+	reason \
 	annotate \
-	 --ontology-iri "$(OBO)$(COB)" \
+	 --ontology-iri "$(OBO)$@" \
+	 --version-iri "$(OBO)cob/$(DATE)/$@" \
 	 --output $@
 
 previous-$(COB): $(MODULES) | build/robot.jar
 	$(eval INPUTS := $(foreach I,$(shell ls modules), --input modules/$(I)))
-	$(ROBOT) --prefix $(PREFIX) merge $(INPUTS) --output $@ 
+	$(ROBOT) --prefix $(PREFIX) merge $(INPUTS) --output $@  \
+	annotate --version-iri $(OBO)cob/$(DATE)/$@ --ontology-iri $(OBO)cob/$@
 
 # ---------- MODULES ---------- #
 
@@ -69,6 +65,12 @@ modules/science.owl: templates/science.tsv | modules/generic.owl modules/human.o
 	 --output $@
 
 # ---------- TEMPLATES ---------- #
+
+GENERIC_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1709706289&single=true&output=tsv
+PHYSICAL_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=2144007357&single=true&output=tsv
+BIOLOGICAL_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=663651851&single=true&output=tsv
+HUMAN_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1499631141&single=true&output=tsv
+SCIENCE_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1951374411&single=true&output=tsv
 
 templates:
 	mkdir -p $@
