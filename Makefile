@@ -93,46 +93,6 @@ templates/human.tsv:
 templates/science.tsv:
 	curl "$(SCIENCE_SHEET)" > $@
 
-
-# ---------- TESTS & REPORTS ---------- #
-
-build:
-	mkdir -p $@
-
-# Files to create pseudo-core
-build/bfo-classes.owl: build
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/bfo/classes.owl
-
-build/ro-core.owl: build
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/ro/core.owl
-
-build/pseudo-core.owl: build/bfo-classes.owl build/ro-core.owl | build/robot.jar
-	$(ROBOT) merge \
-	 --input $< \
-	 --input $(word 2,$^) \
-	annotate \
-	 --remove-annotations \
-	 --ontology-iri "$(OBO)obo-core/pseudo-core.owl" \
-	 --output $@
-
-build/pseudo-terms.csv:  util/get-terms.rq | build/robot.jar
-	$(ROBOT) query \
-	 --input build/pseudo-core.owl \
-	 --query $(word 2,$^) $@
-
-build/core-terms.csv: cob.owl util/get-terms.rq | build/robot.jar
-	$(ROBOT) query \
-	 --input $< \
-	 --query $(word 2,$^) $@
-
-build/obi-terms.csv: util/get-terms.rq | build/robot.jar
-	$(ROBOT) query \
-	 --input-iri $(OBO)obi.owl \
-	 --query $< $@
-
-diff: build/pseudo-terms.csv build/core-terms.csv build/obi-terms.csv
-	./util/compare-terms.py $^ build
-
 # ---------- ALIGNMENT ---------- #
 # Currentlh this requires installing some tools - I will set up a docker for running these...
 
