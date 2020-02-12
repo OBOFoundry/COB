@@ -14,8 +14,8 @@ ROBOT := java -jar build/robot.jar
 build:
 	mkdir $@
 
-build/robot.jar: build
-	curl -Lk -o $@ https://github.com/ontodev/robot/releases/download/v1.4.3/robot.jar
+build/robot.jar: | build
+	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.5.0/robot.jar
 
 $(COB): cob-edit.owl | build/robot.jar
 	$(ROBOT) reason --input $< --reasoner hermit \
@@ -23,3 +23,10 @@ $(COB): cob-edit.owl | build/robot.jar
 	 --ontology-iri "http://purl.obolibrary.org/obo/$@" \
 	 --version-iri "http://purl.obolibrary.org/obo/cob/$(DATE)/$@" \
 	 --output $@
+
+.PRECIOUS: build/report.tsv
+build/report.tsv: cob-edit.owl | build/robot.jar
+	$(ROBOT) report \
+	--input $^ \
+	--labels true \
+	--output $@
