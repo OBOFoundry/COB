@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/tauber/ontologies/2020/0/untitled-ontology-1105#"
-     xml:base="http://www.semanticweb.org/tauber/ontologies/2020/0/untitled-ontology-1105"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-examples.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/cob-examples.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-example.owl">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-edit.owl"/>
     </owl:Ontology>
     
@@ -46,7 +48,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
-        <rdfs:comment>nucleotide</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;nucleotide&apos;</rdfs:comment>
         <rdfs:label>guanine</rdfs:label>
     </owl:Class>
     
@@ -56,7 +58,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16708">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36976"/>
-        <rdfs:comment>nucleotide</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;nucleotide&apos;</rdfs:comment>
         <rdfs:label>adenine</rdfs:label>
     </owl:Class>
     
@@ -66,7 +68,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16914">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:comment>molecular entity</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;molecular entity&apos;</rdfs:comment>
         <rdfs:label>salicylic acid</rdfs:label>
     </owl:Class>
     
@@ -78,7 +80,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COBex_1"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -90,7 +92,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COBex_1"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1"/>
+        <rdfs:comment>Example subclass of &apos;atom&apos;</rdfs:comment>
         <rdfs:label>nickel atom (uncharged)</rdfs:label>
     </owl:Class>
     
@@ -100,7 +103,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36976">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:comment>molecular entity</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;molecular entity&apos;</rdfs:comment>
         <rdfs:label>nucleotide</rdfs:label>
     </owl:Class>
     
@@ -112,7 +115,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COBex_1"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
@@ -120,7 +123,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COBex_1"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1"/>
+        <rdfs:comment>Example subclass of &apos;atom&apos;</rdfs:comment>
         <rdfs:label>nickel ion</rdfs:label>
     </owl:Class>
     
@@ -130,7 +134,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83400">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-        <rdfs:comment>nucleic acid polymer</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;nucleic acid polymer&apos;</rdfs:comment>
         <rdfs:label>RNA polymer</rdfs:label>
     </owl:Class>
     
@@ -140,7 +144,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83828">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-        <rdfs:comment>nucleic acid polymer</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;nucleic acid polymer&apos;</rdfs:comment>
         <rdfs:label>DNA polymer</rdfs:label>
     </owl:Class>
     
@@ -152,51 +156,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COBex_1 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBex_1">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
-        <rdfs:comment>atom</rdfs:comment>
-        <rdfs:label>nickel atom</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COBex_2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBex_2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <rdfs:comment>gross anatomical part</rdfs:comment>
-        <rdfs:label>tumor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COBex_3 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBex_3">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
-        <rdfs:comment>protein</rdfs:comment>
-        <rdfs:label>glycosylated protein</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COBex_4 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBex_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:comment>processed material entity</rdfs:comment>
-        <rdfs:label>drug product</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
-        <rdfs:comment>geophysical entity</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;geophysical entity&apos;</rdfs:comment>
         <rdfs:label>mountain</rdfs:label>
     </owl:Class>
     
@@ -206,7 +170,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000317">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000067"/>
-        <rdfs:comment>ecosystem</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;ecosystem&apos;</rdfs:comment>
         <rdfs:label>tidal pool</rdfs:label>
     </owl:Class>
     
@@ -216,7 +180,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005886">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000116"/>
-        <rdfs:comment>cellular membrane</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;cellular membrane&apos;</rdfs:comment>
         <rdfs:label>plasma membrane</rdfs:label>
     </owl:Class>
     
@@ -226,7 +190,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <rdfs:comment>cellular organism</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;cellular organism&apos;</rdfs:comment>
         <rdfs:label>human</rdfs:label>
     </owl:Class>
     
@@ -236,7 +200,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000810">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:comment>planned process</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;planned process&apos;</rdfs:comment>
         <rdfs:label>informed consent process</rdfs:label>
     </owl:Class>
     
@@ -246,7 +210,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:comment>processed material entity</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;processed material entity&apos;</rdfs:comment>
         <rdfs:label>device</rdfs:label>
     </owl:Class>
     
@@ -256,7 +220,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001879">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:comment>processed material entity</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;processed material entity&apos;</rdfs:comment>
         <rdfs:label>reagent</rdfs:label>
     </owl:Class>
     
@@ -266,7 +230,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
-        <rdfs:comment>plan specification</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;plan specification&apos;</rdfs:comment>
         <rdfs:label>study design</rdfs:label>
     </owl:Class>
     
@@ -276,7 +240,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <rdfs:comment>gross anatomical part</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;gross anatomical part&apos;</rdfs:comment>
         <rdfs:label>lung</rdfs:label>
     </owl:Class>
     
@@ -286,12 +250,52 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:comment>processed material entity</rdfs:comment>
+        <rdfs:comment>Example subclass of &apos;processed material entity&apos;</rdfs:comment>
         <rdfs:label>vaccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <rdfs:comment>Example subclass of &apos;atom&apos;</rdfs:comment>
+        <rdfs:label>nickel atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+        <rdfs:comment>Example subclass of &apos;gross anatomical part&apos;</rdfs:comment>
+        <rdfs:label>tumor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+        <rdfs:comment>Example subclass of &apos;protein&apos;</rdfs:comment>
+        <rdfs:label>glycosylated protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <rdfs:comment>Example subclass of &apos;processed material entity&apos;</rdfs:comment>
+        <rdfs:label>drug product</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
