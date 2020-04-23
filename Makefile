@@ -47,4 +47,4 @@ build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
 .PRECIOUS: build/merged-%.owl
 
 build/reasoned-%.owl: build/merged-%.owl
-	robot reason --reasoner ELK -i $< -o $@
+	touch $@.RUN && robot reason --reasoner ELK -i $< -o $@ && rm $@.RUN
