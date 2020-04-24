@@ -33,3 +33,18 @@ cob.owl: cob-edit.owl | build/robot.jar
 	--ontology-iri "http://purl.obolibrary.org/obo/$@" \
 	--version-iri "http://purl.obolibrary.org/obo/cob/$(DATE)/$@" \
 	--output $@
+
+COB_COMPLIANT = pato obi ro
+
+itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
+
+build/source-%.owl:
+	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
+.PRECIOUS: build/source-%.owl
+
+build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
+	robot merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
+.PRECIOUS: build/merged-%.owl
+
+build/reasoned-%.owl: build/merged-%.owl
+	touch $@.RUN && robot reason --reasoner ELK -i $< -o $@ && rm $@.RUN
