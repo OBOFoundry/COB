@@ -13,7 +13,7 @@ SHELL := bash
 DATE = $(shell date +'%Y-%m-%d')
 ROBOT := java -jar build/robot.jar
 
-all: build/report.tsv cob.owl
+all: test build/report.tsv cob.owl
 
 build:
 	mkdir $@
@@ -34,13 +34,24 @@ cob.owl: cob-edit.owl | build/robot.jar
 	--version-iri "http://purl.obolibrary.org/obo/cob/$(DATE)/$@" \
 	--output $@
 
-COB_COMPLIANT = pato obi ro
+COB_COMPLIANT = pato go cl uberon ro chebi obi
 
 itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
 
 build/source-%.owl:
 	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
 .PRECIOUS: build/source-%.owl
+
+# TODO: we should use the registry for this
+build/source-go.owl:
+	curl -L -s $(OBO)/go/go-base.owl > $@.tmp && mv $@.tmp $@
+build/source-uberon.owl:
+	curl -L -s $(OBO)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
+build/source-cl.owl:
+	curl -L -s $(OBO)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
+
+build/source-uberon+cl.owl: build/source+cl.owl build/source-uberon.owl
+	robot merge $(patsubst %, -i %, $^) -o $@
 
 build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
 	robot merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
