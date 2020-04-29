@@ -41,6 +41,11 @@ cob-base.owl: cob.owl cob-to-external.owl
 cob.tsv: cob.owl
 	robot export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
 
+cob-to-external.ttl: cob-to-external.tsv
+	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
+cob-to-external.owl: cob-to-external.ttl
+	robot convert -i $< -o $@
+
 COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo chebi ogms doid hp mp mondo obi
 
 itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
