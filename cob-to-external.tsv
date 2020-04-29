@@ -1,0 +1,45 @@
+subject_id	subject_label	predicate_id	object_id	object_label	notes
+COB:0000001	quality	owl:equivalentClass	BFO:0000019	quality	.
+COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.
+COB:0000006	material entity	owl:equivalentClass	BFO:0000040	material entity	.
+COB:0000007	subatomic particle	owl:equivalentClass	CHEBI:36342	subatomic particle	.
+COB:0000008	proton	owl:equivalentClass	CHEBI:24636	proton	.
+COB:0000009	neutron	owl:equivalentClass	CHEBI:30222	neutron	.
+COB:0000010	electron	owl:equivalentClass	CHEBI:10545	electron	.
+COB:0000011	atom	owl:equivalentClass	CHEBI:33250	atom	.
+COB:0000012	atomic nucleus	owl:equivalentClass	CHEBI:33252	atomic nucleus	.
+COB:0000013	molecular entity	owl:equivalentClass	CHEBI:23367	molecular entity	.
+COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.
+COB:0000015	protein	owl:equivalentClass	PR:000000001	protein	.
+COB:0000017	cell	owl:equivalentClass	CL:0000001	cell	.
+COB:0000018     native cell  owl:equivalentClass           CL:0000003     native cell
+COB:0000019     cell in vitro  owl:equivalentClass         CL:0001034     cell in vitro
+COB:0000022	organism	owl:equivalentClass	NCBITaxon:1	root	.
+COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.
+COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.
+COB:0000025	organization	owl:equivalentClass	OBI:0000245	organization	.
+COB:0000026	processed material entity	owl:equivalentClass	OBI:0000047	processed material	.
+COB:0000028	reagent	owl:equivalentClass	OBI:0001879	reagent	.
+COB:0000028	reagent	DIFFERENT	CHEBI:33893	reagent	.
+COB:0000029	vaccine	owl:equivalentClass	VO:0000001	vaccine	.
+COB:0000031	immaterial entity	owl:equivalentClass	BFO:0000041	immaterial entity	.
+COB:0000033	realizable	owl:equivalentClass	BFO:0000017	realizable entity	.
+COB:0000034	process	owl:equivalentClass	BFO:0000015	process	.
+COB:0000035	planned process	owl:equivalentClass	OBI:0000011	planned process	.
+COB:0000037	biological process	owl:equivalentClass	GO:0008150	biological process	.
+COB:0000038     gene product or complex activity owl:equivalentClass GO:0003674	molecular function	.
+COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.
+COB:0000056	immaterial anatomical entity	owl:equivalentClass	UBERON:0000466	immaterial anatomical entity	.
+COB:0000057	site	owl:equivalentClass	BFO:0000029	site	.
+COB:0000061	information	owl:equivalentClass	IAO:0000030	information content entity	.
+COB:0000064	disease course	owl:equivalentClass	OGMS:0000063	disease course	.
+COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.
+COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.
+COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.
+COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.
+COB:0000041	has quality	owl:equivalentProperty	RO:0000086	has quality	.
+COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.
+COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
+COB:0000071	occurs in	owl:equivalentProperty	BFO:0000066	occurs in	.
+COB:0000072	part of	owl:equivalentProperty	BFO:0000050	part of	.
+COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.
