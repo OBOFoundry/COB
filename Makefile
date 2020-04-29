@@ -34,7 +34,14 @@ cob.owl: cob-edit.owl | build/robot.jar
 	--version-iri "http://purl.obolibrary.org/obo/cob/$(DATE)/$@" \
 	--output $@
 
-COB_COMPLIANT = pato go cl uberon ro chebi obi
+
+cob-base.owl: cob.owl cob-to-external.owl
+	robot merge $(patsubst %, -i %, $^) -o $@
+
+cob.tsv: cob.owl
+	robot export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
+
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo chebi ogms doid hp mp mondo obi
 
 itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
 
@@ -49,8 +56,10 @@ build/source-uberon.owl:
 	curl -L -s $(OBO)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
 build/source-cl.owl:
 	curl -L -s $(OBO)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
+build/source-envo.owl:
+	curl -L -s $(OBO)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
 
-build/source-uberon+cl.owl: build/source+cl.owl build/source-uberon.owl
+build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl
 	robot merge $(patsubst %, -i %, $^) -o $@
 
 build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
