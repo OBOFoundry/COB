@@ -11,3 +11,7 @@ To suggest adding a term to COB, please submit an issue to our tracker.
 - `cob-edit.owl`: the *current version* of COB containing new terms in the COB namespace
 - `cob-to-external.owl`: COB terms and OBO Foundry counterparts with proposed equivalencies
 - `cob-examples.owl`: additional child terms as examples
+
+## Editors Guide
+
+Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makefile

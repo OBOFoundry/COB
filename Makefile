@@ -34,18 +34,21 @@ cob.owl: cob-edit.owl | build/robot.jar
 	--version-iri "http://purl.obolibrary.org/obo/cob/$(DATE)/$@" \
 	--output $@
 
-
+# base file is main cob plus linking axioms
 cob-base.owl: cob.owl cob-to-external.owl
 	robot merge $(patsubst %, -i %, $^) -o $@
 
+# TSV export (may depend on dev version of robot export)
 cob.tsv: cob.owl
 	robot export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
 
+# this is a really hacky way to do this, replace with robot report?
 cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 cob-to-external.owl: cob-to-external.ttl
 	robot convert -i $< -o $@
 
+# totally as-hoc list for now
 COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo chebi ogms doid hp mp mondo obi
 
 itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
