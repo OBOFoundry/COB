@@ -49,9 +49,12 @@ cob-to-external.owl: cob-to-external.ttl
 	robot convert -i $< -o $@
 
 # totally as-hoc list for now
-COB_COMPLIANT = pato go cl obi uberon po uberon+cl ro envo  ogms doid hp chebi mp mondo
+COB_COMPLIANT = pato go cl obi uberon po uberon+cl ro envo  ogms doid hp mp mondo
+COB_NONCOMPLIANT =  chebi
 
-itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
+itest: itest_compliant
+itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
+itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_COMPLIANT))
 
 build/source-%.owl:
 	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
@@ -76,3 +79,12 @@ build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
 
 build/reasoned-%.owl: build/merged-%.owl
 	touch $@.RUN && robot reason --reasoner ELK -i $< -o $@ && rm $@.RUN
+build/incoherent-%.owl: build/merged-%.owl
+	touch $@.RUN && robot reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
+
+# TODO: implement https://github.com/ontodev/robot/issues/686
+# then explain all incoherencies
+#build/incoherent-%.md: build/incoherent-%.owl
+#	robot explain --reasoner ELK -i $< -o $@
+build/incoherent-%.md: build/incoherent-%.owl
+	owltools $< --run-reasoner -r elk -u -e | grep ^UNSAT > $@

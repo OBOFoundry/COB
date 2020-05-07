@@ -1,0 +1,64 @@
+ID	ID [label]	definition	subClassOf [ID]	subClassOf [label]
+COB:0000001	quality			
+COB:0000003	mass		COB:0000001	quality
+COB:0000004	charge		COB:0000001	quality
+COB:0000005	elementary charge		COB:0000004	charge
+COB:0000006	material entity			
+COB:0000007	subatomic particle		COB:0000006	material entity
+COB:0000008	proton		COB:0000007	subatomic particle
+COB:0000009	neutron		COB:0000007	subatomic particle
+COB:0000010	electron		COB:0000007	subatomic particle
+COB:0000011	atom	A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.	COB:0000006|COB:0000047 some COB:0000012	has part some atomic nucleus|material entity
+COB:0000012	atomic nucleus		COB:0000007	subatomic particle
+COB:0000013	molecular entity	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	COB:0000006|COB:0000047 some COB:0000011	has part some atom|material entity
+COB:0000014	obsolete macromolecular entity	A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.		
+COB:0000015	protein		COB:0000013	molecular entity
+COB:0000017	cell	A material entity that has a plasma membrane and results from cellular division.	COB:0000006	material entity
+COB:0000018	native cell		COB:0000017	cell
+COB:0000019	cell in vitro		COB:0000017	cell
+COB:0000020	subcellular structure	A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.	COB:0000006|COB:0000047 some COB:0000013	has part some molecular entity|material entity
+COB:0000021	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	COB:0000006	material entity
+COB:0000022	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.	COB:0000006	material entity
+COB:0000025	organization		COB:0000006	material entity
+COB:0000026	processed material entity	A material entity processed by human activity with an intent to produce	COB:0000006	material entity
+COB:0000031	immaterial entity			
+COB:0000032	geographical location		COB:0000031	immaterial entity
+COB:0000033	realizable			
+COB:0000034	process			
+COB:0000035	planned process		COB:0000034	process
+COB:0000037	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	(COB:0000070 some COB:0000022) or (COB:0000070 some (COB:0000072 some COB:0000022)) or (COB:0000071 some COB:0000022)|COB:0000034|COB:0000047 some COB:0000038	(has participant some organism) or (has participant some (part of some organism)) or (occurs in some organism)|has part some gene product or complex activity|process
+COB:0000038	gene product or complex activity		COB:0000034|COB:0000074 some (COB:0000073 or COB:0000075)	enabled by some (gene product or protein-containing macromolecular complex)|process
+COB:0000042	monoatomic ion		COB:0000011	atom
+COB:0000043	uncharged atom		COB:0000011	atom
+COB:0000049	nucleic acid polymer		COB:0000013	molecular entity
+COB:0000055	collection of organisms		COB:0000006	material entity
+COB:0000056	immaterial anatomical entity		COB:0000031	immaterial entity
+COB:0000057	site		COB:0000031	immaterial entity
+COB:0000058	conclusion based on data		COB:0000061	information
+COB:0000061	information			
+COB:0000062	disease diagnosis		COB:0000061	information
+COB:0000063	phenotypic finding		COB:0000061	information
+COB:0000064	disease course		COB:0000034	process
+COB:0000065	environmental process		COB:0000034	process
+COB:0000066	physico-chemical process		COB:0000034	process
+COB:0000067	ecosystem		COB:0000006	material entity
+COB:0000068	geophysical entity		COB:0000006	material entity
+COB:0000069	directive information entity		COB:0000061	information
+COB:0000073	gene product		COB:0000013	molecular entity
+COB:0000075	protein-containing macromolecular complex		COB:0000047 some COB:0000073|COB:0000080	complex of molecular entities|has part some gene product
+COB:0000076	objective specification		COB:0000069	directive information entity
+COB:0000079	plan specification		COB:0000069	directive information entity
+COB:0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	COB:0000006	material entity
+COB:0000101	document		COB:0000061	information
+COB:0000102	data item		COB:0000061	information
+COB:0000103	cell nucleus		COB:0000020	subcellular structure
+COB:0000107	assay		COB:0000035	planned process
+COB:0000108	data transformation		COB:0000035	planned process
+COB:0000109	investigation		COB:0000035	planned process
+COB:0000110	material processing		COB:0000035	planned process
+COB:0000111	disposition		COB:0000033	realizable
+COB:0000112	function		COB:0000111	disposition
+COB:0000113	plan		COB:0000033	realizable
+COB:0000114	role		COB:0000033	realizable
+COB:0000116	cellular membrane		COB:0000020	subcellular structure
+COB:0000118	cellular organism		COB:0000022	organism
