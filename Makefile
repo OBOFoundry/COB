@@ -76,8 +76,9 @@ cob-to-external.owl: cob-to-external.ttl
 # No ontologies should have orphans - classes should have subClass ancestry to a COB class
 #
 # these list are incomplete: it can easily be added to:
-COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo  ogms hp mp mondo
-COB_NONCOMPLIANT =  doid chebi obi
+
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo  ogms hp mp caro
+COB_NONCOMPLIANT =  doid chebi obi mondo
 
 test: main_test itest
 main_test: build/report.tsv cob.owl
@@ -106,6 +107,8 @@ build/source-envo.owl:
 	curl -L -s $(OBO)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
 build/source-hp.owl:
 	curl -L -s $(OBO)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-mp.owl:
+	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
 
 # special cases
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl
