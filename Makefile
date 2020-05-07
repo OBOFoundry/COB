@@ -49,8 +49,8 @@ cob-to-external.owl: cob-to-external.ttl
 	robot convert -i $< -o $@
 
 # totally as-hoc list for now
-COB_COMPLIANT = pato go cl obi uberon po uberon+cl ro envo  ogms doid hp mp mondo
-COB_NONCOMPLIANT =  chebi
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo  ogms doid hp mp mondo
+COB_NONCOMPLIANT =  chebi obi
 
 itest: itest_compliant
 itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
