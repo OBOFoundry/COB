@@ -10,6 +10,7 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+OBO := http://purl.obolibrary.org/obo
 DATE = $(shell date +'%Y-%m-%d')
 ROBOT := java -jar build/robot.jar
 
@@ -19,7 +20,7 @@ build:
 	mkdir $@
 
 build/robot.jar: | build
-	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.5.0/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 # -- MAIN RELEASE PRODUCTS --
 
@@ -40,11 +41,11 @@ cob.owl: cob-edit.owl | build/robot.jar
 
 # base file is main cob plus linking axioms
 cob-base.owl: cob.owl cob-to-external.owl
-	robot merge $(patsubst %, -i %, $^) -o $@
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # TSV export (may depend on dev version of robot export)
 cob.tsv: cob.owl
-	robot export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
+	$(ROBOT) export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
 
 # -- MAPPINGS TO OBO --
 #
@@ -56,7 +57,7 @@ cob.tsv: cob.owl
 cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 cob-to-external.owl: cob-to-external.ttl
-	robot convert -i $< -o $@
+	$(ROBOT) convert -i $< -o $@
 
 # -- TESTING --
 
@@ -119,25 +120,25 @@ build/source-mp.owl:
 
 # special cases
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl
-	robot merge $(patsubst %, -i %, $^) -o $@
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # merged product to be tested
 build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
-	robot merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
+	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
 # reasoned product; this will FAIL if incoherent
 build/reasoned-%.owl: build/merged-%.owl
-	touch $@.RUN && robot reason --reasoner ELK -i $< -o $@ && rm $@.RUN
+	touch $@.RUN && $(ROBOT) reason --reasoner ELK -i $< -o $@ && rm $@.RUN
 
 # incoherent product; we EXPECT to be incoherent. If it is not, then we FAIL
 build/incoherent-%.owl: build/merged-%.owl
-	touch $@.RUN && robot reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
+	touch $@.RUN && $(ROBOT) reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
 
 # TODO: implement https://github.com/ontodev/robot/issues/686
 # then explain all incoherencies. use owltools for now
 #build/incoherent-%.md: build/incoherent-%.owl
-#	robot explain --reasoner ELK -i $< -o $@
+#	$(ROBOT) explain --reasoner ELK -i $< -o $@
 build/incoherent-%.md: build/incoherent-%.owl
 	owltools $< --run-reasoner -r elk -u -e | grep ^UNSAT > $@
 
