@@ -156,6 +156,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CARO_0010004 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010004">
+        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_10545 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10545">
@@ -437,9 +445,7 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
-        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
-    </Class>
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056"/>
     
 
 
@@ -824,12 +830,6 @@
     <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466"/>
 </rdf:RDF>
 
 

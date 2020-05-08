@@ -27,10 +27,14 @@ while(<>) {
     next if $p eq 'DIFFERENT';
     $s =~ s@:@_@;
     $o =~ s@:@_@;
-    print ":$s $p :$o .\n";
     $type = 'owl:Class';
     if ($p =~ m@property@i) {
         $type = 'owl:ObjectProperty';
     }
     print ":$s a $type .\n";
+    if ($p eq 'SUPERCLASS_OF') {
+        ($s,$o) = ($o,$s);
+        $p = 'owl:subClassOf';
+    }
+    print ":$s $p :$o .\n";
 }

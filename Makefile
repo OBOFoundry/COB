@@ -77,17 +77,24 @@ cob-to-external.owl: cob-to-external.ttl
 #
 # these list are incomplete: it can easily be added to:
 
-COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo  ogms hp mp caro
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo ogms hp mp caro
 COB_NONCOMPLIANT =  doid chebi obi mondo
+ALL_ONTS = $(COB_COMPLIANT)) $(COB_NONCOMPLIANT))
 
 test: main_test itest
 main_test: build/report.tsv cob.owl
 
 # integration tests
-itest: itest_compliant itest_noncompliant
+itest: itest_compliant itest_noncompliant #superclass_test
 
 itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
-itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_COMPLIANT))
+itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
+
+# currently almost ALL ontologies fail this.
+# PASSES: ENVO
+# FAILS: anything with stages (PO, UBERON, ...): https://github.com/OBOFoundry/COB/issues/40
+# FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
+superclass_test: $(patsubst %, build/no-orphans-%.owl, $(ALL_ONTS))
 
 # cache ontology locally; by default we use main product...
 build/source-%.owl:
@@ -133,3 +140,11 @@ build/incoherent-%.owl: build/merged-%.owl
 #	robot explain --reasoner ELK -i $< -o $@
 build/incoherent-%.md: build/incoherent-%.owl
 	owltools $< --run-reasoner -r elk -u -e | grep ^UNSAT > $@
+
+# test to see if the ontology has any classes that are not inferred subclasses of a COB
+# class. Exceptions made for BFO which largely sits above COB.
+# note that for 'reasoning' we use only subClassOf and equivalentClasses;
+# this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
+# is all sub/equiv axioms
+build/no-orphans-%.txt: build/merged-%.owl
+	robot verify -i $< -q sparql/no-cob-ancestor.rq > build-orphans-$*.txt && touch $@

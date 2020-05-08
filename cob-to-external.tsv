@@ -35,7 +35,8 @@ COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.
 COB:0000043	uncharged atom
 COB:0000049	nucleic acid polymer
 COB:0000055	collection of organisms	owl:equivalentClass	PCO:0000000	collection of organisms	.
-COB:0000056	immaterial anatomical entity	owl:equivalentClass	UBERON:0000466	immaterial anatomical entity	.
+COB:0000056	immaterial anatomical entity	SUPERCLASS_OF	UBERON:0000466	immaterial anatomical entity	.
+COB:0000056	immaterial anatomical entity	SUPERCLASS_OF	PO:0025117	plant anatomical space	.
 COB:0000057	site	owl:equivalentClass	BFO:0000029	site	.
 COB:0000058	conclusion based on data	owl:equivalentClass	OBI:0001909	conclusion based on data	.
 COB:0000061	information	owl:equivalentClass	IAO:0000030	information content entity	.
@@ -65,6 +66,9 @@ COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.
 COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.
 COB:0000116	cellular membrane
 COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.
+COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.
+COB:0000118	cellular organism	SUPERCLASS_OF	UBERON:0000468	multicellular organism	.
+COB:0000118	cellular organism	SUPERCLASS_OF	PO:0000003	whole plant	.
 COB:0000041	has quality	owl:equivalentProperty	RO:0000086	has quality	.
 COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.
 COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
