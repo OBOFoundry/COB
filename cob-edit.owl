@@ -37,6 +37,24 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
@@ -134,6 +152,14 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000001">
+        <obo:IAO_0000115>(primitive definition)
+A property, feature, trait, or attribute of an entity</obo:IAO_0000115>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+This definition allows for qualites to have qualities.  
+The standard philsophical argument against second-order qualities is that they permite infinite orders of qualities.  
+I think this agrument conflates potentiality with actuality. By analogy, there are potentially an infinite real numbers between two integers. But, in acutality, we use integers and real numbers just fine.</rdfs:comment>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+This definition does not exclude processes having qualities.  That is, unlike BFO, it is not a logical consequence of the definition that process cannot have qualities.</rdfs:comment>
         <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
     
@@ -175,6 +201,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <obo:IAO_0000115>(primitive definition)
+A spatial extended entity that has mass</obo:IAO_0000115>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     
@@ -377,6 +405,10 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000031">
+        <obo:IAO_0000115>(primitive definition)
+A spatial extended entity that does not have mass</obo:IAO_0000115>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+Material entities are located in, but not necessarily part of immaterial entities.</rdfs:comment>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
     
@@ -394,6 +426,12 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000033">
+        <obo:IAO_0000115>(primitive definition)
+A property, trait, or attribute of an entity (material entity?) that orients or inclines the entity to behave in a certain way.</obo:IAO_0000115>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+I think realizables (often just called dispositions in philosophical literature) are viable entities. For example, postassium has the dispostion ot react with water. However, the metaphyiscal nature of realiables is very much up for debate.</rdfs:comment>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+Ugh ... this one may be tough to define w/o getting metaphysically obtuse. But, we want it gronkable by non-philosophers. Do we want to restrict realizables to apply only to material entities? Also, perhaps change name to &apos;capability&apos;. &apos;Realizable&apos; is a bit of an inaccessible name.</rdfs:comment>
         <rdfs:label xml:lang="en">realizable</rdfs:label>
     </owl:Class>
     
@@ -402,6 +440,10 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000034">
+        <obo:IAO_0000115>(primitive definition)
+A temporally extended entity that necessarily has one or more material entities as participants</obo:IAO_0000115>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+We don&apos;t have temporal regions in COB (yet). Temporal regions would not necessarily have participants. Not sure if temporal regions are needed.</rdfs:comment>
         <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
     
@@ -576,6 +618,10 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000061">
+        <obo:IAO_0000115>(primitive definition)
+An entity whose properties permit it to undergo processes that communicate the characteristics of or the meaning of an entity (usually a different entity, but information can be self referential). In this sense, information is said to inform or be about an entity.</obo:IAO_0000115>
+        <rdfs:comment>Bill Duncan (https://orcid.org/0000-0001-9625-1899):
+I&apos;m not real happy about this definition, but defining information tough w/o being too circular. Plus, we have to start somewhere. The definition should not block creating understandable relations between information and planned processes and/or plans (in the realizable sense of &apos;plan&apos;).</rdfs:comment>
         <rdfs:label>information</rdfs:label>
     </owl:Class>
     
@@ -827,5 +873,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
