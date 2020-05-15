@@ -45,7 +45,8 @@ cob-base.owl: cob.owl cob-to-external.owl
 
 # TSV export (may depend on dev version of robot export)
 cob.tsv: cob.owl
-	$(ROBOT) export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
+	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
+#	$(ROBOT) export -i $< --entity-select NAMED -c "ID|ID [LABEL]|definition|subClassOf [ID]|subClassOf [LABEL]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 
 # -- MAPPINGS TO OBO --
 #
