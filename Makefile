@@ -10,23 +10,28 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+OBO := http://purl.obolibrary.org/obo
 DATE = $(shell date +'%Y-%m-%d')
 ROBOT := java -jar build/robot.jar
 
-all: test build/report.tsv cob.owl
+all: test build/report.tsv cob.owl cob.tsv
 
 build:
 	mkdir $@
 
 build/robot.jar: | build
-	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.5.0/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
+# -- MAIN RELEASE PRODUCTS --
+
+# create report and fail if errors introduced
 build/report.tsv: cob-edit.owl | build/robot.jar
 	$(ROBOT) report \
 	--input $^ \
 	--labels true \
 	--output $@
 
+# build main release product
 cob.owl: cob-edit.owl | build/robot.jar
 	$(ROBOT) reason --input $< --reasoner hermit \
 	annotate \
@@ -36,28 +41,71 @@ cob.owl: cob-edit.owl | build/robot.jar
 
 # base file is main cob plus linking axioms
 cob-base.owl: cob.owl cob-to-external.owl
-	robot merge $(patsubst %, -i %, $^) -o $@
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # TSV export (may depend on dev version of robot export)
 cob.tsv: cob.owl
-	robot export -i $< -c "ID|ID [label]|definition|subClassOf [ID]|subClassOf [label]" -e $@
+	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
+#	$(ROBOT) export -i $< --entity-select NAMED -c "ID|ID [LABEL]|definition|subClassOf [ID]|subClassOf [LABEL]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 
+# -- MAPPINGS TO OBO --
+#
+#  the source file is cob-to-external.tsv
+#
+#  OWL is generated from this
+#
 # this is a really hacky way to do this, replace with robot report?
 cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 cob-to-external.owl: cob-to-external.ttl
-	robot convert -i $< -o $@
+	$(ROBOT) convert -i $< -o $@
 
-# totally as-hoc list for now
-COB_COMPLIANT = pato go cl obi uberon po uberon+cl ro envo  ogms doid hp chebi mp mondo
+# -- TESTING --
 
-itest: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
+# in addition to standard testing, we also perform integration tests.
+#
+# here we join cob, cob-to-external (bridge ontology) and OBO ontology O;
+# we then test this merged product for coherency.
+#
+# these tests are divided in two:
+#
+#  if an ontology that is known to be compliant is INCOHERENT, this is a failure
+#  if an ontology that is known to be NON-compliant is unexpectedly COHERENT, this is a failure
+#
+# See https://github.com/OBOFoundry/COB/issues/71 for discussion
+#
+# Note that in addition to coherency testing, we also want to do orphan testing.
+# No ontologies should have orphans - classes should have subClass ancestry to a COB class
+#
+# these list are incomplete: it can easily be added to:
 
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo ogms hp mp caro
+COB_NONCOMPLIANT =  doid chebi obi mondo
+ALL_ONTS = $(COB_COMPLIANT)) $(COB_NONCOMPLIANT))
+
+test: main_test itest
+main_test: build/report.tsv cob.owl
+
+# integration tests
+itest: itest_compliant itest_noncompliant #superclass_test
+
+itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
+itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
+
+# currently almost ALL ontologies fail this.
+# PASSES: ENVO
+# FAILS: anything with stages (PO, UBERON, ...): https://github.com/OBOFoundry/COB/issues/40
+# FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
+superclass_test: $(patsubst %, build/no-orphans-%.owl, $(ALL_ONTS))
+
+# cache ontology locally; by default we use main product...
 build/source-%.owl:
 	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
 .PRECIOUS: build/source-%.owl
 
+# overrides for ontologies with bases
 # TODO: we should use the registry for this
+# see https://github.com/OBOFoundry/OBO-Dashboard/issues/20
 build/source-go.owl:
 	curl -L -s $(OBO)/go/go-base.owl > $@.tmp && mv $@.tmp $@
 build/source-uberon.owl:
@@ -66,13 +114,39 @@ build/source-cl.owl:
 	curl -L -s $(OBO)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
 build/source-envo.owl:
 	curl -L -s $(OBO)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
+build/source-hp.owl:
+	curl -L -s $(OBO)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-mp.owl:
+	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
 
+# special cases
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl
-	robot merge $(patsubst %, -i %, $^) -o $@
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+# merged product to be tested
 build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
-	robot merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
+	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
+# reasoned product; this will FAIL if incoherent
 build/reasoned-%.owl: build/merged-%.owl
-	touch $@.RUN && robot reason --reasoner ELK -i $< -o $@ && rm $@.RUN
+	touch $@.RUN && $(ROBOT) reason --reasoner ELK -i $< -o $@ && rm $@.RUN
+
+# incoherent product; we EXPECT to be incoherent. If it is not, then we FAIL
+build/incoherent-%.owl: build/merged-%.owl
+	touch $@.RUN && $(ROBOT) reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
+
+# TODO: implement https://github.com/ontodev/robot/issues/686
+# then explain all incoherencies. use owltools for now
+#build/incoherent-%.md: build/incoherent-%.owl
+#	$(ROBOT) explain --reasoner ELK -i $< -o $@
+build/incoherent-%.md: build/incoherent-%.owl
+	owltools $< --run-reasoner -r elk -u -e | grep ^UNSAT > $@
+
+# test to see if the ontology has any classes that are not inferred subclasses of a COB
+# class. Exceptions made for BFO which largely sits above COB.
+# note that for 'reasoning' we use only subClassOf and equivalentClasses;
+# this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
+# is all sub/equiv axioms
+build/no-orphans-%.txt: build/merged-%.owl
+	robot verify -i $< -q sparql/no-cob-ancestor.rq > build-orphans-$*.txt && touch $@

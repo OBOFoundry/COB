@@ -14,4 +14,8 @@ To suggest adding a term to COB, please submit an issue to our tracker.
 
 ## Editors Guide
 
-Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makefile
+Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makefile.
+
+Run `make test` to run both basic tests and integration tests.
+
+See the [Makefile](Makefile) for a list of ontologies that are known to be compliant and those known to be non-compliant
