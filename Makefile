@@ -36,7 +36,7 @@ cob.owl: cob-edit.owl | build/robot.jar
 	$(ROBOT) reason --input $< --reasoner hermit \
 	annotate \
 	--ontology-iri "http://purl.obolibrary.org/obo/$@" \
-	--version-iri "http://purl.obolibrary.org/obo/cob/$(DATE)/$@" \
+	--annotation owl:versionInfo $(DATE) \
 	--output $@
 
 # base file is main cob plus linking axioms
