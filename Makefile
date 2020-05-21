@@ -96,7 +96,7 @@ itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
 # PASSES: ENVO
 # FAILS: anything with stages (PO, UBERON, ...): https://github.com/OBOFoundry/COB/issues/40
 # FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
-superclass_test: $(patsubst %, build/no-orphans-%.owl, $(ALL_ONTS))
+superclass_test: $(patsubst %, build/no-orphans-%.txt, $(ALL_ONTS))
 
 # cache ontology locally; by default we use main product...
 build/source-%.owl:
@@ -149,4 +149,4 @@ build/incoherent-%.md: build/incoherent-%.owl
 # this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
 # is all sub/equiv axioms
 build/no-orphans-%.txt: build/merged-%.owl
-	robot verify -i $< -q sparql/no-cob-ancestor.rq > build-orphans-$*.txt && touch $@
+	robot verify -i $< -q sparql/no-cob-ancestor.rq >& build/orphans-$*.txt && touch $@
