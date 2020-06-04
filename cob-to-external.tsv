@@ -11,11 +11,14 @@ COB:0000010	electron	owl:equivalentClass	CHEBI:10545	electron	.
 COB:0000011	atom	owl:equivalentClass	CHEBI:33250	atom	.
 COB:0000012	atomic nucleus	owl:equivalentClass	CHEBI:33252	atomic nucleus	.
 COB:0000013	molecular entity	owl:equivalentClass	CHEBI:23367	molecular entity	.
-COB:0000014	obsolete macromolecular entity
 COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.
 COB:0000015	protein	owl:equivalentClass	PR:000000001	protein	.
-COB:0000017	cell	owl:equivalentClass	CL:0000001	cell	.
+COB:0000017	cell	owl:equivalentClass	CL:0000000	cell	.
+COB:0000017	cell	SUPERCLASSOF	PO:0009002	plant cell	.
 COB:0000018	native cell	owl:equivalentClass	CL:0000003	native cell	.
+COB:0000018	native cell	SUPERCLASS_OF	XAO:0003012	xenopus cell	.
+COB:0000018	native cell	SUPERCLASS_OF	ZFA:0009000	zebrafish cell	.
+COB:0000018	native cell	SUPERCLASS_OF	PO:0025606	native plant cell	.
 COB:0000019	cell in vitro	owl:equivalentClass	CL:0001034	cell in vitro	.
 COB:0000020	subcellular structure
 COB:0000021	gross anatomical part	owl:equivalentClass	CARO:0001008	gross anatomical part	.
@@ -53,7 +56,7 @@ COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:003
 COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective specification	.
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
 COB:0000080	complex of molecular entities
-COB:0000101	document	owl:equivalentClass	IAO:0000310	plan specification	.
+COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
 COB:0000102	data item	owl:equivalentClass	IAO:0000027	plan specification	.
 COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
 COB:0000107	assay	owl:equivalentClass	OBI:0000070	plan specification	.
