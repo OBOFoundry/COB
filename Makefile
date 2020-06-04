@@ -176,9 +176,10 @@ build/demo-cob-init.owl: $(DEMO_ONT_FILES)
 # TODO: do this with robot somehow.
 # equivalence pairs ugly for browsing; merge into COB
 build/demo-cob-merged.owl: build/demo-cob-init.owl
-	owltools $< --reasoner elk --merge-equivalence-sets -s COB 10 -l COB 10  -o $@
+	owltools $< --reasoner elk --merge-equivalence-sets -s COB 10 -l COB 10 -d COB 10  -o $@
 
 # remove redundancy
+# todo: remove danglers in fiinal release (use a SPARQL update), but produce a report
 products/demo-cob.owl: build/demo-cob-merged.owl
 	robot reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
 
