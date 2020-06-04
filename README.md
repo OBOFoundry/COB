@@ -27,6 +27,16 @@ You can also enter any COB class PURL into a browser to resolve it; e.g. [http:/
   - [cob-to-external.tsv](cob-to-external.tsv): TSV source of cob-to-external
   - [Makefile](Makefile): workflow for build COB
 
+## COB demo
+
+As a demonstration of how COB could be used to unify OBO ontologies in the future we produce an ontology:
+
+ - [products/cob-demo.owl](products/cob-demo.owl)
+
+This has selected subsets of certain ontologies merged in with
+cob-to-external. It is incomplete and messy. Please see the Makefile
+for how to add more to it.
+
 ## Editors Guide
 
 Do not edit cob.owl directly. Instead edit cob-edit.owl
