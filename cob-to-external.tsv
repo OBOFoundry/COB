@@ -35,7 +35,7 @@ COB:0000035	planned process	owl:equivalentClass	OBI:0000011	planned process	.
 COB:0000037	biological process	owl:equivalentClass	GO:0008150	biological process	.
 COB:0000038	gene product or complex activity	owl:equivalentClass	GO:0003674	molecular function	.
 COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.
-COB:0000043	uncharged atom		CHEBI:33250	atom	our uncharged atom is actually chebi:atom
+COB:0000043	uncharged atom	owl:equivalentClass	CHEBI:33250	atom	"we think our uncharged atom is actually chebi:atom, to be discussed with CHEBI people"
 COB:0000049	nucleic acid polymer	owl:equivalentClass	CHEBI:10545	nucleic acid	follow up with CHEBI on nomenclature
 COB:0000055	collection of organisms	owl:equivalentClass	PCO:0000000	collection of organisms	.
 COB:0000056	immaterial anatomical entity	SUPERCLASS_OF	UBERON:0000466	immaterial anatomical entity	.
