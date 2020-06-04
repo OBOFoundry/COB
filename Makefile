@@ -179,7 +179,7 @@ build/demo-cob-merged.owl: build/demo-cob-init.owl
 	owltools $< --reasoner elk --merge-equivalence-sets -s COB 10 -l COB 10  -o $@
 
 # remove redundancy
-build/demo-cob.owl: build/demo-cob-merged.owl
+products/demo-cob.owl: build/demo-cob-merged.owl
 	robot reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
 
 build/subset-%.owl: build/merged-%.owl subsets/terms_%.txt 
