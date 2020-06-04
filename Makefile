@@ -79,9 +79,9 @@ cob-to-external.owl: cob-to-external.ttl
 #
 # these list are incomplete: it can easily be added to:
 
-COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo ogms hp mp caro
-COB_NONCOMPLIANT =  doid chebi obi mondo
-ALL_ONTS = $(COB_COMPLIANT)) $(COB_NONCOMPLIANT))
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt mco nbo peco ecto so
+COB_NONCOMPLIANT =  doid chebi obi mondo eco  maxo
+ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest
 main_test: build/report.tsv cob.owl
@@ -93,6 +93,11 @@ itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
 itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
 
 # currently almost ALL ontologies fail this.
+#
+# Recommended:
+#
+#   make -k superclass_test
+#
 # PASSES: ENVO
 # FAILS: anything with stages (PO, UBERON, ...): https://github.com/OBOFoundry/COB/issues/40
 # FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
@@ -118,6 +123,8 @@ build/source-hp.owl:
 	curl -L -s $(OBO)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
 build/source-mp.owl:
 	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-ncbitaxon.owl:
+	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
 
 # special cases
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl
@@ -150,3 +157,30 @@ build/incoherent-%.md: build/incoherent-%.owl
 # is all sub/equiv axioms
 build/no-orphans-%.txt: build/merged-%.owl
 	robot verify -i $< -q sparql/no-cob-ancestor.rq >& build/orphans-$*.txt && touch $@
+
+
+# -- EXEMPLAR ONTOLOGY --
+
+DEMO_ONTS = go chebi envo ncbitaxon cl pr
+
+DEMO_ONT_FILES = $(patsubst %,build/subset-%.owl,$(DEMO_ONTS))
+
+# merge subsets together with cob;
+# remove disjointness, for now we want to 'pass' ontologies for demo purposes
+build/demo-cob-init.owl: $(DEMO_ONT_FILES)
+	robot merge $(patsubst %, -i build/subset-%.owl,$(DEMO_ONTS)) \
+              remove --axioms disjoint \
+	      -o $@
+.PRECIOUS: build/demo-cob-init.owl
+
+# TODO: do this with robot somehow.
+# equivalence pairs ugly for browsing; merge into COB
+build/demo-cob-merged.owl: build/demo-cob-init.owl
+	owltools $< --reasoner elk --merge-equivalence-sets -s COB 10 -l COB 10  -o $@
+
+# remove redundancy
+build/demo-cob.owl: build/demo-cob-merged.owl
+	robot reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
+
+build/subset-%.owl: build/merged-%.owl subsets/terms_%.txt 
+	robot extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
