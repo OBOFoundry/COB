@@ -236,9 +236,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CL_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/CL_0000001">
+    <Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
     </Class>
     
