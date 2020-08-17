@@ -31,7 +31,7 @@ You can also enter any COB class PURL into a browser to resolve it; e.g. [http:/
 
 As a demonstration of how COB could be used to unify OBO ontologies in the future we produce an ontology:
 
- - [products/cob-demo.owl](products/cob-demo.owl)
+ - [products/demo-cob.owl](products/demo-cob.owl)
 
 This has selected subsets of certain ontologies merged in with
 cob-to-external. It is incomplete and messy. Please see the Makefile
