@@ -58,7 +58,7 @@ cob.tsv: cob.owl
 cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 cob-to-external.owl: cob-to-external.ttl
-	$(ROBOT) convert -i $< -o $@
+	$(ROBOT) -vvv convert -i $< -o $@
 
 # -- TESTING --
 
