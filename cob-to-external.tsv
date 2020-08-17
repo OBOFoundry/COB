@@ -8,7 +8,7 @@ COB:0000007	subatomic particle	owl:equivalentClass	CHEBI:36342	subatomic particl
 COB:0000008	proton	owl:equivalentClass	CHEBI:24636	proton	.
 COB:0000009	neutron	owl:equivalentClass	CHEBI:30222	neutron	.
 COB:0000010	electron	owl:equivalentClass	CHEBI:10545	electron	.
-COB:0000011	atom				.
+COB:0000011	atom	skos:closeMatch	CHEBI:33250	atom	.
 COB:0000012	atomic nucleus	owl:equivalentClass	CHEBI:33252	atomic nucleus	.
 COB:0000013	molecular entity	owl:equivalentClass	CHEBI:23367	molecular entity	.
 COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.

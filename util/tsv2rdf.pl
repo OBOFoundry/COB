@@ -15,6 +15,10 @@ while(<>) {
         # skip unmatched
         next;
     }
+    if (!$vals[2] || $vals[3]) {
+        # skip blanks
+        next;
+    }
     if (@vals != 6) {
         print STDERR "Expected 6 columns got ", scalar(@vals), "\n";
         foreach my $v (@vals) {
