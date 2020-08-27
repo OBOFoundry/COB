@@ -1,4 +1,7 @@
-# config
+### Configuration
+#
+# These are standard options to make Make sane:
+# <http://clarkgrubb.com/makefile-style-guide#toc2>
 MAKEFLAGS += --warn-undefined-variables
 SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
@@ -7,94 +10,179 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-OBO = http://purl.obolibrary.org/obo/
+OBO := http://purl.obolibrary.org/obo
+DATE = $(shell date +'%Y-%m-%d')
+ROBOT := java -jar build/robot.jar
 
-CORE = obo-core.owl
-MODULES = generic physical biological human science
+all: test build/report.tsv cob.owl cob.tsv
 
-PREFIX = 'CORE: http://purl.obolibrary.org/CORE_'
+build:
+	mkdir $@
 
-GENERIC_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1709706289&single=true&output=tsv
-PHYSICAL_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=2144007357&single=true&output=tsv
-BIOLOGICAL_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=663651851&single=true&output=tsv
-HUMAN_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1499631141&single=true&output=tsv
-SCIENCE_SHEET = https://docs.google.com/spreadsheets/d/e/2PACX-1vRGrxd10VuAmb55RqWEzft8q64mI0Ryr8biOb3K8Sx281Xv0NyRVwhr-Z_0IjFWra8dPmHYeKng6PbS/pub?gid=1951374411&single=true&output=tsv
+build/robot.jar: | build
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
-core: $(CORE)
-$(CORE): $(MODULES)
-	$(eval INPUTS := $(foreach I,$(shell ls modules), --input modules/$(I)))
-	robot --prefix $(PREFIX) merge $(INPUTS) \
-	annotate --ontology-iri $(OBO)obo-core.owl --output $@ 
+# -- MAIN RELEASE PRODUCTS --
 
-# ---------- MODULES ---------- #
+# create report and fail if errors introduced
+.PRECIOUS: build/report.tsv
+build/report.tsv: cob-edit.owl | build/robot.jar
+	$(ROBOT) report \
+	--input $^ \
+	--labels true \
+	--output $@
 
-generic: modules/generic.owl
-modules/generic.owl: templates/generic.tsv
-	robot --prefix $(PREFIX) template --template $< \
-	annotate --ontology-iri $(OBO)obo-core/$@\
-	 --output $@
+# build main release product
+cob.owl: cob-edit.owl | build/robot.jar
+	$(ROBOT) reason --input $< --reasoner hermit \
+	annotate \
+	--ontology-iri "http://purl.obolibrary.org/obo/$@" \
+	--annotation owl:versionInfo $(DATE) \
+	--output $@
 
-physical: modules/physical.owl
-modules/physical.owl: templates/physical.tsv | modules/generic.owl
-	robot --prefix $(PREFIX) merge $(foreach I,$|, --input $(I)) \
-	template --template $< --ontology-iri $(OBO)obo-core/$@\
-	 --output $@
+# base file is main cob plus linking axioms
+cob-base.owl: cob.owl cob-to-external.owl | build/robot.jar
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
-biological: modules/biological.owl
-modules/biological.owl: templates/biological.tsv | modules/generic.owl
-	robot --prefix $(PREFIX) merge $(foreach I,$|, --input $(I)) \
-	template --template $< --ontology-iri $(OBO)obo-core/$@\
-	 --output $@
+# TSV export (may depend on dev version of robot export)
+cob.tsv: cob.owl | build/robot.jar
+	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
+#	$(ROBOT) export -i $< --entity-select NAMED -c "ID|ID [LABEL]|definition|subClassOf [ID]|subClassOf [LABEL]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 
-human: modules/human.owl
-modules/human.owl: templates/human.tsv | modules/generic.owl modules/biological.owl
-	robot --prefix $(PREFIX) merge $(foreach I,$|, --input $(I)) \
-	template --template $< --ontology-iri $(OBO)obo-core/$@\
-	 --output $@
+# -- MAPPINGS TO OBO --
+#
+#  the source file is cob-to-external.tsv
+#
+#  OWL is generated from this
+#
+# this is a really hacky way to do this, replace with robot report?
+cob-to-external.ttl: cob-to-external.tsv
+	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
+cob-to-external.owl: cob-to-external.ttl | build/robot.jar
+	$(ROBOT) convert -i $< -o $@
 
-science: modules/science.owl
-modules/science.owl: templates/science.tsv | modules/generic.owl modules/human.owl
-	robot --prefix $(PREFIX) merge $(foreach I,$|, --input $(I)) \
-	template --template $< --ontology-iri $(OBO)obo-core/$@\
-	 --output $@
+# -- TESTING --
 
-# ---------- TEMPLATES ---------- #
+# in addition to standard testing, we also perform integration tests.
+#
+# here we join cob, cob-to-external (bridge ontology) and OBO ontology O;
+# we then test this merged product for coherency.
+#
+# these tests are divided in two:
+#
+#  if an ontology that is known to be compliant is INCOHERENT, this is a failure
+#  if an ontology that is known to be NON-compliant is unexpectedly COHERENT, this is a failure
+#
+# See https://github.com/OBOFoundry/COB/issues/71 for discussion
+#
+# Note that in addition to coherency testing, we also want to do orphan testing.
+# No ontologies should have orphans - classes should have subClass ancestry to a COB class
+#
+# these list are incomplete: it can easily be added to:
 
-templates:
-	mkdir -p $@
+COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt mco nbo peco ecto so
+COB_NONCOMPLIANT =  doid chebi obi mondo eco  maxo
+ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
-.PHONY: templates/generic.tsv
-templates/generic.tsv: | templates
-	curl "$(GENERIC_SHEET)" > $@
+test: main_test itest
+main_test: build/report.tsv cob.owl
 
-.PHONY: templates/physical.tsv
-templates/physical.tsv:
-	curl "$(PHYSICAL_SHEET)" > $@
+# integration tests
+itest: itest_compliant itest_noncompliant #superclass_test
 
-.PHONY: templates/biological.tsv
-templates/biological.tsv:
-	curl "$(BIOLOGICAL_SHEET)" > $@
+itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
+itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
 
-.PHONY: templates/human.tsv
-templates/human.tsv:
-	curl "$(HUMAN_SHEET)" > $@
+# currently almost ALL ontologies fail this.
+#
+# Recommended:
+#
+#   make -k superclass_test
+#
+# PASSES: ENVO
+# FAILS: anything with stages (PO, UBERON, ...): https://github.com/OBOFoundry/COB/issues/40
+# FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
+superclass_test: $(patsubst %, build/no-orphans-%.txt, $(ALL_ONTS))
 
-.PHONY: templates/science.tsv
-templates/science.tsv:
-	curl "$(SCIENCE_SHEET)" > $@
+# cache ontology locally; by default we use main product...
+build/source-%.owl:
+	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
+.PRECIOUS: build/source-%.owl
 
-# ---------- ALIGNMENT ---------- #
-# Currentlh this requires installing some tools - I will set up a docker for running these...
+# overrides for ontologies with bases
+# TODO: we should use the registry for this
+# see https://github.com/OBOFoundry/OBO-Dashboard/issues/20
+build/source-go.owl:
+	curl -L -s $(OBO)/go/go-base.owl > $@.tmp && mv $@.tmp $@
+build/source-uberon.owl:
+	curl -L -s $(OBO)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
+build/source-cl.owl:
+	curl -L -s $(OBO)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
+build/source-envo.owl:
+	curl -L -s $(OBO)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
+build/source-hp.owl:
+	curl -L -s $(OBO)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-mp.owl:
+	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-ncbitaxon.owl:
+	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
 
-XONTS = ro sio biotop bfoc mesh chebi blmod common_core
-all_matches: $(patsubst %, matches/matches-%.tsv, $(XONTS))
+# special cases
+build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
-matches/matches-%.tsv: manual-core.owl
-	rdfmatch -d rdf_matcher -G imports/matches-$*.owl --predicate skos:exactMatch --prefix CORE -f tsv -l -A ~/repos/onto-mirror/void.ttl -i prefixes.ttl -i $< -i $* new_match > $@.tmp &&   cut -f1-4 $@.tmp | sort -u > $@
+# merged product to be tested
+build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot.jar
+	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
+.PRECIOUS: build/merged-%.owl
 
-# match to wikidata
-matches/wd-closematches.ttl: manual-core.owl
-	wd-ontomatch -d ontomatcher -i $< -a wikidata_ontomatcher:cached_db_file=$@ -e match_classes
+# reasoned product; this will FAIL if incoherent
+build/reasoned-%.owl: build/merged-%.owl | build/robot.jar
+	touch $@.RUN && $(ROBOT) reason --reasoner ELK -i $< -o $@ && rm $@.RUN
 
-matches/wd-align.tsv: manual-core.owl matches/wd-closematches.ttl
-	rdfmatch -d rdf_matcher -G imports/matches-wd.owl --predicate skos:closeMatch --prefix CORE -f tsv -l -A ~/repos/onto-mirror/void.ttl -i prefixes.ttl -i $< -i wd-closematches.ttl exact > $@.tmp &&  cut -f1-9,11,15-19 $@.tmp > $@
+# incoherent product; we EXPECT to be incoherent. If it is not, then we FAIL
+build/incoherent-%.owl: build/merged-%.owl | build/robot.jar
+	touch $@.RUN && $(ROBOT) reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
+
+# TODO: implement https://github.com/ontodev/robot/issues/686
+# then explain all incoherencies. use owltools for now
+#build/incoherent-%.md: build/incoherent-%.owl
+#	$(ROBOT) explain --reasoner ELK -i $< -o $@
+build/incoherent-%.md: build/incoherent-%.owl
+	owltools $< --run-reasoner -r elk -u -e | grep ^UNSAT > $@
+
+# test to see if the ontology has any classes that are not inferred subclasses of a COB
+# class. Exceptions made for BFO which largely sits above COB.
+# note that for 'reasoning' we use only subClassOf and equivalentClasses;
+# this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
+# is all sub/equiv axioms
+build/no-orphans-%.txt: build/merged-%.owl
+	robot verify -i $< -q sparql/no-cob-ancestor.rq >& build/orphans-$*.txt && touch $@
+
+
+# -- EXEMPLAR ONTOLOGY --
+
+DEMO_ONTS = go chebi envo ncbitaxon cl pr
+
+DEMO_ONT_FILES = $(patsubst %,build/subset-%.owl,$(DEMO_ONTS))
+
+# merge subsets together with cob;
+# remove disjointness, for now we want to 'pass' ontologies for demo purposes
+build/demo-cob-init.owl: $(DEMO_ONT_FILES) | build/robot.jar
+	$(ROBOT) merge $(patsubst %, -i build/subset-%.owl,$(DEMO_ONTS)) \
+              remove --axioms disjoint \
+	      -o $@
+.PRECIOUS: build/demo-cob-init.owl
+
+# TODO: do this with robot somehow.
+# equivalence pairs ugly for browsing; merge into COB
+build/demo-cob-merged.owl: build/demo-cob-init.owl
+	owltools $< --reasoner elk --merge-equivalence-sets -s COB 10 -l COB 10 -d COB 10  -o $@
+
+# remove redundancy
+# todo: remove danglers in fiinal release (use a SPARQL update), but produce a report
+products/demo-cob.owl: build/demo-cob-merged.owl | build/robot.jar
+	$(ROBOT) reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
+
+build/subset-%.owl: build/merged-%.owl subsets/terms_%.txt | build/robot.jar
+	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@

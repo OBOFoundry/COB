@@ -1,8 +1,1 @@
-src/ontology/build/*.txt
-src/ontology/build/*.tsv
-src/ontology/build/*.xml
-src/ontology/build/*.rq
-src/ontology/build/*.ttl
-src/ontology/catalog-v001.xml
-src/ontology/imports/catalog-v001.xml
-RDF-Cache/
+build/
