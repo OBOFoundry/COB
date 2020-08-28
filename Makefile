@@ -25,6 +25,7 @@ build/robot.jar: | build
 # -- MAIN RELEASE PRODUCTS --
 
 # create report and fail if errors introduced
+.PRECIOUS: build/report.tsv
 build/report.tsv: cob-edit.owl | build/robot.jar
 	$(ROBOT) report \
 	--input $^ \
@@ -42,11 +43,11 @@ cob.owl: cob-edit.owl | build/robot.jar
 	--output $@
 
 # base file is main cob plus linking axioms
-cob-base.owl: cob.owl cob-to-external.owl
+cob-base.owl: cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # TSV export (may depend on dev version of robot export)
-cob.tsv: cob.owl
+cob.tsv: cob.owl | build/robot.jar
 	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 #	$(ROBOT) export -i $< --entity-select NAMED -c "ID|ID [LABEL]|definition|subClassOf [ID]|subClassOf [LABEL]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 
@@ -60,7 +61,7 @@ cob.tsv: cob.owl
 cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 
-cob-to-external.owl: cob-to-external.ttl
+cob-to-external.owl: cob-to-external.ttl | build/robot.jar
 	$(ROBOT) convert -i $< -o $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
@@ -139,20 +140,20 @@ build/source-ncbitaxon.owl:
 	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
 
 # special cases
-build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl
+build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # merged product to be tested
-build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl
+build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
 # reasoned product; this will FAIL if incoherent
-build/reasoned-%.owl: build/merged-%.owl
+build/reasoned-%.owl: build/merged-%.owl | build/robot.jar
 	touch $@.RUN && $(ROBOT) reason --reasoner ELK -i $< -o $@ && rm $@.RUN
 
 # incoherent product; we EXPECT to be incoherent. If it is not, then we FAIL
-build/incoherent-%.owl: build/merged-%.owl
+build/incoherent-%.owl: build/merged-%.owl | build/robot.jar
 	touch $@.RUN && $(ROBOT) reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
 
 # TODO: implement https://github.com/ontodev/robot/issues/686
@@ -179,8 +180,8 @@ DEMO_ONT_FILES = $(patsubst %,build/subset-%.owl,$(DEMO_ONTS))
 
 # merge subsets together with cob;
 # remove disjointness, for now we want to 'pass' ontologies for demo purposes
-build/demo-cob-init.owl: $(DEMO_ONT_FILES)
-	robot merge $(patsubst %, -i build/subset-%.owl,$(DEMO_ONTS)) \
+build/demo-cob-init.owl: $(DEMO_ONT_FILES) | build/robot.jar
+	$(ROBOT) merge $(patsubst %, -i build/subset-%.owl,$(DEMO_ONTS)) \
               remove --axioms disjoint \
 	      -o $@
 .PRECIOUS: build/demo-cob-init.owl
@@ -192,8 +193,8 @@ build/demo-cob-merged.owl: build/demo-cob-init.owl
 
 # remove redundancy
 # todo: remove danglers in fiinal release (use a SPARQL update), but produce a report
-products/demo-cob.owl: build/demo-cob-merged.owl
-	robot reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
+products/demo-cob.owl: build/demo-cob-merged.owl | build/robot.jar
+	$(ROBOT) reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
 
-build/subset-%.owl: build/merged-%.owl subsets/terms_%.txt 
-	robot extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
+build/subset-%.owl: build/merged-%.owl subsets/terms_%.txt | build/robot.jar
+	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
