@@ -1,0 +1,20 @@
+PREFIX COB: <http://purl.obolibrary.org/obo/COB_>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+   COB:based_on a owl:AnnotationProperty ;
+                rdfs:label "based on" .
+   ?x COB:based_on ?link .
+}
+WHERE {
+ {
+   ?x owl:equivalentClass ?ext .
+   FILTER(STRSTARTS(STR(?x), "http://purl.obolibrary.org/obo/COB_"))
+   BIND(STR(?ext) AS ?link)
+ } UNION {
+   ?ext owl:equivalentClass ?x .
+   FILTER(STRSTARTS(STR(?x), "http://purl.obolibrary.org/obo/COB_"))
+   BIND(STR(?ext) AS ?link)
+ }
+}
