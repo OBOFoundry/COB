@@ -1,83 +1,84 @@
-subject_id	subject_label	predicate_id	object_id	object_label	notes
-COB:0000001	quality	owl:equivalentClass	BFO:0000019	quality	.
-COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.
-COB:0000004	charge	owl:equivalentClass	PATO:0002193	electric	.
-COB:0000005	elementary charge				Making ticket in PATO tracker
-COB:0000006	material entity	owl:equivalentClass	BFO:0000040	material entity	.
-COB:0000007	subatomic particle	owl:equivalentClass	CHEBI:36342	subatomic particle	.
-COB:0000008	proton	owl:equivalentClass	CHEBI:24636	proton	.
-COB:0000009	neutron	owl:equivalentClass	CHEBI:30222	neutron	.
-COB:0000010	electron	owl:equivalentClass	CHEBI:10545	electron	.
-COB:0000011	atom	skos:closeMatch	CHEBI:33250	atom	.
-COB:0000012	atomic nucleus	owl:equivalentClass	CHEBI:33252	atomic nucleus	.
-COB:0000013	molecular entity	owl:equivalentClass	CHEBI:23367	molecular entity	.
-COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.
-COB:0000015	protein	owl:equivalentClass	PR:000000001	protein	.
-COB:0000017	cell	owl:equivalentClass	CL:0000000	cell	.
-COB:0000017	cell	SUPERCLASSOF	PO:0009002	plant cell	.
-COB:0000018	native cell	owl:equivalentClass	CL:0000003	native cell	.
-COB:0000018	native cell	SUPERCLASS_OF	XAO:0003012	xenopus cell	.
-COB:0000018	native cell	SUPERCLASS_OF	ZFA:0009000	zebrafish cell	.
-COB:0000018	native cell	SUPERCLASS_OF	PO:0025606	native plant cell	.
-COB:0000019	cell in vitro	owl:equivalentClass	CL:0001034	cell in vitro	.
-COB:0000020	subcellular structure				Chris will follow up
-COB:0000021	gross anatomical part	owl:equivalentClass	CARO:0001008	gross anatomical part	.
-COB:0000022	organism	owl:equivalentClass	NCBITaxon:1	root	.
-COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.
-COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.
-COB:0000025	organization	owl:equivalentClass	OBI:0000245	organization	.
-COB:0000026	processed material entity	owl:equivalentClass	OBI:0000047	processed material	.
-COB:0000031	immaterial entity	owl:equivalentClass	BFO:0000041	immaterial entity	.
-COB:0000032	geographical location				
-COB:0000033	realizable	owl:equivalentClass	BFO:0000017	realizable entity	.
-COB:0000034	process	owl:equivalentClass	BFO:0000015	process	.
-COB:0000035	planned process	owl:equivalentClass	OBI:0000011	planned process	.
-COB:0000037	biological process	owl:equivalentClass	GO:0008150	biological process	.
-COB:0000038	gene product or complex activity	owl:equivalentClass	GO:0003674	molecular function	.
-COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.
-COB:0000043	uncharged atom	owl:equivalentClass	CHEBI:33250	atom	"we think our uncharged atom is actually chebi:atom, to be discussed with CHEBI people"
-COB:0000049	nucleic acid polymer	owl:equivalentClass	CHEBI:10545	nucleic acid	follow up with CHEBI on nomenclature
-COB:0000055	collection of organisms	owl:equivalentClass	PCO:0000000	collection of organisms	.
-COB:0000056	immaterial anatomical entity	SUPERCLASS_OF	UBERON:0000466	immaterial anatomical entity	.
-COB:0000056	immaterial anatomical entity	SUPERCLASS_OF	PO:0025117	plant anatomical space	.
-COB:0000057	site	owl:equivalentClass	BFO:0000029	site	.
-COB:0000058	conclusion based on data	owl:equivalentClass	OBI:0001909	conclusion based on data	.
-COB:0000061	information	owl:equivalentClass	IAO:0000030	information content entity	.
-COB:0000062	disease diagnosis	owl:equivalentClass	OGMS:0000073	diagnosis	.
-COB:0000063	phenotypic finding	owl:equivalentClass	OGMS:0000014	clinical finding	.
-COB:0000064	disease course	owl:equivalentClass	OGMS:0000063	disease course	.
-COB:0000065	environmental process	owl:equivalentClass	ENVO:02500000	environmental system process	.
-COB:0000066	physico-chemical process	owl:equivalentClass	MOP:0000543	molecular process	"we are not sure if these are equivalent, or if we even want to retain this. Follow up with Colin"
-COB:0000067	ecosystem	owl:equivalentClass	ENVO:01001110	ecosystem	.
-COB:0000068	geophysical entity	owl:equivalentClass	ENVO:01000813	astronomical body part	.
-COB:0000069	directive information entity	owl:equivalentClass	IAO:0000033	directive information entity	.
-COB:0000073	gene product				
-COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:0032991	protein-containing complex	.
-COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective specification	.
-COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
-COB:0000080	complex of molecular entities				
-COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
-COB:0000102	data item	owl:equivalentClass	IAO:0000027	plan specification	.
-COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
-COB:0000107	assay	owl:equivalentClass	OBI:0000070	plan specification	.
-COB:0000108	data transformation	owl:equivalentClass	OBI:0200000	data transformation	.
-COB:0000109	investigation	owl:equivalentClass	IAO:0000066	investigation	.
-COB:0000110	material processing	owl:equivalentClass	OBI:0000094	material processing	.
-COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.
-COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.
-COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.
-COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.
-COB:0000116	cellular membrane				
-COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.
-COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.
-COB:0000118	cellular organism	SUPERCLASS_OF	UBERON:0000468	multicellular organism	.
-COB:0000118	cellular organism	SUPERCLASS_OF	PO:0000003	whole plant	.
-COB:0000041	has quality	owl:equivalentProperty	RO:0000086	has quality	.
-COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.
-COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
-COB:0000071	occurs in	owl:equivalentProperty	BFO:0000066	occurs in	.
-COB:0000072	part of	owl:equivalentProperty	BFO:0000050	part of	.
-COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.
-COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower
-COB:0000511	has quantity				.
-COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.
+Subject	Subject Label	Entity Type	Class Axiom Type	Related Class	Related Class Label	Property Axiom Type	Related Property	Related Property Label	Close Match	Close Match Label	notes
+ID		TYPE	CLASS_TYPE	C %		PROPERTY_TYPE	P %		AI skos:closeMatch		
+COB:0000001	quality	owl:Class	equivalent	BFO:0000019	quality						.
+COB:0000003	mass	owl:Class	equivalent	PATO:0000125	mass						.
+COB:0000004	charge	owl:Class	equivalent	PATO:0002193	electric						.
+COB:0000005	elementary charge	owl:Class									Making ticket in PATO tracker
+COB:0000006	material entity	owl:Class	equivalent	BFO:0000040	material entity						.
+COB:0000007	subatomic particle	owl:Class	equivalent	CHEBI:36342	subatomic particle						.
+COB:0000008	proton	owl:Class	equivalent	CHEBI:24636	proton						.
+COB:0000009	neutron	owl:Class	equivalent	CHEBI:30222	neutron						.
+COB:0000010	electron	owl:Class	equivalent	CHEBI:10545	electron						.
+COB:0000011	atom	owl:Class							CHEBI:33250	atom	.
+COB:0000012	atomic nucleus	owl:Class	equivalent	CHEBI:33252	atomic nucleus						.
+COB:0000013	molecular entity	owl:Class	equivalent	CHEBI:23367	molecular entity						.
+COB:0000015	protein	owl:Class	equivalent	CHEBI:16541	protein polypeptide chain						.
+COB:0000015	protein	owl:Class	equivalent	PR:000000001	protein						.
+COB:0000017	cell	owl:Class	equivalent	CL:0000000	cell						.
+COB:0000018	native cell	owl:Class	equivalent	CL:0000003	native cell						.
+COB:0000019	cell in vitro	owl:Class	equivalent	CL:0001034	cell in vitro						.
+COB:0000020	subcellular structure	owl:Class									Chris will follow up
+COB:0000021	gross anatomical part	owl:Class	equivalent	CARO:0001008	gross anatomical part						.
+COB:0000022	organism	owl:Class	equivalent	NCBITaxon:1	root						.
+COB:0000022	organism	owl:Class	equivalent	OBI:0100026	organism						.
+COB:0000022	organism	owl:Class	equivalent	CARO:0001010	organism or virus or viroid						.
+COB:0000025	organization	owl:Class	equivalent	OBI:0000245	organization						.
+COB:0000026	processed material entity	owl:Class	equivalent	OBI:0000047	processed material						.
+COB:0000031	immaterial entity	owl:Class	equivalent	BFO:0000041	immaterial entity						.
+COB:0000032	geographical location	owl:Class									
+COB:0000033	realizable	owl:Class	equivalent	BFO:0000017	realizable entity						.
+COB:0000034	process	owl:Class	equivalent	BFO:0000015	process						.
+COB:0000035	planned process	owl:Class	equivalent	OBI:0000011	planned process						.
+COB:0000037	biological process	owl:Class	equivalent	GO:0008150	biological process						.
+COB:0000038	gene product or complex activity	owl:Class	equivalent	GO:0003674	molecular function						.
+COB:0000042	monoatomic ion	owl:Class	equivalent	CHEBI:24867	monoatomic ion						.
+COB:0000043	uncharged atom	owl:Class	equivalent	CHEBI:33250	atom						"we think our uncharged atom is actually chebi:atom, to be discussed with CHEBI people"
+COB:0000049	nucleic acid polymer	owl:Class	equivalent	CHEBI:10545	nucleic acid						follow up with CHEBI on nomenclature
+COB:0000055	collection of organisms	owl:Class	equivalent	PCO:0000000	collection of organisms						.
+COB:0000057	site	owl:Class	equivalent	BFO:0000029	site						.
+COB:0000058	conclusion based on data	owl:Class	equivalent	OBI:0001909	conclusion based on data						.
+COB:0000061	information	owl:Class	equivalent	IAO:0000030	information content entity						.
+COB:0000062	disease diagnosis	owl:Class	equivalent	OGMS:0000073	diagnosis						.
+COB:0000063	phenotypic finding	owl:Class	equivalent	OGMS:0000014	clinical finding						.
+COB:0000064	disease course	owl:Class	equivalent	OGMS:0000063	disease course						.
+COB:0000065	environmental process	owl:Class	equivalent	ENVO:02500000	environmental system process						.
+COB:0000066	physico-chemical process	owl:Class	equivalent	MOP:0000543	molecular process						"we are not sure if these are equivalent, or if we even want to retain this. Follow up with Colin"
+COB:0000067	ecosystem	owl:Class	equivalent	ENVO:01001110	ecosystem						.
+COB:0000068	geophysical entity	owl:Class	equivalent	ENVO:01000813	astronomical body part						.
+COB:0000069	directive information entity	owl:Class	equivalent	IAO:0000033	directive information entity						.
+COB:0000073	gene product	owl:Class									
+COB:0000075	protein-containing macromolecular complex	owl:Class	equivalent	GO:0032991	protein-containing complex						.
+COB:0000076	objective specification	owl:Class	equivalent	IAO:0000005	objective specification						.
+COB:0000079	plan specification	owl:Class	equivalent	IAO:0000104	plan specification						.
+COB:0000080	complex of molecular entities	owl:Class									
+COB:0000101	document	owl:Class	equivalent	IAO:0000310	document						.
+COB:0000102	data item	owl:Class	equivalent	IAO:0000027	data item						.
+COB:0000103	cell nucleus	owl:Class	equivalent	GO:0005634	nucleus						.
+COB:0000107	assay	owl:Class	equivalent	OBI:0000070	assay						.
+COB:0000108	data transformation	owl:Class	equivalent	OBI:0200000	data transformation						.
+COB:0000109	investigation	owl:Class	equivalent	OBI:0000066	investigation						.
+COB:0000110	material processing	owl:Class	equivalent	OBI:0000094	material processing						.
+COB:0000111	disposition	owl:Class	equivalent	BFO:0000016	disposition						.
+COB:0000112	function	owl:Class	equivalent	BFO:0000034	function						.
+COB:0000113	plan	owl:Class	equivalent	OBI:0000260	plan						.
+COB:0000114	role	owl:Class	equivalent	BFO:0000023	role						.
+COB:0000116	cellular membrane	owl:Class									
+COB:0000118	cellular organism	owl:Class	equivalent	NCBITaxon:131567	cellular organisms						.
+COB:0000118	cellular organism	owl:Class	equivalent	CARO:0010004	cellular organism						.
+PO:0000003	whole plant	owl:Class	subclass	COB:0000118	cellular organism						
+PO:0009002	plant cell	owl:Class	subclass	COB:0000017	cell						
+PO:0025117	plant anatomical space	owl:Class	subclass	COB:0000056	immaterial anatomical entity						
+PO:0025606	native plant cell	owl:Class	subclass	COB:0000018	native cell						
+UBERON:0000466	immaterial anatomical entity	owl:Class	subclass	COB:0000056	immaterial anatomical entity						
+UBERON:0000468	multicellular organism	owl:Class	subclass	COB:0000118	cellular organism						
+XAO:0003012	xenopus cell	owl:Class	subclass	COB:0000018	native cell						
+ZFA:0009000	zebrafish cell	owl:Class	subclass	COB:0000018	native cell						
+COB:0000041	has quality	owl:ObjectProperty				equivalent	RO:0000086	has quality			.
+COB:0000047	has part	owl:ObjectProperty				equivalent	BFO:0000051	has part			.
+COB:0000070	has participant	owl:ObjectProperty				equivalent	RO:0000057	has participant			.
+COB:0000071	occurs in	owl:ObjectProperty				equivalent	BFO:0000066	occurs in			.
+COB:0000072	part of	owl:ObjectProperty				equivalent	BFO:0000050	part of			.
+COB:0000074	enabled by	owl:ObjectProperty				equivalent	RO:0002333	enabled by			.
+COB:0000502	characteristic	owl:ObjectProperty				equivalent	BFO:0000020	specifically dependent continuant			may be revised to be narrower
+COB:0000511	has quantity	owl:ObjectProperty									.
+COB:0000512	has characteristic	owl:ObjectProperty				equivalent	RO:0000053	bearer of			.

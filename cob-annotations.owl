@@ -64,9 +64,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000010">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_10545</obo:COB_based_on>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_33250</obo:COB_based_on>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000012">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_33252</obo:COB_based_on>
     </rdf:Description>
@@ -90,8 +87,8 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001008</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001010</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0100026</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001010</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/NCBITaxon_1</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
@@ -121,6 +118,12 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000042">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_24867</obo:COB_based_on>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000043">
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_33250</obo:COB_based_on>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000049">
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_10545</obo:COB_based_on>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000055">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/PCO_0000000</obo:COB_based_on>
     </rdf:Description>
@@ -144,6 +147,9 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000065">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/ENVO_02500000</obo:COB_based_on>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000066">
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/MOP_0000543</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000067">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/ENVO_01001110</obo:COB_based_on>
@@ -179,7 +185,7 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0200000</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000109">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000066</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0000066</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000110">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0000094</obo:COB_based_on>

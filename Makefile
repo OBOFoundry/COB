@@ -12,7 +12,7 @@ SHELL := bash
 
 OBO := http://purl.obolibrary.org/obo
 DATE = $(shell date +'%Y-%m-%d')
-ROBOT := java -jar build/robot.jar
+ROBOT := java -jar build/robot.jar --prefix "COB: http://purl.obolibrary.org/obo/COB_"
 
 all: test build/report.tsv cob.owl cob.tsv
 
@@ -20,7 +20,7 @@ build:
 	mkdir $@
 
 build/robot.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/eq-class/lastSuccessfulBuild/artifact/bin/robot.jar
 
 # -- MAIN RELEASE PRODUCTS --
 
@@ -57,12 +57,13 @@ cob.tsv: cob.owl | build/robot.jar
 #
 #  OWL is generated from this
 #
-# this is a really hacky way to do this, replace with robot report?
-cob-to-external.ttl: cob-to-external.tsv
-	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 
-cob-to-external.owl: cob-to-external.ttl | build/robot.jar
-	$(ROBOT) convert -i $< -o $@
+cob-to-external.owl: cob-to-external.tsv | build/robot.jar
+	$(ROBOT) template --template $< \
+	annotate \
+	--ontology-iri "http://purl.obolibrary.org/obo/cob/$@" \
+	--annotation owl:versionInfo $(DATE) \
+	--output $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
