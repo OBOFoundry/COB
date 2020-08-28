@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.obolibrary.org/obo/cob/cob-annotations.owl" uri="cob-annotations.owl"/>
     <uri name="http://purl.obolibrary.org/obo/cob/cob-edit.owl" uri="cob-edit.owl"/>
 </catalog>

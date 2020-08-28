@@ -33,7 +33,9 @@ build/report.tsv: cob-edit.owl | build/robot.jar
 
 # build main release product
 cob.owl: cob-edit.owl | build/robot.jar
-	$(ROBOT) reason --input $< --reasoner hermit \
+	$(ROBOT) remove --input $< \
+	--select imports \
+	reason --reasoner hermit \
 	annotate \
 	--ontology-iri "http://purl.obolibrary.org/obo/$@" \
 	--annotation owl:versionInfo $(DATE) \
@@ -57,8 +59,18 @@ cob.tsv: cob.owl
 # this is a really hacky way to do this, replace with robot report?
 cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
+
 cob-to-external.owl: cob-to-external.ttl
 	$(ROBOT) convert -i $< -o $@
+
+build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
+	$(ROBOT) annotate --input $< \
+	--ontology-iri "http://purl.obolibrary.org/obo/cob/$@" \
+	--annotation owl:versionInfo $(DATE) \
+	--output $@
 
 # -- TESTING --
 
