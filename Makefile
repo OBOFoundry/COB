@@ -22,7 +22,9 @@ build:
 build/robot.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
+########################################
 # -- MAIN RELEASE PRODUCTS --
+########################################
 
 # create report and fail if errors introduced
 .PRECIOUS: build/report.tsv
@@ -73,7 +75,9 @@ cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
 	--annotation owl:versionInfo $(DATE) \
 	--output $@
 
+########################################
 # -- TESTING --
+########################################
 
 # in addition to standard testing, we also perform integration tests.
 #
@@ -116,33 +120,6 @@ itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
 # FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
 superclass_test: $(patsubst %, build/no-orphans-%.txt, $(ALL_ONTS))
 
-# cache ontology locally; by default we use main product...
-build/source-%.owl:
-	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
-.PRECIOUS: build/source-%.owl
-
-# overrides for ontologies with bases
-# TODO: we should use the registry for this
-# see https://github.com/OBOFoundry/OBO-Dashboard/issues/20
-build/source-go.owl:
-	curl -L -s $(OBO)/go/go-base.owl > $@.tmp && mv $@.tmp $@
-build/source-uberon.owl:
-	curl -L -s $(OBO)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
-build/source-cl.owl:
-	curl -L -s $(OBO)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
-build/source-envo.owl:
-	curl -L -s $(OBO)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
-build/source-hp.owl:
-	curl -L -s $(OBO)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
-build/source-mp.owl:
-	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
-build/source-ncbitaxon.owl:
-	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
-
-# special cases
-build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
-	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
-
 # merged product to be tested
 build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
@@ -172,7 +149,40 @@ build/no-orphans-%.txt: build/merged-%.owl
 	robot verify -i $< -q sparql/no-cob-ancestor.rq >& build/orphans-$*.txt && touch $@
 
 
+########################################
+## -- Fetch Source Ontologies --
+########################################
+# cache ontology locally; by default we use main product...
+build/source-%.owl:
+	curl -L -s $(OBO)/$*.owl > $@.tmp && mv $@.tmp $@
+.PRECIOUS: build/source-%.owl
+
+# overrides for ontologies with bases
+# TODO: we should use the registry for this
+# see https://github.com/OBOFoundry/OBO-Dashboard/issues/20
+build/source-go.owl:
+	curl -L -s $(OBO)/go/go-base.owl > $@.tmp && mv $@.tmp $@
+build/source-uberon.owl:
+	curl -L -s $(OBO)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
+build/source-cl.owl:
+	curl -L -s $(OBO)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
+build/source-envo.owl:
+	curl -L -s $(OBO)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
+build/source-hp.owl:
+	curl -L -s $(OBO)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-mp.owl:
+	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
+build/source-ncbitaxon.owl:
+	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
+
+# special cases
+build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
+
+
+########################################
 # -- EXEMPLAR ONTOLOGY --
+########################################
 
 DEMO_ONTS = go chebi envo ncbitaxon cl pr
 
