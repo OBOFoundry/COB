@@ -50,6 +50,7 @@ COB:0000065	environmental process	owl:equivalentClass	ENVO:02500000	environmenta
 COB:0000066	physico-chemical process	owl:equivalentClass	MOP:0000543	molecular process	"we are not sure if these are equivalent, or if we even want to retain this. Follow up with Colin"
 COB:0000067	ecosystem	owl:equivalentClass	ENVO:01001110	ecosystem	.
 COB:0000068	geophysical entity	owl:equivalentClass	ENVO:01000813	astronomical body part	.
+COB:0000068	geophysical entity	SUPERCLASS_OF	GEO:000000370	geographical entity	See https://github.com/OBOFoundry/COB/issues/91
 COB:0000069	directive information entity	owl:equivalentClass	IAO:0000033	directive information entity	.
 COB:0000073	gene product				
 COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:0032991	protein-containing complex	.
