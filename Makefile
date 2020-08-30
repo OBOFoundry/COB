@@ -174,6 +174,9 @@ build/source-mp.owl:
 	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
 build/source-ncbitaxon.owl:
 	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
+# change this when https://github.com/obi-ontology/obi/pull/1225 is merged
+build/source-obi.owl:
+	curl -L -s https://raw.githubusercontent.com/obi-ontology/obi/4c7a0b1bc7034614a951e7700815a2612b39c334/views/obi_base.owl > $@.tmp && mv $@.tmp $@
 
 # special cases
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
