@@ -51,8 +51,8 @@ Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makef
 
 Currently we have two kinds:
 
-- testing if an ontology is coherent when combined with COB + ext
-- testing if an ontology has classes that are not subclasses of COB classes
+- **Coherency**: testing if an ontology is coherent when combined with COB + ext
+- **Coverage**: testing if an ontology has classes that are not subclasses (direct or indirect) of COB classes
 
 See the [Makefile](Makefile) for a list of ontologies that are known to be compliant and those known to be non-compliant
 

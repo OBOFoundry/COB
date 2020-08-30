@@ -53,7 +53,7 @@ cob.tsv: cob.owl | build/robot.jar
 	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 #	$(ROBOT) export -i $< --entity-select NAMED -c "ID|ID [LABEL]|definition|subClassOf [ID]|subClassOf [LABEL]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 
-# -- MAPPINGS TO OBO --
+# -- BRIDGING AXIOMS TO OBO ROOTS --
 #
 #  the source file is cob-to-external.tsv
 #
@@ -96,8 +96,8 @@ cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
 #
 # these list are incomplete: it can easily be added to:
 
-COB_COMPLIANT = pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt mco nbo peco ecto so
-COB_NONCOMPLIANT =  doid chebi obi mondo eco  maxo
+COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt 
+COB_NONCOMPLIANT =  doid chebi mondo eco  maxo  mco  nbo peco ecto so
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest
