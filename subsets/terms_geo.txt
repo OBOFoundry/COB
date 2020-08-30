@@ -1,0 +1,3 @@
+GEO:000000396 ## sovereign state
+GEO:000000376 ## island
+GEO:000000390 ## aggregate of islands

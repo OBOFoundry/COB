@@ -1,0 +1,3 @@
+CL:0000084 ## T cell
+CL:1001569 ## hippocampal interneuron
+CL:0000034 ## stem cell

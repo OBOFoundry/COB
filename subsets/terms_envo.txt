@@ -1,0 +1,35 @@
+ENVO:01000629 ## climate change
+ENVO:01001082 ## climate
+ENVO:01001364 ## climate system
+ENVO:21001216 ## ultraviolet radiation
+ENVO:02000099 ## coal dust
+ENVO:2000038 ## coal power plant
+ENVO:01000049 ## marine coral reef biome
+ENVO:00002206 ## coal mine waste material
+ENVO:00000150 ## coral reef
+ENVO:00000339 ## piece of rock
+ENVO:00000340 ## grain of sand
+ENVO:00000344 ## grain of desert sand
+ENVO:00000345 ## grain of beach sand
+ENVO:00000346 ## grain of acid dune sand
+ENVO:00000347 ## grain of sea sand
+ENVO:00000348 ## grain of rocky sand
+ENVO:00000112 ## tundra
+ENVO:00001995 ## rock
+ENVO:00002013 ## igneous rock
+ENVO:00002014 ## plutonic rock
+ENVO:00002015 ## volcanic rock
+ENVO:00002016 ## sedimentary rock
+ENVO:00002017 ## metamorphic rock
+ENVO:2000013 ## generation of energy from coal
+ENVO:01001453 ## terrestrial mountain
+ENVO:01001454 ## polar mountain
+ENVO:01001455 ## temperate mountain
+ENVO:01001456 ## tropical mountain
+ENVO:00000212 ## marine abyssalpelagic zone
+ENVO:00000244 ## abyssal plain
+ENVO:00000856 ## city
+ENVO:01000689 ## tsunami
+ENVO:01000715 ## meteotsunami
+ENVO:01001396 ## abyssal clay
+ENVO:01001504 ## glacial surface layer velocity
