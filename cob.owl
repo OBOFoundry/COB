@@ -14,7 +14,7 @@
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-08-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-08-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -651,6 +651,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
         <rdfs:label>monoatomic ion</rdfs:label>
     </owl:Class>
     
