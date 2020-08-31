@@ -74,6 +74,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17748">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33838"/>
+        <rdfs:label xml:lang="en">thymidine</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_25805 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
@@ -149,12 +158,50 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33838 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33838">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:label xml:lang="en">nucleoside</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36358">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:label xml:lang="en">polyatomic ion</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_36976 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36976">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
         <rdfs:comment>Example subclass of &apos;molecular entity&apos;</rdfs:comment>
         <rdfs:label>nucleotide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33838"/>
+        <rdfs:label xml:lang="en">tritiated thymidine</rdfs:label>
     </owl:Class>
     
 
@@ -226,26 +273,6 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33263"/>
         <rdfs:label xml:lang="en">diatomic oxygen ion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COBEXAMPLES_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBEXAMPLES_0000009">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <rdfs:label xml:lang="en">polyatomic ion</rdfs:label>
     </owl:Class>
     
 
