@@ -74,6 +74,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25805 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <rdfs:label xml:lang="en">oxygen atom</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_28112 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28112">
@@ -95,6 +115,36 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1"/>
         <rdfs:comment>Example subclass of &apos;atom&apos;</rdfs:comment>
         <rdfs:label>nickel atom (uncharged)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_29371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COBEXAMPLES_0000007"/>
+        <rdfs:label xml:lang="en">dioxygen(2+)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000801"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">diatomic oxygen</rdfs:label>
     </owl:Class>
     
 
@@ -150,6 +200,80 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COBEXAMPLES_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBEXAMPLES_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1"/>
+        <rdfs:comment>TODO: add has_neutron_number=34</rdfs:comment>
+        <rdfs:label xml:lang="en">nickel 58</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COBEXAMPLES_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBEXAMPLES_0000007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33263"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33263"/>
+        <rdfs:label xml:lang="en">diatomic oxygen ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COBEXAMPLES_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBEXAMPLES_0000009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:label xml:lang="en">polyatomic ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COBEXAMPLES_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COBEXAMPLES_0000010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33263"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33263"/>
+        <rdfs:label xml:lang="en">uncharged diatomic oxygen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000004"/>
@@ -173,6 +297,32 @@
         <rdfs:comment>Example subclass of &apos;ecosystem&apos;</rdfs:comment>
         <rdfs:label>tidal pool</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005694">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">chromosome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005694"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>min 2</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -259,6 +409,17 @@
     <!-- http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl#ex1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
         <rdfs:comment>Example subclass of &apos;atom&apos;</rdfs:comment>
         <rdfs:label>nickel atom</rdfs:label>
@@ -297,5 +458,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

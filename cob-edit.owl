@@ -246,6 +246,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000800 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000800">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <obo:IAO_0000115>Number of protons in an atomic nucleus</obo:IAO_0000115>
+        <rdfs:comment>We are undecided as to whether to ultimately model this as a data property of object property + cardinality, but for now we are using DPs as these are faster for reasoning</rdfs:comment>
+        <rdfs:label xml:lang="en">has atomic number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000801 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000801">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="en">has number of atomic nuclei</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -339,6 +361,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000801"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">electron</rdfs:label>
     </owl:Class>
     
@@ -347,6 +375,12 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000801"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
