@@ -207,7 +207,7 @@ build/demo-cob-merged.owl: build/demo-cob-init.owl
 # remove redundancy
 # todo: remove danglers in fiinal release (use a SPARQL update), but produce a report
 products/demo-cob.owl: build/demo-cob-merged.owl | build/robot.jar
-	$(ROBOT) reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o $@
+	$(ROBOT) reason -r ELK -s true -i $< annotate -O $(OBO)/cob/demo-cob.owl -o products/demo-cob-d.owl && owltools products/demo-cob-d.owl --remove-dangling -o products/demo-cob.owl
 
 build/subset-%.owl: build/merged-%.owl subsets/terms_%.txt | build/robot.jar
 	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
