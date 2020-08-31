@@ -10,7 +10,7 @@ COB:0000009	neutron	owl:equivalentClass	CHEBI:30222	neutron	.
 COB:0000010	electron	owl:equivalentClass	CHEBI:10545	electron	.
 COB:0000011	atom	skos:closeMatch	CHEBI:33250	atom	.
 COB:0000012	atomic nucleus	owl:equivalentClass	CHEBI:33252	atomic nucleus	.
-COB:0000013	molecular entity	owl:equivalentClass	CHEBI:23367	molecular entity	.
+COB:0000013	molecular entity	skos:closeMatch	CHEBI:23367	molecular entity	No exact match in CHEBI
 COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.
 COB:0000015	protein	owl:equivalentClass	PR:000000001	protein	.
 COB:0000017	cell	owl:equivalentClass	CL:0000000	cell	.
@@ -59,11 +59,11 @@ COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective sp
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
 COB:0000080	complex of molecular entities				
 COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
-COB:0000102	data item	owl:equivalentClass	IAO:0000027	plan specification	.
+COB:0000102	data item	owl:equivalentClass	IAO:0000027	data item	.
 COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
-COB:0000107	assay	owl:equivalentClass	OBI:0000070	plan specification	.
+COB:0000107	assay	owl:equivalentClass	OBI:0000070	assay	.
 COB:0000108	data transformation	owl:equivalentClass	OBI:0200000	data transformation	.
-COB:0000109	investigation	owl:equivalentClass	IAO:0000066	investigation	.
+COB:0000109	investigation	owl:equivalentClass	OBI:0000066	investigation	.
 COB:0000110	material processing	owl:equivalentClass	OBI:0000094	material processing	.
 COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.
 COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.
