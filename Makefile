@@ -187,7 +187,7 @@ build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/
 # -- EXEMPLAR ONTOLOGY --
 ########################################
 
-DEMO_ONTS = go chebi envo ncbitaxon cl geo pr obi
+DEMO_ONTS = go chebi envo ncbitaxon cl geo obi
 
 DEMO_ONT_FILES = $(patsubst %,build/subset-%.owl,$(DEMO_ONTS))
 
