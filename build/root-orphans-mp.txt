@@ -1,0 +1,30 @@
+x,xl
+http://purl.obolibrary.org/obo/MP_0005380,embryo phenotype
+http://purl.obolibrary.org/obo/MP_0005381,digestive/alimentary phenotype
+http://purl.obolibrary.org/obo/MP_0005382,craniofacial phenotype
+http://purl.obolibrary.org/obo/MP_0002006,neoplasm
+http://purl.obolibrary.org/obo/MP_0010771,integument phenotype
+http://purl.obolibrary.org/obo/MP_0005384,cellular phenotype
+http://purl.obolibrary.org/obo/MP_0005388,respiratory system phenotype
+http://purl.obolibrary.org/obo/MP_0005385,cardiovascular system phenotype
+http://purl.obolibrary.org/obo/MP_0005387,immune system phenotype
+http://purl.obolibrary.org/obo/MP_0005389,reproductive system phenotype
+http://purl.obolibrary.org/obo/MP_0005386,behavior/neurological phenotype
+http://purl.obolibrary.org/obo/MP_0005370,liver/biliary system phenotype
+http://purl.obolibrary.org/obo/MP_0003012,no phenotypic analysis
+http://purl.obolibrary.org/obo/MP_0005371,limbs/digits/tail phenotype
+http://purl.obolibrary.org/obo/MP_0010768,mortality/aging
+http://purl.obolibrary.org/obo/MP_0003631,nervous system phenotype
+http://purl.obolibrary.org/obo/MP_0005391,vision/eye phenotype
+http://purl.obolibrary.org/obo/MP_0002873,normal phenotype
+http://purl.obolibrary.org/obo/MP_0005376,homeostasis/metabolism phenotype
+http://purl.obolibrary.org/obo/MP_0005375,adipose tissue phenotype
+http://purl.obolibrary.org/obo/MP_0005377,hearing/vestibular/ear phenotype
+http://purl.obolibrary.org/obo/MP_0005394,taste/olfaction phenotype
+http://purl.obolibrary.org/obo/MP_0005378,growth/size/body region phenotype
+http://purl.obolibrary.org/obo/MP_0005379,endocrine/exocrine gland phenotype
+http://purl.obolibrary.org/obo/MP_0001186,pigmentation phenotype
+http://purl.obolibrary.org/obo/MP_0005397,hematopoietic system phenotype
+http://purl.obolibrary.org/obo/MP_0005367,renal/urinary system phenotype
+http://purl.obolibrary.org/obo/MP_0005369,muscle phenotype
+http://purl.obolibrary.org/obo/MP_0005390,skeleton phenotype

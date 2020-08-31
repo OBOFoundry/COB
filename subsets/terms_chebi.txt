@@ -1,0 +1,11 @@
+CHEBI:33708 ## amino-acid residue
+CHEBI:45783 ## imatinib
+CHEBI:31690 ## imatinib methanesulfonate
+CHEBI:39083 ## linkable imatinib analogue
+CHEBI:49552 ## copper(1+)
+CHEBI:28694 ## copper atom
+CHEBI:29036 ## copper(2+)
+CHEBI:29037 ## copper(3+)
+CHEBI:30052 ## copper(0)
+CHEBI:30212 ## photon
+CHEBI:16716 ## benzene

@@ -1,0 +1,2 @@
+UBERON:0010279 ## pericardial sinus
+UBERON:0002407 ## pericardium

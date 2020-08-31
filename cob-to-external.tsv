@@ -65,12 +65,14 @@ COB:0000114	role	owl:Class	equivalent	BFO:0000023	role						.
 COB:0000116	cellular membrane	owl:Class									
 COB:0000118	cellular organism	owl:Class	equivalent	NCBITaxon:131567	cellular organisms						.
 COB:0000118	cellular organism	owl:Class	equivalent	CARO:0010004	cellular organism						.
+GEO:000000370	geographical entity	owl:Class	subclass	COB:0000068	geophysical entity
 PO:0000003	whole plant	owl:Class	subclass	COB:0000118	cellular organism						
 PO:0009002	plant cell	owl:Class	subclass	COB:0000017	cell						
 PO:0025117	plant anatomical space	owl:Class	subclass	COB:0000056	immaterial anatomical entity						
 PO:0025606	native plant cell	owl:Class	subclass	COB:0000018	native cell						
 UBERON:0000466	immaterial anatomical entity	owl:Class	subclass	COB:0000056	immaterial anatomical entity						
 UBERON:0000468	multicellular organism	owl:Class	subclass	COB:0000118	cellular organism						
+UBERON:0010000	multicellular anatomical structure	owl:Class	subclass	COB:0000021	gross anatomical part
 XAO:0003012	xenopus cell	owl:Class	subclass	COB:0000018	native cell						
 ZFA:0009000	zebrafish cell	owl:Class	subclass	COB:0000018	native cell						
 COB:0000041	has quality	owl:ObjectProperty				equivalent	RO:0000086	has quality			.

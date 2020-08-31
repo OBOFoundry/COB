@@ -1,0 +1,235 @@
+x,xl
+http://purl.obolibrary.org/obo/OMIM_275000,susceptibility to Graves disease 1
+http://purl.obolibrary.org/obo/OMIM_606581,susceptibility to polysubstance abuse
+http://purl.obolibrary.org/obo/OMIM_614810,susceptibility to multiple sclerosis 5
+http://purl.obolibrary.org/obo/OMIM_614456,susceptibility to cutaneous malignant melanoma 8
+http://purl.obolibrary.org/obo/OMIM_185100,susceptibility to strabismus
+http://purl.obolibrary.org/obo/OMIM_607248,glioma susceptibility 4
+http://purl.obolibrary.org/obo/OMIM_608901,susceptibility to coronary heart disease 5
+http://purl.obolibrary.org/obo/OMIM_612253,susceptibility to systemic lupus erythematosus 11
+http://purl.obolibrary.org/obo/TRANS_0000001,direct transmission
+http://purl.obolibrary.org/obo/SYMP_0000196,reproductive system symptom
+http://purl.obolibrary.org/obo/OMIM_609755,susceptibility to celiac disease 3
+http://purl.obolibrary.org/obo/OMIM_300351,susceptibility to Graves disease X-linked 1
+http://purl.obolibrary.org/obo/OMIM_615848,susceptibility to cutaneous malignant melanoma 10
+http://purl.obolibrary.org/obo/OMIM_609423,susceptibility to human immunodeficiency virus type 1
+http://purl.obolibrary.org/obo/OMIM_616106,pustular psoriasis susceptibility 15
+http://purl.obolibrary.org/obo/OMIM_606217,susceptibility to atrioventricular septal defect 2
+http://purl.obolibrary.org/obo/OMIM_610836,susceptibility to autism 11
+http://purl.obolibrary.org/obo/OMIM_611185,susceptibility to restless legs syndrome 6
+http://purl.obolibrary.org/obo/OMIM_616818,susceptibility to IgA nephropathy 3
+http://purl.obolibrary.org/obo/OMIM_617349,susceptibility to familial thoracic aortic aneurysm  11
+http://purl.obolibrary.org/obo/OMIM_612923,susceptibility to atypical hemolytic uremic syndrome 3
+http://purl.obolibrary.org/obo/TRANS_0000002,indirect transmission
+http://purl.obolibrary.org/obo/DOID_14566,disease of cellular proliferation
+http://purl.obolibrary.org/obo/OMIM_610927,susceptibility to systemic lupus erythematosus 9
+http://purl.obolibrary.org/obo/OMIM_615197,susceptibility to restless legs syndrome 8
+http://purl.obolibrary.org/obo/OMIM_612551,susceptibility to focal segmental glomerulosclerosis 4
+http://purl.obolibrary.org/obo/OMIM_605218,susceptibility to systemic lupus erythematosus 2
+http://purl.obolibrary.org/obo/OMIM_615091,susceptibility to autism 19
+http://purl.obolibrary.org/obo/OMIM_615545,susceptibility to acute lymphoblastic leukemia 3
+http://purl.obolibrary.org/obo/OMIM_610938,susceptibility to coronary heart disease 7
+http://purl.obolibrary.org/obo/OMIM_611469,susceptibility to colorectal cancer 2
+http://purl.obolibrary.org/obo/OMIM_609532,susceptibility to hepatitis C virus
+http://purl.obolibrary.org/obo/OMIM_612589,susceptibility to colorectal cancer 8
+http://purl.obolibrary.org/obo/GENO_0000933,monogenic inheritance
+http://purl.obolibrary.org/obo/OMIM_612924,susceptibility to atypical hemolytic uremic syndrome 4
+http://purl.obolibrary.org/obo/CL_0000003,native cell
+http://purl.obolibrary.org/obo/OMIM_131200,"endometriosis, susceptibility to"
+http://purl.obolibrary.org/obo/OMIM_148000,susceptibility to kaposi sarcoma
+http://purl.obolibrary.org/obo/OMIM_613399,susceptibility to familial breast-ovarian cancer 3
+http://purl.obolibrary.org/obo/SO_0000110,sequence_feature
+http://purl.obolibrary.org/obo/OMIM_606657,"normal tension glaucoma, susceptibility to"
+http://purl.obolibrary.org/obo/OMIM_609378,susceptibility to autism 6
+http://purl.obolibrary.org/obo/OMIM_146500,susceptibility to multiple system atrophy 1
+http://purl.obolibrary.org/obo/OMIM_603388,susceptibility to Graves disease 2
+http://purl.obolibrary.org/obo/OMIM_612925,susceptibility to atypical hemolytic uremic syndrome 5
+http://purl.obolibrary.org/obo/OMIM_126200,susceptibility to multiple sclerosis
+http://purl.obolibrary.org/obo/OMIM_258660,susceptibility to nonarteritic anterior ischemic optic neuropathy
+http://purl.obolibrary.org/obo/OMIM_140600,osteoarthritis susceptibility 2
+http://purl.obolibrary.org/obo/DOID_630,genetic disease
+http://purl.obolibrary.org/obo/CHEBI_24431,chemical entity
+http://purl.obolibrary.org/obo/OMIM_613656,susceptibility to migraine with or without aura 13
+http://purl.obolibrary.org/obo/OMIM_610438,susceptibility to restless legs syndrome 3
+http://purl.obolibrary.org/obo/SYMP_0000410,neurological and physiological symptom
+http://purl.obolibrary.org/obo/OMIM_601887,susceptibility to malignant hyperthermia 5
+http://purl.obolibrary.org/obo/OMIM_607174,susceptibility to familial meningioma
+http://purl.obolibrary.org/obo/OMIM_613062,susceptibility to basal cell carcinoma 5
+http://purl.obolibrary.org/obo/OMIM_606856,susceptibility to pancreatic cancer 1
+http://purl.obolibrary.org/obo/OMIM_612926,susceptibility to atypical hemolytic uremic syndrome 6
+http://purl.obolibrary.org/obo/OMIM_617892,susceptibility to amyotrophic lateral sclerosis 24
+http://purl.obolibrary.org/obo/OMIM_613013,susceptibility to neuroblastoma 2
+http://purl.obolibrary.org/obo/OMIM_608049,susceptibility to autism 3
+http://purl.obolibrary.org/obo/OMIM_608446,susceptibility to myocardial infarction
+http://purl.obolibrary.org/obo/OMIM_607681,susceptibility to childhood absence epilepsy 2
+http://purl.obolibrary.org/obo/OMIM_618267,susceptibility to epidermodysplasia verruciformis 3
+http://purl.obolibrary.org/obo/SYMP_0000514,respiratory system and chest symptom
+http://purl.obolibrary.org/obo/OMIM_616871,susceptibility to familial (multiple types) myeloproliferative/lymphoproliferative neoplasms
+http://purl.obolibrary.org/obo/OMIM_235400,susceptibility to atypical hemolytic uremic syndrome 1
+http://purl.obolibrary.org/obo/OMIM_188890,susceptibility to tobacco addiction
+http://purl.obolibrary.org/obo/OMIM_613061,susceptibility to basal cell carcinoma 4
+http://purl.obolibrary.org/obo/OMIM_610439,susceptibility to restless legs syndrome 4
+http://purl.obolibrary.org/obo/OMIM_613063,susceptibility to basal cell carcinoma 6
+http://purl.obolibrary.org/obo/OMIM_300425,susceptibility to X-linked autism 1
+http://purl.obolibrary.org/obo/OMIM_611942,susceptibility to childhood absence epilepsy 6
+http://purl.obolibrary.org/obo/OMIM_613436,susceptibility to autism 17
+http://purl.obolibrary.org/obo/OMIM_613014,susceptibility to neuroblastoma 3
+http://purl.obolibrary.org/obo/OMIM_613551,susceptibility to autoimmune disease 6
+http://purl.obolibrary.org/obo/OMIM_615557,susceptibility to melioidosis
+http://purl.obolibrary.org/obo/OMIM_608709,susceptibility to partial acquired lipodystrophy
+http://purl.obolibrary.org/obo/OMIM_607373,susceptibility to autism 8
+http://purl.obolibrary.org/obo/OMIM_618307,susceptibility to epidermodysplasia verruciformis 4
+http://purl.obolibrary.org/obo/SYMP_0000597,head and neck symptom
+http://purl.obolibrary.org/obo/OMIM_102300,susceptibility to restless legs syndrome 1
+http://purl.obolibrary.org/obo/OMIM_215400,susceptibility to chordoma
+http://purl.obolibrary.org/obo/ECO_0000000,evidence
+http://purl.obolibrary.org/obo/OMIM_610988,susceptibility to leprosy 4
+http://purl.obolibrary.org/obo/SYMP_0000567,general symptom
+http://purl.obolibrary.org/obo/OMIM_613015,susceptibility to neuroblastoma 4
+http://purl.obolibrary.org/obo/OMIM_612230,susceptibility to colorectal cancer 5
+http://purl.obolibrary.org/obo/OMIM_612232,susceptibility to colorectal cancer 7
+http://purl.obolibrary.org/obo/FOODON_00001046,seafood product
+http://purl.obolibrary.org/obo/GENO_0000929,multifactorial inheritance
+http://purl.obolibrary.org/obo/OMIM_300830,susceptibility to X-linked autism 4
+http://purl.obolibrary.org/obo/OMIM_613024,susceptibility to follicular lymphoma 1
+http://purl.obolibrary.org/obo/OMIM_616568,glioma susceptibility 9
+http://purl.obolibrary.org/obo/OMIM_615134,susceptibility to cutaneous malignant melanoma 9
+http://purl.obolibrary.org/obo/DOID_0014667,disease of metabolism
+http://purl.obolibrary.org/obo/OMIM_611162,"malaria, susceptibility to"
+http://purl.obolibrary.org/obo/OMIM_608765,susceptibility to idiopathic scoliosis 3
+http://purl.obolibrary.org/obo/OMIM_607516,susceptibility to migraine with or without aura 6
+http://purl.obolibrary.org/obo/OMIM_614680,susceptibility to severe influenza
+http://purl.obolibrary.org/obo/OMIM_613016,susceptibility to neuroblastoma 5
+http://purl.obolibrary.org/obo/OMIM_612231,susceptibility to colorectal cancer 6
+http://purl.obolibrary.org/obo/OMIM_245300,susceptibility to kuru
+http://purl.obolibrary.org/obo/OMIM_609148,susceptibility to mild malaria
+http://purl.obolibrary.org/obo/NCBITaxon_10239,Viruses
+http://purl.obolibrary.org/obo/GENO_0000949,mitochondrial inheritance
+http://purl.obolibrary.org/obo/OMIM_246300,susceptibility to leprosy 3
+http://purl.obolibrary.org/obo/OMIM_137800,glioma susceptibility 1
+http://purl.obolibrary.org/obo/SYMP_0000528,cardiovascular system symptom
+http://purl.obolibrary.org/obo/OMIM_613410,susceptibility to autism 16
+http://purl.obolibrary.org/obo/OMIM_613223,susceptibility to leprosy 5
+http://purl.obolibrary.org/obo/OMIM_300847,susceptibility to X-linked autism 5
+http://purl.obolibrary.org/obo/FOODON_00001092,vertebrate animal food product
+http://purl.obolibrary.org/obo/OMIM_607507,psoriatic arthritis susceptibility
+http://purl.obolibrary.org/obo/OMIM_613711,susceptibility to hirschsprung disease 3
+http://purl.obolibrary.org/obo/OMIM_181800,susceptibility to idiopathic scoliosis 1
+http://purl.obolibrary.org/obo/OMIM_617075,susceptibility to nasopharyngeal carcinoma 3
+http://purl.obolibrary.org/obo/OMIM_106300,susceptibility to spondyloarthropathy 1
+http://purl.obolibrary.org/obo/OMIM_612387,susceptibility to sarcoidosis 2
+http://purl.obolibrary.org/obo/OMIM_605990,susceptibility to uric acid nephrolithiasis
+http://purl.obolibrary.org/obo/OMIM_612400,osteoarthritis susceptibility 5
+http://purl.obolibrary.org/obo/CL_0001061,abnormal cell
+http://purl.obolibrary.org/obo/OMIM_613067,susceptibility to acute lymphoblastic leukemia 2
+http://purl.obolibrary.org/obo/OMIM_612555,susceptibility to familial breast-ovarian cancer 2
+http://purl.obolibrary.org/obo/OMIM_615371,susceptibility to neonatal pulmonary hypertension
+http://purl.obolibrary.org/obo/CHEBI_50906,role
+http://purl.obolibrary.org/obo/UBERON_0001062,anatomy
+http://purl.obolibrary.org/obo/OMIM_607688,susceptibility to autosomal dominant parkinson disease 11
+http://purl.obolibrary.org/obo/OMIM_613030,glioma susceptibility 5
+http://purl.obolibrary.org/obo/SO_0001260,sequence_collection
+http://purl.obolibrary.org/obo/OMIM_613712,susceptibility to hirschsprung disease 4
+http://purl.obolibrary.org/obo/OMIM_612401,osteoarthritis susceptibility 6
+http://purl.obolibrary.org/obo/SO_0001060,sequence_variant
+http://purl.obolibrary.org/obo/OMIM_145600,susceptibility to malignant hyperthermia 1
+http://purl.obolibrary.org/obo/SYMP_0000486,urinary system symptom
+http://purl.obolibrary.org/obo/OMIM_612388,susceptibility to sarcoidosis 3
+http://purl.obolibrary.org/obo/OMIM_608812,susceptibility to colorectal cancer 1
+http://purl.obolibrary.org/obo/OMIM_613031,glioma susceptibility 6
+http://purl.obolibrary.org/obo/SO_0000400,sequence_attribute
+http://purl.obolibrary.org/obo/OMIM_607832,susceptibility to focal segmental glomerulosclerosis 3
+http://purl.obolibrary.org/obo/OMIM_614090,susceptibility to sick sinus syndrome 3
+http://purl.obolibrary.org/obo/OMIM_613028,glioma susceptibility 2
+http://purl.obolibrary.org/obo/OMIM_618309,susceptibility to epidermodysplasia verruciformis 5
+http://purl.obolibrary.org/obo/OMIM_615032,susceptibility to autism 18
+http://purl.obolibrary.org/obo/DOID_7,disease of anatomical entity
+http://purl.obolibrary.org/obo/OMIM_614371,susceptibility to dengue virus
+http://purl.obolibrary.org/obo/OMIM_612100,susceptibility to autism 15
+http://purl.obolibrary.org/obo/DOID_0080015,physical disorder
+http://purl.obolibrary.org/obo/OMIM_618231,susceptibility to epidermodysplasia verruciformis 2
+http://purl.obolibrary.org/obo/OMIM_256700,susceptibility to neuroblastoma
+http://purl.obolibrary.org/obo/OMIM_614320,susceptibility to pancreatic cancer 4
+http://purl.obolibrary.org/obo/OMIM_613032,glioma susceptibility 7
+http://purl.obolibrary.org/obo/OMIM_166760,"otitis media, susceptibility to"
+http://purl.obolibrary.org/obo/OMIM_613058,susceptibility to basal cell carcinoma 2
+http://purl.obolibrary.org/obo/OMIM_613029,glioma susceptibility 3
+http://purl.obolibrary.org/obo/OMIM_606798,susceptibility to benign essential blepharospasm
+http://purl.obolibrary.org/obo/SYMP_0000488,skin and integumentary tissue symptom
+http://purl.obolibrary.org/obo/NCBITaxon_131567,cellular organisms
+http://purl.obolibrary.org/obo/OMIM_613099,susceptibility to cutaneous malignant melanoma 5
+http://purl.obolibrary.org/obo/OMIM_142623,susceptibility to hirschsprung disease 1
+http://purl.obolibrary.org/obo/OMIM_606788,susceptibility to anorexia nervosa
+http://purl.obolibrary.org/obo/OMIM_212750,susceptibility to celiac disease 1
+http://purl.obolibrary.org/obo/OMIM_613033,glioma susceptibility 8
+http://purl.obolibrary.org/obo/OMIM_612238,susceptibility to idiopathic scoliosis 4
+http://purl.obolibrary.org/obo/OMIM_610839,osteoarthritis susceptibility 4
+http://purl.obolibrary.org/obo/OMIM_611015,susceptibility to autism 9
+http://purl.obolibrary.org/obo/OMIM_615083,susceptibility to colorectal cancer 12
+http://purl.obolibrary.org/obo/OMIM_613059,susceptibility to basal cell carcinoma 3
+http://purl.obolibrary.org/obo/OMIM_155600,cutaneous malignant melanoma 1
+http://purl.obolibrary.org/obo/OMIM_614009,susceptibility to platelet-type bleeding disorder 13
+http://purl.obolibrary.org/obo/OMIM_614079,susceptibility to aspergillosis
+http://purl.obolibrary.org/obo/OMIM_613003,susceptibility to attention deficit-hyperactivity disorder 7
+http://purl.obolibrary.org/obo/OMIM_300872,susceptibility to X-linked autism 6
+http://purl.obolibrary.org/obo/OMIM_610908,susceptibility to autism 13
+http://purl.obolibrary.org/obo/OMIM_615529,susceptibility to craniosynostosis 5
+http://purl.obolibrary.org/obo/OMIM_610297,susceptibility to autosomal dominant parkinson disease 13
+http://purl.obolibrary.org/obo/OMIM_608864,susceptibility to orofacial cleft 6
+http://purl.obolibrary.org/obo/OMIM_604370,susceptibility to familial breast-ovarian cancer 1
+http://purl.obolibrary.org/obo/OMIM_612853,susceptibility to restless legs syndrome 7
+http://purl.obolibrary.org/obo/OMIM_617921,susceptibility to amyotrophic lateral sclerosis 25
+http://purl.obolibrary.org/obo/OMIM_612239,susceptibility to idiopathic scoliosis 5
+http://purl.obolibrary.org/obo/OMIM_612590,susceptibility to colorectal cancer 9
+http://purl.obolibrary.org/obo/OMIM_611016,susceptibility to autism 10
+http://purl.obolibrary.org/obo/OMIM_155601,susceptibility to cutaneous malignant melanoma 2
+http://purl.obolibrary.org/obo/OMIM_600155,susceptibility to hirschsprung disease 2
+http://purl.obolibrary.org/obo/OMIM_600807,susceptibility to asthma
+http://purl.obolibrary.org/obo/SYMP_0000461,abdominal symptom
+http://purl.obolibrary.org/obo/SYMP_0000480,nervous system symptom
+http://purl.obolibrary.org/obo/OMIM_165720,osteoarthritis susceptibility 1
+http://purl.obolibrary.org/obo/OMIM_609048,susceptibility to cutaneous malignant melanoma 3
+http://purl.obolibrary.org/obo/OMIM_608556,susceptibility to legionnaire disease
+http://purl.obolibrary.org/obo/OMIM_300494,susceptibility to X-linked asperger syndrome 1
+http://purl.obolibrary.org/obo/OMIM_181000,susceptibility to sarcoidosis 1
+http://purl.obolibrary.org/obo/OMIM_612591,susceptibility to colorectal cancer 10
+http://purl.obolibrary.org/obo/OMIM_607836,susceptibility to autoimmune disease 1
+http://purl.obolibrary.org/obo/OMIM_610676,susceptibility to autism 7
+http://purl.obolibrary.org/obo/OMIM_605462,susceptibility to basal cell carcinoma 1
+http://purl.obolibrary.org/obo/OMIM_300909,susceptibility to angioedema induced by ace inhibitors
+http://purl.obolibrary.org/obo/OMIM_611242,susceptibility to restless legs syndrome 5
+http://purl.obolibrary.org/obo/OMIM_613972,susceptibility to cutaneous malignant melanoma 6
+http://purl.obolibrary.org/obo/OMIM_300495,susceptibility to X-linked autism 2
+http://purl.obolibrary.org/obo/SYMP_0000459,digestive system symptom
+http://purl.obolibrary.org/obo/OMIM_613347,susceptibility to pancreatic cancer 2
+http://purl.obolibrary.org/obo/DOID_225,syndrome
+http://purl.obolibrary.org/obo/OMIM_612592,susceptibility to colorectal cancer 11
+http://purl.obolibrary.org/obo/OMIM_612922,susceptibility to atypical hemolytic uremic syndrome 2
+http://purl.obolibrary.org/obo/SYMP_0017795,hemic and immune system symptom
+http://purl.obolibrary.org/obo/SYMP_0000473,"nutrition, metabolism, and development symptom"
+http://purl.obolibrary.org/obo/UPHENO_0001001,phenotype
+http://purl.obolibrary.org/obo/OMIM_127700,susceptibility to dyslexia 1
+http://purl.obolibrary.org/obo/OMIM_226400,susceptibility to epidermodysplasia verruciformis 1
+http://purl.obolibrary.org/obo/DOID_0050117,disease by infectious agent
+http://purl.obolibrary.org/obo/OMIM_300496,susceptibility to X-linked autism 3
+http://purl.obolibrary.org/obo/OMIM_612269,susceptibility to childhood absence epilepsy 5
+http://purl.obolibrary.org/obo/OMIM_613348,susceptibility to pancreatic cancer 3
+http://purl.obolibrary.org/obo/OMIM_601744,susceptibility to systemic lupus erythematosus 1
+http://purl.obolibrary.org/obo/FOODON_00001015,plant food product
+http://purl.obolibrary.org/obo/OMIM_614251,susceptibility to autosomal dominant parkinson disease 18
+http://purl.obolibrary.org/obo/DOID_150,disease of mental health
+http://purl.obolibrary.org/obo/OMIM_613643,susceptibility to autosomal dominant parkinson disease 5
+http://purl.obolibrary.org/obo/OMIM_607850,osteoarthritis susceptibility 3
+http://purl.obolibrary.org/obo/OMIM_300125,susceptibility to migraine with or without aura 2
+http://purl.obolibrary.org/obo/SYMP_0000891,musculoskeletal system symptom
+http://purl.obolibrary.org/obo/OMIM_614740,susceptibility to basal cell carcinoma 7
+http://purl.obolibrary.org/obo/OMIM_612251,susceptibility to systemic lupus erythematosus 10
+http://purl.obolibrary.org/obo/OMIM_609753,susceptibility to celiac disease 4
+http://purl.obolibrary.org/obo/OMIM_612229,susceptibility to colorectal cancer 3
+http://purl.obolibrary.org/obo/OMIM_300497,susceptibility to X-linked asperger syndrome 2
+http://purl.obolibrary.org/obo/OMIM_607354,susceptibility to idiopathic scoliosis 2
+http://purl.obolibrary.org/obo/OMIM_182940,"neural tube defects, susceptibility to"
+http://purl.obolibrary.org/obo/OMIM_614291,susceptibility to familial breast-ovarian cancer 4
+http://purl.obolibrary.org/obo/OMIM_608831,susceptibility to restless legs syndrome 2
+http://purl.obolibrary.org/obo/OMIM_614466,susceptibility to coronary heart disease 6
+http://purl.obolibrary.org/obo/OMIM_607499,susceptibility to bulimia nervosa

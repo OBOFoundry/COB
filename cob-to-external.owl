@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-to-external.owl">
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-08-28</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-08-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -820,6 +820,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003674"/>
@@ -1044,6 +1052,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
     </owl:Class>
     
 

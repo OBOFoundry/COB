@@ -1,0 +1,92 @@
+x,xl
+http://purl.obolibrary.org/obo/IDO_0000586,infection
+http://purl.obolibrary.org/obo/IDO_0000635,source of infection role
+http://purl.obolibrary.org/obo/IDO_0000629,host role
+http://purl.obolibrary.org/obo/GO_0032991,macromolecular complex
+http://purl.obolibrary.org/obo/IDO_0000489,infectious disease mortality rate
+http://purl.obolibrary.org/obo/IDO_0000417,infectious agent transporter role
+http://purl.obolibrary.org/obo/IDO_0000486,infection prevalence
+http://purl.obolibrary.org/obo/OGMS_0000020,symptom
+http://purl.obolibrary.org/obo/IDO_0000626,appearance of disorder
+http://purl.obolibrary.org/obo/IDO_0000433,antiseptic role
+http://purl.obolibrary.org/obo/IDO_0000480,infection incidence
+http://purl.obolibrary.org/obo/IDO_0000528,pathogen
+http://purl.obolibrary.org/obo/OGMS_0000087,extended organism
+http://purl.obolibrary.org/obo/IDO_0000432,disinfectant role
+http://purl.obolibrary.org/obo/IDO_0000655,transmissibility disposition
+http://purl.obolibrary.org/obo/IDO_0000424,reservoir of infectious agent role
+http://purl.obolibrary.org/obo/IDO_0000440,antiviral disposition
+http://purl.obolibrary.org/obo/IDO_0000438,invasion disposition
+http://purl.obolibrary.org/obo/IDO_0000451,invasive disposition
+http://purl.obolibrary.org/obo/IDO_0000607,production
+http://purl.obolibrary.org/obo/IDO_0001002,transition to clinical abnormality
+http://purl.obolibrary.org/obo/IDO_0000467,susceptibility
+http://purl.obolibrary.org/obo/IDO_0000450,pathogenic disposition
+http://purl.obolibrary.org/obo/IDO_0000488,infectious agent seroprevalence
+http://purl.obolibrary.org/obo/IDO_0000431,infectious agent portal of exit role
+http://purl.obolibrary.org/obo/IDO_0000543,vehicle of infectious agent
+http://purl.obolibrary.org/obo/IDO_0000485,infectious disease prevalence
+http://purl.obolibrary.org/obo/IDO_0000556,antiseptic
+http://purl.obolibrary.org/obo/CARO_0000000,anatomical entity
+http://purl.obolibrary.org/obo/IDO_0000437,adhesion disposition
+http://purl.obolibrary.org/obo/OGMS_0000045,disorder
+http://purl.obolibrary.org/obo/IDO_0000458,contagiousness
+http://purl.obolibrary.org/obo/IDO_0000667,parasitic disposition
+http://purl.obolibrary.org/obo/IDO_0000466,virulence
+http://purl.obolibrary.org/obo/IDO_0000619,immunosuppressive disposition
+http://purl.obolibrary.org/obo/IDO_0000479,infectious disease incidence
+http://purl.obolibrary.org/obo/IDO_0000560,antifungal
+http://purl.obolibrary.org/obo/GO_0008150,biological_process
+http://purl.obolibrary.org/obo/IDO_0000463,infectious agent transmissibility
+http://purl.obolibrary.org/obo/OGMS_0000063,disease course
+http://purl.obolibrary.org/obo/IDO_0000603,process of establishing an infection
+http://purl.obolibrary.org/obo/IDO_0000520,communicability period
+http://purl.obolibrary.org/obo/IDO_0000484,infection incidence rate
+http://purl.obolibrary.org/obo/IDO_0000497,immunization against infectious agent
+http://purl.obolibrary.org/obo/IDO_0000483,infectious disease incidence rate
+http://purl.obolibrary.org/obo/OGMS_0000031,disease
+http://purl.obolibrary.org/obo/IDO_0000444,protective resistance
+http://purl.obolibrary.org/obo/IDO_0000430,infectious agent portal of entry role
+http://purl.obolibrary.org/obo/IDO_0000443,antiparasitic disposition
+http://purl.obolibrary.org/obo/IDO_0000555,disinfectant
+http://purl.obolibrary.org/obo/IDO_0000464,infectivity
+http://purl.obolibrary.org/obo/IDO_0000562,antibacterial
+http://purl.obolibrary.org/obo/IDO_0000610,immunosuppression
+http://purl.obolibrary.org/obo/IDO_0000618,immunocompetence
+http://purl.obolibrary.org/obo/IDO_0000400,symbiont role
+http://purl.obolibrary.org/obo/IDO_0000490,infectious disease endemicity
+http://purl.obolibrary.org/obo/IDO_0000435,secondary infection role
+http://purl.obolibrary.org/obo/IDO_0000482,infection incidence proportion
+http://www.geneontology.org/formats/oboInOwl#ObsoleteClass,Obsolete Class
+http://purl.obolibrary.org/obo/IDO_0000519,incubation period
+http://purl.obolibrary.org/obo/IDO_0000593,transmission period
+http://purl.obolibrary.org/obo/IDO_0000442,antibacterial disposition
+http://purl.obolibrary.org/obo/IDO_0000658,host exposure to infectious agent
+http://purl.obolibrary.org/obo/IDO_0000545,infectious agent reservoir
+http://purl.obolibrary.org/obo/IDO_0000561,antiparasitic
+http://purl.obolibrary.org/obo/UBERON_0035944,life-death temporal boundary
+http://purl.obolibrary.org/obo/TRANS_0000000,transmission process
+http://purl.obolibrary.org/obo/IDO_0000559,antiviral
+http://purl.obolibrary.org/obo/IDO_0000622,disposition to form a non-parasitic colony
+http://purl.obolibrary.org/obo/IDO_0000503,infectious disease pandemic
+http://purl.obolibrary.org/obo/IDO_0000502,infectious disease epidemic
+http://purl.obolibrary.org/obo/IDO_0000571,resistant entity
+http://purl.obolibrary.org/obo/IDO_0000636,sepsis
+http://purl.obolibrary.org/obo/IDO_0000405,pathogen role
+http://purl.obolibrary.org/obo/IAO_0000030,information content entity
+http://purl.obolibrary.org/obo/IDO_0000487,infectious disease lifetime prevalence
+http://purl.obolibrary.org/obo/IDO_0000665,source of infection
+http://purl.obolibrary.org/obo/IDO_0000434,primary infection role
+http://purl.obolibrary.org/obo/IDO_0000657,process that results in death
+http://purl.obolibrary.org/obo/IDO_0000426,toxin disposition
+http://purl.obolibrary.org/obo/IDO_0000481,infectious disease incidence proportion
+http://purl.obolibrary.org/obo/IDO_0000494,infectious disease sporadicity
+http://purl.obolibrary.org/obo/IDO_0000439,antimicrobial disposition
+http://purl.obolibrary.org/obo/IDO_0000425,virulence factor disposition
+http://purl.obolibrary.org/obo/IDO_0000455,collective disposition
+http://purl.obolibrary.org/obo/IDO_0000441,antifungal disposition
+http://purl.obolibrary.org/obo/CHEBI_23367,molecular entity
+http://purl.obolibrary.org/obo/OBI_0100026,organism
+http://purl.obolibrary.org/obo/IDO_0000558,antimicrobial
+http://purl.obolibrary.org/obo/GO_0065007,biological regulation
+http://purl.obolibrary.org/obo/IDO_0000509,organism population

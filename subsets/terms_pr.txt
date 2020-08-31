@@ -1,0 +1,3 @@
+PR:000000001 ## protein
+PR:000016283 ## thyroglobulin
+PR:000010228 
