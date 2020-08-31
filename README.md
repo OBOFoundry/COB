@@ -70,15 +70,12 @@ For coverage test results, see the files root-orphans-*.txt in [build](build)
 
 See the [Makefile](Makefile) for a list of ontologies that are known to be compliant and those known to be non-compliant
 
-## Ontology developers guide
+## External Ontology developers guide
 
 It is too early for you to start using COB as an upper level in your ontology
 
-But you can still participate. You can add the top level classes to
-your ontology in [cob-to-external.tsv](cob-to-external.tsv) - just
-make a pull request for us.
+ 1. Create a *base* file
+ 2. Add bridging axioms to your root to [cob-to-external.tsv](cob-to-external.tsv)
+ 3. Add your ontology to the Makefile under integration tests
 
-You can also clone this repo and test the integration of your ontology
-by editing the Makefile and including your ontology in the COMPLIANT
-list, adding your roots to cob-to-external.tsv, then running the
-integration tests. If it succeeds you can make a PR for us!
+
