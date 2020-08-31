@@ -20,7 +20,7 @@ build:
 	mkdir $@
 
 build/robot.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/eq-class/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 # -- MAIN RELEASE PRODUCTS --
 
