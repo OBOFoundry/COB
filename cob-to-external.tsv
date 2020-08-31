@@ -22,6 +22,7 @@ COB:0000018	native cell	SUPERCLASS_OF	PO:0025606	native plant cell	.
 COB:0000019	cell in vitro	owl:equivalentClass	CL:0001034	cell in vitro	.
 COB:0000020	subcellular structure				Chris will follow up
 COB:0000021	gross anatomical part	owl:equivalentClass	CARO:0001008	gross anatomical part	.
+COB:0000021	gross anatomical part	SUPERCLASS_OF	UBERON:0010000	multicellular anatomical structure	.
 COB:0000022	organism	owl:equivalentClass	NCBITaxon:1	root	.
 COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.
 COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.

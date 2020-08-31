@@ -1,0 +1,34 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?x ?xl WHERE {
+   ?x a owl:Class ;
+      rdfs:label ?xl .
+   FILTER ( EXISTS { ?x rdfs:subClassOf ?super } ) .
+   FILTER ( NOT EXISTS { ?x owl:deprecated "true"^^xsd:boolean } ) .
+   FILTER ( isIRI(?x) ) .
+   FILTER ( NOT EXISTS { FILTER(strStarts(STR(?x), "http://purl.obolibrary.org/obo/COB_")) } ) .
+   FILTER ( NOT EXISTS { FILTER(strStarts(STR(?x), "http://purl.obolibrary.org/obo/BFO_")) } ) .   # we allow BFO orphans
+   FILTER ( NOT EXISTS {
+               ?x (rdfs:subClassOf|owl:equivalentClass|^owl:equivalentClass)+ ?y .
+              FILTER( strStarts(STR(?y), "http://purl.obolibrary.org/obo/COB_" ))
+            } )
+
+   FILTER ( NOT EXISTS {
+
+   ?x rdfs:subClassOf ?x2 .
+   ?x2 a owl:Class ;
+      rdfs:label ?x2l .
+   FILTER ( EXISTS { ?x2 rdfs:subClassOf ?super } ) .
+   FILTER ( NOT EXISTS { ?x2 owl:deprecated "true"^^xsd:boolean } ) .
+   FILTER ( isIRI(?x2) ) .
+   FILTER ( NOT EXISTS { FILTER(strStarts(STR(?x2), "http://purl.obolibrary.org/obo/COB_")) } ) .
+   FILTER ( NOT EXISTS { FILTER(strStarts(STR(?x2), "http://purl.obolibrary.org/obo/BFO_")) } ) .   # we allow BFO orphans
+   FILTER ( NOT EXISTS {
+               ?x2 (rdfs:subClassOf|owl:equivalentClass|^owl:equivalentClass)+ ?y .
+              FILTER( strStarts(STR(?y), "http://purl.obolibrary.org/obo/COB_" ))
+            } )
+
+   } )
+}

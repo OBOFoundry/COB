@@ -96,8 +96,8 @@ cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
 #
 # these list are incomplete: it can easily be added to:
 
-COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt 
-COB_NONCOMPLIANT =  doid chebi mondo eco  maxo  mco  nbo peco ecto so
+COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt doid so
+COB_NONCOMPLIANT =   mondo chebi eco  maxo  mco  nbo peco ecto
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest
@@ -106,8 +106,8 @@ main_test: build/report.tsv cob.owl
 # integration tests
 itest: itest_compliant itest_noncompliant #superclass_test
 
-itest_compliant: $(patsubst %, build/reasoned-%.owl, $(COB_COMPLIANT))
-itest_noncompliant: $(patsubst %, build/incoherent-%.owl, $(COB_NONCOMPLIANT))
+itest_compliant: $(patsubst %, build/reasoned-%.owl, $(ALL_ONTS))
+itest_noncompliant: $(patsubst %, build/incoherent-%.txt, $(COB_NONCOMPLIANT))
 
 # currently almost ALL ontologies fail this.
 #
@@ -125,20 +125,16 @@ build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot
 	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
-# reasoned product; this will FAIL if incoherent
 build/reasoned-%.owl: build/merged-%.owl | build/robot.jar
-	touch $@.RUN && $(ROBOT) reason --reasoner ELK -i $< -o $@ && rm $@.RUN
-
-# incoherent product; we EXPECT to be incoherent. If it is not, then we FAIL
-build/incoherent-%.owl: build/merged-%.owl | build/robot.jar
-	touch $@.RUN && $(ROBOT) reason --reasoner ELK -D $@ -i $< -o $@ || rm $@.RUN
+	(test -f build/debug-$*.owl && rm build/debug-$*.owl || echo) && \
+	$(ROBOT) reason --reasoner ELK -i $< -D build/debug-$*.owl -o $@ && echo SUCCESS > build/status-$*.txt || echo FAIL > build/status-$*.txt
 
 # TODO: implement https://github.com/ontodev/robot/issues/686
 # then explain all incoherencies. use owltools for now
 #build/incoherent-%.md: build/incoherent-%.owl
 #	$(ROBOT) explain --reasoner ELK -i $< -o $@
-build/incoherent-%.md: build/incoherent-%.owl
-	owltools $< --run-reasoner -r elk -u -e | grep ^UNSAT > $@
+build/incoherent-%.txt: build/reasoned-%.owl
+	test -f build/debug-$*.owl && (owltools build/debug-$*.owl --run-reasoner -r elk -u -e | grep ^UNSAT > $@) || echo COHERENT > $@
 
 # test to see if the ontology has any classes that are not inferred subclasses of a COB
 # class. Exceptions made for BFO which largely sits above COB.
@@ -147,6 +143,10 @@ build/incoherent-%.md: build/incoherent-%.owl
 # is all sub/equiv axioms
 build/no-orphans-%.txt: build/merged-%.owl
 	robot verify -i $< -q sparql/no-cob-ancestor.rq >& build/orphans-$*.txt && touch $@
+
+all_orphans: $(patsubst %, build/root-orphans-%.txt, $(ALL_ONTS))
+build/root-orphans-%.txt: build/reasoned-%.owl
+	robot query -i $< -q sparql/cob-orphans.rq $@
 
 
 ########################################
@@ -187,7 +187,7 @@ build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/
 # -- EXEMPLAR ONTOLOGY --
 ########################################
 
-DEMO_ONTS = go chebi envo ncbitaxon cl pr
+DEMO_ONTS = go chebi envo ncbitaxon cl geo pr obi
 
 DEMO_ONT_FILES = $(patsubst %,build/subset-%.owl,$(DEMO_ONTS))
 

@@ -1,0 +1,121 @@
+x,xl
+http://purl.obolibrary.org/obo/ENVO_01000203,environmental condition
+http://purl.obolibrary.org/obo/ENVO_00000020,lake
+http://purl.obolibrary.org/obo/ENVO_02500019,alga
+http://purl.obolibrary.org/obo/ENVO_03000077,slush ice layer
+http://purl.obolibrary.org/obo/ENVO_00010358,fomite
+http://purl.obolibrary.org/obo/ENVO_01001853,periglacial
+http://purl.obolibrary.org/obo/ENVO_00000057,mangrove swamp
+http://purl.obolibrary.org/obo/ENVO_01001168,ecosystem fragmentation process
+http://purl.obolibrary.org/obo/ENVO_01000963,diatomite particle
+http://purl.obolibrary.org/obo/ENVO_01001375,sea ice variability
+http://purl.obolibrary.org/obo/ENVO_01000254,environmental system
+http://purl.obolibrary.org/obo/ENVO_01001188,holothurian digestive tract contents
+http://purl.obolibrary.org/obo/ENVO_01001844,ocean surface stress
+http://purl.obolibrary.org/obo/ENVO_01000813,astronomical body part
+http://purl.obolibrary.org/obo/ENVO_01001681,weather front
+http://purl.obolibrary.org/obo/ENVO_01001813,construction
+http://purl.obolibrary.org/obo/ENVO_01000310,haline environment
+http://purl.obolibrary.org/obo/ENVO_01000281,layer
+http://purl.obolibrary.org/obo/ENVO_01000804,astronomical object
+http://purl.obolibrary.org/obo/ENVO_01000498,pole
+http://purl.obolibrary.org/obo/ENVO_01001008,meteor
+http://purl.obolibrary.org/obo/ENVO_01001484,fire whirl
+http://purl.obolibrary.org/obo/ENVO_00002139,pebble
+http://purl.obolibrary.org/obo/ENVO_01000777,nurdle
+http://purl.obolibrary.org/obo/ENVO_01000136,drop stone
+http://purl.obolibrary.org/obo/ENVO_01001641,glaciation
+http://purl.obolibrary.org/obo/ENVO_01001435,planned deforestation
+http://purl.obolibrary.org/obo/ENVO_01000556,biogas
+http://purl.obolibrary.org/obo/ENVO_01001173,sacred site
+http://purl.obolibrary.org/obo/ENVO_01001814,organic object
+http://purl.obolibrary.org/obo/ENVO_02000047,animal feed
+http://purl.obolibrary.org/obo/ENVO_01001564,rain
+http://purl.obolibrary.org/obo/ENVO_04000010,soil surface layer
+http://purl.obolibrary.org/obo/ENVO_00000192,mudflat
+http://purl.obolibrary.org/obo/ENVO_01001495,dioxygen dissolved in marine water
+http://purl.obolibrary.org/obo/ENVO_01000452,environmental disposition
+http://purl.obolibrary.org/obo/ENVO_01001377,sea surface height
+http://purl.obolibrary.org/obo/ENVO_01001260,waste disposal process
+http://purl.obolibrary.org/obo/ENVO_00000102,cave entrance
+http://purl.obolibrary.org/obo/ENVO_01000408,environmental zone
+http://purl.obolibrary.org/obo/ENVO_01000372,household waste material
+http://purl.obolibrary.org/obo/ENVO_02000103,metallic dust
+http://purl.obolibrary.org/obo/ENVO_01001436,planned environmental usage process
+http://purl.obolibrary.org/obo/ENVO_00000004,administrative region
+http://purl.obolibrary.org/obo/ENVO_01001642,interglacial
+http://purl.obolibrary.org/obo/ENVO_02000007,tissue culture
+http://purl.obolibrary.org/obo/ENVO_01000293,ice mass
+http://purl.obolibrary.org/obo/ENVO_03000074,grease ice layer
+http://purl.obolibrary.org/obo/ENVO_01000665,waste role
+http://purl.obolibrary.org/obo/ENVO_01001496,inorganic macronutrient dissolved in ocean water
+http://purl.obolibrary.org/obo/ENVO_01001497,carbonate system of ocean water
+http://purl.obolibrary.org/obo/ENVO_01001468,intertidal ecosystem
+http://purl.obolibrary.org/obo/ENVO_00000473,gravel pit
+http://purl.obolibrary.org/obo/ENVO_01000371,agricultural waste material
+http://purl.obolibrary.org/obo/ENVO_01001544,two-dimensional fiat ice surface
+http://purl.obolibrary.org/obo/ENVO_02500026,anthropogenic modulatory intervention process
+http://purl.obolibrary.org/obo/ENVO_2000015,energy
+http://purl.obolibrary.org/obo/ENVO_01000373,biological waste material
+http://purl.obolibrary.org/obo/ENVO_03000111,snow mass
+http://purl.obolibrary.org/obo/ENVO_01001643,ice age
+http://purl.obolibrary.org/obo/ENVO_01001001,plant-associated environment
+http://purl.obolibrary.org/obo/ENVO_01000382,cold desert
+http://purl.obolibrary.org/obo/ENVO_01000701,volcanic ash
+http://purl.obolibrary.org/obo/ENVO_2000045,hydrocarbon-based environmental material
+http://purl.obolibrary.org/obo/ENVO_01001504,glacial surface layer velocity
+http://purl.obolibrary.org/obo/ENVO_00000315,bajada
+http://purl.obolibrary.org/obo/ENVO_01000944,microplastic particle
+http://purl.obolibrary.org/obo/ENVO_01001002,animal-associated environment
+http://purl.obolibrary.org/obo/ENVO_2000028,mechanical wave energy
+http://purl.obolibrary.org/obo/ENVO_01001361,atmospheric wind direction
+http://purl.obolibrary.org/obo/ENVO_01001711,upper air
+http://purl.obolibrary.org/obo/ENVO_01000996,human-directed construction process
+http://purl.obolibrary.org/obo/ENVO_01001858,cloud cover
+http://purl.obolibrary.org/obo/ENVO_00002140,cobble
+http://purl.obolibrary.org/obo/ENVO_03000096,season
+http://purl.obolibrary.org/obo/ENVO_00000172,sandy desert
+http://purl.obolibrary.org/obo/ENVO_01000687,coast
+http://purl.obolibrary.org/obo/ENVO_01001164,geodiversity
+http://purl.obolibrary.org/obo/ENVO_00000070,human construction
+http://purl.obolibrary.org/obo/ENVO_01001308,hydroform
+http://purl.obolibrary.org/obo/ENVO_00010483,environmental material
+http://purl.obolibrary.org/obo/ENVO_01001686,mass of environmental material
+http://purl.obolibrary.org/obo/ENVO_01001362,atmospheric wind speed
+http://purl.obolibrary.org/obo/ENVO_02500037,air pollution
+http://purl.obolibrary.org/obo/ENVO_01000443,salt mass
+http://purl.obolibrary.org/obo/ENVO_03000123,concentration of nitrate and nitrite in liquid water
+http://purl.obolibrary.org/obo/ENVO_01001859,dew point
+http://purl.obolibrary.org/obo/ENVO_01000785,material extraction process
+http://purl.obolibrary.org/obo/ENVO_00000173,rocky desert
+http://purl.obolibrary.org/obo/ENVO_02500000,environmental system process
+http://purl.obolibrary.org/obo/ENVO_02500041,environmental monitoring
+http://purl.obolibrary.org/obo/ENVO_01001303,environmental role
+http://purl.obolibrary.org/obo/ENVO_01000547,glaze ice layer
+http://purl.obolibrary.org/obo/ENVO_00000028,sand pit quarry
+http://purl.obolibrary.org/obo/ENVO_02500038,soil pollution
+http://purl.obolibrary.org/obo/ENVO_00000183,stony desert
+http://purl.obolibrary.org/obo/ENVO_01001363,volume of hydrological precipitation
+http://purl.obolibrary.org/obo/ENVO_01000179,desert biome
+http://purl.obolibrary.org/obo/ENVO_01000552,natural gas
+http://purl.obolibrary.org/obo/ENVO_00000243,freshwater wetland ecosystem
+http://purl.obolibrary.org/obo/ENVO_02000055,plant feed
+http://purl.obolibrary.org/obo/ENVO_01001469,observing system
+http://purl.obolibrary.org/obo/ENVO_01001606,speed of a water current
+http://purl.obolibrary.org/obo/ENVO_04000002,temperature of sea surface
+http://purl.obolibrary.org/obo/ENVO_02500039,water pollution
+http://purl.obolibrary.org/obo/ENVO_01001667,thalassic
+http://purl.obolibrary.org/obo/ENVO_00002267,industrial waste material
+http://purl.obolibrary.org/obo/ENVO_01001620,mass of ice and snow
+http://purl.obolibrary.org/obo/ENVO_01001041,fungi-associated environment
+http://purl.obolibrary.org/obo/ENVO_00000341,piece of gravel
+http://purl.obolibrary.org/obo/ENVO_01000993,manufacturing process
+http://purl.obolibrary.org/obo/ENVO_01000243,boulder
+http://purl.obolibrary.org/obo/ENVO_01001492,satellite imaging
+http://purl.obolibrary.org/obo/ENVO_01001374,sea state
+http://purl.obolibrary.org/obo/ENVO_00003074,manufactured product
+http://purl.obolibrary.org/obo/ENVO_01001482,tornado
+http://purl.obolibrary.org/obo/ENVO_01000543,atmospheric layer
+http://purl.obolibrary.org/obo/ENVO_01000912,cloud condensation nucleus
+http://purl.obolibrary.org/obo/ENVO_01001621,englacial
+http://purl.obolibrary.org/obo/ENVO_01001187,holothurian digestive tract
