@@ -59,11 +59,11 @@ COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective sp
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
 COB:0000080	complex of molecular entities				
 COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
-COB:0000102	data item	owl:equivalentClass	IAO:0000027	plan specification	.
+COB:0000102	data item	owl:equivalentClass	IAO:0000027	data item	.
 COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
-COB:0000107	assay	owl:equivalentClass	OBI:0000070	plan specification	.
+COB:0000107	assay	owl:equivalentClass	OBI:0000070	assay	.
 COB:0000108	data transformation	owl:equivalentClass	OBI:0200000	data transformation	.
-COB:0000109	investigation	owl:equivalentClass	IAO:0000066	investigation	.
+COB:0000109	investigation	owl:equivalentClass	OBI:0000066	investigation	.
 COB:0000110	material processing	owl:equivalentClass	OBI:0000094	material processing	.
 COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.
 COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.
