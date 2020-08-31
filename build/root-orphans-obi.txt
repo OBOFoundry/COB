@@ -1,0 +1,637 @@
+x,xl
+http://purl.obolibrary.org/obo/OBI_0600053,electrophoresis
+http://purl.obolibrary.org/obo/OBI_0000815,Berichrom(r) Antithrombin III (A) Kit
+http://purl.obolibrary.org/obo/OBI_0001522,sequence assembly algorithm
+http://purl.obolibrary.org/obo/OBI_0001479,specimen from organism
+http://purl.obolibrary.org/obo/OBI_0000413,cell cycle synchronization
+http://purl.obolibrary.org/obo/OBI_0002016,histone modification identification by ChIP-chip assay
+http://purl.obolibrary.org/obo/OBI_0002394,number of pregnancies
+http://purl.obolibrary.org/obo/OBI_1110053,cancer
+http://purl.obolibrary.org/obo/OBI_0000992,DNA sequencing service
+http://purl.obolibrary.org/obo/OBI_0001892,specification of data to be generated in an investigation
+http://purl.obolibrary.org/obo/OBI_0100058,xenograft
+http://purl.obolibrary.org/obo/OBI_0302868,mean-centered data
+http://purl.obolibrary.org/obo/OBI_0002754,cDNA library
+http://purl.obolibrary.org/obo/OBI_0000938,categorical measurement datum
+http://purl.obolibrary.org/obo/OBI_0001906,cancer cell line
+http://purl.obolibrary.org/obo/OBI_0302731,buffer role
+http://purl.obolibrary.org/obo/OBI_0000909,cloacal specimen
+http://purl.obolibrary.org/obo/OBI_0002051,in vivo assay measuring B cell epitope specific protection from infectious challenge based on pathogen burden
+http://purl.obolibrary.org/obo/OBI_0002401,hormonal birth control use history
+http://purl.obolibrary.org/obo/OBI_0002371,diagnosis of cancer
+http://purl.obolibrary.org/obo/OBI_0302890,polymerization
+http://purl.obolibrary.org/obo/OBI_0001023,Fe-BABE RNA structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001947,sequence annotation provider
+http://purl.obolibrary.org/obo/OBI_0000375,freeze function
+http://purl.obolibrary.org/obo/OBI_0000319,material to be added role
+http://purl.obolibrary.org/obo/OBI_0000658,data representational model
+http://purl.obolibrary.org/obo/OBI_0001029,OH-radical structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001849,structural analysis by paired-end tag sequencing assay
+http://purl.obolibrary.org/obo/OBI_0600004,human subject enrollment
+http://purl.obolibrary.org/obo/OBI_0001636,grant
+http://purl.obolibrary.org/obo/OBI_0001882,target material in specimen specification
+http://purl.obolibrary.org/obo/OBI_0000835,manufacturer
+http://purl.obolibrary.org/obo/OBI_0001000,questionnaire
+http://purl.obolibrary.org/obo/OBI_0000962,training objective
+http://purl.obolibrary.org/obo/OBI_0000073,sample preparation for assay
+http://purl.obolibrary.org/obo/OBI_0002644,in vivo assay measuring B cell epitope specific protection from tumor challenge resulting from the adoptive transfer of epitope specific antibodies or B cells
+http://purl.obolibrary.org/obo/OBI_0001041,stabilization function
+http://purl.obolibrary.org/obo/OBI_0002369,clinical history devoid of cancer
+http://purl.obolibrary.org/obo/OBI_0002115,cytometry time of flight assay
+http://purl.obolibrary.org/obo/OBI_0002410,menopausal status
+http://purl.obolibrary.org/obo/OBI_0000218,investigation results report
+http://purl.obolibrary.org/obo/OBI_1110085,antigen presentation function
+http://purl.obolibrary.org/obo/OBI_0000723,DNA sequencing by ligation assay
+http://purl.obolibrary.org/obo/OBI_0001705,biological activity assay measuring epitope specific antigen inhibition of antibody activity
+http://purl.obolibrary.org/obo/OBI_0001638,antigen inhibition assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex approximated by IC50
+http://purl.obolibrary.org/obo/OBI_0302888,washing
+http://purl.obolibrary.org/obo/OBI_0001172,dose response curve
+http://purl.obolibrary.org/obo/OBI_0001019,RNA ADA I RNA structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0002197,tissue section thickness
+http://purl.obolibrary.org/obo/OBI_1110016,adaptive immune effector function
+http://purl.obolibrary.org/obo/OBI_0000023,classified data set
+http://purl.obolibrary.org/obo/OBI_0001151,genetically modified material
+http://purl.obolibrary.org/obo/OBI_0302838,validated information
+http://purl.obolibrary.org/obo/OBI_0001879,reagent
+http://purl.obolibrary.org/obo/OBI_0000725,host role
+http://purl.obolibrary.org/obo/OBI_0002191,courier tracking number
+http://purl.obolibrary.org/obo/OBI_0001039,inline probing RNA structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001620,latitude coordinate measurement datum
+http://purl.obolibrary.org/obo/OBI_1110036,JY cell line
+http://purl.obolibrary.org/obo/OBI_0001628,investigation identifier
+http://purl.obolibrary.org/obo/OBI_0001873,number of errors
+http://purl.obolibrary.org/obo/OBI_0002017,histone modification identification by ChIP-Seq assay
+http://purl.obolibrary.org/obo/OBI_0000952,oral administration
+http://purl.obolibrary.org/obo/OBI_0600054,selection by survival
+http://purl.obolibrary.org/obo/OBI_0001920,DNA replication timing by sequencing assay
+http://purl.obolibrary.org/obo/OBI_0000202,investigation agent role
+http://purl.obolibrary.org/obo/OBI_0000385,ionization function
+http://purl.obolibrary.org/obo/OBI_1110054,autoimmune disease
+http://purl.obolibrary.org/obo/OBI_0001667,purified MHC competitive binding assay measuring equilibrium dissociation constant [KD] of a MHC:ligand complex approximated by IC50 using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_0001928,selection
+http://purl.obolibrary.org/obo/OBI_0000455,consume data function
+http://purl.obolibrary.org/obo/OBI_0001141,individual organism identifier
+http://purl.obolibrary.org/obo/OBI_0500022,stopping rule
+http://purl.obolibrary.org/obo/OBI_0001640,biological activity assay measuring epitope specific immunoglobulin-mediated antigen activation
+http://purl.obolibrary.org/obo/OBI_0002072,assay measuring qualitiative binding of a MHC:ligand complex
+http://purl.obolibrary.org/obo/OBI_0001147,cell culture expansion
+http://purl.obolibrary.org/obo/OBI_0002095,specimen family creation
+http://purl.obolibrary.org/obo/OBI_0000931,study intervention
+http://purl.obolibrary.org/obo/OBI_0000015,biological feature identification objective
+http://purl.obolibrary.org/obo/OBI_0000662,error corrected data set
+http://purl.obolibrary.org/obo/OBI_0100016,blood plasma specimen
+http://purl.obolibrary.org/obo/OBI_0000939,training process
+http://purl.obolibrary.org/obo/OBI_0001940,N50
+http://purl.obolibrary.org/obo/OBI_0302732,solvent role
+http://purl.obolibrary.org/obo/OBI_0001687,contact representative role
+http://purl.obolibrary.org/obo/OBI_0002372,family clinical history of cancer
+http://purl.obolibrary.org/obo/OBI_0001588,binding
+http://purl.obolibrary.org/obo/OBI_0002052,in vivo assay measuring B cell epitope specific protection from tumor challenge
+http://purl.obolibrary.org/obo/OBI_0002125,H&E-stained fixed tissue slide specimen
+http://purl.obolibrary.org/obo/OBI_0000174,study group role
+http://purl.obolibrary.org/obo/OBI_0002160,multiplexed indexed T7 ChIP-seq assay
+http://purl.obolibrary.org/obo/OBI_0000750,study design independent variable
+http://purl.obolibrary.org/obo/OBI_0001182,negative binding datum
+http://purl.obolibrary.org/obo/OBI_0002449,footprinting assay measuring binding of a B cell epitope:antibody complex
+http://purl.obolibrary.org/obo/OBI_0100010,Epstein Barr virus transformed B cell
+http://purl.obolibrary.org/obo/OBI_0000105,transplantation
+http://purl.obolibrary.org/obo/OBI_0001502,epitope specific perforin production by T cells
+http://purl.obolibrary.org/obo/OBI_0000922,frozen specimen
+http://purl.obolibrary.org/obo/OBI_0600005,collecting specimen from organism
+http://purl.obolibrary.org/obo/OBI_0000370,contain function
+http://purl.obolibrary.org/obo/OBI_0002466,alignment counting algorithm
+http://purl.obolibrary.org/obo/OBI_0600046,preparative chromatography
+http://purl.obolibrary.org/obo/OBI_0001543,purified MHC direct binding assay measuring equilibrium dissociation constant [KD] of a MHC:ligand complex approximated by EC50 using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_0000286,precipitate
+http://purl.obolibrary.org/obo/OBI_0000376,synthesizing function
+http://purl.obolibrary.org/obo/OBI_1110045,disposition to be bound by an adaptive immune receptor
+http://purl.obolibrary.org/obo/OBI_0302729,chemical solution
+http://purl.obolibrary.org/obo/OBI_0000164,clonal cDNA library
+http://purl.obolibrary.org/obo/OBI_0000125,number of lost events electronic
+http://purl.obolibrary.org/obo/OBI_0302889,irradiation
+http://purl.obolibrary.org/obo/OBI_0002110,digital object identifier
+http://purl.obolibrary.org/obo/OBI_0000671,sample from organism
+http://purl.obolibrary.org/obo/OBI_0002746,induced sputum specimen
+http://purl.obolibrary.org/obo/OBI_0001489,mass spectrometry assay measuring MHC ligand processing and presentation of MHC ligands eluted from cellular MHC
+http://purl.obolibrary.org/obo/OBI_0600064,recombinant vector cloning
+http://purl.obolibrary.org/obo/OBI_0000963,categorical label
+http://purl.obolibrary.org/obo/OBI_0000826,treatment portion of study execution
+http://purl.obolibrary.org/obo/OBI_0000213,fluorescence compensation matrix
+http://purl.obolibrary.org/obo/OBI_0002480,sequencing library input quantity measurement datum
+http://purl.obolibrary.org/obo/OBI_0001696,in vivo assay measuring B cell epitope specific protection based on survival
+http://purl.obolibrary.org/obo/OBI_0001621,longitude coordinate measurement datum
+http://purl.obolibrary.org/obo/OBI_9999994,chromium release assay
+http://purl.obolibrary.org/obo/OBI_0001483,cell collecting
+http://purl.obolibrary.org/obo/OBI_0001629,grant identifier
+http://purl.obolibrary.org/obo/OBI_0001874,random access memory size
+http://purl.obolibrary.org/obo/OBI_0000272,protocol
+http://purl.obolibrary.org/obo/OBI_0000368,record function
+http://purl.obolibrary.org/obo/OBI_0001599,cell bound MHC competitive binding assay of a MHC:ligand complex using radioactivity detection
+http://purl.obolibrary.org/obo/OBI_0000981,agar stab specimen
+http://purl.obolibrary.org/obo/OBI_0100026,organism
+http://purl.obolibrary.org/obo/OBI_0002476,number of rounds of amplification
+http://purl.obolibrary.org/obo/OBI_0000278,disease stage
+http://purl.obolibrary.org/obo/OBI_0002108,small-angle scattering assay
+http://purl.obolibrary.org/obo/OBI_0000065,"polyethylene glycol p-(1,1,3,3-tetramethylbutyl)-phenyl ether"
+http://purl.obolibrary.org/obo/OBI_0000669,tritiated thymidine incorporation assay
+http://purl.obolibrary.org/obo/OBI_0500023,compliance rule
+http://purl.obolibrary.org/obo/OBI_0001608,purified MHC direct binding assay of a MHC:ligand complex using radioactivity detection
+http://purl.obolibrary.org/obo/OBI_0000456,material transformation objective
+http://purl.obolibrary.org/obo/OBI_0000885,secondary structure of sequence macromolecule
+http://purl.obolibrary.org/obo/OBI_0001853,DNase I hypersensitive sites sequencing assay
+http://purl.obolibrary.org/obo/OBI_0000044,physical document
+http://purl.obolibrary.org/obo/OBI_0001908,testable hypothesis
+http://purl.obolibrary.org/obo/OBI_0300310,sequential design
+http://purl.obolibrary.org/obo/OBI_0002120,mixed lymphocyte reaction assay
+http://purl.obolibrary.org/obo/OBI_0100017,blood serum specimen
+http://purl.obolibrary.org/obo/OBI_0000973,sequence data
+http://purl.obolibrary.org/obo/OBI_0000269,number of lost events computer
+http://purl.obolibrary.org/obo/OBI_0002126,IHC-stained fixed tissue slide specimen
+http://purl.obolibrary.org/obo/OBI_0000718,pathogen role
+http://purl.obolibrary.org/obo/OBI_0002059,assay measuring a binding constant of a T cell epitope:MHC:TCR complex
+http://purl.obolibrary.org/obo/OBI_0000680,whole organism preparation
+http://purl.obolibrary.org/obo/OBI_0000934,intramuscular injection
+http://purl.obolibrary.org/obo/OBI_0002617,national registry
+http://purl.obolibrary.org/obo/OBI_0001961,PCR program
+http://purl.obolibrary.org/obo/OBI_0600006,killing
+http://purl.obolibrary.org/obo/OBI_0001493,cell bound MHC competitive binding assay of a MHC:ligand complex using T cell epitope recognition
+http://purl.obolibrary.org/obo/OBI_0002461,BCL format
+http://purl.obolibrary.org/obo/OBI_0000837,oral ingestion of pill
+http://purl.obolibrary.org/obo/OBI_0302733,solute role
+http://purl.obolibrary.org/obo/OBI_0001755,selection criterion
+http://purl.obolibrary.org/obo/OBI_0000788,fluorescently labeled MHC multimer
+http://purl.obolibrary.org/obo/OBI_0000034,supernatant role
+http://purl.obolibrary.org/obo/OBI_0002467,alignment counting application
+http://purl.obolibrary.org/obo/OBI_0000736,single fragment library
+http://purl.obolibrary.org/obo/OBI_0002117,whole genome sequencing assay
+http://purl.obolibrary.org/obo/OBI_0000377,perturb function
+http://purl.obolibrary.org/obo/OBI_0001707,immunoglobulin mediated histamine release
+http://purl.obolibrary.org/obo/OBI_1110300,direct submission to IEDB
+http://purl.obolibrary.org/obo/OBI_0600024,maintaining cell culture
+http://purl.obolibrary.org/obo/OBI_0001884,specimen-based scope of investigation specification
+http://purl.obolibrary.org/obo/OBI_0000281,intraperitoneal injection
+http://purl.obolibrary.org/obo/OBI_2000018,leukocyte specimen
+http://purl.obolibrary.org/obo/OBI_0001534,purified MHC competitive binding assay measuring binding of a MHC:ligand complex using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_0000827,pill
+http://purl.obolibrary.org/obo/OBI_0000075,diagnosis textual entity
+http://purl.obolibrary.org/obo/OBI_0001396,stimulus or stress design
+http://purl.obolibrary.org/obo/OBI_0001939,genome coverage
+http://purl.obolibrary.org/obo/OBI_0001472,specimen with known storage state
+http://purl.obolibrary.org/obo/OBI_0302884,extraction
+http://purl.obolibrary.org/obo/OBI_0100064,screening library
+http://purl.obolibrary.org/obo/OBI_0000690,immunoprecipitation
+http://purl.obolibrary.org/obo/OBI_0001834,drawing a conclusion
+http://purl.obolibrary.org/obo/OBI_0000941,service consumer role
+http://purl.obolibrary.org/obo/OBI_0002131,Illumina Infinium MethylationEPIC BeadChip
+http://purl.obolibrary.org/obo/OBI_0002199,reason for lack of data item
+http://purl.obolibrary.org/obo/OBI_0000391,energy supply function
+http://purl.obolibrary.org/obo/OBI_0001951,reverse PCR primer
+http://purl.obolibrary.org/obo/OBI_0000025,reference substance role
+http://purl.obolibrary.org/obo/OBI_0000066,investigation
+http://purl.obolibrary.org/obo/OBI_0000416,cloning insert role
+http://purl.obolibrary.org/obo/OBI_0000845,primary structure of RNA molecule
+http://purl.obolibrary.org/obo/OBI_0001463,transcription profiling by array assay
+http://purl.obolibrary.org/obo/OBI_0001035,Nuclease S1 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000576,scattered molecular aggregate
+http://purl.obolibrary.org/obo/OBI_0002084,transcription cofactor activity region identification by ChIP-Seq assay
+http://purl.obolibrary.org/obo/OBI_0002471,date process started
+http://purl.obolibrary.org/obo/OBI_0000806,material maintenance objective
+http://purl.obolibrary.org/obo/OBI_0001513,purified MHC competitive binding assay of a MHC:ligand complex using radioactivity detection
+http://purl.obolibrary.org/obo/OBI_1110038,RMA cell line
+http://purl.obolibrary.org/obo/OBI_0000369,magnify function
+http://purl.obolibrary.org/obo/OBI_0600015,group assignment
+http://purl.obolibrary.org/obo/OBI_0000664,BrdU incorporation assay
+http://purl.obolibrary.org/obo/OBI_0001012,RNASE V1 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001909,conclusion based on data
+http://purl.obolibrary.org/obo/OBI_0002616,genealogical record
+http://purl.obolibrary.org/obo/OBI_0000847,test substance role
+http://purl.obolibrary.org/obo/OBI_0001554,rate measurement datum
+http://purl.obolibrary.org/obo/OBI_0000204,nutrient role
+http://purl.obolibrary.org/obo/OBI_0000387,cool function
+http://purl.obolibrary.org/obo/CHMO_0000087,fluorescence microscopy
+http://purl.obolibrary.org/obo/OBI_0302893,storage
+http://purl.obolibrary.org/obo/OBI_0000457,manufacturing
+http://purl.obolibrary.org/obo/OBI_0001143,labeled nucleic acid extract
+http://purl.obolibrary.org/obo/OBI_0000719,vaccine preparation
+http://purl.obolibrary.org/obo/OBI_0002421,indicator of whether an inclusion criterion was met
+http://purl.obolibrary.org/obo/OBI_0001962,target gene specification
+http://purl.obolibrary.org/obo/OBI_0002168,subcellular protein immunohistochemistry assay
+http://purl.obolibrary.org/obo/OBI_0001504,dissection
+http://purl.obolibrary.org/obo/OBI_0002074,in vitro assay measuring T cell epitope specific suppression
+http://purl.obolibrary.org/obo/OBI_0000735,NTP-2000
+http://purl.obolibrary.org/obo/OBI_0000789,survival rate
+http://purl.obolibrary.org/obo/OBI_0600007,administering substance in vivo
+http://purl.obolibrary.org/obo/OBI_1000207,assay bead
+http://purl.obolibrary.org/obo/OBI_0002587,machine learning
+http://purl.obolibrary.org/obo/OBI_0002468,base calling algorithm
+http://purl.obolibrary.org/obo/OBI_1110028,293-T cell line
+http://purl.obolibrary.org/obo/OBI_0000838,material maintenance
+http://purl.obolibrary.org/obo/OBI_0000153,cell co-culturing
+http://purl.obolibrary.org/obo/OBI_0000086,reagent role
+http://purl.obolibrary.org/obo/OBI_0200166,data transformation objective
+http://purl.obolibrary.org/obo/OBI_0001506,specimen with pre- or post-mortem status
+http://purl.obolibrary.org/obo/OBI_0000737,cloning vector
+http://purl.obolibrary.org/obo/OBI_0001563,material processing service
+http://purl.obolibrary.org/obo/OBI_0000017,regulatory role
+http://purl.obolibrary.org/obo/OBI_0002462,ERCC RNA spike-in
+http://purl.obolibrary.org/obo/OBI_0000379,mechanical function
+http://purl.obolibrary.org/obo/OBI_0000070,assay
+http://purl.obolibrary.org/obo/OBI_0000426,injection
+http://purl.obolibrary.org/obo/OBI_0302885,filtration
+http://purl.obolibrary.org/obo/OBI_0002118,exome sequencing assay
+http://purl.obolibrary.org/obo/OBI_0001932,comparing prediction to measurement
+http://purl.obolibrary.org/obo/OBI_0000679,average value
+http://purl.obolibrary.org/obo/OBI_0000076,unplanned occurrence effecting an investigation
+http://purl.obolibrary.org/obo/OBI_0000728,rodent care
+http://purl.obolibrary.org/obo/OBI_0001864,RNA Annotation and Mapping of Promoters for the Analysis of Gene Expression assay
+http://purl.obolibrary.org/obo/OBI_0002482,specimen harvest quantity
+http://purl.obolibrary.org/obo/OBI_0000392,information processor function
+http://purl.obolibrary.org/obo/OBI_0001404,genetic characteristics information
+http://purl.obolibrary.org/obo/OBI_0001919,Carbon-copy chromosome conformation capture assay
+http://purl.obolibrary.org/obo/OBI_0000942,intradermal injection
+http://purl.obolibrary.org/obo/OBI_0000983,intranasal mucosal administration
+http://purl.obolibrary.org/obo/OBI_0000067,evaluant role
+http://purl.obolibrary.org/obo/OBI_0001913,computation run time
+http://purl.obolibrary.org/obo/OBI_0000341,histological sample preparation
+http://purl.obolibrary.org/obo/OBI_0002472,dbGaP study identifier
+http://purl.obolibrary.org/obo/OBI_0000807,presentation of stimulus
+http://purl.obolibrary.org/obo/OBI_0001514,minimal inhibitory concentration
+http://purl.obolibrary.org/obo/OBI_0000840,unblinding process
+http://purl.obolibrary.org/obo/OBI_0002014,DNA methylation profiling by ChIP-chip assay
+http://purl.obolibrary.org/obo/OBI_1110039,T2 cell line
+http://purl.obolibrary.org/obo/OBI_0600016,pooling specimens
+http://purl.obolibrary.org/obo/OBI_0001013,kethoxal structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0002478,reference genome-transcriptome alignment algorithm
+http://purl.obolibrary.org/obo/OBI_0200032,K-fold cross validation method
+http://purl.obolibrary.org/obo/OBI_1110010,disposition to cause an allergic reaction
+http://purl.obolibrary.org/obo/OBI_0001144,binding constant
+http://purl.obolibrary.org/obo/OBI_0000388,connection function
+http://purl.obolibrary.org/obo/OBI_0001602,cell bound MHC direct binding assay of a MHC:ligand complex using radioactivity detection
+http://purl.obolibrary.org/obo/OBI_0000040,drug role
+http://purl.obolibrary.org/obo/OBI_0000251,cluster
+http://purl.obolibrary.org/obo/OBI_0001963,target subfragment specification
+http://purl.obolibrary.org/obo/OBI_0001896,investigation assay specification
+http://purl.obolibrary.org/obo/OBI_0600051,gradient separation
+http://purl.obolibrary.org/obo/OBI_0002582,sequence library feature count data
+http://purl.obolibrary.org/obo/OBI_0001505,purification
+http://purl.obolibrary.org/obo/OBI_0002032,parallel analysis of RNA structure assay
+http://purl.obolibrary.org/obo/OBI_1110029,C1R cell line
+http://purl.obolibrary.org/obo/OBI_0002405,hormonal replacement therapy history
+http://purl.obolibrary.org/obo/OBI_0002469,base calling application
+http://purl.obolibrary.org/obo/OBI_0001943,software pipeline
+http://purl.obolibrary.org/obo/OBI_0400085,piezo electric crystal
+http://purl.obolibrary.org/obo/OBI_0002422,indicator of whether all inclusion criteria were met
+http://purl.obolibrary.org/obo/OBI_0600030,experimental disease induction
+http://purl.obolibrary.org/obo/OBI_0002169,ChIP-qPCR assay
+http://purl.obolibrary.org/obo/OBI_0000339,planning
+http://purl.obolibrary.org/obo/OBI_0000431,injection into organ section
+http://purl.obolibrary.org/obo/OBI_0002676,in vivo assay measuring a T cell epitope specific response after adoptive transfer of epitope specific T cells
+http://purl.obolibrary.org/obo/OBI_0000439,agarose gel
+http://purl.obolibrary.org/obo/OBI_0002463,SIRV RNA spike-in
+http://purl.obolibrary.org/obo/OBI_0000831,DNA residue methylation
+http://purl.obolibrary.org/obo/OBI_0000839,labeled oligonucleotide
+http://purl.obolibrary.org/obo/OBI_0002395,number of live births
+http://purl.obolibrary.org/obo/OBI_0000993,service provision objective
+http://purl.obolibrary.org/obo/OBI_0002648,individual organism specimen
+http://purl.obolibrary.org/obo/OBI_0002029,serial analysis of gene expression assay
+http://purl.obolibrary.org/obo/OBI_0600008,acquisition
+http://purl.obolibrary.org/obo/OBI_0001564,purified MHC competitive binding assay measuring equilibrium dissociation constant [KD] of a MHC:ligand complex approximated by IC50 using radioactivity detection
+http://purl.obolibrary.org/obo/OBI_0001619,specimen collection time measurement datum
+http://purl.obolibrary.org/obo/OBI_0001701,antigen inhibition assay measuring binding of a B cell epitope:antibody complex
+http://purl.obolibrary.org/obo/OBI_0400059,interrogation_point
+http://purl.obolibrary.org/obo/OBI_0002483,spike-in dilution factor
+http://purl.obolibrary.org/obo/OBI_1110049,allergy
+http://purl.obolibrary.org/obo/OBI_0000943,chemical cleavage
+http://purl.obolibrary.org/obo/OBI_0200000,data transformation
+http://purl.obolibrary.org/obo/OBI_0001912,cell freezing medium
+http://purl.obolibrary.org/obo/OBI_0000071,quantitative confidence value
+http://purl.obolibrary.org/obo/OBI_0001024,RNASE U2 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000857,complementary nucleotide probe role
+http://purl.obolibrary.org/obo/OBI_0000429,intraperitoneal administration
+http://purl.obolibrary.org/obo/OBI_0000674,center value
+http://purl.obolibrary.org/obo/OBI_0000984,dose
+http://purl.obolibrary.org/obo/OBI_0001155,3D structural organization datum
+http://purl.obolibrary.org/obo/OBI_0000399,solid support function
+http://purl.obolibrary.org/obo/OBI_0302910,prediction
+http://purl.obolibrary.org/obo/OBI_0001407,biological activity assay measuring epitope specific T cell activation
+http://purl.obolibrary.org/obo/OBI_0000800,cross linking
+http://purl.obolibrary.org/obo/OBI_0000118,gene list
+http://purl.obolibrary.org/obo/OBI_0000091,detector reagent role
+http://purl.obolibrary.org/obo/OBI_0000441,assay objective
+http://purl.obolibrary.org/obo/OBI_0002767,amplicon sequencing assay
+http://purl.obolibrary.org/obo/OBI_0000694,animal feeding
+http://purl.obolibrary.org/obo/OBI_0000841,subject agrees they understand informed consent document
+http://purl.obolibrary.org/obo/OBI_0002479,sequence read length measurement datum
+http://purl.obolibrary.org/obo/OBI_0001953,freezing
+http://purl.obolibrary.org/obo/OBI_0001556,cell lysate MHC direct binding assay of a MHC:ligand complex using radioactivity detection
+http://purl.obolibrary.org/obo/OBI_0500007,randomized complete block design
+http://purl.obolibrary.org/obo/OBI_0002385,diagnosis of infectious disease
+http://purl.obolibrary.org/obo/OBI_0000097,participant under investigation role
+http://purl.obolibrary.org/obo/OBI_0000708,laboratory animal care
+http://purl.obolibrary.org/obo/OBI_0600058,enzymatic amplification
+http://purl.obolibrary.org/obo/OBI_0001173,service
+http://purl.obolibrary.org/obo/OBI_1110086,restricting MHC role
+http://purl.obolibrary.org/obo/OBI_0600040,synthesis
+http://purl.obolibrary.org/obo/OBI_1000029,phage display library
+http://purl.obolibrary.org/obo/OBI_0001361,transcription profiling by RT-PCR assay
+http://purl.obolibrary.org/obo/OBI_0002076,collection of specimens
+http://purl.obolibrary.org/obo/OBI_0002015,transcription profiling by MPSS assay
+http://purl.obolibrary.org/obo/OBI_0002123,IHC slide staining
+http://purl.obolibrary.org/obo/OBI_0002406,delivery form for hormonal replacement therapy
+http://purl.obolibrary.org/obo/OBI_0001944,sequence annotation
+http://purl.obolibrary.org/obo/OBI_0001850,transcript analysis by paired-end tag sequencing assay
+http://purl.obolibrary.org/obo/OBI_1000023,cell culture supernatant
+http://purl.obolibrary.org/obo/OBI_0000914,nasopharyngeal aspirate specimen
+http://purl.obolibrary.org/obo/CHMO_0000089,confocal fluorescence microscopy
+http://purl.obolibrary.org/obo/OBI_0600031,enzyme-linked immunospot assay
+http://purl.obolibrary.org/obo/OBI_0001500,coelution assay measuring MHC ligand processing and presentation using T cell recognition of HPLC fractionated eluate compared to synthetic ligand
+http://purl.obolibrary.org/obo/OBI_0000731,recombinant vector
+http://purl.obolibrary.org/obo/OBI_0001508,sampling time measurement datum
+http://purl.obolibrary.org/obo/OBI_0000785,study design controlled variable
+http://purl.obolibrary.org/obo/OBI_0002677,in vivo assay measuring a B cell epitope specific response after adoptive transfer of epitope specific antibodies or B cells
+http://purl.obolibrary.org/obo/OBI_0001964,decision-theoretic analysis objective
+http://purl.obolibrary.org/obo/OBI_0002102,bio-layer interferometry assay measuring the on rate [kon] of a B cell epitope:antibody complex
+http://purl.obolibrary.org/obo/OBI_0600037,cell culture splitting
+http://purl.obolibrary.org/obo/OBI_0002370,unknown clinical history of cancer
+http://purl.obolibrary.org/obo/OBI_0000432,polyacrylamide gel
+http://purl.obolibrary.org/obo/OBI_0302874,edited document
+http://purl.obolibrary.org/obo/OBI_0000684,specimen collection objective
+http://purl.obolibrary.org/obo/OBI_0001358,post-transcriptional modification design
+http://purl.obolibrary.org/obo/OBI_0001005,RNASE CL3 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000994,intravenous injection
+http://purl.obolibrary.org/obo/OBI_0002730,pathogen detection by Rapid Analyte Measurement Platform assay
+http://purl.obolibrary.org/obo/OBI_0000078,eMedical record
+http://purl.obolibrary.org/obo/OBI_0600009,exposure of material to environment
+http://purl.obolibrary.org/obo/OBI_0600021,cell fixation
+http://purl.obolibrary.org/obo/OBI_0002390,exposure to second hand smoke
+http://purl.obolibrary.org/obo/OBI_0000817,fucoidan
+http://purl.obolibrary.org/obo/OBI_1110020,Immunization in vitro
+http://purl.obolibrary.org/obo/OBI_0000634,DNA methylation profiling assay
+http://purl.obolibrary.org/obo/OBI_0600027,artificially induced cell membrane lysis
+http://purl.obolibrary.org/obo/OBI_1110061,exposure resulting in immune reactivity
+http://purl.obolibrary.org/obo/OBI_0000751,study design dependent variable
+http://purl.obolibrary.org/obo/OBI_0302911,validation
+http://purl.obolibrary.org/obo/OBI_0000905,sequence feature annotation
+http://purl.obolibrary.org/obo/OBI_0002729,VectorTest assay
+http://purl.obolibrary.org/obo/OBI_0000010,fluorescent reporter intensity
+http://purl.obolibrary.org/obo/OBI_0000722,paired-end library
+http://purl.obolibrary.org/obo/OBI_0000897,DEPC structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000401,environment control function
+http://purl.obolibrary.org/obo/OBI_0001866,secondary cultured cell
+http://purl.obolibrary.org/obo/OBI_1110001,epitope
+http://purl.obolibrary.org/obo/OBI_0000371,heat function
+http://purl.obolibrary.org/obo/OBI_1110040,infectious disease
+http://purl.obolibrary.org/obo/OBI_0000946,sterilization function
+http://purl.obolibrary.org/obo/OBI_0000654,device setting
+http://purl.obolibrary.org/obo/OBI_0000801,spike train datum
+http://purl.obolibrary.org/obo/OBI_1110184,epitope specific GM-CSF release by T cells
+http://purl.obolibrary.org/obo/OBI_0000119,number of particles in subset
+http://purl.obolibrary.org/obo/OBI_0000809,amplified DNA
+http://purl.obolibrary.org/obo/OBI_0001271,RNA-seq assay
+http://purl.obolibrary.org/obo/OBI_0001769,specimen collector role
+http://purl.obolibrary.org/obo/OBI_0002415,exposure to environmental and workplace carcinogens history
+http://purl.obolibrary.org/obo/OBI_0000709,yeast artificial chromosome vector
+http://purl.obolibrary.org/obo/OBI_0600000,adding substance to cell culture
+http://purl.obolibrary.org/obo/OBI_0000985,growth condition intervention design
+http://purl.obolibrary.org/obo/OBI_1110087,donor
+http://purl.obolibrary.org/obo/OBI_0001604,purified MHC direct binding assay measuring 50% dissociation of binding temperature [Tm] of a MHC:ligand complex using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_0600041,concentrate
+http://purl.obolibrary.org/obo/OBI_0000803,denaturing
+http://purl.obolibrary.org/obo/OBI_0001510,mass spectrometry assay measuring MHC ligand processing and presentation of MHC ligands eluted from secreted MHC
+http://purl.obolibrary.org/obo/OBI_0000253,artificially induced nucleic acid hybridization
+http://purl.obolibrary.org/obo/OBI_0000889,survival curve
+http://purl.obolibrary.org/obo/OBI_0001221,ChIP-chip by SNP array assay
+http://purl.obolibrary.org/obo/OBI_0000029,centrifuge pellet role
+http://purl.obolibrary.org/obo/OBI_0000842,informing subject of study arm
+http://purl.obolibrary.org/obo/OBI_0002124,H&E slide staining
+http://purl.obolibrary.org/obo/OBI_0001015,DMS structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001606,cell bound MHC direct binding assay of a MHC:ligand complex using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_1110012,occurrence of allergy
+http://purl.obolibrary.org/obo/OBI_0002071,in vitro assay measuring epitope specific proliferation of T cells
+http://purl.obolibrary.org/obo/OBI_1000024,cell pellet
+http://purl.obolibrary.org/obo/OBI_0302902,immobilization
+http://purl.obolibrary.org/obo/OBI_0001859,formaldehyde-assisted isolation of regulatory elements assay
+http://purl.obolibrary.org/obo/OBI_0001622,investigation title
+http://purl.obolibrary.org/obo/OBI_0600032,artificially induced DNA repair
+http://purl.obolibrary.org/obo/OBI_1000042,peptide construct
+http://purl.obolibrary.org/obo/OBI_0000954,subcutaneous injection
+http://purl.obolibrary.org/obo/OBI_0002584,differential expression analysis data
+http://purl.obolibrary.org/obo/OBI_0600038,addition of molecular label
+http://purl.obolibrary.org/obo/OBI_0400081,particle delivery vessel
+http://purl.obolibrary.org/obo/OBI_1110108,material to be added
+http://purl.obolibrary.org/obo/OBI_0000083,electronic case report tabulation
+http://purl.obolibrary.org/obo/OBI_0000685,creating a mixture of molecules in solution
+http://purl.obolibrary.org/obo/OBI_0001006,CMCT structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000451,normalized data set
+http://purl.obolibrary.org/obo/OBI_0000227,data encoding
+http://purl.obolibrary.org/obo/OBI_0000732,restriction enzyme
+http://purl.obolibrary.org/obo/OBI_0002731,pathogen detection by loop-mediated isothermal amplification assay
+http://purl.obolibrary.org/obo/OBI_0001594,cell bound MHC competitive binding assay of a MHC:ligand complex using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_0001419,ChIP-chip by tiling array assay
+http://purl.obolibrary.org/obo/OBI_0005246,injection function
+http://purl.obolibrary.org/obo/OBI_0002103,bio-layer interferometry assay measuring the off rate [koff] of a B cell epitope:antibody complex
+http://purl.obolibrary.org/obo/OBI_0001924,micrococcal nuclease digestion followed by high throughput sequencing assay
+http://purl.obolibrary.org/obo/OBI_0002639,in vivo assay measuring T cell epitope specific protection from challenge resulting from the adoptive transfer of epitope specific T cells based on pathogen burden
+http://purl.obolibrary.org/obo/OBI_1110120,assay antigen role
+http://purl.obolibrary.org/obo/OBI_0002696,insecticide resistance by monitoring known mutations assay
+http://purl.obolibrary.org/obo/OBI_0000810,informed consent process
+http://purl.obolibrary.org/obo/OBI_0600028,artificially induced reverse transcription
+http://purl.obolibrary.org/obo/OBI_0000818,calibration
+http://purl.obolibrary.org/obo/OBI_0001160,assay validation objective
+http://purl.obolibrary.org/obo/OBI_1110091,immune epitope carrier role
+http://purl.obolibrary.org/obo/OBI_0002144,extrachromosomal circular DNA sequencing assay
+http://purl.obolibrary.org/obo/OBI_0000423,extract
+http://purl.obolibrary.org/obo/OBI_0001566,50% dissociation of binding temperature (Tm)
+http://purl.obolibrary.org/obo/OBI_0000711,library preparation
+http://purl.obolibrary.org/obo/OBI_0002397,gynecologic surgery history
+http://purl.obolibrary.org/obo/OBI_1110008,occurrence of infectious disease
+http://purl.obolibrary.org/obo/OBI_0000676,reduced dimension data set
+http://purl.obolibrary.org/obo/OBI_0000079,culture medium
+http://purl.obolibrary.org/obo/OBI_0002444,measurand role
+http://purl.obolibrary.org/obo/OBI_1110022,adaptive immune receptor
+http://purl.obolibrary.org/obo/OBI_0001584,purified MHC direct binding assay measuring binding of a MHC:ligand complex using phage display
+http://purl.obolibrary.org/obo/OBI_0600022,excision
+http://purl.obolibrary.org/obo/OBI_0000947,service provider role
+http://purl.obolibrary.org/obo/OBI_0002623,whole metagenome sequencing assay
+http://purl.obolibrary.org/obo/OBI_0001020,Lead structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0002485,transcript analysis by single-end sequencing assay
+http://purl.obolibrary.org/obo/OBI_2000016,erythrocyte specimen
+http://purl.obolibrary.org/obo/OBI_0000101,measured expression level
+http://purl.obolibrary.org/obo/OBI_0001026,NMIA RNA structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0002640,in vivo assay measuring B cell epitope specific protection from challenge resulting from the adoptive transfer of epitope specific antibodies or B cells based on pathogen burden
+http://purl.obolibrary.org/obo/OBI_0002599,swab specimen
+http://purl.obolibrary.org/obo/OBI_0600042,recombinant plasmid cloning
+http://purl.obolibrary.org/obo/OBI_0000804,informing investigator of subject study arm
+http://purl.obolibrary.org/obo/OBI_0001511,disposition to be a product of antigen processing and presentation
+http://purl.obolibrary.org/obo/OBI_0002681,glass bottle
+http://purl.obolibrary.org/obo/OBI_0001519,cell lysate MHC direct binding assay of a MHC:ligand complex using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_0002004,Methylation 450K BeadChip
+http://purl.obolibrary.org/obo/CHMO_0000102,light microscopy
+http://purl.obolibrary.org/obo/OBI_0100086,glucose in solution
+http://purl.obolibrary.org/obo/OBI_0002748,passage history record
+http://purl.obolibrary.org/obo/OBI_0000372,material separation function
+http://purl.obolibrary.org/obo/OBI_0000655,blood specimen
+http://purl.obolibrary.org/obo/OBI_0000965,lyophilized specimen
+http://purl.obolibrary.org/obo/OBI_0002475,number of PCR cycles during library construction
+http://purl.obolibrary.org/obo/OBI_0000093,patient role
+http://purl.obolibrary.org/obo/OBI_0001957,hardware testing design
+http://purl.obolibrary.org/obo/OBI_0001468,cell specimen
+http://purl.obolibrary.org/obo/OBI_1110082,immunogen role
+http://purl.obolibrary.org/obo/OBI_0001016,DNASE 1 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001175,selective organism creation objective
+http://purl.obolibrary.org/obo/OBI_0001485,purified MHC molecule preparation
+http://purl.obolibrary.org/obo/OBI_0001674,cap analysis of gene expression assay
+http://purl.obolibrary.org/obo/OBI_0600039,artificially induced methylation
+http://purl.obolibrary.org/obo/OBI_1110031,EL-4 cell line
+http://purl.obolibrary.org/obo/OBI_0001899,target capture specification
+http://purl.obolibrary.org/obo/OBI_0001692,in vivo assay measuring B cell epitope specific protection from fertility
+http://purl.obolibrary.org/obo/OBI_0001923,protein sequencing by tandem mass spectrometry assay
+http://purl.obolibrary.org/obo/OBI_1110109,target of material addition
+http://purl.obolibrary.org/obo/OBI_0001167,age measurement datum
+http://purl.obolibrary.org/obo/OBI_0001968,operational taxonomic unit matrix
+http://purl.obolibrary.org/obo/OBI_0600033,cell permeabilization
+http://purl.obolibrary.org/obo/OBI_0001876,cell culture
+http://purl.obolibrary.org/obo/OBI_0001030,RNASE T1 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000274,adding a material entity into a target
+http://purl.obolibrary.org/obo/OBI_0302906,DNA Subtraction
+http://purl.obolibrary.org/obo/OBI_0000811,primary structure of DNA macromolecule
+http://purl.obolibrary.org/obo/OBI_0002104,bio-layer interferometry assay measuring binding of a B cell epitope:antibody complex
+http://purl.obolibrary.org/obo/OBI_0001925,chromatin immunoprecipitation with exonuclease sequencing assay
+http://purl.obolibrary.org/obo/OBI_0000245,organization
+http://purl.obolibrary.org/obo/OBI_0001036,specimen fixation function
+http://purl.obolibrary.org/obo/OBI_0600029,isolation of cell culture supernatant
+http://purl.obolibrary.org/obo/OBI_0000852,record of missing knowledge
+http://purl.obolibrary.org/obo/OBI_0001007,image creation
+http://purl.obolibrary.org/obo/OBI_0002691,arthropod meal of blood specimen
+http://purl.obolibrary.org/obo/OBI_0001614,GenBank ID
+http://purl.obolibrary.org/obo/OBI_0000907,supplying
+http://purl.obolibrary.org/obo/OBI_0002445,transcription start site mapping by primer extension assay
+http://purl.obolibrary.org/obo/OBI_0400061,jet_in_air_flow_chamber
+http://purl.obolibrary.org/obo/OBI_0001868,genetic material
+http://purl.obolibrary.org/obo/OBI_0002697,insecticide resistance by detecting enzyme activity assay
+http://purl.obolibrary.org/obo/OBI_0001008,MPE-Fe(II) structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000714,graph of vertices
+http://purl.obolibrary.org/obo/OBI_1110003,host exposure to infectious agent
+http://purl.obolibrary.org/obo/OBI_2000017,reticulocyte specimen
+http://purl.obolibrary.org/obo/OBI_1110092,adjuvant role
+http://purl.obolibrary.org/obo/OBI_0001027,Terbium RNA structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0001616,specimen identifier
+http://purl.obolibrary.org/obo/OBI_0001673,nano-cap analysis of gene expression assay
+http://purl.obolibrary.org/obo/OBI_0001956,assay using chromatin immunoprecipitation
+http://purl.obolibrary.org/obo/OBI_1110023,immunogen
+http://purl.obolibrary.org/obo/OBI_0001970,multiplexed sequencing library
+http://purl.obolibrary.org/obo/OBI_0600043,genetic transformation
+http://purl.obolibrary.org/obo/OBI_0001021,RNASE T2 structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0002005,Methylation 27K BeadChip
+http://purl.obolibrary.org/obo/OBI_0000444,target of material addition role
+http://purl.obolibrary.org/obo/OBI_0000705,Edman degradation
+http://purl.obolibrary.org/obo/OBI_0000373,ionize process
+http://purl.obolibrary.org/obo/OBI_0000656,data set of predicted values according to fitted curve
+http://purl.obolibrary.org/obo/OBI_0001933,value specification
+http://purl.obolibrary.org/obo/OBI_1110111,environmental proximity to infectious agent
+http://purl.obolibrary.org/obo/OBI_1110083,host of immune response role
+http://purl.obolibrary.org/obo/OBI_0000094,material processing
+http://purl.obolibrary.org/obo/OBI_0302886,centrifugation
+http://purl.obolibrary.org/obo/OBI_0000167,electronic case report form
+http://purl.obolibrary.org/obo/OBI_0000237,antigen role
+http://purl.obolibrary.org/obo/OBI_1110014,epitope binding by adaptive immune receptor
+http://purl.obolibrary.org/obo/OBI_0002201,determination if assay will provide reliable results
+http://purl.obolibrary.org/obo/OBI_0002040,chromatin isolation by RNA purification sequencing assay
+http://purl.obolibrary.org/obo/OBI_0200111,data visualization
+http://purl.obolibrary.org/obo/OBI_0001486,disposition to be bound by an MHC protein complex
+http://purl.obolibrary.org/obo/OBI_0000960,reagent application function
+http://purl.obolibrary.org/obo/OBI_0000210,analytical cytology data file
+http://purl.obolibrary.org/obo/OBI_0000968,device
+http://purl.obolibrary.org/obo/OBI_1110032,HeLa cell line
+http://purl.obolibrary.org/obo/OBI_0001967,multiplexing sequence identifier
+http://purl.obolibrary.org/obo/OBI_0001011,ENU structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0100060,cultured cell population
+http://purl.obolibrary.org/obo/OBI_0001469,monospecific T cell recognition assay measuring MHC ligand processing and presentation
+http://purl.obolibrary.org/obo/OBI_0302905,elution
+http://purl.obolibrary.org/obo/OBI_0500000,study design
+http://purl.obolibrary.org/obo/OBI_0000158,eSource document
+http://purl.obolibrary.org/obo/OBI_0100066,organ section
+http://purl.obolibrary.org/obo/OBI_0000571,manufacturer role
+http://purl.obolibrary.org/obo/OBI_0000734,DNA sequencing by synthesis assay
+http://purl.obolibrary.org/obo/OBI_0002733,blood meal by counter current immunoelectrophoresis assay
+http://purl.obolibrary.org/obo/OBI_0000917,nasal swab specimen
+http://purl.obolibrary.org/obo/OBI_0000021,list-mode data file
+http://purl.obolibrary.org/obo/OBI_0000950,paraffin specimen
+http://purl.obolibrary.org/obo/OBI_0000648,clustered data set
+http://purl.obolibrary.org/obo/OBI_0000181,population
+http://purl.obolibrary.org/obo/OBI_0600034,precipitation
+http://purl.obolibrary.org/obo/OBI_0002105,bio-layer interferometry assay measuring the dissociation constant [KD] of a B cell epitope:antibody complex
+http://purl.obolibrary.org/obo/OBI_0001926,microRNA profiling assay
+http://purl.obolibrary.org/obo/OBI_0001877,random access memory
+http://purl.obolibrary.org/obo/OBI_0000713,GenePattern software
+http://purl.obolibrary.org/obo/OBI_0001590,purified MHC direct binding assay measuring binding of a MHC:ligand complex using fluorescence detection
+http://purl.obolibrary.org/obo/OBI_1110034,antigen
+http://purl.obolibrary.org/obo/OBI_0000997,growth environment
+http://purl.obolibrary.org/obo/OBI_0000660,background corrected data set
+http://purl.obolibrary.org/obo/OBI_1110099,L cell line
+http://purl.obolibrary.org/obo/OBI_0001615,investigation description
+http://purl.obolibrary.org/obo/OBI_0600052,dialysis
+http://purl.obolibrary.org/obo/OBI_0000172,parameter threshold
+http://purl.obolibrary.org/obo/OBI_0000814,guar gum
+http://purl.obolibrary.org/obo/OBI_0000383,transfer function
+http://purl.obolibrary.org/obo/OBI_0000208,methodology testing objective
+http://purl.obolibrary.org/obo/OBI_0002487,microraft
+http://purl.obolibrary.org/obo/OBI_0000453,measure function
+http://purl.obolibrary.org/obo/OBI_1110122,pathologic process
+http://purl.obolibrary.org/obo/OBI_0002698,insecticide resistance bioassay
+http://purl.obolibrary.org/obo/OBI_0002393,pregnancy history
+http://purl.obolibrary.org/obo/OBI_0001180,half maximal effective concentration (EC50)
+http://purl.obolibrary.org/obo/OBI_1110093,disposition to infect an organism
+http://purl.obolibrary.org/obo/OBI_0302867,predicted data item
+http://purl.obolibrary.org/obo/OBI_0001580,material transport service
+http://purl.obolibrary.org/obo/OBI_0000260,plan
+http://purl.obolibrary.org/obo/OBI_1000036,cell lysate
+http://purl.obolibrary.org/obo/OBI_0600003,performing a clinical assessment
+http://purl.obolibrary.org/obo/OBI_0001617,PubMed ID
+http://purl.obolibrary.org/obo/OBI_1110118,P815 cell line
+http://purl.obolibrary.org/obo/OBI_0002464,SRS identifier
+http://purl.obolibrary.org/obo/OBI_0000970,scalar score from composite inputs
+http://purl.obolibrary.org/obo/OBI_0302914,digital curation
+http://purl.obolibrary.org/obo/OBI_0001946,forward PCR primer
+http://purl.obolibrary.org/obo/OBI_0000310,adverse event trigger
+http://purl.obolibrary.org/obo/OBI_0000374,excitation function
+http://purl.obolibrary.org/obo/OBI_0000318,eluate
+http://purl.obolibrary.org/obo/OBI_0000949,accessed material role
+http://purl.obolibrary.org/obo/OBI_0000054,ratio of collected to emitted light
+http://purl.obolibrary.org/obo/OBI_0302846,randomized group participant role
+http://purl.obolibrary.org/obo/OBI_0002047,enzyme-linked antibody
+http://purl.obolibrary.org/obo/OBI_0001934,predicted value
+http://purl.obolibrary.org/obo/OBI_0002389,clinical history of repeated HIV assays
+http://purl.obolibrary.org/obo/OBI_0002744,molecular label
+http://purl.obolibrary.org/obo/OBI_0000651,urine specimen
+http://purl.obolibrary.org/obo/OBI_0000928,material combination function
+http://purl.obolibrary.org/obo/OBI_0302840,curated information
+http://purl.obolibrary.org/obo/OBI_1110015,Immunization in vivo
+http://purl.obolibrary.org/obo/OBI_0000659,specimen collection process
+http://purl.obolibrary.org/obo/OBI_0000969,dose specification
+http://purl.obolibrary.org/obo/OBI_0000512,isolation of cell population
+http://purl.obolibrary.org/obo/OBI_0000798,capsule shell
+http://purl.obolibrary.org/obo/OBI_0002643,in vivo assay measuring T cell epitope specific protection from tumor challenge resulting from the adoptive transfer of epitope specific T cells
+http://purl.obolibrary.org/obo/OBI_0001040,current amplification function
+http://purl.obolibrary.org/obo/OBI_1110132,CD8 receptor
+http://purl.obolibrary.org/obo/OBI_1110033,JAWS II cell line
+http://purl.obolibrary.org/obo/OBI_0001704,biological activity assay measuring epitope specific activation of additional immune response in vitro
+http://purl.obolibrary.org/obo/OBI_0002368,clinical history of cancer
+http://purl.obolibrary.org/obo/OBI_0302887,staining
+http://purl.obolibrary.org/obo/OBI_0001171,half life datum (t 1/2)
+http://purl.obolibrary.org/obo/OBI_0001018,Rhodium DNA structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0100067,bronchial alveolar lavage
+http://purl.obolibrary.org/obo/OBI_0001625,sequence annotation algorithm
+http://purl.obolibrary.org/obo/OBI_0000112,specimen role
+http://purl.obolibrary.org/obo/OBI_0500002,repeated measure design
+http://purl.obolibrary.org/obo/OBI_0302908,document editing
+http://purl.obolibrary.org/obo/OBI_0000649,data set of features
+http://purl.obolibrary.org/obo/OBI_0001460,genetic modification design
+http://purl.obolibrary.org/obo/OBI_0001191,half maximal inhibitory concentration (IC50)
+http://purl.obolibrary.org/obo/OBI_0001038,Ruthenium structure mapping assay
+http://purl.obolibrary.org/obo/OBI_0000912,X-ray crystallography assay
+http://purl.obolibrary.org/obo/OBI_0001627,country name
+http://purl.obolibrary.org/obo/OBI_1110129,biological activity assay measuring epitope specific cytokine production by T cells
+http://purl.obolibrary.org/obo/OBI_0000338,drawing a conclusion based on data
+http://purl.obolibrary.org/obo/OBI_1110035,Jurkat cell line
+http://purl.obolibrary.org/obo/OBI_0600012,environmental material collection process

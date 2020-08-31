@@ -1,0 +1,4 @@
+NCBITaxon:9606 ## Homo sapiens
+NCBITaxon:2697049
+NCBITaxon:83333 ## Escherichia coli K-12
+NCBITaxon:7227 ## Drosophila melanogaster

@@ -1,0 +1,14 @@
+x,xl
+http://purl.obolibrary.org/obo/SO_0000733,feature_attribute
+http://purl.obolibrary.org/obo/SO_0002206,sequence_source
+http://purl.obolibrary.org/obo/SO_0001501,peptide_collection
+http://purl.obolibrary.org/obo/SO_0001761,variant_quality
+http://purl.obolibrary.org/obo/SO_0001507,variant_collection
+http://purl.obolibrary.org/obo/SO_0001536,functional_effect_variant
+http://purl.obolibrary.org/obo/SO_0000735,sequence_location
+http://purl.obolibrary.org/obo/SO_0000443,polymer_attribute
+http://purl.obolibrary.org/obo/SO_0000699,junction
+http://purl.obolibrary.org/obo/SO_0001026,genome
+http://purl.obolibrary.org/obo/SO_0001537,structural_variant
+http://purl.obolibrary.org/obo/SO_0000001,region
+http://purl.obolibrary.org/obo/SO_0002072,sequence_comparison

@@ -27,6 +27,7 @@ You can also enter any COB class PURL into a browser to resolve it; e.g. [http:/
   - [cob-to-external.tsv](cob-to-external.tsv): TSV source of cob-to-external
   - [Makefile](Makefile): workflow for build COB
 
+
 ## COB demo
 
 As a demonstration of how COB could be used to unify OBO ontologies in the future we produce an ontology:
@@ -36,6 +37,15 @@ As a demonstration of how COB could be used to unify OBO ontologies in the futur
 This has selected subsets of certain ontologies merged in with
 cob-to-external. It is incomplete and messy. Please see the Makefile
 for how to add more to it.
+
+## Issue Tracker
+
+If you are responsible for an OBO ontology you can see any tickets that pertain to your ontology by looking for the label with your ontology ID.
+
+For example:
+
+ * **GO**: https://github.com/OBOFoundry/COB/labels/GO
+ * **OBI**: https://github.com/OBOFoundry/COB/labels/OBI
 
 ## Editors Guide
 
@@ -51,8 +61,12 @@ Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makef
 
 Currently we have two kinds:
 
-- testing if an ontology is coherent when combined with COB + ext
-- testing if an ontology has classes that are not subclasses of COB classes
+- **Coherency**: testing if an ontology is coherent when combined with COB + ext
+- **Coverage**: testing if an ontology has classes that are not subclasses (direct or indirect) of COB classes
+
+For coherency test results, see the files status-*.txt in [build](build)
+
+For coverage test results, see the files root-orphans-*.txt in [build](build)
 
 See the [Makefile](Makefile) for a list of ontologies that are known to be compliant and those known to be non-compliant
 

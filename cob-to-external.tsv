@@ -22,6 +22,7 @@ COB:0000018	native cell	SUPERCLASS_OF	PO:0025606	native plant cell	.
 COB:0000019	cell in vitro	owl:equivalentClass	CL:0001034	cell in vitro	.
 COB:0000020	subcellular structure				Chris will follow up
 COB:0000021	gross anatomical part	owl:equivalentClass	CARO:0001008	gross anatomical part	.
+COB:0000021	gross anatomical part	SUPERCLASS_OF	UBERON:0010000	multicellular anatomical structure	.
 COB:0000022	organism	owl:equivalentClass	NCBITaxon:1	root	.
 COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.
 COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.
@@ -50,6 +51,7 @@ COB:0000065	environmental process	owl:equivalentClass	ENVO:02500000	environmenta
 COB:0000066	physico-chemical process	owl:equivalentClass	MOP:0000543	molecular process	"we are not sure if these are equivalent, or if we even want to retain this. Follow up with Colin"
 COB:0000067	ecosystem	owl:equivalentClass	ENVO:01001110	ecosystem	.
 COB:0000068	geophysical entity	owl:equivalentClass	ENVO:01000813	astronomical body part	.
+COB:0000068	geophysical entity	SUPERCLASS_OF	GEO:000000370	geographical entity	See https://github.com/OBOFoundry/COB/issues/91
 COB:0000069	directive information entity	owl:equivalentClass	IAO:0000033	directive information entity	.
 COB:0000073	gene product				
 COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:0032991	protein-containing complex	.
