@@ -97,7 +97,7 @@ cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
 # these list are incomplete: it can easily be added to:
 
 COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt doid so
-COB_NONCOMPLIANT =   mondo chebi eco  maxo  mco  nbo peco ecto
+COB_NONCOMPLIANT =   mondo  eco  maxo  mco  nbo peco ecto chebi
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest

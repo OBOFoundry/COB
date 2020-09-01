@@ -248,7 +248,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
-        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
     </Class>
     
@@ -348,7 +347,9 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000011 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    </Class>
     
 
 
