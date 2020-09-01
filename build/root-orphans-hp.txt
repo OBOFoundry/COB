@@ -1,8 +1,2 @@
 x,xl
-http://purl.obolibrary.org/obo/HP_0040279,Frequency
-http://purl.obolibrary.org/obo/HP_0032443,Past medical history
-http://purl.obolibrary.org/obo/HP_0012823,Clinical modifier
-http://purl.obolibrary.org/obo/HP_0031797,Clinical course
-http://purl.obolibrary.org/obo/HP_0000005,Mode of inheritance
-http://purl.obolibrary.org/obo/HP_0032223,Blood group
-http://purl.obolibrary.org/obo/HP_0000118,Phenotypic abnormality
+http://purl.obolibrary.org/obo/HP_0000001,All

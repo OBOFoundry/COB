@@ -1,4 +1,0 @@
-x,xl
-http://purl.obolibrary.org/obo/GO_0005575,cellular_component
-http://purl.obolibrary.org/obo/GO_0008150,biological_process
-http://purl.obolibrary.org/obo/GO_0003674,molecular_function

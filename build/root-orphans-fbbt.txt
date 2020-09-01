@@ -55,8 +55,8 @@ http://purl.obolibrary.org/obo/PATO_0000001,quality
 http://flybase.org/reports/FBgn0040849,Ionotropic receptor 41a
 http://flybase.org/reports/FBgn0044046,Insulin-like peptide 7
 http://flybase.org/reports/FBgn0010433,atonal
-http://purl.obolibrary.org/obo/GO_0110165,cellular anatomical entity
 http://flybase.org/reports/FBgn0037590,Odorant receptor 85b
+http://purl.obolibrary.org/obo/GO_0005575,cellular_component
 http://flybase.org/reports/FBgn0014163,failed axon connections
 http://flybase.org/reports/FBgn0030298,Odorant receptor 10a
 http://flybase.org/reports/FBgn0014019,Rhodopsin 5
@@ -108,7 +108,6 @@ http://flybase.org/reports/FBgn0053527,SIFamide
 http://flybase.org/reports/FBgn0266429,Allatostatin A receptor 1
 http://flybase.org/reports/FBgn0052693,Gustatory receptor 9a
 http://flybase.org/reports/FBgn0036080,Odorant receptor 67d
-http://purl.obolibrary.org/obo/GO_0005622,intracellular
 http://flybase.org/reports/FBgn0038203,Odorant receptor 88a
 http://flybase.org/reports/FBgn0036019,Odorant receptor 67b
 http://flybase.org/reports/FBgn0004956,unpaired 1
@@ -120,7 +119,6 @@ http://flybase.org/reports/FBgn0038798,Odorant receptor 92a
 http://flybase.org/reports/FBgn0045502,Gustatory receptor 10a
 http://flybase.org/reports/FBgn0028418,Leucokinin
 http://flybase.org/reports/FBgn0039080,Ionotropic receptor 94h
-http://purl.obolibrary.org/obo/GO_0005623,cell
 http://flybase.org/reports/FBgn0041231,Gustatory receptor 68a
 http://flybase.org/reports/FBgn0035604,Ionotropic receptor 64a
 http://flybase.org/reports/FBgn0041621,Odorant receptor 82a
@@ -128,19 +126,17 @@ http://flybase.org/reports/FBgn0030204,Odorant receptor 9a
 http://flybase.org/reports/FBgn0000395,crossveinless 2
 http://flybase.org/reports/FBgn0035468,Gustatory receptor 63a
 http://flybase.org/reports/FBgn0029521,Odorant receptor 1a
-http://purl.obolibrary.org/obo/FBbt_00048490,male-specific anatomical entity
 http://purl.obolibrary.org/obo/CARO_0030000,biological entity
 http://flybase.org/reports/FBgn0036150,Ionotropic receptor 68a
 http://flybase.org/reports/FBgn0028946,Odorant receptor 35a
 http://flybase.org/reports/FBgn0037976,Tachykinin
 http://flybase.org/reports/FBgn0023178,Pigment-dispersing factor
+http://purl.obolibrary.org/obo/FBbt_10000000,anatomical entity
 http://flybase.org/reports/FBgn0261402,Ionotropic receptor 75b
 http://flybase.org/reports/FBgn0039582,Odorant receptor 98b
 http://flybase.org/reports/FBgn0263776,CG43693
 http://flybase.org/reports/FBgn0026385,Odorant receptor 47b
 http://flybase.org/reports/FBgn0039033,Odorant receptor 94a
-http://purl.obolibrary.org/obo/FBbt_00048491,female-specific anatomical entity
-http://purl.obolibrary.org/obo/FBbt_00007015,immaterial anatomical entity
 http://flybase.org/reports/FBgn0003249,Rhodopsin 3
 http://flybase.org/reports/FBgn0000504,doublesex
 http://flybase.org/reports/FBgn0025680,cryptochrome
@@ -153,7 +149,6 @@ http://flybase.org/reports/FBgn0000964,traffic jam
 http://flybase.org/reports/FBgn0026386,Odorant receptor 47a
 http://flybase.org/reports/FBgn0005775,Connectin
 http://flybase.org/reports/FBgn0010453,Wnt oncogene analog 4
-http://purl.obolibrary.org/obo/FBbt_00007016,material anatomical entity
 http://flybase.org/reports/FBgn0039034,Odorant receptor 94b
 http://flybase.org/reports/FBgn0041243,Gustatory receptor 43a
 http://flybase.org/reports/FBgn0000546,Ecdysone receptor

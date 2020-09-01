@@ -1,16 +1,3 @@
 x,xl
-http://purl.obolibrary.org/obo/XAO_0003003,unspecified
-http://purl.obolibrary.org/obo/XAO_0003007,anatomical entity in vitro
-http://purl.obolibrary.org/obo/XAO_0003186,anatomical region
-http://purl.obolibrary.org/obo/XAO_1000081,unspecified stage
-http://purl.obolibrary.org/obo/XAO_1000012,embryonic stage
-http://purl.obolibrary.org/obo/XAO_0003190,anatomical space
-http://purl.obolibrary.org/obo/XAO_0000437,death
-http://purl.obolibrary.org/obo/XAO_0004001,portion of organism substance
-http://purl.obolibrary.org/obo/XAO_1000095,post-embryonic stage
-http://purl.obolibrary.org/obo/XAO_1000082,unfertilized egg stage
-http://purl.obolibrary.org/obo/XAO_0000113,embryo
-http://purl.obolibrary.org/obo/XAO_0003000,anatomical structure
-http://purl.obolibrary.org/obo/XAO_1000094,NF stage
-http://purl.obolibrary.org/obo/XAO_0003185,anatomical direction
-http://purl.obolibrary.org/obo/XAO_0004003,anatomical line
+http://purl.obolibrary.org/obo/XAO_1000000,Xenopus developmental stage
+http://purl.obolibrary.org/obo/XAO_0000000,Xenopus anatomical entity

@@ -1,24 +1,29 @@
 x,xl
 http://purl.obolibrary.org/obo/OBI_0000947,service provider role
+http://purl.obolibrary.org/obo/NCBITaxon_131567,cellular organisms
 http://purl.obolibrary.org/obo/IAO_0000015,information carrier
+http://rs.tdwg.org/dwc/terms/MaterialSample,Material Sample
 http://rs.tdwg.org/dwc/terms/Event,Event
-http://purl.obolibrary.org/obo/OBI_0000973,sequence data
 http://purl.obolibrary.org/obo/OBI_0002076,collection of specimens
 http://purl.obolibrary.org/obo/OBI_0000067,evaluant role
 http://purl.obolibrary.org/obo/CL_0000000,cell
 http://purl.obolibrary.org/obo/CL_0000000,cell
 http://purl.obolibrary.org/obo/SO_0000001,region
+http://purl.obolibrary.org/obo/OBI_0100051,specimen
 http://purl.obolibrary.org/obo/OBI_0000427,enzyme
 http://purl.obolibrary.org/obo/IAO_0000030,information content entity
 http://purl.obolibrary.org/obo/CHEBI_23367,molecular entity
 http://purl.obolibrary.org/obo/BCO_0000046,material target of observation role
 http://purl.obolibrary.org/obo/OBI_0000047,processed material
-http://purl.obolibrary.org/obo/PATO_0001241,physical object quality
+http://purl.obolibrary.org/obo/PATO_0000001,quality
 http://purl.obolibrary.org/obo/OBI_0000112,specimen role
 http://purl.obolibrary.org/obo/GO_0032991,protein-containing complex
 http://purl.obolibrary.org/obo/OBI_0000571,manufacturer role
+http://rs.tdwg.org/dwc/terms/Occurrence,Occurrence
+http://purl.obolibrary.org/obo/BCO_0000042,taxonomic identification process
 http://purl.obolibrary.org/obo/OBI_0000245,organization
 http://purl.obolibrary.org/obo/UBERON_0000465,material anatomical entity
+http://rs.tdwg.org/dwc/terms/GeologicalContext,Geological Context
 http://purl.obolibrary.org/obo/IAO_0000178,material information bearer
 http://purl.obolibrary.org/obo/BCO_0000031,museum collection
 http://purl.obolibrary.org/obo/OBI_0000453,measure function
@@ -27,6 +32,7 @@ http://purl.obolibrary.org/obo/BCO_0000044,material target of observation
 http://purl.obolibrary.org/obo/OBI_0000017,regulatory role
 http://purl.obolibrary.org/obo/OBI_0100026,organism
 http://purl.obolibrary.org/obo/UBERON_0000477,anatomical cluster
+http://rs.tdwg.org/dwc/terms/Identification,Identification
 http://purl.obolibrary.org/obo/PCO_0000031,organismal entity
 http://purl.obolibrary.org/obo/OBI_0000835,manufacturer
 http://www.geneontology.org/formats/oboInOwl#ObsoleteClass,Obsolete Class

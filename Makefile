@@ -128,13 +128,14 @@ build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot
 build/reasoned-%.owl: build/merged-%.owl | build/robot.jar
 	(test -f build/debug-$*.owl && rm build/debug-$*.owl || echo) && \
 	$(ROBOT) reason --reasoner ELK -i $< -D build/debug-$*.owl -o $@ && echo SUCCESS > build/status-$*.txt || echo FAIL > build/status-$*.txt
+.PRECIOUS: build/reasoned-%.owl
 
 # TODO: implement https://github.com/ontodev/robot/issues/686
 # then explain all incoherencies. use owltools for now
 #build/incoherent-%.md: build/incoherent-%.owl
 #	$(ROBOT) explain --reasoner ELK -i $< -o $@
 build/incoherent-%.txt: build/reasoned-%.owl
-	test -f build/debug-$*.owl && (owltools build/debug-$*.owl --run-reasoner -r elk -u -e | grep ^UNSAT > $@) || echo COHERENT > $@
+	test -f build/debug-$*.owl && (owltools build/debug-$*.owl --run-reasoner -r elk -u -e | grep ^UNSAT | head -100 > $@) || echo COHERENT > $@
 
 # test to see if the ontology has any classes that are not inferred subclasses of a COB
 # class. Exceptions made for BFO which largely sits above COB.
