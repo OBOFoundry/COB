@@ -11,11 +11,10 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-annotations.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-08-31</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-09-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -28,6 +27,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_based_on -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_based_on"/>
     
 
 
@@ -225,9 +230,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cob.owl#is_about -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000513 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/cob.owl#is_about">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000513">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000136</obo:COB_based_on>
         <rdfs:label>is about</rdfs:label>
     </owl:ObjectProperty>
@@ -780,7 +785,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/cob.owl#is_about"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -791,7 +796,7 @@
                         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cob.owl#information_carrier"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Pier: &apos;data, information or knowledge&apos;. OR &apos;representation</rdfs:comment>
@@ -954,10 +959,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
-        <rdfs:comment>We would like to add cardinality but cannot do this with &apos;has part&apos;.</rdfs:comment>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -1027,7 +1048,7 @@
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000006"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cob.owl#evaluant_role"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000119"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1040,16 +1061,16 @@
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/cob.owl#measurement_datum"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000121"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/cob.owl#is_about"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000006"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/cob.owl#evaluant_role"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000119"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -1114,6 +1135,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
@@ -1162,20 +1184,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000119 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label xml:lang="en">characteristic</rdfs:label>
-        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
-        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cob.owl#evaluant_role -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob.owl#evaluant_role">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
         <obo:COB_based_on>OBI:0000067</obo:COB_based_on>
         <rdfs:label>evaluant role</rdfs:label>
@@ -1183,9 +1194,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cob.owl#information_carrier -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000120 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob.owl#information_carrier">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000120">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
@@ -1201,9 +1212,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cob.owl#measurement_datum -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000121 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob.owl#measurement_datum">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000109</obo:COB_based_on>
         <rdfs:label>measurement datum</rdfs:label>
@@ -1211,9 +1222,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/cob.owl#physical_information_carrier -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000122 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cob.owl#physical_information_carrier">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000122">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
@@ -1227,9 +1238,20 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
+        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
