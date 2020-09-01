@@ -268,6 +268,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000803 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000803">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label xml:lang="en">has inchi string</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
