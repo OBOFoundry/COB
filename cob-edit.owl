@@ -914,10 +914,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
-        <rdfs:comment>We would like to add cardinality but cannot do this with &apos;has part&apos;.</rdfs:comment>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
+    </owl:Axiom>
     
 
 
