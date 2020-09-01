@@ -15,7 +15,7 @@ COB:0000013	molecular entity	skos:closeMatch	CHEBI:25367	molecule	This is electr
 COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.
 COB:0000015	protein	owl:equivalentClass	PR:000000001	protein	.
 COB:0000017	cell	owl:equivalentClass	CL:0000000	cell	.
-COB:0000017	cell	SUPERCLASSOF	PO:0009002	plant cell	.
+COB:0000017	cell	SUPERCLASS_OF	PO:0009002	plant cell	.
 COB:0000018	native cell	owl:equivalentClass	CL:0000003	native cell	.
 COB:0000018	native cell	SUPERCLASS_OF	XAO:0003012	xenopus cell	.
 COB:0000018	native cell	SUPERCLASS_OF	ZFA:0009000	zebrafish cell	.
