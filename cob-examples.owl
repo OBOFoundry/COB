@@ -131,6 +131,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_29371 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29371">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000803"/>
+                <owl:hasValue>InChI=1S/O2/c1-2/q+2</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COBEXAMPLES_0000007"/>
         <rdfs:label xml:lang="en">dioxygen(2+)</rdfs:label>
     </owl:Class>
@@ -304,6 +310,30 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000080 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>&gt;1, where the parts are not transitively covalently connected</rdfs:comment>
+    </owl:Axiom>
     
 
 
