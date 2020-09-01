@@ -230,6 +230,7 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000136</obo:COB_based_on>
         <rdfs:label>is about</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
     <!-- 
@@ -1170,16 +1171,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
-        <rdfs:label xml:lang="en">characteristic</rdfs:label>
-        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
-        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
-    </owl:Class>
-
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000119 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000119">
@@ -1187,7 +1178,7 @@
         <obo:COB_based_on>OBI:0000067</obo:COB_based_on>
         <rdfs:label>evaluant role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000120 -->
@@ -1205,7 +1196,7 @@
         <rdfs:comment>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</rdfs:comment>
         <rdfs:label>information representation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000121 -->
@@ -1215,7 +1206,7 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000109</obo:COB_based_on>
         <rdfs:label>measurement datum</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000122 -->
@@ -1233,6 +1224,17 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:label>physical information carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
+        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
     </owl:Class>
 </rdf:RDF>
 
