@@ -39,6 +39,7 @@ http://purl.obolibrary.org/obo/OBI_0002110,digital object identifier
 http://purl.obolibrary.org/obo/OBI_0000963,categorical label
 http://purl.obolibrary.org/obo/OBI_0001678,epitope specific granzyme A production by T cells
 http://purl.obolibrary.org/obo/OBI_0001629,grant identifier
+http://purl.obolibrary.org/obo/OBI_0000065,"polyethylene glycol p-(1,1,3,3-tetramethylbutyl)-phenyl ether"
 http://purl.obolibrary.org/obo/OBI_0500023,compliance rule
 http://purl.obolibrary.org/obo/OBI_0001462,epitope specific IP-10 production by T cells
 http://purl.obolibrary.org/obo/OBI_0001193,epitope specific cytokine production by T cells
@@ -97,6 +98,7 @@ http://purl.obolibrary.org/obo/OBI_0002370,unknown clinical history of cancer
 http://purl.obolibrary.org/obo/OBI_0001381,epitope specific interleukin-23 production by T cells
 http://purl.obolibrary.org/obo/OBI_0001212,epitope specific type IV hypersensitivity by T cells
 http://purl.obolibrary.org/obo/OBI_0002390,exposure to second hand smoke
+http://purl.obolibrary.org/obo/OBI_0000817,fucoidan
 http://purl.obolibrary.org/obo/OBI_0001887,email address of Bioinformatics Resource Center contact person
 http://purl.obolibrary.org/obo/OBI_0001612,epitope specific vascular endothelial growth factor production by T cells
 http://purl.obolibrary.org/obo/OBI_0001866,secondary cultured cell

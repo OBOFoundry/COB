@@ -1,10 +1,8 @@
 x,xl
-http://purl.obolibrary.org/obo/CL_0000000,cell
 http://purl.obolibrary.org/obo/TRANS_0000000,transmission process
 http://purl.obolibrary.org/obo/DOID_4,disease
 http://purl.obolibrary.org/obo/ECO_0000000,evidence
 http://purl.obolibrary.org/obo/doid#sequence,sequence
-http://purl.obolibrary.org/obo/NCBITaxon_1,ncbitaxon
 http://purl.obolibrary.org/obo/GENO_0000141,inheritance pattern
 http://purl.obolibrary.org/obo/UBERON_0001062,anatomy
 http://purl.obolibrary.org/obo/FOODON_00002403,food material
