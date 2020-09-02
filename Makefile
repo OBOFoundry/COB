@@ -68,10 +68,10 @@ cob.tsv: cob.owl | build/robot.jar
 #  OWL is generated from this
 #
 # this is a really hacky way to do this, replace with robot report?
-cob-to-external.ttl: cob-to-external.tsv
+build/cob-to-external.ttl: cob-to-external.tsv
 	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
 
-cob-to-external.owl: cob-to-external.ttl | build/robot.jar
+cob-to-external.owl: build/cob-to-external.ttl | build/robot.jar
 	$(ROBOT) convert -i $< -o $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar

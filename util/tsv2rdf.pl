@@ -39,7 +39,7 @@ while(<>) {
     print ":$s a $type .\n";
     if ($p eq 'SUPERCLASS_OF') {
         ($s,$o) = ($o,$s);
-        $p = 'owl:subClassOf';
+        $p = 'rdfs:subClassOf';
     }
     print ":$s $p :$o .\n";
 }

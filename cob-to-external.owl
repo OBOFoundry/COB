@@ -693,7 +693,9 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+    </Class>
     
 
 
@@ -712,6 +714,14 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+    </Class>
     
 
 
@@ -871,6 +881,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
@@ -889,9 +905,113 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0000003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0009002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025117 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025606 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000400 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001060 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0001060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000468 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XAO_0003012 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XAO_0003012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZFA_0009000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/ZFA_0009000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </Class>
 </rdf:RDF>
 
 
