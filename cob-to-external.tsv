@@ -39,14 +39,14 @@ COB:0000013	molecular entity	skos:closeMatch	CHEBI:25367	molecule	This is electr
 COB:0000015	protein	owl:equivalentClass	CHEBI:16541	protein polypeptide chain	.
 COB:0000015	protein	owl:equivalentClass	PR:000000001	protein	.
 COB:0000017	cell	owl:equivalentClass	CL:0000000	cell	.
-COB:0000017	cell	inverseOf(owl:subClassOf)	PO:0009002	plant cell	.
+COB:0000017	cell	sssom:superClassOf	PO:0009002	plant cell	.
 COB:0000018	native cell	owl:equivalentClass	CL:0000003	native cell	.
-COB:0000018	native cell	inverseOf(owl:subClassOf)	XAO:0003012	xenopus cell	.
-COB:0000018	native cell	inverseOf(owl:subClassOf)	ZFA:0009000	zebrafish cell	.
-COB:0000018	native cell	inverseOf(owl:subClassOf)	PO:0025606	native plant cell	.
+COB:0000018	native cell	sssom:superClassOf	XAO:0003012	xenopus cell	.
+COB:0000018	native cell	sssom:superClassOf	ZFA:0009000	zebrafish cell	.
+COB:0000018	native cell	sssom:superClassOf	PO:0025606	native plant cell	.
 COB:0000019	cell in vitro	owl:equivalentClass	CL:0001034	cell in vitro	.
 COB:0000021	gross anatomical part	owl:equivalentClass	CARO:0001008	gross anatomical part	.
-COB:0000021	gross anatomical part	inverseOf(owl:subClassOf)	UBERON:0010000	multicellular anatomical structure	.
+COB:0000021	gross anatomical part	sssom:superClassOf	UBERON:0010000	multicellular anatomical structure	.
 COB:0000022	organism	owl:equivalentClass	NCBITaxon:1	root	.
 COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.
 COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.
@@ -62,8 +62,8 @@ COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.
 COB:0000043	uncharged atom	owl:equivalentClass	CHEBI:33250	atom	"we think our uncharged atom is actually chebi:atom, to be discussed with CHEBI people"
 COB:0000049	nucleic acid polymer	owl:equivalentClass	CHEBI:10545	nucleic acid	follow up with CHEBI on nomenclature
 COB:0000055	collection of organisms	owl:equivalentClass	PCO:0000000	collection of organisms	.
-COB:0000056	immaterial anatomical entity	inverseOf(owl:subClassOf)	UBERON:0000466	immaterial anatomical entity	.
-COB:0000056	immaterial anatomical entity	inverseOf(owl:subClassOf)	PO:0025117	plant anatomical space	.
+COB:0000056	immaterial anatomical entity	sssom:superClassOf	UBERON:0000466	immaterial anatomical entity	.
+COB:0000056	immaterial anatomical entity	sssom:superClassOf	PO:0025117	plant anatomical space	.
 COB:0000057	site	owl:equivalentClass	BFO:0000029	site	.
 COB:0000058	conclusion based on data	owl:equivalentClass	OBI:0001909	conclusion based on data	.
 COB:0000061	information	owl:equivalentClass	IAO:0000030	information content entity	.
@@ -74,7 +74,7 @@ COB:0000065	environmental process	owl:equivalentClass	ENVO:02500000	environmenta
 COB:0000066	physico-chemical process	owl:equivalentClass	MOP:0000543	molecular process	"we are not sure if these are equivalent, or if we even want to retain this. Follow up with Colin"
 COB:0000067	ecosystem	owl:equivalentClass	ENVO:01001110	ecosystem	.
 COB:0000068	geophysical entity	owl:equivalentClass	ENVO:01000813	astronomical body part	.
-COB:0000068	geophysical entity	inverseOf(owl:subClassOf)	GEO:000000370	geographical entity	See https://github.com/OBOFoundry/COB/issues/91
+COB:0000068	geophysical entity	sssom:superClassOf	GEO:000000370	geographical entity	See https://github.com/OBOFoundry/COB/issues/91
 COB:0000069	directive information entity	owl:equivalentClass	IAO:0000033	directive information entity	.
 COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:0032991	protein-containing complex	.
 COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective specification	.
@@ -92,8 +92,8 @@ COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.
 COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.
 COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.
 COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.
-COB:0000118	cellular organism	inverseOf(owl:subClassOf)	UBERON:0000468	multicellular organism	.
-COB:0000118	cellular organism	inverseOf(owl:subClassOf)	PO:0000003	whole plant	.
+COB:0000118	cellular organism	sssom:superClassOf	UBERON:0000468	multicellular organism	.
+COB:0000118	cellular organism	sssom:superClassOf	PO:0000003	whole plant	.
 COB:0000041	has quality	owl:equivalentProperty	RO:0000086	has quality	.
 COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.
 COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
