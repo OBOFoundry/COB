@@ -74,6 +74,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16991 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16991">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <rdfs:label xml:lang="en">deoxyribonucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_17748 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17748">
@@ -203,6 +212,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4705">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">double-stranded DNA</rdfs:label>
+        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/103</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_53526 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53526">
@@ -248,7 +273,16 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83828">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
         <rdfs:comment>Example subclass of &apos;nucleic acid polymer&apos;</rdfs:comment>
-        <rdfs:label>DNA polymer</rdfs:label>
+        <rdfs:label>DNA polyanion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:label xml:lang="en">single-stranded DNA</rdfs:label>
     </owl:Class>
     
 
