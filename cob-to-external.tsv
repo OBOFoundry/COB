@@ -81,6 +81,7 @@ COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
 COB:0000071	occurs in	owl:equivalentProperty	BFO:0000066	occurs in	.
 COB:0000072	part of	owl:equivalentProperty	BFO:0000050	part of	.
 COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.
+COB:0000502	characteristic	owl:equivalentClass	PATO:0000001	quality	https://github.com/OBOFoundry/COB/issues/124
 COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower
 COB:0000511	has quantity				.
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.
