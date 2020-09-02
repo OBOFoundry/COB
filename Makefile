@@ -17,10 +17,11 @@ ROBOT := java -jar build/robot.jar
 all: test build/report.tsv cob.owl cob.tsv
 
 build:
-	mkdir $@
+	mkdir -p $@
 
 build/robot.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
+	echo "SKIPPING ROBOT DOWNLOAD"
+	#curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 ########################################
 # -- MAIN RELEASE PRODUCTS --
@@ -61,7 +62,7 @@ cob.tsv: cob.owl | build/robot.jar
 #
 # this is a really hacky way to do this, replace with robot report?
 cob-to-external.ttl: cob-to-external.tsv
-	./util/tsv2rdf.pl $< > $@.tmp && mv $@.tmp $@
+	sssom convert -i $< -o $@
 
 cob-to-external.owl: cob-to-external.ttl | build/robot.jar
 	$(ROBOT) convert -i $< -o $@
