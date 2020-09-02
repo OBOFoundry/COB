@@ -127,7 +127,7 @@ build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot
 
 build/reasoned-%.owl build/status-%.txt: build/merged-%.owl | build/robot.jar
 	(test -f build/debug-$*.owl && rm build/debug-$*.owl || echo) && \
-	$(ROBOT) reason --reasoner ELK -i $< -D build/debug-$*.owl -o $@ && echo SUCCESS > build/status-$*.txt || echo FAIL > build/status-$*.txt
+	$(ROBOT) reason --reasoner ELK -i $< -D build/debug-$*.owl -o build/reasoned-$*.owl && echo SUCCESS > build/status-$*.txt || echo FAIL > build/status-$*.txt
 .PRECIOUS: build/reasoned-%.owl
 
 # TODO: implement https://github.com/ontodev/robot/issues/686
