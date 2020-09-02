@@ -97,7 +97,7 @@ cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
 # these list are incomplete: it can easily be added to:
 
 COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido zfa xao bco fbbt doid so
-COB_NONCOMPLIANT =   mondo  eco  maxo  mco  nbo peco ecto chebi
+COB_NONCOMPLIANT =  iao mondo  eco  maxo  mco  nbo peco ecto chebi
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest
@@ -125,7 +125,7 @@ build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot
 	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
-build/reasoned-%.owl: build/merged-%.owl | build/robot.jar
+build/reasoned-%.owl build/status-%.txt: build/merged-%.owl | build/robot.jar
 	(test -f build/debug-$*.owl && rm build/debug-$*.owl || echo) && \
 	$(ROBOT) reason --reasoner ELK -i $< -D build/debug-$*.owl -o $@ && echo SUCCESS > build/status-$*.txt || echo FAIL > build/status-$*.txt
 .PRECIOUS: build/reasoned-%.owl
@@ -149,6 +149,8 @@ all_orphans: $(patsubst %, build/root-orphans-%.txt, $(ALL_ONTS))
 build/root-orphans-%.txt: build/reasoned-%.owl
 	robot query -i $< -q sparql/cob-orphans.rq $@
 
+build/SUMMARY.txt:
+	(head build/status-*txt && head -1 build/incoherent-*txt) > $@
 
 ########################################
 ## -- Fetch Source Ontologies --

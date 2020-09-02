@@ -7,7 +7,7 @@ obo:COB_0000006	material entity
 obo:COB_0000007	subatomic particle		obo:COB_0000006	material entity		
 obo:COB_0000008	proton		obo:COB_0000007	subatomic particle		
 obo:COB_0000009	neutron		obo:COB_0000007	subatomic particle		
-obo:COB_0000010	electron		obo:COB_0000007	subatomic particle		
+obo:COB_0000010	electron		obo:COB_0000007	subatomic particle	obo:COB_0000801 value 0	has number of atomic nuclei value 0
 obo:COB_0000011	atom	A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000012	has part some atomic nucleus
 obo:COB_0000012	atomic nucleus		obo:COB_0000007	subatomic particle		
 obo:COB_0000013	molecular entity	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000011	has part some atom
@@ -25,7 +25,7 @@ obo:COB_0000031	immaterial entity
 obo:COB_0000032	geographical location		obo:COB_0000031	immaterial entity		
 obo:COB_0000033	realizable		obo:COB_0000502	characteristic		
 obo:COB_0000034	process				obo:COB_0000072 only obo:COB_0000034	part of only process
-obo:COB_0000035	successful planned process		obo:COB_0000082	planned process	obo:COB_0000087 some (obo:COB_0000078 some obo:COB_0000079)	realizes some (concretizes some plan specification)
+obo:COB_0000035	completely executed planned process		obo:COB_0000082	planned process	obo:COB_0000087 some obo:COB_0000113	realizes some plan
 obo:COB_0000037	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	obo:COB_0000034	process	(obo:COB_0000070 some obo:COB_0000022) or (obo:COB_0000070 some (obo:COB_0000072 some obo:COB_0000022)) or (obo:COB_0000071 some obo:COB_0000022)|obo:COB_0000047 some obo:COB_0000038	(has participant some organism) or (has participant some (part of some organism)) or (occurs in some organism)|has part some gene product or complex activity
 obo:COB_0000038	gene product or complex activity		obo:COB_0000034	process	obo:COB_0000074 some (obo:COB_0000073 or obo:COB_0000075)	enabled by some (gene product or protein-containing macromolecular complex)
 obo:COB_0000042	monoatomic ion		obo:COB_0000011	atom		
@@ -35,7 +35,7 @@ obo:COB_0000055	collection of organisms		obo:COB_0000006	material entity
 obo:COB_0000056	immaterial anatomical entity		obo:COB_0000031	immaterial entity		
 obo:COB_0000057	site		obo:COB_0000031	immaterial entity		
 obo:COB_0000058	conclusion based on data		obo:COB_0000061	information		
-obo:COB_0000061	information					
+obo:COB_0000061	information				 inverse (obo:COB_0000078) some obo:COB_0000120|obo:COB_0000513 some owl:Thing	 inverse (concretizes) some information representation|is about some 
 obo:COB_0000062	disease diagnosis		obo:COB_0000061	information		
 obo:COB_0000063	phenotypic finding		obo:COB_0000061	information		
 obo:COB_0000064	disease course		obo:COB_0000034	process		
@@ -48,21 +48,25 @@ obo:COB_0000073	gene product		obo:COB_0000013	molecular entity
 obo:COB_0000075	protein-containing macromolecular complex		obo:COB_0000080	complex of molecular entities	obo:COB_0000047 some obo:COB_0000073	has part some gene product
 obo:COB_0000076	objective specification		obo:COB_0000069	directive information entity		
 obo:COB_0000077	action specification		obo:COB_0000069	directive information entity	obo:COB_0000047 some obo:COB_0000076|obo:COB_0000047 some obo:COB_0000077	has part some action specification|has part some objective specification
-obo:COB_0000079	plan specification		obo:COB_0000069	directive information entity		
-obo:COB_0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	obo:COB_0000006	material entity		
-obo:COB_0000082	planned process		obo:COB_0000034	process	obo:COB_0000081 some (obo:COB_0000078 some obo:COB_0000079)	intended to realize some (concretizes some plan specification)
+obo:COB_0000079	plan specification		obo:COB_0000069	directive information entity	obo:COB_0000047 some obo:COB_0000076|obo:COB_0000047 some obo:COB_0000077	has part some action specification|has part some objective specification
+obo:COB_0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000013	has part some molecular entity
+obo:COB_0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	obo:COB_0000034	process	obo:COB_0000081 some obo:COB_0000113	intended to realize some plan
 obo:COB_0000083	failed planned process		obo:COB_0000082	planned process		
 obo:COB_0000101	document		obo:COB_0000061	information		
 obo:COB_0000102	data item		obo:COB_0000061	information		
 obo:COB_0000103	cell nucleus		obo:COB_0000020	subcellular structure		
-obo:COB_0000107	assay		obo:COB_0000035	successful planned process		
-obo:COB_0000108	data transformation		obo:COB_0000035	successful planned process		
-obo:COB_0000109	investigation		obo:COB_0000035	successful planned process		
-obo:COB_0000110	material processing		obo:COB_0000035	successful planned process		
+obo:COB_0000107	assay		obo:COB_0000035	completely executed planned process	obo:COB_0000039 some (obo:COB_0000006 and (obo:COB_0000512 some obo:COB_0000119))|obo:COB_0000040 some (obo:COB_0000121 and (obo:COB_0000513 some (obo:COB_0000006 and (obo:COB_0000512 some obo:COB_0000119))))	has specified input some (material entity and (has characteristic some evaluant role))|has specified output some (measurement datum and (is about some (material entity and (has characteristic some evaluant role))))
+obo:COB_0000108	data transformation		obo:COB_0000035	completely executed planned process		
+obo:COB_0000109	investigation		obo:COB_0000035	completely executed planned process		
+obo:COB_0000110	material processing		obo:COB_0000035	completely executed planned process		
 obo:COB_0000111	disposition		obo:COB_0000033	realizable		
 obo:COB_0000112	function		obo:COB_0000111	disposition		
-obo:COB_0000113	plan		obo:COB_0000033	realizable	obo:COB_0000078 some obo:COB_0000079	concretizes some plan specification
+obo:COB_0000113	plan		obo:COB_0000033|obo:COB_0000120	information representation|realizable	 inverse (obo:COB_0000087) only obo:COB_0000082|obo:COB_0000078 some obo:COB_0000079	 inverse (realizes) only planned process|concretizes some plan specification
 obo:COB_0000114	role		obo:COB_0000033	realizable		
 obo:COB_0000116	cellular membrane		obo:COB_0000020	subcellular structure		
 obo:COB_0000118	cellular organism		obo:COB_0000022	organism		
+obo:COB_0000119	evaluant role		obo:COB_0000114	role		
+obo:COB_0000120	information representation		obo:COB_0000001	quality		
+obo:COB_0000121	measurement datum		obo:COB_0000102	data item		
+obo:COB_0000122	physical information carrier		obo:COB_0000006	material entity		
 obo:COB_0000502	characteristic					
