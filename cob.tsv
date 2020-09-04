@@ -25,7 +25,7 @@ obo:COB_0000031	immaterial entity
 obo:COB_0000032	geographical location		obo:COB_0000031	immaterial entity		
 obo:COB_0000033	realizable		obo:COB_0000502	characteristic		
 obo:COB_0000034	process				obo:COB_0000072 only obo:COB_0000034	part of only process
-obo:COB_0000035	completely executed planned process		obo:COB_0000082	planned process	obo:COB_0000087 some obo:COB_0000113	realizes some plan
+obo:COB_0000035	completely executed planned process		obo:COB_0000033|obo:COB_0000082	planned process|realizable	obo:COB_0000087 some obo:COB_0000113	realizes some plan
 obo:COB_0000037	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	obo:COB_0000034	process	(obo:COB_0000070 some obo:COB_0000022) or (obo:COB_0000070 some (obo:COB_0000072 some obo:COB_0000022)) or (obo:COB_0000071 some obo:COB_0000022)|obo:COB_0000047 some obo:COB_0000038	(has participant some organism) or (has participant some (part of some organism)) or (occurs in some organism)|has part some gene product or complex activity
 obo:COB_0000038	gene product or complex activity		obo:COB_0000034	process	obo:COB_0000074 some (obo:COB_0000073 or obo:COB_0000075)	enabled by some (gene product or protein-containing macromolecular complex)
 obo:COB_0000042	monoatomic ion		obo:COB_0000011	atom		
@@ -66,7 +66,7 @@ obo:COB_0000114	role		obo:COB_0000033	realizable
 obo:COB_0000116	cellular membrane		obo:COB_0000020	subcellular structure		
 obo:COB_0000118	cellular organism		obo:COB_0000022	organism		
 obo:COB_0000119	evaluant role		obo:COB_0000114	role		
-obo:COB_0000120	information representation		obo:COB_0000001	quality		
+obo:COB_0000120	information representation		obo:COB_0000502	characteristic		
 obo:COB_0000121	measurement datum		obo:COB_0000102	data item		
 obo:COB_0000122	physical information carrier		obo:COB_0000006	material entity		
-obo:COB_0000502	characteristic					
+obo:COB_0000502	characteristic				 inverse (obo:COB_0000512) some owl:Thing|obo:COB_0000047 only obo:COB_0000502	 inverse (has characteristic) some |has part only characteristic

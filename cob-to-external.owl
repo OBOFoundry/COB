@@ -693,7 +693,9 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+    </Class>
     
 
 
@@ -868,6 +870,12 @@
     <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
     
 
 
