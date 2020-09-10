@@ -39,6 +39,66 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000002 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000023 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000024 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000027 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000028 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000028"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000029 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000030 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000036 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000036"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000039 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000039"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000040 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000040"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000041 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000041"/>
@@ -75,9 +135,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000086 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000086"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000512 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000512"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000513 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000513"/>
     
 
 

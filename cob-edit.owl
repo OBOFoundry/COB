@@ -79,6 +79,89 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000002">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
+        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000016">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+        <rdfs:label xml:lang="en">executed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000023 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000023">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
+        <rdfs:label xml:lang="en">characteristic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000024">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000027">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+        <rdfs:label xml:lang="en">is specified input of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000028 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000028">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
+        <rdfs:label xml:lang="en">is specified output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000029 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000029">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000030 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+        <rdfs:label xml:lang="en">quality of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000036">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
+        <rdfs:label xml:lang="en">contains process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000039 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000039">
