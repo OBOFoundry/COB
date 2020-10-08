@@ -9,7 +9,7 @@ before_install:
   - docker pull obolibrary/odkfull
 
 # command to run tests
-script: sh run.sh make main_test
+script: docker run -v $PWD/:/work -w /work --rm -ti obolibrary/odkfull make main_test
 
 #after_success:
 #  coveralls
