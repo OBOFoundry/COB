@@ -79,6 +79,89 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000002">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
+        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000016">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+        <rdfs:label xml:lang="en">executed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000023 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000023">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
+        <rdfs:label xml:lang="en">characteristic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000024">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000027">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+        <rdfs:label xml:lang="en">is specified input of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000028 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000028">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
+        <rdfs:label xml:lang="en">is specified output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000029 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000029">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000030 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+        <rdfs:label xml:lang="en">quality of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000036">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
+        <rdfs:label xml:lang="en">contains process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000039 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000039">
@@ -201,6 +284,8 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000087">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
         <rdfs:label>realizes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1190,7 +1275,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000015</obo:COB_based_on>
         <rdfs:comment>Pier &apos;representational entity&apos;</rdfs:comment>
         <rdfs:comment>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</rdfs:comment>
@@ -1240,6 +1325,12 @@
                     </rdf:Description>
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">characteristic</rdfs:label>

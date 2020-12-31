@@ -49,6 +49,14 @@ cob.owl: cob-edit.owl | build/robot.jar
 cob-base.owl: cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+cob-base-reasoned.owl: cob-base.owl | build/robot.jar
+	$(ROBOT) reason -i $< -r HERMIT -o $@
+
+cob-examples-reasoned.owl: cob-base.owl cob-examples.owl | build/robot.jar
+	$(ROBOT) merge -i cob-base.owl -i cob-examples.owl \
+	reason -r HERMIT -o $@
+
+
 # TSV export (may depend on dev version of robot export)
 cob.tsv: cob.owl | build/robot.jar
 	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
@@ -102,7 +110,7 @@ COB_NONCOMPLIANT =  iao mondo  eco  maxo  mco  nbo peco ecto chebi
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest
-main_test: build/report.tsv cob.owl
+main_test: build/report.tsv cob.owl cob-base-reasoned.owl cob-examples-reasoned.owl
 
 # integration tests
 itest: itest_compliant itest_noncompliant #superclass_test

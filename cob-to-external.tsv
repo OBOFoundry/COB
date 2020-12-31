@@ -100,5 +100,19 @@ COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
 COB:0000071	occurs in	owl:equivalentProperty	BFO:0000066	occurs in	.
 COB:0000072	part of	owl:equivalentProperty	BFO:0000050	part of	.
 COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.
+COB:0000502	characteristic	owl:equivalentClass	PATO:0000001	quality	https://github.com/OBOFoundry/COB/issues/124
 COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.
+COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.
+COB:0000086	executes	owl:equivalentProperty	STATO:0000102	executes	.
+COB:0000016	executed by				"There is no inverse for 'executes' STATO, only in COB."
+COB:0000023	characteristic of	owl:equivalentProperty	RO:0000052	inheres in	"In RO, 'inheres in' is the inverse of 'bearer of'."
+COB:0000024	participates in	owl:equivalentProperty	RO:0000056	participates in	.
+COB:0000027	is specified input of	owl:equivalentProperty	OBI:0000295	is_specified_input_of	.
+COB:0000028	is specified output of	owl:equivalentProperty	OBI:0000312	is_specified_output_of	.
+COB:0000039	has specified input	owl:equivalentProperty	OBI:0000293	has_specified_input	.
+COB:0000040	has specified output	 owl:equivalentProperty	OBI:0000299	has_specified_output	.
+COB:0000029	realized in	 owl:equivalentProperty	BFO:0000054	realized in	.
+COB:0000030	quality of	 owl:equivalentProperty	RO:0000080	quality of	.
+COB:0000513	is about	 owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.
+COB:0000036	contains process	 owl:equivalentProperty	BFO:0000067	contains process	.

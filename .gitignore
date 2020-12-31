@@ -1,2 +1,4 @@
 *.old
 catalog-v001.xml
+build/robot.jar
+build/cob-annotations.ttl
