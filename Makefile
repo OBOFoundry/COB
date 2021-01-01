@@ -20,8 +20,7 @@ build:
 	mkdir -p $@
 
 build/robot.jar: | build
-	echo "SKIPPING ROBOT DOWNLOAD"
-	#curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 ########################################
 # -- MAIN RELEASE PRODUCTS --
