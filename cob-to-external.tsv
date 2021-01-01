@@ -2,6 +2,7 @@
 #curie_map:
 #  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
 #  skos: "http://www.w3.org/2004/02/skos/core#"
+#  owl: "http://www.w3.org/2002/07/owl#"
 #  BFO: "http://purl.obolibrary.org/obo/BFO_"
 #  CARO: "http://purl.obolibrary.org/obo/CARO_"
 #  CHEBI: "http://purl.obolibrary.org/obo/CHEBI_"
@@ -105,14 +106,14 @@ COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependen
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.
 COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.
 COB:0000086	executes	owl:equivalentProperty	STATO:0000102	executes	.
-COB:0000016	executed by				"There is no inverse for 'executes' STATO, only in COB."
+COB:0000016	executed by	rdfs:subPropertyOf	owl:topObjectProperty	topObjectProperty	"There is no inverse for 'executes' STATO, only in COB."
 COB:0000023	characteristic of	owl:equivalentProperty	RO:0000052	inheres in	"In RO, 'inheres in' is the inverse of 'bearer of'."
 COB:0000024	participates in	owl:equivalentProperty	RO:0000056	participates in	.
 COB:0000027	is specified input of	owl:equivalentProperty	OBI:0000295	is_specified_input_of	.
 COB:0000028	is specified output of	owl:equivalentProperty	OBI:0000312	is_specified_output_of	.
 COB:0000039	has specified input	owl:equivalentProperty	OBI:0000293	has_specified_input	.
-COB:0000040	has specified output	 owl:equivalentProperty	OBI:0000299	has_specified_output	.
-COB:0000029	realized in	 owl:equivalentProperty	BFO:0000054	realized in	.
-COB:0000030	quality of	 owl:equivalentProperty	RO:0000080	quality of	.
-COB:0000513	is about	 owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.
-COB:0000036	contains process	 owl:equivalentProperty	BFO:0000067	contains process	.
+COB:0000040	has specified output	owl:equivalentProperty	OBI:0000299	has_specified_output	.
+COB:0000029	realized in	owl:equivalentProperty	BFO:0000054	realized in	.
+COB:0000030	quality of	owl:equivalentProperty	RO:0000080	quality of	.
+COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.
+COB:0000036	contains process	owl:equivalentProperty	BFO:0000067	contains process	.

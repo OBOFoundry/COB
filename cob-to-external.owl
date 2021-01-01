@@ -6,7 +6,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sssom="http://example.org/sssom/">
     <Ontology/>
     
 
@@ -19,6 +20,246 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://example.org/sssom/comment -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/comment"/>
+    
+
+
+    <!-- http://example.org/sssom/confidence -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/confidence"/>
+    
+
+
+    <!-- http://example.org/sssom/creator_id -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/creator_id"/>
+    
+
+
+    <!-- http://example.org/sssom/creator_label -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/creator_label"/>
+    
+
+
+    <!-- http://example.org/sssom/equivalent_property -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/equivalent_property"/>
+    
+
+
+    <!-- http://example.org/sssom/id -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/id"/>
+    
+
+
+    <!-- http://example.org/sssom/information_content_mica_score -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/information_content_mica_score"/>
+    
+
+
+    <!-- http://example.org/sssom/license -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/license"/>
+    
+
+
+    <!-- http://example.org/sssom/mapping_date -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/mapping_date"/>
+    
+
+
+    <!-- http://example.org/sssom/mapping_provider -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/mapping_provider"/>
+    
+
+
+    <!-- http://example.org/sssom/mapping_set_id -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/mapping_set_id"/>
+    
+
+
+    <!-- http://example.org/sssom/mapping_set_version -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/mapping_set_version"/>
+    
+
+
+    <!-- http://example.org/sssom/mapping_tool -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/mapping_tool"/>
+    
+
+
+    <!-- http://example.org/sssom/match_string -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/match_string"/>
+    
+
+
+    <!-- http://example.org/sssom/match_term_type -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/match_term_type"/>
+    
+
+
+    <!-- http://example.org/sssom/match_type -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/match_type"/>
+    
+
+
+    <!-- http://example.org/sssom/metadata_element -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/metadata_element"/>
+    
+
+
+    <!-- http://example.org/sssom/object_category -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/object_category"/>
+    
+
+
+    <!-- http://example.org/sssom/object_label -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/object_label"/>
+    
+
+
+    <!-- http://example.org/sssom/object_match_field -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/object_match_field"/>
+    
+
+
+    <!-- http://example.org/sssom/object_preprocessing -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/object_preprocessing"/>
+    
+
+
+    <!-- http://example.org/sssom/object_source -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/object_source"/>
+    
+
+
+    <!-- http://example.org/sssom/object_source_version -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/object_source_version"/>
+    
+
+
+    <!-- http://example.org/sssom/other -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/other"/>
+    
+
+
+    <!-- http://example.org/sssom/predicate_label -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/predicate_label"/>
+    
+
+
+    <!-- http://example.org/sssom/rdf_example -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/rdf_example"/>
+    
+
+
+    <!-- http://example.org/sssom/required -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/required"/>
+    
+
+
+    <!-- http://example.org/sssom/scope -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/scope"/>
+    
+
+
+    <!-- http://example.org/sssom/see_also -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/see_also"/>
+    
+
+
+    <!-- http://example.org/sssom/semantic_similarity_score -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/semantic_similarity_score"/>
+    
+
+
+    <!-- http://example.org/sssom/subject_category -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/subject_category"/>
+    
+
+
+    <!-- http://example.org/sssom/subject_label -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/subject_label"/>
+    
+
+
+    <!-- http://example.org/sssom/subject_match_field -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/subject_match_field"/>
+    
+
+
+    <!-- http://example.org/sssom/subject_preprocessing -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/subject_preprocessing"/>
+    
+
+
+    <!-- http://example.org/sssom/subject_source -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/subject_source"/>
+    
+
+
+    <!-- http://example.org/sssom/subject_source_version -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/subject_source_version"/>
+    
+
+
+    <!-- http://example.org/sssom/tsv_example -->
+
+    <AnnotationProperty rdf:about="http://example.org/sssom/tsv_example"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#annotatedProperty -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#annotatedProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#annotatedSource -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#annotatedSource"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#annotatedTarget -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#annotatedTarget"/>
     
 
 
@@ -39,117 +280,550 @@
     
 
 
+    <!-- file:///Users/matentzn/ws/COB/STATO:0000102 -->
+
+    <ObjectProperty rdf:about="file:///Users/matentzn/ws/COB/STATO:0000102">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="file:///Users/matentzn/ws/COB/STATO:0000102"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+        <sssom:object_label>executes</sssom:object_label>
+        <sssom:subject_label>executes</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+        <sssom:object_label>part of</sssom:object_label>
+        <sssom:subject_label>part of</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+        <sssom:object_label>has part</sssom:object_label>
+        <sssom:subject_label>has part</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
+        <sssom:object_label>realized in</sssom:object_label>
+        <sssom:subject_label>realized in</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
+        <sssom:object_label>occurs in</sssom:object_label>
+        <sssom:subject_label>occurs in</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000067">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000036"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000036"/>
+        <sssom:object_label>contains process</sssom:object_label>
+        <sssom:subject_label>contains process</sssom:subject_label>
+    </Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000002 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000002"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000002">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000002"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+        <sssom:object_label>is concretized as</sssom:object_label>
+        <sssom:subject_label>is concretized as</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000016 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000016">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000016"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <sssom:object_label>topObjectProperty</sssom:object_label>
+        <sssom:subject_label>executed by</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000023 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000023"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000023">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000023"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <sssom:object_label>inheres in</sssom:object_label>
+        <sssom:subject_label>characteristic of</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000024 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000024"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000024">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <sssom:object_label>participates in</sssom:object_label>
+        <sssom:subject_label>participates in</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000027 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000027"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000027">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000027"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+        <sssom:object_label>is_specified_input_of</sssom:object_label>
+        <sssom:subject_label>is specified input of</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000028 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000028"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000028">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000028"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <sssom:object_label>is_specified_output_of</sssom:object_label>
+        <sssom:subject_label>is specified output of</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000029 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000029"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
+        <sssom:object_label>realized in</sssom:object_label>
+        <sssom:subject_label>realized in</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000030 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000030"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+        <sssom:object_label>quality of</sssom:object_label>
+        <sssom:subject_label>quality of</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000036 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000036"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000036"/>
+        <sssom:object_label>contains process</sssom:object_label>
+        <sssom:subject_label>contains process</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000039 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000039"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000039">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+        <sssom:object_label>has_specified_input</sssom:object_label>
+        <sssom:subject_label>has specified input</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000040 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000040"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000040">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+        <sssom:object_label>has_specified_output</sssom:object_label>
+        <sssom:subject_label>has specified output</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000041 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000041"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000041">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <sssom:object_label>has quality</sssom:object_label>
+        <sssom:subject_label>has quality</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000047 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000047"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+        <sssom:object_label>has part</sssom:object_label>
+        <sssom:subject_label>has part</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000070 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000070"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000070">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <sssom:object_label>has participant</sssom:object_label>
+        <sssom:subject_label>has participant</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000071 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000071"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
+        <sssom:object_label>occurs in</sssom:object_label>
+        <sssom:subject_label>occurs in</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000072 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000072"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+        <sssom:object_label>part of</sssom:object_label>
+        <sssom:subject_label>part of</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000074 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000074"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000074">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000074"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
+        <sssom:object_label>enabled by</sssom:object_label>
+        <sssom:subject_label>enabled by</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000086 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000086"/>
+    <Axiom>
+        <annotatedSource rdf:resource="file:///Users/matentzn/ws/COB/STATO:0000102"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+        <sssom:object_label>executes</sssom:object_label>
+        <sssom:subject_label>executes</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000512 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000512"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000512">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <sssom:object_label>bearer of</sssom:object_label>
+        <sssom:subject_label>has characteristic</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000513 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000513"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000513">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </ObjectProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <sssom:object_label>is about</sssom:object_label>
+        <sssom:subject_label>is about</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <sssom:object_label>is about</sssom:object_label>
+        <sssom:subject_label>is about</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+        <sssom:object_label>has_specified_input</sssom:object_label>
+        <sssom:subject_label>has specified input</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000027"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+        <sssom:object_label>is_specified_input_of</sssom:object_label>
+        <sssom:subject_label>is specified input of</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+        <sssom:object_label>has_specified_output</sssom:object_label>
+        <sssom:subject_label>has specified output</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000028"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <sssom:object_label>is_specified_output_of</sssom:object_label>
+        <sssom:subject_label>is specified output of</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000023"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <sssom:object_label>inheres in</sssom:object_label>
+        <sssom:subject_label>characteristic of</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <sssom:object_label>bearer of</sssom:object_label>
+        <sssom:subject_label>has characteristic</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <sssom:object_label>participates in</sssom:object_label>
+        <sssom:subject_label>participates in</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <sssom:object_label>has participant</sssom:object_label>
+        <sssom:subject_label>has participant</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000002"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+        <sssom:object_label>is concretized as</sssom:object_label>
+        <sssom:subject_label>is concretized as</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000030"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+        <sssom:object_label>quality of</sssom:object_label>
+        <sssom:subject_label>quality of</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <sssom:object_label>has quality</sssom:object_label>
+        <sssom:subject_label>has quality</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002333 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002333"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000074"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
+        <sssom:object_label>enabled by</sssom:object_label>
+        <sssom:subject_label>enabled by</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -169,6 +843,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <sssom:object_label>process</sssom:object_label>
+        <sssom:subject_label>process</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -177,6 +858,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
+        <sssom:object_label>disposition</sssom:object_label>
+        <sssom:subject_label>disposition</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -185,6 +873,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
+        <sssom:object_label>realizable entity</sssom:object_label>
+        <sssom:subject_label>realizable</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -193,6 +888,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <sssom:object_label>quality</sssom:object_label>
+        <sssom:subject_label>quality</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -201,6 +903,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:object_label>specifically dependent continuant</sssom:object_label>
+        <sssom:subject_label>characteristic</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -209,6 +918,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
+        <sssom:object_label>role</sssom:object_label>
+        <sssom:subject_label>role</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -217,6 +933,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000057"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000057"/>
+        <sssom:object_label>site</sssom:object_label>
+        <sssom:subject_label>site</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -225,6 +948,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
+        <sssom:object_label>function</sssom:object_label>
+        <sssom:subject_label>function</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -233,6 +963,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>material entity</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -241,6 +978,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000041">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
+        <sssom:object_label>immaterial entity</sssom:object_label>
+        <sssom:subject_label>immaterial entity</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -249,6 +993,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001008">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+        <sssom:object_label>gross anatomical part</sssom:object_label>
+        <sssom:subject_label>gross anatomical part</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -257,6 +1008,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001010">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <sssom:object_label>organism or virus or viroid</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -265,6 +1023,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010004">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <sssom:object_label>cellular organism</sssom:object_label>
+        <sssom:subject_label>cellular organism</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -274,6 +1039,20 @@
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000010"/>
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000010"/>
+        <sssom:object_label>electron</sssom:object_label>
+        <sssom:subject_label>electron</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+        <sssom:object_label>nucleic acid</sssom:object_label>
+        <sssom:subject_label>nucleic acid polymer</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -282,6 +1061,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16541">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16541"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+        <sssom:object_label>protein polypeptide chain</sssom:object_label>
+        <sssom:subject_label>protein</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -290,6 +1076,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24636">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000008"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000008"/>
+        <sssom:object_label>proton</sssom:object_label>
+        <sssom:subject_label>proton</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -298,6 +1091,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24867">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000042"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24867"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000042"/>
+        <sssom:object_label>monoatomic ion</sssom:object_label>
+        <sssom:subject_label>monoatomic ion</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -306,6 +1106,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30222">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000009"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000009"/>
+        <sssom:object_label>neutron</sssom:object_label>
+        <sssom:subject_label>neutron</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -314,6 +1121,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
+        <sssom:object_label>atom</sssom:object_label>
+        <sssom:subject_label>uncharged atom</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -322,6 +1136,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33252">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000012"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000012"/>
+        <sssom:object_label>atomic nucleus</sssom:object_label>
+        <sssom:subject_label>atomic nucleus</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -330,6 +1151,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
+        <sssom:object_label>subatomic particle</sssom:object_label>
+        <sssom:subject_label>subatomic particle</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -338,6 +1166,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+        <sssom:object_label>cell</sssom:object_label>
+        <sssom:subject_label>cell</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -346,6 +1181,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CL_0000003">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>native cell</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -354,12 +1196,26 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/CL_0001034">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000019"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001034"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000019"/>
+        <sssom:object_label>cell in vitro</sssom:object_label>
+        <sssom:subject_label>cell in vitro</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000001 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000001"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
+        <sssom:object_label>quality</sssom:object_label>
+        <sssom:subject_label>quality</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -368,6 +1224,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000003">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <sssom:object_label>mass</sssom:object_label>
+        <sssom:subject_label>mass</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -376,59 +1239,91 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000004">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0002193"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0002193"/>
+        <sssom:object_label>electric</sssom:object_label>
+        <sssom:subject_label>charge</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000006 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000006"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>material entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000007 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000007"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
+        <sssom:object_label>subatomic particle</sssom:object_label>
+        <sssom:subject_label>subatomic particle</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000008 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000008"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000008"/>
+        <sssom:object_label>proton</sssom:object_label>
+        <sssom:subject_label>proton</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000009 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000009"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000009"/>
+        <sssom:object_label>neutron</sssom:object_label>
+        <sssom:subject_label>neutron</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000010 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000010"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000011 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
-        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000010"/>
+        <sssom:object_label>electron</sssom:object_label>
+        <sssom:subject_label>electron</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000012 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000012"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000013 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
-        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25367"/>
-    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000012"/>
+        <sssom:object_label>atomic nucleus</sssom:object_label>
+        <sssom:subject_label>atomic nucleus</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -437,30 +1332,72 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000015">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16541"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+        <sssom:object_label>protein polypeptide chain</sssom:object_label>
+        <sssom:subject_label>protein</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <sssom:object_label>protein</sssom:object_label>
+        <sssom:subject_label>protein</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000017 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+        <sssom:object_label>cell</sssom:object_label>
+        <sssom:subject_label>cell</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000018 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000018"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>native cell</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000019 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000019"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001034"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000019"/>
+        <sssom:object_label>cell in vitro</sssom:object_label>
+        <sssom:subject_label>cell in vitro</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000021 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000021"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+        <sssom:object_label>gross anatomical part</sssom:object_label>
+        <sssom:subject_label>gross anatomical part</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -470,6 +1407,27 @@
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <sssom:object_label>organism or virus or viroid</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <sssom:object_label>root</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -478,6 +1436,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000025"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <sssom:object_label>organization</sssom:object_label>
+        <sssom:subject_label>organization</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -486,24 +1451,52 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000026">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <sssom:object_label>processed material</sssom:object_label>
+        <sssom:subject_label>processed material entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000031 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000031"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
+        <sssom:object_label>immaterial entity</sssom:object_label>
+        <sssom:subject_label>immaterial entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000033 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000033"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
+        <sssom:object_label>realizable entity</sssom:object_label>
+        <sssom:subject_label>realizable</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000034 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000034"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <sssom:object_label>process</sssom:object_label>
+        <sssom:subject_label>process</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -512,6 +1505,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <sssom:object_label>planned process</sssom:object_label>
+        <sssom:subject_label>planned process</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -520,6 +1520,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000037">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000037"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <sssom:object_label>biological process</sssom:object_label>
+        <sssom:subject_label>biological process</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -528,24 +1535,52 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000038">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000038"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
+        <sssom:object_label>molecular function</sssom:object_label>
+        <sssom:subject_label>gene product or complex activity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000042 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000042"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24867"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000042"/>
+        <sssom:object_label>monoatomic ion</sssom:object_label>
+        <sssom:subject_label>monoatomic ion</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000043 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000043"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
+        <sssom:object_label>atom</sssom:object_label>
+        <sssom:subject_label>uncharged atom</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000049 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000049"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+        <sssom:object_label>nucleic acid</sssom:object_label>
+        <sssom:subject_label>nucleic acid polymer</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -554,6 +1589,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000055">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <sssom:object_label>collection of organisms</sssom:object_label>
+        <sssom:subject_label>collection of organisms</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -566,6 +1608,13 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000057 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000057"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000057"/>
+        <sssom:object_label>site</sssom:object_label>
+        <sssom:subject_label>site</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -574,6 +1623,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000058">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000058"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <sssom:object_label>conclusion based on data</sssom:object_label>
+        <sssom:subject_label>conclusion based on data</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -582,6 +1638,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000061">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <sssom:object_label>information content entity</sssom:object_label>
+        <sssom:subject_label>information</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -590,6 +1653,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000062">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000062"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <sssom:object_label>diagnosis</sssom:object_label>
+        <sssom:subject_label>disease diagnosis</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -598,6 +1668,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000063">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000063"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <sssom:object_label>clinical finding</sssom:object_label>
+        <sssom:subject_label>phenotypic finding</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -606,6 +1683,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000064">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000064"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+        <sssom:object_label>disease course</sssom:object_label>
+        <sssom:subject_label>disease course</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -614,6 +1698,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000065">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000065"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <sssom:object_label>environmental system process</sssom:object_label>
+        <sssom:subject_label>environmental process</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -622,6 +1713,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000066">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/MOP_0000543"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000066"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MOP_0000543"/>
+        <sssom:object_label>molecular process</sssom:object_label>
+        <sssom:subject_label>physico-chemical process</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -630,6 +1728,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000067">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000067"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <sssom:object_label>ecosystem</sssom:object_label>
+        <sssom:subject_label>ecosystem</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -638,6 +1743,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000068">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <sssom:object_label>astronomical body part</sssom:object_label>
+        <sssom:subject_label>geophysical entity</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -646,6 +1758,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000069">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <sssom:object_label>directive information entity</sssom:object_label>
+        <sssom:subject_label>directive information entity</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -654,6 +1773,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000075">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000075"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
+        <sssom:object_label>protein-containing complex</sssom:object_label>
+        <sssom:subject_label>protein-containing macromolecular complex</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -662,6 +1788,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000076">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000076"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <sssom:object_label>objective specification</sssom:object_label>
+        <sssom:subject_label>objective specification</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -670,6 +1803,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000079">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <sssom:object_label>plan specification</sssom:object_label>
+        <sssom:subject_label>plan specification</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -678,6 +1818,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000101">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000101"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <sssom:object_label>document</sssom:object_label>
+        <sssom:subject_label>document</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -686,6 +1833,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000102">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <sssom:object_label>data item</sssom:object_label>
+        <sssom:subject_label>data item</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -694,6 +1848,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000103">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000103"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
+        <sssom:object_label>nucleus</sssom:object_label>
+        <sssom:subject_label>cell nucleus</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -702,6 +1863,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000107">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000107"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <sssom:object_label>assay</sssom:object_label>
+        <sssom:subject_label>assay</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -710,6 +1878,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000108">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000108"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <sssom:object_label>data transformation</sssom:object_label>
+        <sssom:subject_label>data transformation</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -718,6 +1893,13 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000109">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000109"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <sssom:object_label>investigation</sssom:object_label>
+        <sssom:subject_label>investigation</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -726,18 +1908,39 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000110">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <sssom:object_label>material processing</sssom:object_label>
+        <sssom:subject_label>material processing</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000111 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000111"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
+        <sssom:object_label>disposition</sssom:object_label>
+        <sssom:subject_label>disposition</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000112 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000112"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
+        <sssom:object_label>function</sssom:object_label>
+        <sssom:subject_label>function</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -746,12 +1949,26 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000113">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000113"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+        <sssom:object_label>plan</sssom:object_label>
+        <sssom:subject_label>plan</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000114 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000114"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
+        <sssom:object_label>role</sssom:object_label>
+        <sssom:subject_label>role</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -760,6 +1977,20 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000118">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <sssom:object_label>cellular organism</sssom:object_label>
+        <sssom:subject_label>cellular organism</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <sssom:object_label>cellular organisms</sssom:object_label>
+        <sssom:subject_label>cellular organism</sssom:subject_label>
+    </Axiom>
     
 
 
@@ -768,210 +1999,654 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:object_label>specifically dependent continuant</sssom:object_label>
+        <sssom:subject_label>characteristic</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <sssom:object_label>quality</sssom:object_label>
+        <sssom:subject_label>characteristic</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <sssom:object_label>astronomical body part</sssom:object_label>
+        <sssom:subject_label>geophysical entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ENVO_01001110 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000067"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <sssom:object_label>ecosystem</sssom:object_label>
+        <sssom:subject_label>ecosystem</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000065"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+        <sssom:object_label>environmental system process</sssom:object_label>
+        <sssom:subject_label>environmental process</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+        <sssom:object_label>geophysical entity</sssom:object_label>
+        <sssom:subject_label>geographical entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0003674"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000038"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
+        <sssom:object_label>molecular function</sssom:object_label>
+        <sssom:subject_label>gene product or complex activity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0005634 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000103"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
+        <sssom:object_label>nucleus</sssom:object_label>
+        <sssom:subject_label>cell nucleus</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000037"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <sssom:object_label>biological process</sssom:object_label>
+        <sssom:subject_label>biological process</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0032991 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0032991"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000075"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
+        <sssom:object_label>protein-containing complex</sssom:object_label>
+        <sssom:subject_label>protein-containing macromolecular complex</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000076"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <sssom:object_label>objective specification</sssom:object_label>
+        <sssom:subject_label>objective specification</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <sssom:object_label>data item</sssom:object_label>
+        <sssom:subject_label>data item</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <sssom:object_label>information content entity</sssom:object_label>
+        <sssom:subject_label>information</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <sssom:object_label>directive information entity</sssom:object_label>
+        <sssom:subject_label>directive information entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <sssom:object_label>plan specification</sssom:object_label>
+        <sssom:subject_label>plan specification</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000101"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <sssom:object_label>document</sssom:object_label>
+        <sssom:subject_label>document</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MOP_0000543 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/MOP_0000543"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000066"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MOP_0000543"/>
+        <sssom:object_label>molecular process</sssom:object_label>
+        <sssom:subject_label>physico-chemical process</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <sssom:object_label>root</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <sssom:object_label>cellular organisms</sssom:object_label>
+        <sssom:subject_label>cellular organism</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <sssom:object_label>planned process</sssom:object_label>
+        <sssom:subject_label>planned process</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <sssom:object_label>processed material</sssom:object_label>
+        <sssom:subject_label>processed material entity</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000109"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
+        <sssom:object_label>investigation</sssom:object_label>
+        <sssom:subject_label>investigation</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000107"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <sssom:object_label>assay</sssom:object_label>
+        <sssom:subject_label>assay</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <sssom:object_label>material processing</sssom:object_label>
+        <sssom:subject_label>material processing</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000025"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <sssom:object_label>organization</sssom:object_label>
+        <sssom:subject_label>organization</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000113"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+        <sssom:object_label>plan</sssom:object_label>
+        <sssom:subject_label>plan</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001909 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001909"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000058"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <sssom:object_label>conclusion based on data</sssom:object_label>
+        <sssom:subject_label>conclusion based on data</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000108"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <sssom:object_label>data transformation</sssom:object_label>
+        <sssom:subject_label>data transformation</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000063"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <sssom:object_label>clinical finding</sssom:object_label>
+        <sssom:subject_label>phenotypic finding</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000063 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000064"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+        <sssom:object_label>disease course</sssom:object_label>
+        <sssom:subject_label>disease course</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000062"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <sssom:object_label>diagnosis</sssom:object_label>
+        <sssom:subject_label>disease diagnosis</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <sssom:object_label>quality</sssom:object_label>
+        <sssom:subject_label>characteristic</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <sssom:object_label>mass</sssom:object_label>
+        <sssom:subject_label>mass</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002193 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002193"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0002193"/>
+        <sssom:object_label>electric</sssom:object_label>
+        <sssom:subject_label>charge</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <sssom:object_label>collection of organisms</sssom:object_label>
+        <sssom:subject_label>collection of organisms</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0000003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <sssom:object_label>cellular organism</sssom:object_label>
+        <sssom:subject_label>whole plant</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0009002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+        <sssom:object_label>cell</sssom:object_label>
+        <sssom:subject_label>plant cell</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025117 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+        <sssom:object_label>immaterial anatomical entity</sssom:object_label>
+        <sssom:subject_label>plant anatomical space</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025606 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>native plant cell</sssom:subject_label>
+    </Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <sssom:object_label>protein</sssom:object_label>
+        <sssom:subject_label>protein</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+        <sssom:object_label>immaterial anatomical entity</sssom:object_label>
+        <sssom:subject_label>immaterial anatomical entity</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000468 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <sssom:object_label>cellular organism</sssom:object_label>
+        <sssom:subject_label>multicellular organism</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+        <sssom:object_label>gross anatomical part</sssom:object_label>
+        <sssom:subject_label>multicellular anatomical structure</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XAO_0003012 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/XAO_0003012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003012"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>xenopus cell</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZFA_0009000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/ZFA_0009000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZFA_0009000"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>zebrafish cell</sssom:subject_label>
+    </Axiom>
+    <rdf:Description>
+        <sssom:license>https://creativecommons.org/publicdomain/zero/1.0/</sssom:license>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    </rdf:Description>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <sssom:object_label>atom</sssom:object_label>
+        <sssom:subject_label>atom</sssom:subject_label>
+    </Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25367"/>
+    </rdf:Description>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <sssom:object_label>molecular entity</sssom:object_label>
+        <sssom:subject_label>molecular entity</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25367"/>
+        <sssom:object_label>molecule</sssom:object_label>
+        <sssom:subject_label>molecular entity</sssom:subject_label>
+    </Axiom>
 </rdf:RDF>
 
 

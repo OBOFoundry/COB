@@ -73,7 +73,7 @@ cob-to-external.ttl: cob-to-external.tsv
 	sssom convert -i $< -o $@
 
 cob-to-external.owl: cob-to-external.ttl | build/robot.jar
-	$(ROBOT) -vvv convert -i $< -o $@
+	$(ROBOT) -vvv remove -i $< --term "http://example.org/sssom/MappingSet" --term "http://example.org/sssom/mappings" convert -o $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
