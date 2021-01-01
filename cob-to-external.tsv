@@ -24,6 +24,7 @@
 #  UBERON: "http://purl.obolibrary.org/obo/UBERON_"
 #  XAO: "http://purl.obolibrary.org/obo/XAO_"
 #  ZFA: "http://purl.obolibrary.org/obo/ZFA_"
+#  STATO: "http://purl.obolibrary.org/obo/STATO_"
 subject_id	subject_label	predicate_id	object_id	object_label	notes
 COB:0000001	quality	owl:equivalentClass	BFO:0000019	quality	.
 COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.

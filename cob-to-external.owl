@@ -280,21 +280,6 @@
     
 
 
-    <!-- file:///Users/matentzn/ws/COB/STATO:0000102 -->
-
-    <ObjectProperty rdf:about="file:///Users/matentzn/ws/COB/STATO:0000102">
-        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
-    </ObjectProperty>
-    <Axiom>
-        <annotatedSource rdf:resource="file:///Users/matentzn/ws/COB/STATO:0000102"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
-        <sssom:object_label>executes</sssom:object_label>
-        <sssom:subject_label>executes</sssom:subject_label>
-    </Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
@@ -617,11 +602,13 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000086 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000086"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000086">
+        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000102"/>
+    </ObjectProperty>
     <Axiom>
-        <annotatedSource rdf:resource="file:///Users/matentzn/ws/COB/STATO:0000102"/>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
         <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/STATO_0000102"/>
         <sssom:object_label>executes</sssom:object_label>
         <sssom:subject_label>executes</sssom:subject_label>
     </Axiom>
@@ -823,6 +810,19 @@
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
         <sssom:object_label>enabled by</sssom:object_label>
         <sssom:subject_label>enabled by</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000102 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000102"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/STATO_0000102"/>
+        <sssom:object_label>executes</sssom:object_label>
+        <sssom:subject_label>executes</sssom:subject_label>
     </Axiom>
     
 
