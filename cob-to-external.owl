@@ -41,24 +41,6 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#annotatedProperty -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#annotatedProperty"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#annotatedSource -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#annotatedSource"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#annotatedTarget -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#annotatedTarget"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
 
     <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
