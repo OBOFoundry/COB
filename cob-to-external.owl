@@ -2444,6 +2444,66 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>sequence_feature</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000400 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:object_label>characteristic</sssom:object_label>
+        <sssom:subject_label>sequence_attribute</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001060 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0001060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001060"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>sequence_variant</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>sequence_collection</sssom:subject_label>
+    </Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">

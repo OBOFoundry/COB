@@ -20,6 +20,7 @@
 #  PCO: "http://purl.obolibrary.org/obo/PCO_"
 #  PO: "http://purl.obolibrary.org/obo/PO_"
 #  PR: "http://purl.obolibrary.org/obo/PR_"
+#  SO: "http://purl.obolibrary.org/obo/SO_"
 #  RO: "http://purl.obolibrary.org/obo/RO_"
 #  UBERON: "http://purl.obolibrary.org/obo/UBERON_"
 #  XAO: "http://purl.obolibrary.org/obo/XAO_"
@@ -32,6 +33,9 @@ COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.
 COB:0000004	charge	owl:equivalentClass	PATO:0002193	electric	.
 COB:0000005	elementary charge	rdfs:subClassOf	owl:Thing	owl:Thing	Making ticket in PATO tracker
 COB:0000006	material entity	owl:equivalentClass	BFO:0000040	material entity	.
+COB:0000006	material entity	sssom:superClassOf	SO:0000110	sequence_feature	.
+COB:0000006	material entity	sssom:superClassOf	SO:0001060	sequence_variant	.
+COB:0000006	material entity	sssom:superClassOf	SO:0001260	sequence_collection	.
 COB:0000007	subatomic particle	owl:equivalentClass	CHEBI:36342	subatomic particle	.
 COB:0000008	proton	owl:equivalentClass	CHEBI:24636	proton	.
 COB:0000009	neutron	owl:equivalentClass	CHEBI:30222	neutron	.
@@ -113,6 +117,7 @@ COB:0000072	part of	owl:equivalentProperty	BFO:0000050	part of	.
 COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.
 COB:0000502	characteristic	owl:equivalentClass	PATO:0000001	quality	https://github.com/OBOFoundry/COB/issues/124
 COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower
+COB:0000502	characteristic	sssom:superClassOf	SO:0000400	sequence_attribute	.
 COB:0000511	has quantity	rdfs:subPropertyOf	owl:topObjectProperty	topObjectProperty	.
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.
 COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.
