@@ -70,6 +70,7 @@ cob.tsv: cob.owl | build/robot.jar
 #  OWL is generated from this
 #
 # this is a really hacky way to do this, replace with robot report?
+.PHONY: sssom
 sssom:
 	pip install git+https://github.com/matentzn/sssom-py.git@superclassof --upgrade --no-deps --force-reinstall
 
@@ -77,9 +78,10 @@ cob-to-external.ttl: cob-to-external.tsv | sssom
 	sssom convert -i $< -o $@
 
 cob-to-external.owl: cob-to-external.ttl | build/robot.jar
-	$(ROBOT) -vvv remove -i $< \
-		--term "http://example.org/sssom/MappingSet" \
-		--term "http://example.org/sssom/mappings" convert -o $@
+	$(ROBOT) remove -i $< \
+	--term "http://example.org/sssom/MappingSet" \
+	--term "http://example.org/sssom/mappings" \
+	convert -o $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
