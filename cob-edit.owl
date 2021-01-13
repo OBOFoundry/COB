@@ -1081,6 +1081,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <obo:COB_based_on rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
+        <obo:IAO_0000115>A processed material entity created to be administered to an individual with the intent to improve health.</obo:IAO_0000115>
+        <rdfs:label>drug product</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000101">
