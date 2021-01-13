@@ -25,6 +25,7 @@
 #  XAO: "http://purl.obolibrary.org/obo/XAO_"
 #  ZFA: "http://purl.obolibrary.org/obo/ZFA_"
 #  STATO: "http://purl.obolibrary.org/obo/STATO_"
+#  DRON: "http://purl.obolibrary.org/obo/DRON_"
 subject_id	subject_label	predicate_id	object_id	object_label	notes
 COB:0000001	quality	owl:equivalentClass	BFO:0000019	quality	.
 COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.
@@ -86,6 +87,7 @@ COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:003
 COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective specification	.
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
 COB:0000080	complex of molecular entities	rdfs:subClassOf	owl:Thing	owl:Thing	
+COB:0000088	drug product	owl:equivalentClass	DRON:0000005	drug product	we currently use a different text definition but we believe they do not contradict
 COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
 COB:0000102	data item	owl:equivalentClass	IAO:0000027	data item	.
 COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
@@ -102,6 +104,7 @@ COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular orga
 COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.
 COB:0000118	cellular organism	sssom:superClassOf	UBERON:0000468	multicellular organism	.
 COB:0000118	cellular organism	sssom:superClassOf	PO:0000003	whole plant	.
+COB:0000036	contains process	owl:equivalentProperty	BFO:0000067	contains process	.
 COB:0000041	has quality	owl:equivalentProperty	RO:0000086	has quality	.
 COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.
 COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.
@@ -124,4 +127,3 @@ COB:0000040	has specified output	owl:equivalentProperty	OBI:0000299	has_specifie
 COB:0000029	realized in	owl:equivalentProperty	BFO:0000054	realized in	.
 COB:0000030	quality of	owl:equivalentProperty	RO:0000080	quality of	.
 COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.
-COB:0000036	contains process	owl:equivalentProperty	BFO:0000067	contains process	.
