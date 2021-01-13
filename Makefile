@@ -72,7 +72,7 @@ cob.tsv: cob.owl | build/robot.jar
 # this is a really hacky way to do this, replace with robot report?
 .PHONY: sssom
 sssom:
-	pip install git+https://github.com/matentzn/sssom-py.git@superclassof --upgrade --no-deps --force-reinstall
+	pip install sssom==0.14.10.dev0
 
 cob-to-external.ttl: cob-to-external.tsv | sssom
 	sssom convert -i $< -o $@
