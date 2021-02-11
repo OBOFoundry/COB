@@ -1065,8 +1065,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
-        <rdfs:comment>Should we create agent?</rdfs:comment>
         <rdfs:label>planned process</rdfs:label>
     </owl:Class>
     
@@ -1321,6 +1326,16 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <rdfs:label>physical information carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
+        <obo:IAO_0000116>A role realized by a participant in a process such that the participant causes the process.</obo:IAO_0000116>
+        <rdfs:label>agent role</rdfs:label>
     </owl:Class>
     
 
