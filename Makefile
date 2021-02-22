@@ -73,8 +73,7 @@ cob.tsv: cob.owl | build/robot.jar
 .PHONY: sssom
 sssom:
 	pip install sssom
-	#pip install --upgrade --no-deps --force-reinstall sssom==0.14.13.dev0
-	pip install --upgrade --no-deps --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@fix-context
+	pip install --upgrade --no-deps --force-reinstall sssom==0.14.14.dev0
 
 cob-to-external.sssom.owl: cob-to-external.tsv | sssom
 	sssom convert -i $< -o $@
