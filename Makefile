@@ -182,6 +182,8 @@ build/source-%.owl:
 # see https://github.com/OBOFoundry/OBO-Dashboard/issues/20
 build/source-go.owl:
 	curl -L -s $(OBO)/go/go-base.owl > $@.tmp && mv $@.tmp $@
+build/source-pato.owl:
+	curl -L -s $(OBO)/pato/pato-base.owl > $@.tmp && mv $@.tmp $@
 build/source-uberon.owl:
 	curl -L -s $(OBO)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
 build/source-cl.owl:
