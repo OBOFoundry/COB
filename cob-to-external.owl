@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:sssom="http://example.org/sssom/">
+     xmlns:sssom="http://w3id.org/sssom/">
     <Ontology/>
     
 
@@ -23,21 +23,21 @@
     
 
 
-    <!-- http://example.org/sssom/license -->
+    <!-- http://w3id.org/sssom/license -->
 
-    <AnnotationProperty rdf:about="http://example.org/sssom/license"/>
+    <AnnotationProperty rdf:about="http://w3id.org/sssom/license"/>
     
 
 
-    <!-- http://example.org/sssom/object_label -->
+    <!-- http://w3id.org/sssom/object_label -->
 
-    <AnnotationProperty rdf:about="http://example.org/sssom/object_label"/>
+    <AnnotationProperty rdf:about="http://w3id.org/sssom/object_label"/>
     
 
 
-    <!-- http://example.org/sssom/subject_label -->
+    <!-- http://w3id.org/sssom/subject_label -->
 
-    <AnnotationProperty rdf:about="http://example.org/sssom/subject_label"/>
+    <AnnotationProperty rdf:about="http://w3id.org/sssom/subject_label"/>
     
 
 
@@ -2601,21 +2601,21 @@
         <sssom:subject_label>atom</sssom:subject_label>
     </Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
-        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25367"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
     </rdf:Description>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <sssom:object_label>molecular entity</sssom:object_label>
-        <sssom:subject_label>molecular entity</sssom:subject_label>
-    </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
         <annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25367"/>
         <sssom:object_label>molecule</sssom:object_label>
+        <sssom:subject_label>molecular entity</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <sssom:object_label>molecular entity</sssom:object_label>
         <sssom:subject_label>molecular entity</sssom:subject_label>
     </Axiom>
 </rdf:RDF>
