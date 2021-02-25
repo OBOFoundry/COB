@@ -168,7 +168,7 @@ products/orphans-%.tsv: build/merged-%.owl
 	robot query -f tsv -i $< -q sparql/no-cob-ancestor.rq $@.tmp && head -1000 $@.tmp > $@
 
 all_orphans: $(patsubst %, products/root-orphans-%.txt, $(ALL_ONTS))
-products/root-orphans-%.tsv: build/reasoned-%.owl
+products/root-orphans-%.tsv: build/merged-%.owl
 	robot query -f tsv -i $< -q sparql/cob-orphans.rq $@
 
 build/SUMMARY.txt:

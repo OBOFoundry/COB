@@ -1,0 +1,6 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/OGMS_0000020>	"symptom"
+<http://purl.obolibrary.org/obo/IDO_0000520>	"communicability period"@en
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>	"Obsolete Class"
+<http://purl.obolibrary.org/obo/IDO_0000519>	"incubation period"@en
+<http://purl.obolibrary.org/obo/IDO_0000593>	"transmission period"@en

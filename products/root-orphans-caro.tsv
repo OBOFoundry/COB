@@ -1,0 +1,9 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/GO_0008150>	"biological_process"
+<http://purl.obolibrary.org/obo/CARO_0030000>	"biological entity"
+<http://purl.obolibrary.org/obo/PATO_0000001>	"quality"
+<http://purl.obolibrary.org/obo/CARO_0020000>	"disconnected anatomical group"
+<http://purl.obolibrary.org/obo/CARO_0001010>	"organism or virus or viroid"
+<http://purl.obolibrary.org/obo/PCO_0000000>	"collection of organisms"
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>	"Obsolete Class"
+<http://purl.obolibrary.org/obo/CHEBI_25367>	"molecule"

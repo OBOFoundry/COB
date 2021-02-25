@@ -1,0 +1,158 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/ENVO_01000203>	"environmental condition"
+<http://purl.obolibrary.org/obo/ENVO_3200034>	"concentration of samarium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_00010358>	"fomite"
+<http://purl.obolibrary.org/obo/ENVO_3100019>	"concentration of lutein in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200013>	"concentration of niobium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200054>	"concentration of silver in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001853>	"periglacial"@en
+<http://purl.obolibrary.org/obo/ENVO_01001375>	"sea ice variability"@en
+<http://purl.obolibrary.org/obo/ENVO_3200004>	"concentration of cobalt in lake water"
+<http://purl.obolibrary.org/obo/ENVO_09200003>	"atmospheric wind intensity"
+<http://purl.obolibrary.org/obo/ENVO_01000254>	"environmental system"
+<http://purl.obolibrary.org/obo/ENVO_04000004>	"concentration of carbon dioxide in air"@en
+<http://purl.obolibrary.org/obo/ENVO_09200009>	"structure of soil"
+<http://purl.obolibrary.org/obo/ENVO_3200045>	"concentration of gadolinium in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001188>	"holothurian digestive tract contents"@en
+<http://purl.obolibrary.org/obo/ENVO_01001844>	"ocean surface stress"@en
+<http://purl.obolibrary.org/obo/ENVO_3100001>	"concentration of Adenosine 5-triphosphate in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_09000004>	"amount of carbon atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_3200035>	"concentration of silver in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3200014>	"concentration of praseodymium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200055>	"concentration of thallium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3100010>	"concentration of chlorophyllide a in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_01000804>	"astronomical object"@en
+<http://purl.obolibrary.org/obo/ENVO_01000498>	"pole"
+<http://purl.obolibrary.org/obo/ENVO_01001008>	"meteor"@en
+<http://purl.obolibrary.org/obo/ENVO_09200004>	"porosity of soil"
+<http://purl.obolibrary.org/obo/ENVO_3200005>	"concentration of dysprosium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_04000005>	"concentration of carbon dioxide in freshwater"@en
+<http://purl.obolibrary.org/obo/ENVO_3200046>	"concentration of lanthanum in snow"
+<http://purl.obolibrary.org/obo/ENVO_3100002>	"concentration of alloxanthine in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_01001641>	"glaciation"@en
+<http://purl.obolibrary.org/obo/ENVO_3200036>	"concentration of thallium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3100020>	"concentration of methane in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200015>	"concentration of samarium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_02000047>	"animal feed"
+<http://purl.obolibrary.org/obo/ENVO_01001564>	"rain"@en
+<http://purl.obolibrary.org/obo/ENVO_09000007>	"concentration of carbon atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_09200013>	"wetness of soil"
+<http://purl.obolibrary.org/obo/ENVO_01001495>	"dioxygen dissolved in marine water"@en
+<http://purl.obolibrary.org/obo/ENVO_3200056>	"concentration of tin in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001377>	"sea surface height"@en
+<http://purl.obolibrary.org/obo/ENVO_3100011>	"concentration of dioxygen in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_09000016>	"concentration of nitrogen atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_04000006>	"concentration of carbon dioxide in seawater"@en
+<http://purl.obolibrary.org/obo/ENVO_3200006>	"concentration of europium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200047>	"concentration of lithium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3100031>	"depth of water"
+<http://purl.obolibrary.org/obo/ENVO_09200005>	"mass density of soil"
+<http://purl.obolibrary.org/obo/ENVO_3100003>	"concentration of alpha-carotene in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3100021>	"concentration of neoxanthin in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_01001642>	"interglacial"@en
+<http://purl.obolibrary.org/obo/ENVO_3200010>	"concentration of methanesulfonic acid in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200016>	"concentration of silver in lake water"
+<http://purl.obolibrary.org/obo/ENVO_01001496>	"inorganic macronutrient dissolved in ocean water"@en
+<http://purl.obolibrary.org/obo/ENVO_3200057>	"concentration of titanium in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001497>	"carbonate system of ocean water"@en
+<http://purl.obolibrary.org/obo/ENVO_01001544>	"two-dimensional fiat ice surface"@en
+<http://purl.obolibrary.org/obo/ENVO_3100012>	"concentration of divinyl chlorophyll a in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200007>	"concentration of gadolinium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200048>	"concentration of methanesulfonic acid in snow"
+<http://purl.obolibrary.org/obo/ENVO_09200000>	"temperature of environmental material"
+<http://purl.obolibrary.org/obo/ENVO_3100032>	"fluorescence of water"
+<http://purl.obolibrary.org/obo/ENVO_09200006>	"concentration of ammonium in soil"
+<http://purl.obolibrary.org/obo/ENVO_3200025>	"concentration of europium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_01001643>	"ice age"@en
+<http://purl.obolibrary.org/obo/ENVO_3100004>	"concentration of ammonium in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_09100004>	"dissolved nitrogen atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_3200011>	"concentration of molybdenum in lake water"
+<http://purl.obolibrary.org/obo/ENVO_09200015>	"humidity of soil"
+<http://purl.obolibrary.org/obo/ENVO_3200017>	"concentration of thallium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200050>	"concentration of neodymium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3200058>	"concentration of yttrium in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001504>	"glacial surface layer velocity"@en
+<http://purl.obolibrary.org/obo/ENVO_3100013>	"concentration of divinyl chlorophyll b in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200052>	"concentration of praseodymium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3200008>	"concentration of lanthanum in lake water"
+<http://purl.obolibrary.org/obo/ENVO_09200007>	"concentration of nitrate in soil"
+<http://purl.obolibrary.org/obo/ENVO_3200026>	"concentration of gadolinium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3200009>	"concentration of lithium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_09000019>	"concentration of chloride in water"
+<http://purl.obolibrary.org/obo/ENVO_3100033>	"pressure of water"
+<http://purl.obolibrary.org/obo/ENVO_3200020>	"concentration of yttrium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3100005>	"concentration of bacteriochlorophyll a in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200018>	"concentration of tin in lake water"
+<http://purl.obolibrary.org/obo/ENVO_01001361>	"atmospheric wind direction"@en
+<http://purl.obolibrary.org/obo/ENVO_3200051>	"concentration of niobium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3200059>	"concentration of urea in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_09200010>	"acidity of soil"
+<http://purl.obolibrary.org/obo/ENVO_01001858>	"cloud cover"@en
+<http://purl.obolibrary.org/obo/ENVO_3200012>	"concentration of neodymium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_09200016>	"conductivity of soil"
+<http://purl.obolibrary.org/obo/ENVO_3100014>	"concentration of fucoxanthin in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_03000096>	"season"@en
+<http://purl.obolibrary.org/obo/ENVO_3200030>	"concentration of molybdenum in water ice"
+<http://purl.obolibrary.org/obo/ENVO_09200008>	"composition of soil"
+<http://purl.obolibrary.org/obo/ENVO_3100015>	"concentration of Guanosine 5-triphosphate in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200021>	"concentration of bromine in water ice"
+<http://purl.obolibrary.org/obo/ENVO_01001164>	"geodiversity"@en
+<http://purl.obolibrary.org/obo/ENVO_3100034>	"concentration of silicic acid in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200027>	"concentration of lanthanum in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3100006>	"concentration of beta-carotene in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3100024>	"concentration of nitrous oxide in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_00010483>	"environmental material"
+<http://purl.obolibrary.org/obo/ENVO_3200019>	"concentration of titanium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_01001686>	"mass of environmental material"@en
+<http://purl.obolibrary.org/obo/ENVO_09000010>	"solubility of nitrogen atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_01001362>	"atmospheric wind speed"@en
+<http://purl.obolibrary.org/obo/ENVO_09200011>	"pressure of air"
+<http://purl.obolibrary.org/obo/ENVO_3200041>	"concentration of cerium in snow"
+<http://purl.obolibrary.org/obo/ENVO_09200017>	"composition of water"
+<http://purl.obolibrary.org/obo/ENVO_3200037>	"concentration of tin in water ice"
+<http://purl.obolibrary.org/obo/ENVO_03000123>	"concentration of nitrate and nitrite in liquid water"@en
+<http://purl.obolibrary.org/obo/ENVO_3200031>	"concentration of neodymium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3100016>	"concentration of hydrogen peroxide in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200022>	"concentration of cerium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3200028>	"concentration of lithium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3100007>	"concentration of carotene in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_01001303>	"environmental role"
+<http://purl.obolibrary.org/obo/ENVO_3100025>	"concentration of peridinin in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200040>	"concentration of bromine in snow"
+<http://purl.obolibrary.org/obo/ENVO_09100001>	"dissolved carbon atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_3200042>	"concentration of cobalt in snow"
+<http://purl.obolibrary.org/obo/ENVO_09200018>	"conductivity of water"
+<http://purl.obolibrary.org/obo/ENVO_01001363>	"volume of hydrological precipitation"@en
+<http://purl.obolibrary.org/obo/ENVO_3100027>	"concentration of silicate(4-) in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_09000001>	"solubility of carbon atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_3200032>	"concentration of niobium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3200038>	"concentration of titanium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3100017>	"concentration of hydrogen sulfide in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3100036>	"concentration of chlorophyll in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_02000055>	"plant feed"
+<http://purl.obolibrary.org/obo/ENVO_3200029>	"concentration of methanesulfonic acid in water ice"
+<http://purl.obolibrary.org/obo/ENVO_01001469>	"observing system"@en
+<http://purl.obolibrary.org/obo/ENVO_3100030>	"acidity of water"
+<http://purl.obolibrary.org/obo/ENVO_01001606>	"speed of a water current"@en
+<http://purl.obolibrary.org/obo/ENVO_3200023>	"concentration of cobalt in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3100008>	"concentration of chlorophyll a in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200002>	"concentration of bromine in lake water"
+<http://purl.obolibrary.org/obo/ENVO_3200043>	"concentration of dysprosium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3100026>	"concentration of phosphate in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200049>	"concentration of molybdenum in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001667>	"thalassic"@en
+<http://purl.obolibrary.org/obo/ENVO_3100028>	"concentration of violaxanthin in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200033>	"concentration of praseodymium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3200039>	"concentration of yttrium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_3200053>	"concentration of samarium in snow"
+<http://purl.obolibrary.org/obo/ENVO_3200024>	"concentration of dysprosium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_01001374>	"sea state"@en
+<http://purl.obolibrary.org/obo/ENVO_3200003>	"concentration of cerium in lake water"
+<http://purl.obolibrary.org/obo/ENVO_09000013>	"amount of nitrogen atom in environmental material"
+<http://purl.obolibrary.org/obo/ENVO_04000003>	"concentration of carbon dioxide in soil"@en
+<http://purl.obolibrary.org/obo/ENVO_3100009>	"concentration of chlorophyll b in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_3200044>	"concentration of europium in snow"
+<http://purl.obolibrary.org/obo/ENVO_09200002>	"environmental system process quality"
+<http://purl.obolibrary.org/obo/ENVO_3100029>	"concentration of zeaxanthin in liquid water"
+<http://purl.obolibrary.org/obo/ENVO_01001621>	"englacial"@en
+<http://purl.obolibrary.org/obo/ENVO_01001187>	"holothurian digestive tract"@en

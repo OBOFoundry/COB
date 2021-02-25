@@ -1,0 +1,28 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/ogms.owl#disease_stage>	"disease stage"@en
+<http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"@en
+<http://purl.obolibrary.org/obo/OGMS_0000087>	"extended organism"
+<http://purl.obolibrary.org/obo/OGMS_0000022>	"manifestation of a disease"
+<http://purl.obolibrary.org/obo/OGMS_0000063>	"disease course"
+<http://purl.obolibrary.org/obo/OGMS_0000077>	"pathological formation"
+<http://purl.obolibrary.org/obo/OGMS_0000045>	"disorder"
+<http://purl.obolibrary.org/obo/OGMS_0000074>	"normal value"
+<http://purl.obolibrary.org/obo/OGMS_0000039>	"configuration"
+<http://purl.obolibrary.org/obo/OGMS_0000092>	"life course"
+<http://purl.obolibrary.org/obo/OGMS_0000031>	"disease"
+<http://purl.obolibrary.org/obo/OGMS_0000059>	"etiological process"
+<http://purl.obolibrary.org/obo/OGMS_0000023>	"phenotype"
+<http://purl.obolibrary.org/obo/OGMS_0000078>	"pathological anatomical structure"
+<http://purl.obolibrary.org/obo/OGMS_0000060>	"bodily process"
+<http://purl.obolibrary.org/obo/OGMS_0000030>	"predisposition to disease of type X"
+<http://purl.obolibrary.org/obo/OGMS_0000122>	"recovered from disease"@en
+<http://purl.obolibrary.org/obo/OGMS_0000089>	"congenital malformation"
+<http://purl.obolibrary.org/obo/OGMS_0000084>	"organism population"
+<http://purl.obolibrary.org/obo/OBI_0000011>	"planned process"@en
+<http://purl.obolibrary.org/obo/OGMS_0000032>	"homeostasis"
+<http://purl.obolibrary.org/obo/OGMS_0000024>	"sign"
+<http://purl.obolibrary.org/obo/OGMS_0000020>	"symptom"
+<http://purl.obolibrary.org/obo/OGMS_0000079>	"portion of pathological body substance"
+<http://purl.obolibrary.org/obo/OGMS_0000091>	"convalescence"
+<http://purl.obolibrary.org/obo/OGMS_0000086>	"syndrome"
+<http://purl.obolibrary.org/obo/OGMS_0000067>	"_undefined primitive term"
