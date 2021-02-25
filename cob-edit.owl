@@ -520,6 +520,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
         <rdfs:comment>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</rdfs:comment>
         <rdfs:comment>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</rdfs:comment>
