@@ -1,0 +1,27 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/OBI_0000319>	"material to be added role"@en
+<http://purl.obolibrary.org/obo/OBI_0302732>	"solvent role"@en
+<http://purl.obolibrary.org/obo/IAO_0000015>	"information carrier"@en
+<http://purl.obolibrary.org/obo/GO_0008150>	"biological_process"
+<http://purl.obolibrary.org/obo/OBI_0302733>	"solute role"@en
+<http://purl.obolibrary.org/obo/OBI_0000025>	"reference substance role"@en
+<http://purl.obolibrary.org/obo/ECO_0000000>	"evidence"
+<http://purl.obolibrary.org/obo/OBI_0000416>	"cloning insert role"@en
+<http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"@en
+<http://purl.obolibrary.org/obo/OBI_0000086>	"reagent role"@en
+<http://purl.obolibrary.org/obo/ECO_0000217>	"assertion method"
+<http://purl.obolibrary.org/obo/PATO_0001241>	"physical object quality"
+<http://purl.obolibrary.org/obo/OBI_0000067>	"evaluant role"@en
+<http://purl.obolibrary.org/obo/OBI_0000857>	"complementary nucleotide probe role"
+<http://purl.obolibrary.org/obo/SO_0000001>	"region"
+<http://purl.obolibrary.org/obo/OBI_0000097>	"participant under investigation role"@en
+<http://purl.obolibrary.org/obo/OBI_0000654>	"device setting"
+<http://purl.obolibrary.org/obo/OBI_1110120>	"assay antigen role"@en
+<http://purl.obolibrary.org/obo/OBI_0000011>	"planned process"@en
+<http://purl.obolibrary.org/obo/OBI_0002444>	"measurand role"@en
+<http://purl.obolibrary.org/obo/PATO_0000125>	"mass"
+<http://purl.obolibrary.org/obo/OBI_0000444>	"target of material addition role"@en
+<http://purl.obolibrary.org/obo/GO_0003674>	"molecular_function"
+<http://purl.obolibrary.org/obo/GO_0003674>	"GO:molecular_function"
+<http://purl.obolibrary.org/obo/OBI_0000112>	"specimen role"@en
+<http://purl.obolibrary.org/obo/REO_0000171>	"molecular label role"@en

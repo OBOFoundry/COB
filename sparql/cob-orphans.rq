@@ -15,6 +15,7 @@ SELECT ?x ?xl WHERE {
               FILTER( strStarts(STR(?y), "http://purl.obolibrary.org/obo/COB_" ))
             } )
 
+   ## REMOVE REDUNDANT
    FILTER ( NOT EXISTS {
 
    ?x rdfs:subClassOf ?x2 .
