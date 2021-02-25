@@ -72,15 +72,16 @@ cob.tsv: cob.owl | build/robot.jar
 # this is a really hacky way to do this, replace with robot report?
 .PHONY: sssom
 sssom:
-	pip install sssom==0.14.10.dev0
+	pip install sssom
+	pip install --upgrade --no-deps --force-reinstall sssom==0.14.14.dev0
 
-cob-to-external.ttl: cob-to-external.tsv | sssom
+cob-to-external.sssom.owl: cob-to-external.tsv | sssom
 	sssom convert -i $< -o $@
 
-cob-to-external.owl: cob-to-external.ttl | build/robot.jar
+cob-to-external.owl: cob-to-external.sssom.owl | build/robot.jar
 	$(ROBOT) remove -i $< \
-	--term "http://example.org/sssom/MappingSet" \
-	--term "http://example.org/sssom/mappings" \
+	--term "http://w3id.org/sssom/MappingSet" \
+	--term "http://w3id.org/sssom/mappings" \
 	convert -o $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
