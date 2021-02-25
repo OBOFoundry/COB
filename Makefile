@@ -139,7 +139,7 @@ itest_noncompliant: $(patsubst %, build/incoherent-%.txt, $(COB_NONCOMPLIANT))
 superclass_test: $(patsubst %, build/no-orphans-%.txt, $(ALL_ONTS))
 
 # merged product to be tested
-build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot.jar
+build/merged-%.owl: build/relaxed-%.owl cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
@@ -205,6 +205,9 @@ build/source-obi.owl:
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+# See: https://github.com/OBOFoundry/COB/issues/151
+build/relaxed-%.owl: build/source-%.owl
+	$(ROBOT) relax -i $< reason -r ELK -o $@
 
 ########################################
 # -- EXEMPLAR ONTOLOGY --
