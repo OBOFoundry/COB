@@ -22,7 +22,8 @@ build:
 ROBOT_DOWNLOAD=true
 
 build/robot.jar: | build
-	if [ $(ROBOT_DOWNLOAD) = true ]; then curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar; fi
+	echo "Skipping sssom install"
+	#if [ $(ROBOT_DOWNLOAD) = true ]; then curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar; fi
 
 ########################################
 # -- MAIN RELEASE PRODUCTS --
