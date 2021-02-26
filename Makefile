@@ -165,7 +165,7 @@ build/incoherent-%.txt: build/reasoned-%.owl
 # this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
 # is all sub/equiv axioms
 products/orphans-%.tsv: build/merged-%.owl
-	robot query -f tsv -i $< -q sparql/no-cob-ancestor.rq $@.tmp && grep -i '/$*_' $@.tmp | head -1000 > $@
+	robot query -f tsv -i $< -q sparql/no-cob-ancestor.rq $@.tmp && egrep -i '(^\?|/$*_)' $@.tmp | head -1000 > $@
 
 all_orphans: $(patsubst %, products/root-orphans-%.txt, $(ALL_ONTS))
 products/root-orphans-%.tsv: build/merged-%.owl
