@@ -103,8 +103,8 @@
 <http://purl.obolibrary.org/obo/ENVO_09000014>	"amount of nitrogen atom in soil"
 <http://purl.obolibrary.org/obo/ENVO_04000004>	"concentration of carbon dioxide in air"@en
 <http://purl.obolibrary.org/obo/ENVO_09200009>	"structure of soil"
-<http://purl.obolibrary.org/obo/ENVO_03000088>	"methane-laden permafrost"@en
 <http://purl.obolibrary.org/obo/ENVO_01001393>	"Bathymodiolus gill tissue material"@en
+<http://purl.obolibrary.org/obo/ENVO_03000088>	"methane-laden permafrost"@en
 <http://purl.obolibrary.org/obo/ENVO_00005781>	"heat stressed soil"
 <http://purl.obolibrary.org/obo/ENVO_03500010>	"shady environment"@en
 <http://purl.obolibrary.org/obo/ENVO_01000301>	"estuarine water"
@@ -146,8 +146,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001475>	"omics observatory system"@en
 <http://purl.obolibrary.org/obo/ENVO_00003045>	"bacon curing brine"
 <http://purl.obolibrary.org/obo/ENVO_01000155>	"organic material"
-<http://purl.obolibrary.org/obo/ENVO_01001687>	"mass of solid material"@en
 <http://purl.obolibrary.org/obo/ENVO_09000006>	"amount of carbon atom in water"
+<http://purl.obolibrary.org/obo/ENVO_01001687>	"mass of solid material"@en
 <http://purl.obolibrary.org/obo/ENVO_01001017>	"halo"@en
 <http://purl.obolibrary.org/obo/ENVO_03000072>	"second year ice"@en
 <http://purl.obolibrary.org/obo/ENVO_02000040>	"mucus material"
@@ -252,8 +252,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001044>	"soil environment"@en
 <http://purl.obolibrary.org/obo/ENVO_00000344>	"grain of desert sand"
 <http://purl.obolibrary.org/obo/ENVO_01000115>	"cobble sediment"
-<http://purl.obolibrary.org/obo/ENVO_03500008>	"safe environment for human presence"@en
 <http://purl.obolibrary.org/obo/ENVO_3200036>	"concentration of thallium in water ice"
+<http://purl.obolibrary.org/obo/ENVO_03500008>	"safe environment for human presence"@en
 <http://purl.obolibrary.org/obo/ENVO_00002249>	"phaeozem"
 <http://purl.obolibrary.org/obo/ENVO_01001647>	"colloid suspended in a hydrosphere"@en
 <http://purl.obolibrary.org/obo/ENVO_01001179>	"cnidarian-associated environment"@en
@@ -477,8 +477,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001649>	"heavy fraction material"@en
 <http://purl.obolibrary.org/obo/ENVO_02000029>	"cerebrospinal fluid material"
 <http://purl.obolibrary.org/obo/ENVO_09000018>	"concentration of nitrogen atom in water"
-<http://purl.obolibrary.org/obo/ENVO_00002114>	"chemically enriched sediment"
 <http://purl.obolibrary.org/obo/ENVO_02000098>	"platinum ore"
+<http://purl.obolibrary.org/obo/ENVO_00002114>	"chemically enriched sediment"
 <http://purl.obolibrary.org/obo/ENVO_00005763>	"humus-rich acidic ash soil"
 <http://purl.obolibrary.org/obo/ENVO_02000008>	"cell culture"
 <http://purl.obolibrary.org/obo/ENVO_01001040>	"saline environment"@en
@@ -677,8 +677,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001283>	"aluminium dust"@en
 <http://purl.obolibrary.org/obo/ENVO_01001164>	"geodiversity"@en
 <http://purl.obolibrary.org/obo/ENVO_3100034>	"concentration of silicic acid in liquid water"
-<http://purl.obolibrary.org/obo/ENVO_01001820>	"cultured organic material"@en
 <http://purl.obolibrary.org/obo/ENVO_01000277>	"water ice"
+<http://purl.obolibrary.org/obo/ENVO_01001820>	"cultured organic material"@en
 <http://purl.obolibrary.org/obo/ENVO_02000053>	"hide"
 <http://purl.obolibrary.org/obo/ENVO_00000307>	"icefall"
 <http://purl.obolibrary.org/obo/ENVO_00003030>	"silage"
@@ -713,8 +713,8 @@
 <http://purl.obolibrary.org/obo/ENVO_3200019>	"concentration of titanium in lake water"
 <http://purl.obolibrary.org/obo/ENVO_02000091>	"coal"
 <http://purl.obolibrary.org/obo/ENVO_02000120>	"zinc chloride fume"
-<http://purl.obolibrary.org/obo/ENVO_00002018>	"sewage"
 <http://purl.obolibrary.org/obo/ENVO_01001138>	"carbon dioxide ice"@en
+<http://purl.obolibrary.org/obo/ENVO_00002018>	"sewage"
 <http://purl.obolibrary.org/obo/ENVO_2000009>	"sub-bitumous coal"
 <http://purl.obolibrary.org/obo/ENVO_01001686>	"mass of environmental material"@en
 <http://purl.obolibrary.org/obo/ENVO_09000010>	"solubility of nitrogen atom in environmental material"
@@ -954,8 +954,8 @@
 <http://purl.obolibrary.org/obo/ENVO_3100026>	"concentration of phosphate in liquid water"
 <http://purl.obolibrary.org/obo/ENVO_00002014>	"plutonic rock"
 <http://purl.obolibrary.org/obo/ENVO_01000063>	"planktonic material"@en
-<http://purl.obolibrary.org/obo/ENVO_01001345>	"floating ice mass"@en
 <http://purl.obolibrary.org/obo/ENVO_3200049>	"concentration of molybdenum in snow"
+<http://purl.obolibrary.org/obo/ENVO_01001345>	"floating ice mass"@en
 <http://purl.obolibrary.org/obo/ENVO_01000346>	"lower montane"
 <http://purl.obolibrary.org/obo/ENVO_01001667>	"thalassic"@en
 <http://purl.obolibrary.org/obo/ENVO_00002177>	"1,4-dioxane contaminated sludge"

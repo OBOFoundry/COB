@@ -285,7 +285,6 @@
 <http://purl.obolibrary.org/obo/OBI_0302914>	"digital curation"@en
 <http://purl.obolibrary.org/obo/OBI_0001946>	"forward PCR primer"@en
 <http://purl.obolibrary.org/obo/OBI_0000310>	"adverse event trigger"@en
-<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>	"Obsolete Class"
 <http://purl.obolibrary.org/obo/OBI_0500010>	"reference design"
 <http://purl.obolibrary.org/obo/OBI_0001306>	"RNA stability design"
 <http://purl.obolibrary.org/obo/OBI_0002595>	"enzymatic reaction identification design"

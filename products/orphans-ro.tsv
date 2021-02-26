@@ -1,8 +1,4 @@
 ?x	?xl
-<http://purl.obolibrary.org/obo/CARO_0030000>	"biological entity"
 <http://purl.obolibrary.org/obo/RO_0002533>	"sequence atomic unit"
-<http://purl.obolibrary.org/obo/CARO_0000000>	"anatomical entity"@en
 <http://purl.obolibrary.org/obo/RO_0002534>	"sequence bearer"
-<http://purl.obolibrary.org/obo/CARO_0000007>	"immaterial anatomical entity"
 <http://purl.obolibrary.org/obo/RO_0002532>	"sequentially ordered entity"
-<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>	"Obsolete Class"
