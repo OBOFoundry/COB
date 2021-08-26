@@ -1,0 +1,38 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/OBI_0000947>	"service provider role"
+<http://purl.obolibrary.org/obo/NCBITaxon_131567>	"cellular organisms"
+<http://purl.obolibrary.org/obo/IAO_0000015>	"information carrier"@en
+<http://rs.tdwg.org/dwc/terms/MaterialSample>	"Material Sample"@en-us
+<http://rs.tdwg.org/dwc/terms/Event>	"Event"@en-us
+<http://purl.obolibrary.org/obo/OBI_0002076>	"collection of specimens"@en
+<http://purl.obolibrary.org/obo/OBI_0000067>	"evaluant role"@en
+<http://purl.obolibrary.org/obo/CL_0000000>	"cell"@en
+<http://purl.obolibrary.org/obo/CL_0000000>	"cell"
+<http://purl.obolibrary.org/obo/SO_0000001>	"region"
+<http://purl.obolibrary.org/obo/OBI_0100051>	"specimen"@en
+<http://purl.obolibrary.org/obo/OBI_0000427>	"enzyme"@en
+<http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"@en
+<http://purl.obolibrary.org/obo/CHEBI_23367>	"molecular entity"
+<http://purl.obolibrary.org/obo/BCO_0000046>	"material target of observation role"@en
+<http://purl.obolibrary.org/obo/OBI_0000047>	"processed material"@en
+<http://purl.obolibrary.org/obo/PATO_0000001>	"quality"
+<http://purl.obolibrary.org/obo/OBI_0000112>	"specimen role"@en
+<http://purl.obolibrary.org/obo/GO_0032991>	"protein-containing complex"
+<http://purl.obolibrary.org/obo/OBI_0000571>	"manufacturer role"
+<http://rs.tdwg.org/dwc/terms/Occurrence>	"Occurrence"@en-us
+<http://purl.obolibrary.org/obo/BCO_0000042>	"taxonomic identification process"@en
+<http://purl.obolibrary.org/obo/OBI_0000245>	"organization"@en
+<http://purl.obolibrary.org/obo/UBERON_0000465>	"material anatomical entity"
+<http://rs.tdwg.org/dwc/terms/GeologicalContext>	"Geological Context"@en-us
+<http://purl.obolibrary.org/obo/IAO_0000178>	"material information bearer"@en
+<http://purl.obolibrary.org/obo/BCO_0000031>	"museum collection"@en
+<http://purl.obolibrary.org/obo/OBI_0000453>	"measure function"@en
+<http://purl.obolibrary.org/obo/ENVO_00002297>	"environmental feature"
+<http://purl.obolibrary.org/obo/BCO_0000044>	"material target of observation"@en
+<http://purl.obolibrary.org/obo/OBI_0000017>	"regulatory role"@en
+<http://purl.obolibrary.org/obo/OBI_0100026>	"organism"@en
+<http://purl.obolibrary.org/obo/UBERON_0000477>	"anatomical cluster"
+<http://rs.tdwg.org/dwc/terms/Identification>	"Identification"@en-us
+<http://purl.obolibrary.org/obo/PCO_0000031>	"organismal entity"@en
+<http://purl.obolibrary.org/obo/OBI_0000835>	"manufacturer"
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>	"Obsolete Class"

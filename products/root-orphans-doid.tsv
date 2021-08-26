@@ -1,0 +1,12 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/TRANS_0000000>	"transmission process"
+<http://purl.obolibrary.org/obo/DOID_4>	"disease"
+<http://purl.obolibrary.org/obo/ECO_0000000>	"evidence"
+<http://purl.obolibrary.org/obo/doid#sequence>	"sequence"
+<http://purl.obolibrary.org/obo/GENO_0000141>	"inheritance pattern"
+<http://purl.obolibrary.org/obo/UBERON_0001062>	"anatomy"
+<http://purl.obolibrary.org/obo/FOODON_00002403>	"food material"@en
+<http://purl.obolibrary.org/obo/doid#chebi>	"chebi"
+<http://purl.obolibrary.org/obo/SYMP_0000462>	"symptom"
+<http://purl.obolibrary.org/obo/UPHENO_0001001>	"phenotype"
+<http://purl.obolibrary.org/obo/OMIM_000000>	"omim_susceptibilty"

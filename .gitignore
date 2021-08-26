@@ -1,7 +1,8 @@
 *.old
+*.tmp
 catalog-v001.xml
 build/robot.jar
 build/cob-annotations.ttl
 cob-to-external.ttl
 cob-to-external.sssom.owl
-build/source-*.owl
+build/

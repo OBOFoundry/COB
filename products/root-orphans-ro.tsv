@@ -1,0 +1,12 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/GO_0008150>	"biological_process"
+<http://purl.obolibrary.org/obo/CARO_0030000>	"biological entity"
+<http://purl.obolibrary.org/obo/RO_0002310>	"exposure event or process"
+<http://purl.obolibrary.org/obo/GO_0003674>	"molecular_function"
+<http://purl.obolibrary.org/obo/RO_0002577>	"system"
+<http://purl.obolibrary.org/obo/CARO_0000007>	"immaterial anatomical entity"
+<http://purl.obolibrary.org/obo/OGMS_0000031>	"disease"
+<http://purl.obolibrary.org/obo/PATO_0000001>	"quality"
+<http://purl.obolibrary.org/obo/CARO_0001010>	"organism or virus or viroid"
+<http://purl.obolibrary.org/obo/RO_0002532>	"sequentially ordered entity"
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>	"Obsolete Class"

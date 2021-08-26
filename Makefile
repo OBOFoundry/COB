@@ -119,27 +119,31 @@ COB_NONCOMPLIANT =  iao mondo  eco  maxo  mco  nbo peco ecto chebi
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
 test: main_test itest
+
+# main test: should be run via CI on every PR
+# this tests COB's internal consistency
 main_test: build/report.tsv cob.owl cob-base-reasoned.owl cob-examples-reasoned.owl
 
-# integration tests
+# integration tests: for now, run these on commmand line
 itest: itest_compliant itest_noncompliant #superclass_test
 
 itest_compliant: $(patsubst %, build/reasoned-%.owl, $(ALL_ONTS))
 itest_noncompliant: $(patsubst %, build/incoherent-%.txt, $(COB_NONCOMPLIANT))
 
-# currently almost ALL ontologies fail this.
-#
-# Recommended:
-#
-#   make -k superclass_test
+# --
+# orphan reports
+# --
 #
 # PASSES: ENVO
 # FAILS: anything with stages (PO, UBERON, ...): https://github.com/OBOFoundry/COB/issues/40
 # FAILS: PATO we need characteristic https://github.com/OBOFoundry/COB/issues/65
-superclass_test: $(patsubst %, build/no-orphans-%.txt, $(ALL_ONTS))
+orphans: $(patsubst %, products/orphans-%.tsv, $(ALL_ONTS))
+root_orphans: $(patsubst %, products/root-orphans-%.tsv, $(ALL_ONTS))
+superclass_test: orphans
+	echo TODO: currently this test always passes
 
 # merged product to be tested
-build/merged-%.owl: build/source-%.owl cob.owl cob-to-external.owl | build/robot.jar
+build/merged-%.owl: build/relaxed-%.owl cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge -i $< -i cob.owl -i cob-to-external.owl --collapse-import-closure true -o $@
 .PRECIOUS: build/merged-%.owl
 
@@ -160,12 +164,12 @@ build/incoherent-%.txt: build/reasoned-%.owl
 # note that for 'reasoning' we use only subClassOf and equivalentClasses;
 # this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
 # is all sub/equiv axioms
-build/no-orphans-%.txt: build/merged-%.owl
-	robot verify -i $< -q sparql/no-cob-ancestor.rq >& build/orphans-$*.txt && touch $@
+products/orphans-%.tsv: build/merged-%.owl
+	robot query -f tsv -i $< -q sparql/no-cob-ancestor.rq $@.tmp && egrep -i '(^\?|/$*_)' $@.tmp | head -1000 > $@
 
-all_orphans: $(patsubst %, build/root-orphans-%.txt, $(ALL_ONTS))
-build/root-orphans-%.txt: build/reasoned-%.owl
-	robot query -i $< -q sparql/cob-orphans.rq $@
+all_orphans: $(patsubst %, products/root-orphans-%.txt, $(ALL_ONTS))
+products/root-orphans-%.tsv: build/merged-%.owl
+	robot query -f tsv -i $< -q sparql/cob-orphans.rq $@
 
 build/SUMMARY.txt:
 	(head build/status-*txt && head -1 build/incoherent-*txt) > $@
@@ -197,14 +201,16 @@ build/source-mp.owl:
 	curl -L -s $(OBO)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
 build/source-ncbitaxon.owl:
 	curl -L -s $(OBO)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
-# change this when https://github.com/obi-ontology/obi/pull/1225 is merged
 build/source-obi.owl:
-	curl -L -s https://raw.githubusercontent.com/obi-ontology/obi/4c7a0b1bc7034614a951e7700815a2612b39c334/views/obi_base.owl > $@.tmp && mv $@.tmp $@
+	curl -L -s $(OBO)/obi/obi-base.owl > $@.tmp && mv $@.tmp $@
 
 # special cases
 build/source-uberon+cl.owl: build/source-cl.owl build/source-uberon.owl | build/robot.jar
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+# See: https://github.com/OBOFoundry/COB/issues/151
+build/relaxed-%.owl: build/source-%.owl
+	$(ROBOT) relax -i $< reason -r ELK -o $@
 
 ########################################
 # -- EXEMPLAR ONTOLOGY --

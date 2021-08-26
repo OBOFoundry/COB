@@ -1,0 +1,24 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/CARO_0000009>	"anatomical point"
+<http://purl.obolibrary.org/obo/CARO_0000000>	"anatomical entity"
+<http://purl.obolibrary.org/obo/CARO_0002100>	"anatomical system"
+<http://purl.obolibrary.org/obo/CARO_0000014>	"cell part"@en
+<http://purl.obolibrary.org/obo/CARO_0000006>	"material anatomical entity"
+<http://purl.obolibrary.org/obo/CARO_0002003>	"clustered anatomical group"@en
+<http://purl.obolibrary.org/obo/CARO_0020003>	"cellular anatomical structure"@en
+<http://purl.obolibrary.org/obo/CARO_0000003>	"connected anatomical structure"
+<http://purl.obolibrary.org/obo/CARO_0001005>	"gene expression boundary"@en
+<http://purl.obolibrary.org/obo/CARO_0002002>	"aligned anatomical group"
+<http://purl.obolibrary.org/obo/CARO_0020000>	"disconnected anatomical group"
+<http://purl.obolibrary.org/obo/CARO_0000008>	"anatomical line"
+<http://purl.obolibrary.org/obo/CARO_0001003>	"fiat anatomical boundary"@en
+<http://purl.obolibrary.org/obo/CARO_0001013>	"anatomical plane"
+<http://purl.obolibrary.org/obo/CARO_0000010>	"anatomical boundary"
+<http://purl.obolibrary.org/obo/CARO_0001007>	"morphological boundary"@en
+<http://purl.obolibrary.org/obo/CARO_0001004>	"bona-fide anatomical boundary"@en
+<http://purl.obolibrary.org/obo/CARO_0000007>	"immaterial anatomical entity"
+<http://purl.obolibrary.org/obo/CARO_0002101>	"disconnected anatomical system"
+<http://purl.obolibrary.org/obo/CARO_0001002>	"anatomical surface"
+<http://purl.obolibrary.org/obo/CARO_0030000>	"biological entity"
+<http://purl.obolibrary.org/obo/CARO_0030002>	"expression pattern"
+<http://purl.obolibrary.org/obo/CARO_0001006>	"developmental compartment boundary"@en

@@ -1,0 +1,562 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/MAXO_0000042>	"therapeutic disease avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000471>	"diagnostic procedure avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000614>	"immunofluorescence assays"@en
+<http://purl.obolibrary.org/obo/MAXO_0000158>	"antiparasitic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0001020>	"general anesthetic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000021>	"palliative therapeutics"@en
+<http://purl.obolibrary.org/obo/MAXO_0000089>	"calorie restrictive diet intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0010076>	"rapeseed flour intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000585>	"microbial culture procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000205>	"calcium channel modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0002000>	"cannabis consumption avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000518>	"extubation procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000062>	"antineoplastic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000152>	"augmentation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000462>	"cold water immersion therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000535>	"surgical aspiration procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000107>	"multivitamin supplementation"@en
+<http://purl.obolibrary.org/obo/MAXO_0010070>	"brussels sprout intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000068>	"transplantation surgical procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000080>	"stress management therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000323>	"sedatives and hypnotic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000606>	"procalcitonin measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000468>	"peritoneal lavage"@en
+<http://purl.obolibrary.org/obo/MAXO_0000576>	"patient travel risk assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0000223>	"abortive antimigraine agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000011>	"physical therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000623>	"nutrition counseling"@en
+<http://purl.obolibrary.org/obo/MAXO_0001018>	"nutrition intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000264>	"dental and oral agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010101>	"dietary ascorbic acid intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000170>	"anesthetic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000017>	"preventative therapeutics"@en
+<http://purl.obolibrary.org/obo/MAXO_0000058>	"pharmacotherapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000570>	"induced sputum collection"@en
+<http://purl.obolibrary.org/obo/MAXO_0010061>	"sunflower seed intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000148>	"oxygen capacity measurement test"@en
+<http://purl.obolibrary.org/obo/MAXO_0010107>	"dietary sterol intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000458>	"hydrotherapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010067>	"peanut intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000121>	"passive immunization"@en
+<http://purl.obolibrary.org/obo/MAXO_0000499>	"respiratory therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000509>	"positive controlled ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000127>	"genetic testing"@en
+<http://purl.obolibrary.org/obo/MAXO_0000590>	"loop-mediated isothermal amplification test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000437>	"ADHD agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000168>	"antiviral agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000527>	"physical examination"@en
+<http://purl.obolibrary.org/obo/MAXO_0000071>	"chemical exposure avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000568>	"plasma glucose measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000314>	"inhaled corticosteroid agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010087>	"cane juice intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000215>	"tricyclic antidepressant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000072>	"ultrasonography procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000256>	"antimanic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000002>	"therapeutic procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000162>	"adrenal-modifying, hormonal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000043>	"communicable disease avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000472>	"preventative therapeutics avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000118>	"preventative immunization"@en
+<http://purl.obolibrary.org/obo/MAXO_0010081>	"sorbitol syrup intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000297>	"immune suppressant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000049>	"therapeutic avoidance of physical activity"@en
+<http://purl.obolibrary.org/obo/MAXO_0000545>	"basophil count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000478>	"orthopedic consultation"@en
+<http://purl.obolibrary.org/obo/MAXO_0010116>	"dietary sucrose intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000586>	"invasive ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000615>	"immunoblot assay"@en
+<http://purl.obolibrary.org/obo/MAXO_0002001>	"tobacco consumption avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001021>	"antimicrobial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000022>	"hospice care"@en
+<http://purl.obolibrary.org/obo/MAXO_0000274>	"genitourinary agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000112>	"antioxidant therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0002007>	"copulation avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0010110>	"dietary lactose intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000580>	"anion gap measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010071>	"broccoli intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001000>	"functional magnetic resonance imaging procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000069>	"lung transplantation surgical procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000159>	"analgesic pharmacotherapeutic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000536>	"chorionic villus sampling"@en
+<http://purl.obolibrary.org/obo/MAXO_0000469>	"nasal lavage"@en
+<http://purl.obolibrary.org/obo/MAXO_0010077>	"cephalopod intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0010090>	"dietary arginine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000224>	"prophylactic antimigraine agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000130>	"endoscopic procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0001019>	"prenatal vitamin"@en
+<http://purl.obolibrary.org/obo/MAXO_0000440>	"colony stimulating factor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000624>	"nutrition assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0000171>	"antidementia agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000018>	"biomarker analysis"@en
+<http://purl.obolibrary.org/obo/MAXO_0000530>	"genetic carrier screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0000463>	"contrast water therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000108>	"iron supplementation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000571>	"computed tomography procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0010102>	"dietary branched-chain amino acid intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000081>	"tobacco cessation counseling"@en
+<http://purl.obolibrary.org/obo/MAXO_0000177>	"coagulant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000324>	"skeletal muscle relaxant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000607>	"D-dimer measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000577>	"patient travel risk questionaire"@en
+<http://purl.obolibrary.org/obo/MAXO_0010068>	"soy intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0010108>	"dietary purine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000459>	"thermal hydrotherapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000550>	"inflammatory biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000265>	"dermatological agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000128>	"prenatal screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0010091>	"dietary lysine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000481>	"orthotic services"@en
+<http://purl.obolibrary.org/obo/MAXO_0000053>	"therapeutic avoidance of environmental exposure"@en
+<http://purl.obolibrary.org/obo/MAXO_0010062>	"liver intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000528>	"fetal examination"@en
+<http://purl.obolibrary.org/obo/MAXO_0000597>	"supplemental oxygen therapy with mask"@en
+<http://purl.obolibrary.org/obo/MAXO_0000169>	"anti-inflammatory agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010000>	"gluten intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000003>	"diagnostic procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000432>	"beta-lactam antibacterial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000073>	"liver ultrasound procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000257>	"antidiabetic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0030018>	"uncooked cornstarch supplementation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000591>	"clinical DNA detection test"@en
+<http://purl.obolibrary.org/obo/MAXO_0010082>	"human milk intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000009>	"nutrition intervention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000163>	"anxiolytic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000438>	"stimulant ADHD agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000473>	"medical device implantation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000546>	"lymphocyte count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000090>	"enteral nutrition intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000616>	"oxygen saturation measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010088>	"organ meat intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000180>	"platelet aggregation inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000479>	"orthopedic surgery"@en
+<http://purl.obolibrary.org/obo/MAXO_0001022>	"psychotropic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010117>	"dietary triglyceride intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000587>	"airway pressure release ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000234>	"aromatase inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0002002>	"smoking behavior avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000540>	"nuchal translucency screen"@en
+<http://purl.obolibrary.org/obo/MAXO_0000275>	"urinary antispasmodic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0002008>	"stress avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000181>	"cardiovascular agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000429>	"external beam radiation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010111>	"dietary leucine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000581>	"calcium measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010072>	"cabbage intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001001>	"gene therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010078>	"crustacean intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000131>	"location specific endoscopy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000531>	"noninvasive prenatal testing"@en
+<http://purl.obolibrary.org/obo/MAXO_0000137>	"positron emission tomography procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000172>	"therapeutic antidotes, deterrents, and toxicologic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000537>	"bacterial vaginosis screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0000572>	"hypoglycemic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010109>	"dietary fructose intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000178>	"anticoagulant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000325>	"anti-infectives agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000608>	"serum phosphate measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000488>	"body temperature measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000190>	"renin-angiotensin-aldosterone system inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000510>	"negative-pressure respiration"@en
+<http://purl.obolibrary.org/obo/MAXO_0000578>	"patient environmental exposure assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0010069>	"brassicas intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000225>	"antimyasthenic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000260>	"central nervous system agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010051>	"fava bean intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000441>	"granulocyte colony stimulating factor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000013>	"complementary and alternative medical therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000304>	"metabolic bone disease agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000054>	"radiation exposure avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000266>	"enzyme replacements and modifier agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000557>	"interleukin-8 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010103>	"dietary trimethylamine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000129>	"biopsy procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0010092>	"dietary methionine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000482>	"orthotic device usage"@en
+<http://purl.obolibrary.org/obo/MAXO_0000598>	"supplemental oxygen therapy with nasal cannula"@en
+<http://purl.obolibrary.org/obo/MAXO_0010001>	"liquid intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000217>	"antidote agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000551>	"C-reactive protein biomarker assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0000123>	"disease exposure immunization"@en
+<http://purl.obolibrary.org/obo/MAXO_0000286>	"androgen modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000529>	"prenatal genetic testing"@en
+<http://purl.obolibrary.org/obo/MAXO_0000164>	"antigout agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000592>	"clinical RNA detection test"@en
+<http://purl.obolibrary.org/obo/MAXO_0010083>	"cow milk intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000439>	"selective serotonin reuptake inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000547>	"clinical biospecimen collection"@en
+<http://purl.obolibrary.org/obo/MAXO_0000617>	"pulse oximetry"@en
+<http://purl.obolibrary.org/obo/MAXO_0010089>	"dietary isoleucine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000280>	"pituitary-modifying, hormonal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000500>	"airway management"@en
+<http://purl.obolibrary.org/obo/MAXO_0001023>	"tranquilizing agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000235>	"antineoplastic molecular target inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000141>	"pap smear"@en
+<http://purl.obolibrary.org/obo/MAXO_0000074>	"pancreatic function test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000182>	"alpha-adrenergic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000541>	"quad test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000474>	"implantable cardioverter-defibrillator placement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010112>	"dietary oxalate intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000582>	"electrolyte measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010118>	"dietary riboflavin intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000588>	"clinical nucleic acid test"@en
+<http://purl.obolibrary.org/obo/MAXO_0010079>	"beer intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001008>	"platelet count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000270>	"irritable bowel syndrome agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0002003>	"consumption of an addictive substance avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0030010>	"ketogenic diet intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000132>	"specific technique endoscopy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000065>	"aerobic exercise therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000561>	"interleukin-4 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000276>	"benign prostate hypertrophy agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000492>	"respiratory rate assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0000532>	"prenatal molecular genetic testing"@en
+<http://purl.obolibrary.org/obo/MAXO_0010073>	"cauliflower intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001002>	"immunotherapy procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000138>	"contrast-enhanced ultrasound procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000448>	"surgical resection"@en
+<http://purl.obolibrary.org/obo/MAXO_0000083>	"acupuncture therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000179>	"blood formation agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000609>	"serology test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000538>	"fetal fibronectin test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000220>	"glucocorticoid agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000579>	"blood gas measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000014>	"radiation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000226>	"parasympathomimetic therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010052>	"meat food product intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000267>	"gastrointestinal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000442>	"erythropoietin regulating agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000173>	"antiemetics agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010093>	"dietary glycine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000305>	"ophthalmic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000483>	"medical professional consultation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000055>	"sunlight avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000558>	"interleukin-12 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010099>	"dietary cholesterol intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000489>	"vital signs measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000290>	"parathyroid-suppressant hormonal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000191>	"vasodilator agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010002>	"protein intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000511>	"bilevel positive airway pressure ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000261>	"amphetamine agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000246>	"antihepatitis agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000124>	"disease screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0000193>	"non-opioid analgesics agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000552>	"interleukin-6 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000593>	"clinical real-time PCR test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000240>	"antiprotozoal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000599>	"vasopressor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000281>	"prostaglandin-modifying, hormonal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000142>	"sputum cytology"@en
+<http://purl.obolibrary.org/obo/MAXO_0000501>	"endotracheal extubation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000287>	"estrogen modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000434>	"calcium channel blocking agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000075>	"digestive system test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000183>	"alpha-adrenergic agonist agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010084>	"fruit intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000475>	"surgical denervation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000548>	"swab-based biospecimen collection"@en
+<http://purl.obolibrary.org/obo/MAXO_0010113>	"dietary phosphate intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000583>	"serum electrolyte measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000230>	"alkylating agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000092>	"excessive alcohol avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000618>	"fluid replacement therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000189>	"dyslipidemic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0030011>	"texture modified diet intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000025>	"end-of life care"@en
+<http://purl.obolibrary.org/obo/MAXO_0010119>	"dietary phytanic acid intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000589>	"nucleic acid amplification test"@en
+<http://purl.obolibrary.org/obo/MAXO_0001009>	"neutrophil count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000236>	"antineoplastic monoclonal antibody agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000271>	"gastrointestinal protectant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000452>	"ablation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000066>	"supplemental oxygen therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000277>	"phosphate binders agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000139>	"autopsy procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000493>	"cardiovascular diagnostic procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000539>	"prenatal group B streptococcus screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0010074>	"rapeseed intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001003>	"alcohol deterrent agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000227>	"antimycobacterial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000133>	"balloon-guided endoscopic procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000562>	"interleukin-5 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010053>	"nut food product intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000443>	"erythropoietin stimulating agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000015>	"biologic therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000084>	"meditation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000268>	"gastrointestinal antispasmodics agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010059>	"pumpkin seed intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000174>	"antifungal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000449>	"surgical extirpation"@en
+<http://purl.obolibrary.org/obo/MAXO_0010094>	"dietary phenylalanine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000250>	"anti-HIV non-nucleoside reverse transcriptase inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000484>	"bone lengthening procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000221>	"nonsteroidal anti-inflammatory agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000206>	"gamma-aminobutyric acid augmenting agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000291>	"androgen stimulant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000300>	"inflammatory bowel disease agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000512>	"continuous positive airway pressure ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0010003>	"fat or oil intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000553>	"cytokine biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000306>	"ophthalmic anti-allergy agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000194>	"opioid analgesics agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000200>	"macrolide antibacterial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000559>	"tumor necrosis factor-alpha biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000594>	"clinical quantitative reverse transcription PCR test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000241>	"ectoparasiticidic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000600>	"renal replacement therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000247>	"antiherpetic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000282>	"sex hormone modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000502>	"endotracheal intubation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000143>	"urine cytology"@en
+<http://purl.obolibrary.org/obo/MAXO_0000076>	"liver function test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000288>	"progestin modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000543>	"eosinophil count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000149>	"hematocrit measurement test"@en
+<http://purl.obolibrary.org/obo/MAXO_0010085>	"raw egg intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000549>	"self body temperature measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000231>	"antiangiogenic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000093>	"estrogen-containing food avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000619>	"ventilation with proning"@en
+<http://purl.obolibrary.org/obo/MAXO_0010321>	"avoid CT scans"
+<http://purl.obolibrary.org/obo/MAXO_0030012>	"phenylalanine restricted diet intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000237>	"retinoid agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000453>	"laser ablation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000315>	"antileukotriene agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000184>	"alpha-adrenergic antagonist agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000494>	"blood pressure measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010114>	"saturated fat intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000584>	"urine eletrolyte measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0001004>	"smoking cessation agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000569>	"fasting blood glucose measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000272>	"proton pump inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000044>	"physiologic state avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000228>	"antitubercular agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000134>	"chromoendoscopy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000067>	"lung volume reduction surgery"@en
+<http://purl.obolibrary.org/obo/MAXO_0000563>	"Interleukin-10 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010054>	"saffron food product intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000210>	"cholinesterase inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000444>	"erythropoietin inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000175>	"blood glucose regulator therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000610>	"ELISA"@en
+<http://purl.obolibrary.org/obo/MAXO_0000251>	"anti-HIV nucleoside and nucleotide reverse transcriptase inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000113>	"gavage nutrition intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000292>	"androgen suppressant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000513>	"postural drainage"@en
+<http://purl.obolibrary.org/obo/MAXO_0000298>	"passive immunizing agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000085>	"yoga therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000554>	"interleukin-1 beta biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000201>	"quinolone antibacterial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000269>	"H2-receptor antagonist agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010095>	"dietary tyrosine intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000307>	"ophthalmic antiglaucoma agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000485>	"Ilizarov procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000601>	"renal dialysis"@en
+<http://purl.obolibrary.org/obo/MAXO_0000207>	"glutamate reducing agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000242>	"anti-cytomegalovirus agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000248>	"anti-human immunodeficiency virus agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000602>	"hemodialysis"@en
+<http://purl.obolibrary.org/obo/MAXO_0000503>	"artificial respiration"@en
+<http://purl.obolibrary.org/obo/MAXO_0000289>	"selective-estrogen receptor modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000195>	"local anesthetic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000109>	"vitamin C supplementation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000077>	"behavioral counseling"@en
+<http://purl.obolibrary.org/obo/MAXO_0000595>	"radiograph imaging procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0010086>	"fruit juice intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001014>	"medical action avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000283>	"hormone modifying therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000144>	"histological procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000454>	"chemical ablation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000544>	"granulocyte count"@en
+<http://purl.obolibrary.org/obo/MAXO_0010063>	"egg intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000279>	"Glucocorticoids/ Mineralocorticoids"@en
+<http://purl.obolibrary.org/obo/MAXO_0000316>	"bronchodilator agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000185>	"antiarrythmic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000495>	"auscultatory blood pressure measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000505>	"mask ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0010115>	"dietary calcium atom intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001005>	"opioid antagonist agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000232>	"antiestrogen agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000004>	"surgical procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000273>	"obsolete gastrointestinal agents, other"
+<http://purl.obolibrary.org/obo/MAXO_0000564>	"tumor necrosis factor-beta biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000211>	"glutamatergic pathway modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000176>	"hematologic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000252>	"anti-HIV protease inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000611>	"rapid IgM-IgG combined antibody test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000114>	"total parenteral nutrition intake"@en
+<http://purl.obolibrary.org/obo/MAXO_0000258>	"glycemic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000293>	"thyroid-stimulating hormonal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000045>	"dehydration avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000514>	"chest wall oscillation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000229>	"leprostatic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010055>	"seafood product intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000445>	"antifibrinolytic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000308>	"ophthalmic anti-inflammatory agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000086>	"chiropractic therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000202>	"sulfonamide antibacterial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010096>	"dietary sodium intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000486>	"distraction osteogenesis"@en
+<http://purl.obolibrary.org/obo/MAXO_0000208>	"sodium channel inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000249>	"anti-HIV fusion inhibitor therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000424>	"medical magnetic resonance imaging procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000302>	"salicylate agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000465>	"aquatic exercise therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000555>	"interleukin-1 alpha biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000196>	"aminoglycoside agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000596>	"infectious disease screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0000243>	"atypical antipsychotic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000620>	"central venous cannula insertion"@en
+<http://purl.obolibrary.org/obo/MAXO_0000031>	"life support care"@en
+<http://purl.obolibrary.org/obo/MAXO_0000104>	"dietary iron supplementation avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000095>	"excessive iron consumption avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000284>	"thyroid-modifying hormonal agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000320>	"mast cell stabilizer agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000603>	"peritoneal dialysis"@en
+<http://purl.obolibrary.org/obo/MAXO_0000504>	"tracheostomy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000239>	"anthelmintic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000573>	"antiretroviral therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010064>	"kidney intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000145>	"obsolete clinical pathology procedure"
+<http://purl.obolibrary.org/obo/MAXO_0010104>	"dietary choline intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000078>	"alcoholism counseling"@en
+<http://purl.obolibrary.org/obo/MAXO_0000455>	"cryosurgery"@en
+<http://purl.obolibrary.org/obo/MAXO_0000186>	"beta-adrenergic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000506>	"noninvasive ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000233>	"antimetabolite agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000311>	"otic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000165>	"diuretic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000490>	"heart rate measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000096>	"excessive protein consumption avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000136>	"high-resolution microendoscopy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000565>	"serum amyloid A biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000317>	"anticholinergic bronchodilator agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000496>	"oscillometric blood pressure measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000612>	"lateral flow assays"@en
+<http://purl.obolibrary.org/obo/MAXO_0001006>	"blood cell count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000218>	"abuse deterrent agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000253>	"anti-influenza agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000005>	"clinical imaging procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0010050>	"alcohol intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000259>	"insulin therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000046>	"hypertension avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000087>	"massage therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010056>	"mussel food product intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000446>	"desmopressin agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010097>	"dietary galactose intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000309>	"ophthalmic prostaglandin and prostamide agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000487>	"clinical measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0002004>	"agitation avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000115>	"memory intervention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000294>	"antithyroid agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000515>	"extracorporeal membrane oxygenation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000466>	"breast duct lavage"@en
+<http://purl.obolibrary.org/obo/MAXO_0000197>	"cephalosporin agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000556>	"interleukin-2 biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000203>	"tetracycline therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0001016>	"aerobic exercise therapy avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000244>	"conventional antipsychotic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000285>	"anabolic steroid modifying agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000460>	"therapeutic irrigation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000533>	"molecular genetic testing"@en
+<http://purl.obolibrary.org/obo/MAXO_0000146>	"clinical cell count"@en
+<http://purl.obolibrary.org/obo/MAXO_0010105>	"dietary trimethylamine N-oxide intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000321>	"pulmonary antihypertensive agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000604>	"endocrine test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000574>	"medical history taking"@en
+<http://purl.obolibrary.org/obo/MAXO_0010065>	"pea intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001010>	"leukocyte count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000079>	"genetic counseling"@en
+<http://purl.obolibrary.org/obo/MAXO_0000187>	"beta-adrenergic antagonist agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000621>	"arterial catheter line insertion"@en
+<http://purl.obolibrary.org/obo/MAXO_0000507>	"high-frequency ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000050>	"therapeutic impact activities avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000262>	"non-stimulant ADHD agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000140>	"clinical cytological test"@en
+<http://purl.obolibrary.org/obo/MAXO_0000125>	"audiometric testing"@en
+<http://purl.obolibrary.org/obo/MAXO_0000450>	"surgical enucleation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000056>	"nutrition intake avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000525>	"cognitive and behavioral intervention avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000312>	"respiratory tract agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000456>	"thermal ablation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000491>	"pulse assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0000097>	"fasting avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000213>	"monoamine oxidase inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000318>	"phosphodiesterase inhibitor bronchodilator agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000497>	"noninvasive blood pressure measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000613>	"clinical immunoassay"@en
+<http://purl.obolibrary.org/obo/MAXO_0000160>	"antidepressant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0001007>	"erythrocyte count"@en
+<http://purl.obolibrary.org/obo/MAXO_0000219>	"toxicologic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000560>	"interferon-gamma biomarker measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000006>	"clinical laboratory procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000166>	"antipsychotic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000047>	"obesity avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000476>	"left cardiac sympathetic denervation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000566>	"clinical chemistry measurements"@en
+<http://purl.obolibrary.org/obo/MAXO_0010057>	"clove food product intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000447>	"surgical excision"@en
+<http://purl.obolibrary.org/obo/MAXO_0000088>	"dietary intervention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000110>	"vitamin D supplementation"@en
+<http://purl.obolibrary.org/obo/MAXO_0002005>	"fear or anxiety avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0010098>	"cholesterol intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0001025>	"adrenergic agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000470>	"therapeutic procedure avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000116>	"smoking prevention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000295>	"immunological agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000157>	"antiparkinson agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000516>	"chest physiotherapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0010075>	"rapeseed oil intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000198>	"penicillin agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000020>	"behavioral preventative care"@en
+<http://purl.obolibrary.org/obo/MAXO_0000517>	"intubation procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000061>	"antibacterial agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000245>	"antispasticity agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000151>	"therapeutic avoidance intervention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000461>	"warm water immersion therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000106>	"nutritional supplementation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000605>	"protein measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000534>	"amniocentisis"@en
+<http://purl.obolibrary.org/obo/MAXO_0000467>	"bronchoaveolar lavage"@en
+<http://purl.obolibrary.org/obo/MAXO_0000575>	"patient demographic characteristics assessment"@en
+<http://purl.obolibrary.org/obo/MAXO_0000147>	"hematology test"@en
+<http://purl.obolibrary.org/obo/MAXO_0010106>	"dietary lecithin intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000010>	"cognitive and behavioral intervention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000222>	"antimigraine agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0001017>	"vaccination"@en
+<http://purl.obolibrary.org/obo/MAXO_0000622>	"noninvasive positve-pressure ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000016>	"cellular therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000051>	"therapeutic isometric exercise avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0010060>	"sesame seed intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0010100>	"dietary iron intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000451>	"implantation"@en
+<http://purl.obolibrary.org/obo/MAXO_0010066>	"bean intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000098>	"fasting intervention"@en
+<http://purl.obolibrary.org/obo/MAXO_0000457>	"pain management"@en
+<http://purl.obolibrary.org/obo/MAXO_0000319>	"sympathomimetic bronchodilator agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000120>	"active immunization"@en
+<http://purl.obolibrary.org/obo/MAXO_0000498>	"invasive blood pressure measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0000508>	"liquid ventilation"@en
+<http://purl.obolibrary.org/obo/MAXO_0000520>	"obstetric ultrasonography"@en
+<http://purl.obolibrary.org/obo/MAXO_0000126>	"cancer screening"@en
+<http://purl.obolibrary.org/obo/MAXO_0000161>	"receptor antagonist therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000436>	"N-methyl-D-aspartate receptor antagonist therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000526>	"medical examination"@en
+<http://purl.obolibrary.org/obo/MAXO_0000070>	"liver transplantation surgical procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000313>	"antihistamine agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000167>	"anticonvulsant agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000048>	"skin abrasion avoidance"@en
+<http://purl.obolibrary.org/obo/MAXO_0000477>	"orthopedic procedure"@en
+<http://purl.obolibrary.org/obo/MAXO_0000567>	"blood glucose measurement"@en
+<http://purl.obolibrary.org/obo/MAXO_0010058>	"dark chocolate intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000214>	"serotonin-norepinephrine reuptake inhibitor agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0000001>	"medical action"@en
+<http://purl.obolibrary.org/obo/MAXO_0000430>	"internal radiation therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0001026>	"beta-adrenergic agonist agent therapy"@en
+<http://purl.obolibrary.org/obo/MAXO_0002006>	"sexual activity avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000255>	"antidepressant anxiolytics"@en
+<http://purl.obolibrary.org/obo/MAXO_0000117>	"contraceptive pregnancy prevention"@en
+<http://purl.obolibrary.org/obo/MAXO_0010080>	"corn syrup (high fructose) intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0010322>	"ketogenic diet intake avoidance"
+<http://purl.obolibrary.org/obo/MAXO_0000296>	"immune stimulant agent therapy"@en

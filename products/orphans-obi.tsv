@@ -1,0 +1,310 @@
+?x	?xl
+<http://purl.obolibrary.org/obo/OBI_0001522>	"sequence assembly algorithm"@en
+<http://purl.obolibrary.org/obo/OBI_0001890>	"email address of specimen collector"@en
+<http://purl.obolibrary.org/obo/OBI_1110053>	"cancer"@en
+<http://purl.obolibrary.org/obo/OBI_0001285>	"in vitro design"
+<http://purl.obolibrary.org/obo/OBI_0001823>	"epitope specific chemokine (C-C motif) ligand 21 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001316>	"epitope specific interleukin-21 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001906>	"cancer cell line"
+<http://purl.obolibrary.org/obo/OBI_0001432>	"operon identification design"
+<http://purl.obolibrary.org/obo/OBI_1110182>	"epitope specific T cell proliferation"@en
+<http://purl.obolibrary.org/obo/OBI_0002465>	"age since culture seeding measurement datum"
+<http://purl.obolibrary.org/obo/OBI_0002596>	"self interaction identification design"
+<http://purl.obolibrary.org/obo/OBI_0001336>	"quality control testing design"
+<http://purl.obolibrary.org/obo/OBI_0500011>	"latin square design"
+<http://purl.obolibrary.org/obo/OBI_0001275>	"epitope specific interleukin-16 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001208>	"epitope specific T cell activation"
+<http://purl.obolibrary.org/obo/OBI_0001254>	"epitope specific interleukin-3 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001394>	"epitope specific cytotoxic T cell degranulation"
+<http://purl.obolibrary.org/obo/OBI_0001677>	"epitope specific granulysin production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0302847>	"methylated polymer"@en
+<http://purl.obolibrary.org/obo/OBI_0001888>	"sequencing facility contact person"@en
+<http://purl.obolibrary.org/obo/OBI_0002369>	"clinical history devoid of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001441>	"proteomic profiling by array design"
+<http://purl.obolibrary.org/obo/OBI_0000218>	"investigation results report"@en
+<http://purl.obolibrary.org/obo/OBI_0001172>	"dose response curve"
+<http://purl.obolibrary.org/obo/OBI_0001226>	"environmental history design"
+<http://purl.obolibrary.org/obo/OBI_0002197>	"tissue section thickness"@en
+<http://purl.obolibrary.org/obo/OBI_0000023>	"classified data set"@en
+<http://purl.obolibrary.org/obo/OBI_0001157>	"age since hatching measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0002191>	"courier tracking number"@en
+<http://purl.obolibrary.org/obo/OBI_1110036>	"JY cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0001628>	"investigation identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0500003>	"cross over design"
+<http://purl.obolibrary.org/obo/OBI_0001386>	"epitope specific monocyte chemotactic protein-1 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001415>	"epitope specific interleukin-9 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_1110191>	"epitope specific IL-13 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_1110054>	"autoimmune disease"@en
+<http://purl.obolibrary.org/obo/OBI_0001141>	"individual organism identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0500022>	"stopping rule"@en
+<http://purl.obolibrary.org/obo/OBI_0001286>	"RNAi profiling by array design"
+<http://purl.obolibrary.org/obo/OBI_0000662>	"error corrected data set"@en
+<http://purl.obolibrary.org/obo/OBI_0002614>	"birth cohort study design"
+<http://purl.obolibrary.org/obo/OBI_0002372>	"family clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001948>	"sequence assembly name"@en
+<http://purl.obolibrary.org/obo/OBI_0002125>	"H&E-stained fixed tissue slide specimen"@en
+<http://purl.obolibrary.org/obo/OBI_0500012>	"graeco latin square design"
+<http://purl.obolibrary.org/obo/OBI_0001502>	"epitope specific perforin production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002466>	"alignment counting algorithm"
+<http://purl.obolibrary.org/obo/OBI_0001889>	"specimen provider principal investigator"@en
+<http://purl.obolibrary.org/obo/OBI_0001161>	"age since germination measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001337>	"clinical history design"
+<http://purl.obolibrary.org/obo/OBI_0001883>	"Bioinformatics Resource Center contact person"@en
+<http://purl.obolibrary.org/obo/OBI_0500014>	"factorial design"
+<http://purl.obolibrary.org/obo/OBI_0001425>	"protein binding site identification design"
+<http://purl.obolibrary.org/obo/OBI_0002110>	"digital object identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0001290>	"transcription profiling by array design"
+<http://purl.obolibrary.org/obo/OBI_0000963>	"categorical label"
+<http://purl.obolibrary.org/obo/OBI_0001678>	"epitope specific granzyme A production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001328>	"organism development design"
+<http://purl.obolibrary.org/obo/OBI_0000115>	"intervention design"
+<http://purl.obolibrary.org/obo/OBI_0001629>	"grant identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0001199>	"in vivo design"
+<http://purl.obolibrary.org/obo/OBI_0500004>	"n-to-1 design"
+<http://purl.obolibrary.org/obo/OBI_0001958>	"systematic review study design"
+<http://purl.obolibrary.org/obo/OBI_0000065>	"polyethylene glycol p-(1,1,3,3-tetramethylbutyl)-phenyl ether"@en
+<http://purl.obolibrary.org/obo/OBI_0500023>	"compliance rule"@en
+<http://purl.obolibrary.org/obo/OBI_0001462>	"epitope specific IP-10 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001193>	"epitope specific cytokine production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0000885>	"secondary structure of sequence macromolecule"
+<http://purl.obolibrary.org/obo/OBI_0001900>	"specimen identifier assigned by specimen repository"@en
+<http://purl.obolibrary.org/obo/OBI_0002470>	"bcl2fastq software application"@en
+<http://purl.obolibrary.org/obo/OBI_0002615>	"disease specific study design"
+<http://purl.obolibrary.org/obo/OBI_0300310>	"sequential design"
+<http://purl.obolibrary.org/obo/OBI_0002373>	"aunt clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0002126>	"IHC-stained fixed tissue slide specimen"@en
+<http://purl.obolibrary.org/obo/OBI_0002379>	"son clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001716>	"B cell epitope specific complement-dependent cytotoxicity"
+<http://purl.obolibrary.org/obo/OBI_0500013>	"hyper graeco latin square design"
+<http://purl.obolibrary.org/obo/OBI_0002674>	"case series design"
+<http://purl.obolibrary.org/obo/OBI_0001894>	"email address of sequencing facility contact person"@en
+<http://purl.obolibrary.org/obo/OBI_0002461>	"BCL format"@en
+<http://purl.obolibrary.org/obo/OBI_0002467>	"alignment counting application"@en
+<http://purl.obolibrary.org/obo/OBI_0001162>	"validation by reverse transcription PCR design"
+<http://purl.obolibrary.org/obo/OBI_1110300>	"direct submission to IEDB"
+<http://purl.obolibrary.org/obo/OBI_0500015>	"2x2 factorial design"
+<http://purl.obolibrary.org/obo/OBI_0001426>	"sex comparison design"
+<http://purl.obolibrary.org/obo/OBI_0001256>	"epitope specific lymphotoxin A production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0000075>	"diagnosis textual entity"@en
+<http://purl.obolibrary.org/obo/OBI_0001396>	"stimulus or stress design"
+<http://purl.obolibrary.org/obo/OBI_0001329>	"family history design"
+<http://purl.obolibrary.org/obo/OBI_0001159>	"age since egg laying measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001200>	"genotyping by high throughput sequencing design"
+<http://purl.obolibrary.org/obo/OBI_0001951>	"reverse PCR primer"@en
+<http://purl.obolibrary.org/obo/OBI_0500005>	"matched pairs design"
+<http://purl.obolibrary.org/obo/OBI_0002383>	"nephew clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001444>	"genotyping design"
+<http://purl.obolibrary.org/obo/OBI_1110193>	"epitope specific IL-17 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0000845>	"primary structure of RNA molecule"
+<http://purl.obolibrary.org/obo/OBI_1110199>	"epitope specific IL-4 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0500024>	"standard compliance rule"@en
+<http://purl.obolibrary.org/obo/OBI_0300311>	"observation design"
+<http://purl.obolibrary.org/obo/OBI_1110038>	"RMA cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0001901>	"specimen identifier assigned by sequencing facility"@en
+<http://purl.obolibrary.org/obo/OBI_0001365>	"cellular process design"
+<http://purl.obolibrary.org/obo/OBI_0001219>	"epitope specific chemokine (C-C motif) ligand 1 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0000410>	"recombinant plasmid"@en
+<http://purl.obolibrary.org/obo/OBI_0001435>	"DNA methylation profiling by high throughput sequencing design"
+<http://purl.obolibrary.org/obo/OBI_1110056>	"epitope specific IL-2 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0001717>	"B cell epitope specific antibody-dependent cellular cytotoxicity"
+<http://purl.obolibrary.org/obo/OBI_0001903>	"email address of specimen provider principal investigator"@en
+<http://purl.obolibrary.org/obo/OBI_0000430>	"plasmid"@en
+<http://purl.obolibrary.org/obo/OBI_0001895>	"specimen collector"@en
+<http://purl.obolibrary.org/obo/OBI_0002468>	"base calling algorithm"@en
+<http://purl.obolibrary.org/obo/OBI_1110028>	"293-T cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0002374>	"brother clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001163>	"age since eclosion measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001169>	"age since birth measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001239>	"transcription profiling by high throughput sequencing design"
+<http://purl.obolibrary.org/obo/OBI_0500016>	"fractional factorial design"
+<http://purl.obolibrary.org/obo/OBI_0001427>	"transcription profiling by tiling array design"
+<http://purl.obolibrary.org/obo/OBI_0001257>	"epitope specific interleukin-1 alpha production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001825>	"epitope specific chemokine (C-C motif) ligand 19 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001535>	"epitope specific interleukin-7 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0500006>	"parallel group design"
+<http://purl.obolibrary.org/obo/OBI_0002384>	"niece clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0100065>	"synthetic peptide"@en
+<http://purl.obolibrary.org/obo/OBI_0001464>	"strain comparison design"
+<http://purl.obolibrary.org/obo/OBI_0001195>	"operator variation design"
+<http://purl.obolibrary.org/obo/OBI_0001913>	"computation run time"@en
+<http://purl.obolibrary.org/obo/OBI_0001201>	"epitope specific tolerance induction by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002590>	"molecular interaction identification design"
+<http://purl.obolibrary.org/obo/OBI_0002472>	"dbGaP study identifier"@en
+<http://purl.obolibrary.org/obo/OBI_1110039>	"T2 cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0001816>	"epitope specific chemokine (C-X-C motif) ligand 13 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002478>	"reference genome-transcriptome alignment algorithm"@en
+<http://purl.obolibrary.org/obo/OBI_0001202>	"innate behavior design"
+<http://purl.obolibrary.org/obo/OBI_0500025>	"ethical standard compliance rule"@en
+<http://purl.obolibrary.org/obo/OBI_0000251>	"cluster"@en
+<http://purl.obolibrary.org/obo/OBI_0002582>	"sequence library feature count data"
+<http://purl.obolibrary.org/obo/OBI_0001366>	"epitope specific RANTES production by T cells"
+<http://purl.obolibrary.org/obo/OBI_1110029>	"C1R cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0002405>	"hormonal replacement therapy history"
+<http://purl.obolibrary.org/obo/OBI_0002469>	"base calling application"@en
+<http://purl.obolibrary.org/obo/OBI_0002375>	"daughter clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001310>	"species comparison design"
+<http://purl.obolibrary.org/obo/OBI_0001454>	"pathogenicity design"
+<http://purl.obolibrary.org/obo/OBI_0001211>	"ex vivo design"
+<http://purl.obolibrary.org/obo/OBI_0000831>	"DNA residue methylation"
+<http://purl.obolibrary.org/obo/OBI_0500017>	"dye swap design"
+<http://purl.obolibrary.org/obo/OBI_0001258>	"ChIP-seq design"
+<http://purl.obolibrary.org/obo/OBI_0001164>	"age since sowing measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001619>	"specimen collection time measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0000896>	"secondary structure of RNA molecule"
+<http://purl.obolibrary.org/obo/OBI_1110049>	"allergy"@en
+<http://purl.obolibrary.org/obo/OBI_0001252>	"array platform variation design"
+<http://purl.obolibrary.org/obo/OBI_0001446>	"epitope specific interleukin-15 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001293>	"disease state design"
+<http://purl.obolibrary.org/obo/OBI_0001371>	"epitope specific granzyme B production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0000118>	"gene list"@en
+<http://purl.obolibrary.org/obo/OBI_0001377>	"organism status comparison design"
+<http://purl.obolibrary.org/obo/OBI_0002591>	"colocalization identification design"
+<http://purl.obolibrary.org/obo/OBI_1110202>	"epitope specific IL-5 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0500007>	"randomized complete block design"
+<http://purl.obolibrary.org/obo/OBI_0001249>	"epitope specific T cell tolerance induction"
+<http://purl.obolibrary.org/obo/OBI_0000741>	"topologically preserved clustered data set"
+<http://purl.obolibrary.org/obo/OBI_0002376>	"father clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001267>	"epitope specific transforming growth factor-beta production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001508>	"sampling time measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001387>	"genotyping by array design"
+<http://purl.obolibrary.org/obo/OBI_0002370>	"unknown clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001358>	"post-transcriptional modification design"
+<http://purl.obolibrary.org/obo/OBI_0001259>	"translational bias design"
+<http://purl.obolibrary.org/obo/OBI_0001410>	"translation profiling design"
+<http://purl.obolibrary.org/obo/OBI_0001165>	"age since coitus measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001418>	"dose response design"
+<http://purl.obolibrary.org/obo/OBI_0001381>	"epitope specific interleukin-23 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001212>	"epitope specific type IV hypersensitivity by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002390>	"exposure to second hand smoke"
+<http://purl.obolibrary.org/obo/OBI_0000817>	"fucoidan"
+<http://purl.obolibrary.org/obo/OBI_0001887>	"email address of Bioinformatics Resource Center contact person"@en
+<http://purl.obolibrary.org/obo/OBI_0500018>	"replicate design"
+<http://purl.obolibrary.org/obo/OBI_0002396>	"age when gave birth to first child"
+<http://purl.obolibrary.org/obo/OBI_0001612>	"epitope specific vascular endothelial growth factor production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001156>	"age since planting measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0001866>	"secondary cultured cell"
+<http://purl.obolibrary.org/obo/OBI_0002484>	"star algorithm"@en
+<http://purl.obolibrary.org/obo/OBI_0001408>	"imprinting design"
+<http://purl.obolibrary.org/obo/OBI_1110040>	"infectious disease"@en
+<http://purl.obolibrary.org/obo/OBI_0002592>	"genetic interaction identification design"
+<http://purl.obolibrary.org/obo/OBI_0002380>	"uncle clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001447>	"epitope specific macrophage inflammatory protein-1 gamma production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0000985>	"growth condition intervention design"
+<http://purl.obolibrary.org/obo/OBI_0500008>	"balanced incomplete block design"
+<http://purl.obolibrary.org/obo/OBI_0000742>	"nucleic acid restriction enzyme digest"
+<http://purl.obolibrary.org/obo/OBI_0001722>	"B cell epitope specific hypersensitivity"
+<http://purl.obolibrary.org/obo/OBI_0001420>	"epitope specific helper T cell enhancement of T cell mediated immune response"
+<http://purl.obolibrary.org/obo/OBI_0000889>	"survival curve"@en
+<http://purl.obolibrary.org/obo/OBI_0001518>	"epitope specific tumor necrosis factor (ligand) superfamily member 11 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_1110203>	"epitope specific IL-6 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0001262>	"epitope specific interleukin-27 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001818>	"epitope specific chemokine (C-X-C motif) ligand 12 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002377>	"mother clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001622>	"investigation title"@en
+<http://purl.obolibrary.org/obo/OBI_0001362>	"epitope specific chemokine (C-C motif) ligand 4 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001417>	"ChIP-chip by tiling array design"
+<http://purl.obolibrary.org/obo/OBI_0001965>	"decision analysis study design"
+<http://purl.obolibrary.org/obo/OBI_0001898>	"comment on investigation"@en
+<http://purl.obolibrary.org/obo/OBI_0002584>	"differential expression analysis data"
+<http://purl.obolibrary.org/obo/OBI_0001323>	"microRNA profiling by array design"
+<http://purl.obolibrary.org/obo/OBI_0000451>	"normalized data set"@en
+<http://purl.obolibrary.org/obo/OBI_0001166>	"validation by real time PCR design"
+<http://purl.obolibrary.org/obo/OBI_0000227>	"data encoding"@en
+<http://purl.obolibrary.org/obo/OBI_0001411>	"cell type comparison design"
+<http://purl.obolibrary.org/obo/OBI_0002391>	"exposure to second hand smoke in household during childhood"
+<http://purl.obolibrary.org/obo/OBI_0001313>	"transcription profiling by RT-PCR design"
+<http://purl.obolibrary.org/obo/OBI_0001470>	"epitope specific interleukin-17F production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001820>	"epitope specific chemokine (C-X-C motif) ligand 16 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0500019>	"self vs self design"
+<http://purl.obolibrary.org/obo/OBI_0002397>	"gynecologic surgery history"
+<http://purl.obolibrary.org/obo/OBI_0000676>	"reduced dimension data set"@en
+<http://purl.obolibrary.org/obo/OBI_0001401>	"protocol optimization design"
+<http://purl.obolibrary.org/obo/OBI_0001409>	"cell cycle design"
+<http://purl.obolibrary.org/obo/OBI_0002593>	"functional association identification design"
+<http://purl.obolibrary.org/obo/OBI_1110185>	"epitope specific IFN-g release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0500009>	"loop design"
+<http://purl.obolibrary.org/obo/OBI_0001448>	"individual genetic characteristics comparison design"
+<http://purl.obolibrary.org/obo/OBI_0001278>	"DNA methylation profiling by array design"
+<http://purl.obolibrary.org/obo/OBI_0001373>	"epitope specific interleukin-8 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002381>	"grandmother clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001957>	"hardware testing design"
+<http://purl.obolibrary.org/obo/OBI_1110204>	"epitope specific killing by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0001205>	"cell component comparison design"
+<http://purl.obolibrary.org/obo/OBI_0001819>	"epitope specific chemokine (C-C motif) ligand 22 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001439>	"epitope specific chemokine (C-X-C motif) ligand 9 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001421>	"epitope specific interferon-beta production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001429>	"cell differentiation design"
+<http://purl.obolibrary.org/obo/OBI_0001713>	"B cell epitope specific opsonization"
+<http://purl.obolibrary.org/obo/OBI_0302835>	"denatured polymer"@en
+<http://purl.obolibrary.org/obo/OBI_1110031>	"EL-4 cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0002378>	"sister clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001167>	"age measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0000811>	"primary structure of DNA macromolecule"
+<http://purl.obolibrary.org/obo/OBI_0001430>	"transcription profiling design"
+<http://purl.obolibrary.org/obo/OBI_0001526>	"epitope specific interleukin-17A production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001314>	"epitope specific T cell enhancement of B cell mediated immune response"
+<http://purl.obolibrary.org/obo/OBI_0002398>	"hysterectomy history"
+<http://purl.obolibrary.org/obo/OBI_0001214>	"normalization testing design"
+<http://purl.obolibrary.org/obo/OBI_0001614>	"GenBank ID"@en
+<http://purl.obolibrary.org/obo/OBI_0001868>	"genetic material"
+<http://purl.obolibrary.org/obo/OBI_0002486>	"verse algorithm"@en
+<http://purl.obolibrary.org/obo/OBI_0000714>	"graph of vertices"
+<http://purl.obolibrary.org/obo/OBI_0002392>	"exposure to second hand smoke in current household"
+<http://purl.obolibrary.org/obo/OBI_0001616>	"specimen identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0001374>	"injury design"
+<http://purl.obolibrary.org/obo/OBI_0002624>	"case-control study design"
+<http://purl.obolibrary.org/obo/OBI_0002594>	"direct interaction identification design"
+<http://purl.obolibrary.org/obo/OBI_0000656>	"data set of predicted values according to fitted curve"@en
+<http://purl.obolibrary.org/obo/OBI_0002382>	"grandfather clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0001351>	"epitope specific tumor necrosis factor superfamily cytokine production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0001422>	"organism part comparison design"
+<http://purl.obolibrary.org/obo/OBI_0001714>	"B cell epitope specific immunoglobulin-mediated neutralization"
+<http://purl.obolibrary.org/obo/OBI_1110032>	"HeLa cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0001967>	"multiplexing sequence identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0500000>	"study design"@en
+<http://purl.obolibrary.org/obo/OBI_0000648>	"clustered data set"@en
+<http://purl.obolibrary.org/obo/OBI_0001877>	"random access memory"@en
+<http://purl.obolibrary.org/obo/OBI_1110195>	"epitope specific IL-18 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0500020>	"time series design"
+<http://purl.obolibrary.org/obo/OBI_0000713>	"GenePattern software"
+<http://purl.obolibrary.org/obo/OBI_0002399>	"unilateral oophorectomy history"
+<http://purl.obolibrary.org/obo/OBI_0001168>	"age since fertilization measurement datum"@en
+<http://purl.obolibrary.org/obo/OBI_0000660>	"background corrected data set"@en
+<http://purl.obolibrary.org/obo/OBI_1110099>	"L cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0002446>	"proteomic profiling design"
+<http://purl.obolibrary.org/obo/OBI_0001615>	"investigation description"@en
+<http://purl.obolibrary.org/obo/OBI_0002393>	"pregnancy history"
+<http://purl.obolibrary.org/obo/OBI_1110187>	"epitope specific IL-10 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0001617>	"PubMed ID"@en
+<http://purl.obolibrary.org/obo/OBI_0002400>	"neither hysterectomy nor oophorectomy history"
+<http://purl.obolibrary.org/obo/OBI_1110118>	"P815 cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0001334>	"epitope specific granulocyte colony stimulating factor production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002464>	"SRS identifier"@en
+<http://purl.obolibrary.org/obo/OBI_0001403>	"ChIP-chip design"
+<http://purl.obolibrary.org/obo/OBI_0001725>	"B cell epitope specific histamine secretion mediated by immunoglobulin"
+<http://purl.obolibrary.org/obo/OBI_0302914>	"digital curation"@en
+<http://purl.obolibrary.org/obo/OBI_0001946>	"forward PCR primer"@en
+<http://purl.obolibrary.org/obo/OBI_0000310>	"adverse event trigger"@en
+<http://purl.obolibrary.org/obo/OBI_0500010>	"reference design"
+<http://purl.obolibrary.org/obo/OBI_0001306>	"RNA stability design"
+<http://purl.obolibrary.org/obo/OBI_0002595>	"enzymatic reaction identification design"
+<http://purl.obolibrary.org/obo/OBI_1110206>	"epitope specific TNF release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0001207>	"epitope specific macrophage inflammatory protein-1 alpha production by T cells"
+<http://purl.obolibrary.org/obo/OBI_0002389>	"clinical history of repeated HIV assays"
+<http://purl.obolibrary.org/obo/OBI_0000406>	"PCR product"@en
+<http://purl.obolibrary.org/obo/OBI_0001399>	"epitope specific interleukin-22 production by T cells"
+<http://purl.obolibrary.org/obo/OBI_1110033>	"JAWS II cell line"@en
+<http://purl.obolibrary.org/obo/OBI_0002368>	"clinical history of cancer"
+<http://purl.obolibrary.org/obo/OBI_0500001>	"clinical study design"
+<http://purl.obolibrary.org/obo/OBI_0001440>	"all pairs design"
+<http://purl.obolibrary.org/obo/OBI_0001171>	"half life datum (t 1/2)"
+<http://purl.obolibrary.org/obo/OBI_0001625>	"sequence annotation algorithm"@en
+<http://purl.obolibrary.org/obo/OBI_0500002>	"repeated measure design"
+<http://purl.obolibrary.org/obo/OBI_1110190>	"epitope specific IL-12 release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0000951>	"compound treatment design"
+<http://purl.obolibrary.org/obo/OBI_0000649>	"data set of features"@en
+<http://purl.obolibrary.org/obo/OBI_0001460>	"genetic modification design"
+<http://purl.obolibrary.org/obo/OBI_1110196>	"epitope specific IL-1b release by T cells"@en
+<http://purl.obolibrary.org/obo/OBI_0001627>	"country name"@en
+<http://purl.obolibrary.org/obo/OBI_0001197>	"comparative genome hybridization by array design"
+<http://purl.obolibrary.org/obo/OBI_1110035>	"Jurkat cell line"@en
