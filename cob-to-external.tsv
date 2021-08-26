@@ -25,6 +25,7 @@
 #  UBERON: "http://purl.obolibrary.org/obo/UBERON_"
 #  XAO: "http://purl.obolibrary.org/obo/XAO_"
 #  ZFA: "http://purl.obolibrary.org/obo/ZFA_"
+#  SEPIO: "http://purl.obolibrary.org/obo/SEPIO_"
 #  STATO: "http://purl.obolibrary.org/obo/STATO_"
 #  DRON: "http://purl.obolibrary.org/obo/DRON_"
 subject_id	subject_label	predicate_id	object_id	object_label	notes
@@ -132,3 +133,5 @@ COB:0000040	has specified output	owl:equivalentProperty	OBI:0000299	has_specifie
 COB:0000029	realized in	owl:equivalentProperty	BFO:0000054	realized in	.
 COB:0000030	quality of	owl:equivalentProperty	RO:0000080	quality of	.
 COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.
+COB:0000123	agent role	owl:equivalentClass	SEPIO:0000048	agent role	
+COB:0000123	agent role	sssom:superClassOf	OBI:0000202	investigation agent role	

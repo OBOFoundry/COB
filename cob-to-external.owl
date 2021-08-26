@@ -1892,6 +1892,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000123 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000123">
+        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
+        <sssom:object_label>agent role</sssom:object_label>
+        <sssom:subject_label>agent role</sssom:subject_label>
+    </Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
@@ -2215,6 +2230,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000202 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+        <sssom:object_label>agent role</sssom:object_label>
+        <sssom:subject_label>investigation agent role</sssom:subject_label>
+    </Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
@@ -2440,6 +2470,19 @@
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
         <sssom:object_label>protein</sssom:object_label>
         <sssom:subject_label>protein</sssom:subject_label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000048 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
+        <sssom:object_label>agent role</sssom:object_label>
+        <sssom:subject_label>agent role</sssom:subject_label>
     </Axiom>
     
 
