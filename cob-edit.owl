@@ -144,15 +144,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000030 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-        <rdfs:label xml:lang="en">quality of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000036 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000036">
@@ -178,15 +169,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:label xml:lang="en">has specified output</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000041 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000041">
-        <rdfs:comment>Note: this will end up being a subproperty of has-characteristic when we add it, TBD depends on discussion of whether has-characteristic is functional</rdfs:comment>
-        <rdfs:label xml:lang="en">has quality</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -424,12 +406,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000006">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     
@@ -769,17 +745,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000042 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000042">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
         <rdfs:label>monoatomic ion</rdfs:label>
@@ -790,21 +755,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000043">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000011"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
         <rdfs:label>uncharged atom</rdfs:label>
     </owl:Class>
