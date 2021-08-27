@@ -50,6 +50,7 @@ cob.owl: cob-edit.owl | build/robot.jar
 cob-base.owl: cob.owl cob-to-external.owl | build/robot.jar
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+# TODO: rename this according to https://github.com/INCATools/ontology-development-kit/issues/454
 cob-base-reasoned.owl: cob-base.owl | build/robot.jar
 	$(ROBOT) reason -i $< -r HERMIT -o $@
 
@@ -92,6 +93,17 @@ cob-annotations.owl: build/cob-annotations.ttl | build/robot.jar
 	--ontology-iri "http://purl.obolibrary.org/obo/cob/$@" \
 	--annotation owl:versionInfo $(DATE) \
 	--output $@
+
+########################################
+# -- REWIRING --
+########################################
+
+# NOTE: this code currently depends on sssom code not yet on pypi: https://github.com/mapping-commons/sssom-py/pull/119
+REWIRE_PRECEDENCE = PR CHEBI
+cob-rewired.ttl: cob-to-external.tsv cob.owl
+	sssom rewire -I xml  -i cob.owl -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) -o $@
+cob-rewired.owl: cob-rewired.ttl
+	robot annotate -i $<  -O $(OBO)/cob/$@ -o $@
 
 ########################################
 # -- TESTING --
