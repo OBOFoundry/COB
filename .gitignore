@@ -6,3 +6,4 @@ build/cob-annotations.ttl
 cob-to-external.ttl
 cob-to-external.sssom.owl
 build/
+.DS_Store
