@@ -8,7 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:sssom="http://w3id.org/sssom/">
-    <Ontology/>
+    <Ontology>
+        <sssom:license>https://creativecommons.org/publicdomain/zero/1.0/</sssom:license>
+    </Ontology>
     
 
 
@@ -20,12 +22,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://w3id.org/sssom/license -->
-
-    <AnnotationProperty rdf:about="http://w3id.org/sssom/license"/>
     
 
 
@@ -236,21 +232,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000030 -->
-
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000030">
-        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-    </ObjectProperty>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000030"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-        <sssom:object_label>quality of</sssom:object_label>
-        <sssom:subject_label>quality of</sssom:subject_label>
-    </Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000036 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000036"/>
@@ -290,21 +271,6 @@
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
         <sssom:object_label>has_specified_output</sssom:object_label>
         <sssom:subject_label>has specified output</sssom:subject_label>
-    </Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000041 -->
-
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000041">
-        <equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-    </ObjectProperty>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-        <sssom:object_label>has quality</sssom:object_label>
-        <sssom:subject_label>has quality</sssom:subject_label>
     </Axiom>
     
 
@@ -568,32 +534,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
-
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000030"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-        <sssom:object_label>quality of</sssom:object_label>
-        <sssom:subject_label>quality of</sssom:subject_label>
-    </Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
-
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000041"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-        <sssom:object_label>has quality</sssom:object_label>
-        <sssom:subject_label>has quality</sssom:subject_label>
-    </Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002333 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002333"/>
@@ -672,21 +612,6 @@
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
         <sssom:object_label>realizable entity</sssom:object_label>
         <sssom:subject_label>realizable</sssom:subject_label>
-    </Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
-        <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
-    </Class>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
-        <sssom:object_label>quality</sssom:object_label>
-        <sssom:subject_label>quality</sssom:subject_label>
     </Axiom>
     
 
@@ -995,19 +920,6 @@
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000019"/>
         <sssom:object_label>cell in vitro</sssom:object_label>
         <sssom:subject_label>cell in vitro</sssom:subject_label>
-    </Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000001 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000001"/>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000001"/>
-        <sssom:object_label>quality</sssom:object_label>
-        <sssom:subject_label>quality</sssom:subject_label>
     </Axiom>
     
 
@@ -2619,9 +2531,6 @@
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>zebrafish cell</sssom:subject_label>
     </Axiom>
-    <rdf:Description>
-        <sssom:license>https://creativecommons.org/publicdomain/zero/1.0/</sssom:license>
-    </rdf:Description>
     
 
 
