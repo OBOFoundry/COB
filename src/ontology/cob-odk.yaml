@@ -1,0 +1,43 @@
+id: cob
+title: "Core Ontology for Biology and Biomedicine"
+github_org: OBOFoundry
+repo: COB
+report_fail_on: ERROR
+export_formats:
+  - owl
+release_artefacts:
+  - base
+  - full
+  - custom-cob-base-reasoned
+  - custom-cob-examples-reasoned
+import_group:
+  module_type: filter
+  annotation_properties:
+    - rdfs:label
+    - IAO:0000115
+    - IAO:0000116
+    - IAO:0000111
+  products:
+    - id: ro
+      module_type: slme
+      slme_individuals: exclude
+    - id: omo
+      module_type: mirror
+components:
+  products:
+    - filename: cob-annotations.owl
+    - filename: cob-to-external.owl
+robot_java_args: '-Xmx8G'
+custom_makefile_header: |
+  ### Workflow
+  #
+  # Tasks to edit and release DRON.
+  #
+  # #### Edit
+  #
+  # 1. [Prepare release](prepare_release)
+  # 2. [Refresh imports](all_imports)
+  # 3. [Update repo to latest ODK](update_repo)
+create_obo_metadata: FALSE
+documentation:
+  documentation_system: mkdocs
