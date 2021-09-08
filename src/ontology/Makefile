@@ -14,6 +14,9 @@
 # 1. [Prepare release](prepare_release)
 # 2. [Refresh imports](all_imports)
 # 3. [Update repo to latest ODK](update_repo)
+# 4. [Update COB products](prepare_cob_products)
+# 5. [Run COB tests](test)
+# 6. [Run everything (COB products and release pipeline)](all)
 
 
 # ----------------------------------------

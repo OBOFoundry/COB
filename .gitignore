@@ -47,3 +47,4 @@ src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 src/ontology/README-editors.md
+src/ontology/products/

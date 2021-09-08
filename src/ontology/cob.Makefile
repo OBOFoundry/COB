@@ -14,7 +14,19 @@ COB_TO_EXTERNAL = $(COMPONENTSDIR)/cob-to-external.owl
 COB_ANNOTATIONS = $(COMPONENTSDIR)/cob-annotations.owl
 COB_EXAMPLES = $(COMPONENTSDIR)/cob-examples.owl
 
-all: test prepare_release cob.tsv
+.PHONY: prepare_release
+prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES) cob.tsv
+	rsync -R $(RELEASE_ASSETS) cob.tsv $(RELEASEDIR) &&\
+  rm -f $(CLEANFILES) &&\
+	rm -f cob.tsv &&\
+  echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+
+.PHONY: prepare_cob_products
+prepare_cob_products: test
+	cp -r products/* $(RELEASEDIR)/products
+
+.PHONY: all
+all: prepare_release prepare_cob_products
 
 ROBOT_DOWNLOAD=true
 
