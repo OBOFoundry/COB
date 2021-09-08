@@ -1,5 +1,0 @@
-x,xl
-http://purl.obolibrary.org/obo/SO_0000110,sequence_feature
-http://purl.obolibrary.org/obo/SO_0001060,sequence_variant
-http://purl.obolibrary.org/obo/SO_0001260,sequence_collection
-http://purl.obolibrary.org/obo/SO_0000400,sequence_attribute

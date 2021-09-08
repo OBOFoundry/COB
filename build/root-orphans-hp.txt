@@ -1,2 +1,0 @@
-x,xl
-http://purl.obolibrary.org/obo/HP_0000001,All
