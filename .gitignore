@@ -1,6 +1,6 @@
 *.old
 *.tmp
-catalog-v001.xml
+/catalog-v001.xml
 build/robot.jar
 build/cob-annotations.ttl
 cob-to-external.ttl
