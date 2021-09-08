@@ -73,16 +73,13 @@ cob.tsv: cob.owl | build/robot.jar
 .PHONY: sssom
 sssom:
 	pip install sssom
-	pip install --upgrade --no-deps --force-reinstall sssom==0.14.14.dev0
+	pip install --upgrade --no-deps --force-reinstall sssom==0.3.2
 
 cob-to-external.sssom.owl: cob-to-external.tsv | sssom
-	sssom convert -i $< -o $@
+	sssom convert $< -o $@
 
 cob-to-external.owl: cob-to-external.sssom.owl | build/robot.jar
-	$(ROBOT) remove -i $< \
-	--term "http://w3id.org/sssom/MappingSet" \
-	--term "http://w3id.org/sssom/mappings" \
-	convert -o $@
+	$(ROBOT) convert -i $< -f owl -o $@
 
 build/cob-annotations.ttl: cob-to-external.owl sparql/external-links.rq | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
