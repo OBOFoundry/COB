@@ -124,6 +124,7 @@ main_test: $(REPORTDIR)/$(SRC)-obo-report.tsv cob.owl cob-base-reasoned.owl cob-
 
 # integration tests: for now, run these on commmand line
 itest: itest_compliant itest_noncompliant #superclass_test
+	make products/SUMMARY.txt
 
 itest_compliant: $(patsubst %, $(TMPDIR)/reasoned-%.owl, $(ALL_ONTS))
 itest_noncompliant: $(patsubst %, $(TMPDIR)/incoherent-%.txt, $(COB_NONCOMPLIANT))
@@ -169,7 +170,7 @@ all_orphans: $(patsubst %, products/root-orphans-%.txt, $(ALL_ONTS))
 products/root-orphans-%.tsv: $(TMPDIR)/merged-%.owl
 	robot query -f tsv -i $< -q $(SPARQLDIR)/cob-orphans.rq $@
 
-$(TMPDIR)/SUMMARY.txt:
+products/SUMMARY.txt:
 	(head $(TMPDIR)/status-*txt && head -1 $(TMPDIR)/incoherent-*txt) > $@
 
 ########################################
