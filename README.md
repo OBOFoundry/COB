@@ -54,9 +54,9 @@ Do not edit cob.owl directly. Instead edit cob-edit.owl
 
 Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makefile.
 
- - Run `make` to build the ontology from source/edit files
- - Run `make test` to run both basic tests and integration tests.
- - Run `make main_test` to run  basic tests 
+ - Run `sh run.sh make prepare_release` to build the ontology from source/edit files
+ - Run `sh run.sh make cob_test` to run both basic tests and integration tests.
+ - Run `sh run.sh make main_test` to run  basic tests 
 
 ## Integration Tests
 

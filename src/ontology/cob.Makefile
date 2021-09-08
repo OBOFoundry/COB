@@ -116,7 +116,7 @@ COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido z
 COB_NONCOMPLIANT =  iao mondo  eco  maxo  mco  nbo peco ecto chebi
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
-test: main_test itest
+cob_test: main_test itest
 
 # main test: should be run via CI on every PR
 # this tests COB's internal consistency
