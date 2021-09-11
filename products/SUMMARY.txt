@@ -1,0 +1,112 @@
+==> tmp/status-bco.txt <==
+FAIL
+
+==> tmp/status-caro.txt <==
+FAIL
+
+==> tmp/status-chebi.txt <==
+SUCCESS
+
+==> tmp/status-cl.txt <==
+SUCCESS
+
+==> tmp/status-doid.txt <==
+SUCCESS
+
+==> tmp/status-eco.txt <==
+FAIL
+
+==> tmp/status-ecto.txt <==
+FAIL
+
+==> tmp/status-envo.txt <==
+SUCCESS
+
+==> tmp/status-fbbt.txt <==
+FAIL
+
+==> tmp/status-go.txt <==
+SUCCESS
+
+==> tmp/status-hp.txt <==
+SUCCESS
+
+==> tmp/status-iao.txt <==
+FAIL
+
+==> tmp/status-ido.txt <==
+FAIL
+
+==> tmp/status-maxo.txt <==
+FAIL
+
+==> tmp/status-mco.txt <==
+FAIL
+
+==> tmp/status-mondo.txt <==
+FAIL
+
+==> tmp/status-mp.txt <==
+SUCCESS
+
+==> tmp/status-nbo.txt <==
+FAIL
+
+==> tmp/status-obi.txt <==
+SUCCESS
+
+==> tmp/status-ogms.txt <==
+FAIL
+
+==> tmp/status-pato.txt <==
+SUCCESS
+
+==> tmp/status-peco.txt <==
+FAIL
+
+==> tmp/status-po.txt <==
+SUCCESS
+
+==> tmp/status-ro.txt <==
+FAIL
+
+==> tmp/status-so.txt <==
+SUCCESS
+
+==> tmp/status-uberon+cl.txt <==
+SUCCESS
+
+==> tmp/status-uberon.txt <==
+SUCCESS
+
+==> tmp/status-xao.txt <==
+SUCCESS
+
+==> tmp/status-zfa.txt <==
+SUCCESS
+==> tmp/incoherent-chebi.txt <==
+COHERENT
+
+==> tmp/incoherent-eco.txt <==
+COHERENT
+
+==> tmp/incoherent-ecto.txt <==
+COHERENT
+
+==> tmp/incoherent-iao.txt <==
+COHERENT
+
+==> tmp/incoherent-maxo.txt <==
+COHERENT
+
+==> tmp/incoherent-mco.txt <==
+COHERENT
+
+==> tmp/incoherent-mondo.txt <==
+COHERENT
+
+==> tmp/incoherent-nbo.txt <==
+COHERENT
+
+==> tmp/incoherent-peco.txt <==
+COHERENT

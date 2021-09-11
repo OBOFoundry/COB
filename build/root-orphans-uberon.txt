@@ -1,7 +1,0 @@
-x,xl
-http://purl.obolibrary.org/obo/UBERON_0009198,craniofacial suture
-http://purl.obolibrary.org/obo/UBERON_0015854,interpedicular line
-http://purl.obolibrary.org/obo/UBERON_0001062,anatomical entity
-http://purl.obolibrary.org/obo/UBERON_0000000,processual entity
-http://purl.obolibrary.org/obo/UBERON_0016440,glabella region of bone
-http://purl.obolibrary.org/obo/UBERON_0002109,pair of nares

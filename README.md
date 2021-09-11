@@ -22,7 +22,7 @@ You can also enter any COB class PURL into a browser to resolve it; e.g. [http:/
 - End products
    - [cob.owl](cob.owl): the *current version* of COB containing new terms in the COB namespace
    - [cob-to-external.owl](cob-to-external.owl) COB terms and OBO Foundry counterparts with proposed equivalencies
-   - [cob-examples.owl](cob-examples.owl): additional child terms as examples
+   - [cob-examples.owl](cob-examples.owl): additional child terms as examples. This file is edited by hand.
 - Editors/Source files
   - [cob-edit.owl](cob-edit.owl): the editors version
   - [cob-to-external.tsv](cob-to-external.tsv): TSV source of cob-to-external
@@ -54,9 +54,9 @@ Do not edit cob.owl directly. Instead edit cob-edit.owl
 
 Do not edit cob-to-external.owl directly. Instead edit the tsv and run the Makefile.
 
- - Run `make` to build the ontology from source/edit files
- - Run `make test` to run both basic tests and integration tests.
- - Run `make main_test` to run  basic tests 
+ - Run `sh run.sh make prepare_release` to build the ontology from source/edit files
+ - Run `sh run.sh make cob_test` to run both basic tests and integration tests.
+ - Run `sh run.sh make main_test` to run  basic tests 
 
 ## Integration Tests
 

@@ -1,72 +1,73 @@
 ID	ID [LABEL]	definition	subClassOf [ID NAMED]	subClassOf [LABEL NAMED]	subClassOf [ID ANON]	subClassOf [LABEL ANON]
-obo:COB_0000001	quality		obo:COB_0000502	characteristic		
-obo:COB_0000003	mass		obo:COB_0000001	quality		
-obo:COB_0000004	charge		obo:COB_0000001	quality		
-obo:COB_0000005	obsolete_elementary charge					
-obo:COB_0000006	material entity					
-obo:COB_0000007	subatomic particle		obo:COB_0000006	material entity		
-obo:COB_0000008	proton		obo:COB_0000007	subatomic particle		
-obo:COB_0000009	neutron		obo:COB_0000007	subatomic particle		
-obo:COB_0000010	electron		obo:COB_0000007	subatomic particle	obo:COB_0000801 value 0	has number of atomic nuclei value 0
-obo:COB_0000011	atom	A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000012	has part some atomic nucleus
-obo:COB_0000012	atomic nucleus		obo:COB_0000007	subatomic particle		
-obo:COB_0000013	molecular entity	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000011	has part some atom
-obo:COB_0000014	obsolete macromolecular entity	A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.				
-obo:COB_0000015	protein		obo:COB_0000013	molecular entity		
-obo:COB_0000017	cell	A material entity that has a plasma membrane and results from cellular division.	obo:COB_0000006	material entity		
-obo:COB_0000018	native cell		obo:COB_0000017	cell		
-obo:COB_0000019	cell in vitro		obo:COB_0000017	cell		
-obo:COB_0000020	subcellular structure	A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000013	has part some molecular entity
-obo:COB_0000021	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	obo:COB_0000006	material entity		
-obo:COB_0000022	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.	obo:COB_0000006	material entity		
-obo:COB_0000025	organization		obo:COB_0000006	material entity		
-obo:COB_0000026	processed material entity	A material entity processed by human activity with an intent to produce	obo:COB_0000006	material entity		
-obo:COB_0000031	immaterial entity					
-obo:COB_0000032	geographical location		obo:COB_0000031	immaterial entity		
-obo:COB_0000033	realizable		obo:COB_0000502	characteristic		
-obo:COB_0000034	process				obo:COB_0000072 only obo:COB_0000034	part of only process
-obo:COB_0000035	completely executed planned process		obo:COB_0000033|obo:COB_0000082	planned process|realizable	obo:COB_0000087 some obo:COB_0000113	realizes some plan
-obo:COB_0000037	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	obo:COB_0000034	process	(obo:COB_0000070 some obo:COB_0000022) or (obo:COB_0000070 some (obo:COB_0000072 some obo:COB_0000022)) or (obo:COB_0000071 some obo:COB_0000022)|obo:COB_0000047 some obo:COB_0000038	(has participant some organism) or (has participant some (part of some organism)) or (occurs in some organism)|has part some gene product or complex activity
-obo:COB_0000038	gene product or complex activity		obo:COB_0000034	process	obo:COB_0000074 some (obo:COB_0000073 or obo:COB_0000075)	enabled by some (gene product or protein-containing macromolecular complex)
-obo:COB_0000042	monoatomic ion		obo:COB_0000011	atom		
-obo:COB_0000043	uncharged atom		obo:COB_0000011	atom		
-obo:COB_0000049	nucleic acid polymer		obo:COB_0000013	molecular entity		
-obo:COB_0000055	collection of organisms		obo:COB_0000006	material entity		
-obo:COB_0000056	immaterial anatomical entity		obo:COB_0000031	immaterial entity		
-obo:COB_0000057	site		obo:COB_0000031	immaterial entity		
-obo:COB_0000058	conclusion based on data		obo:COB_0000061	information		
-obo:COB_0000061	information				 inverse (obo:COB_0000078) some obo:COB_0000120|obo:COB_0000513 some owl:Thing	 inverse (concretizes) some information representation|is about some 
-obo:COB_0000062	disease diagnosis		obo:COB_0000061	information		
-obo:COB_0000063	phenotypic finding		obo:COB_0000061	information		
-obo:COB_0000064	disease course		obo:COB_0000034	process		
-obo:COB_0000065	environmental process		obo:COB_0000034	process		
-obo:COB_0000066	physico-chemical process		obo:COB_0000034	process		
-obo:COB_0000067	ecosystem		obo:COB_0000006	material entity		
-obo:COB_0000068	geophysical entity		obo:COB_0000006	material entity		
-obo:COB_0000069	directive information entity		obo:COB_0000061	information		
-obo:COB_0000073	gene product		obo:COB_0000013	molecular entity		
-obo:COB_0000075	protein-containing macromolecular complex		obo:COB_0000080	complex of molecular entities	obo:COB_0000047 some obo:COB_0000073	has part some gene product
-obo:COB_0000076	objective specification		obo:COB_0000069	directive information entity		
-obo:COB_0000077	action specification		obo:COB_0000069	directive information entity	obo:COB_0000047 some obo:COB_0000076|obo:COB_0000047 some obo:COB_0000077	has part some action specification|has part some objective specification
-obo:COB_0000079	plan specification		obo:COB_0000069	directive information entity	obo:COB_0000047 some obo:COB_0000076|obo:COB_0000047 some obo:COB_0000077	has part some action specification|has part some objective specification
-obo:COB_0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	obo:COB_0000006	material entity	obo:COB_0000047 some obo:COB_0000013	has part some molecular entity
-obo:COB_0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	obo:COB_0000034	process	obo:COB_0000081 some obo:COB_0000113	intended to realize some plan
-obo:COB_0000083	failed planned process		obo:COB_0000082	planned process		
-obo:COB_0000101	document		obo:COB_0000061	information		
-obo:COB_0000102	data item		obo:COB_0000061	information		
-obo:COB_0000103	cell nucleus		obo:COB_0000020	subcellular structure		
-obo:COB_0000107	assay		obo:COB_0000035	completely executed planned process	obo:COB_0000039 some (obo:COB_0000006 and (obo:COB_0000512 some obo:COB_0000119))|obo:COB_0000040 some (obo:COB_0000121 and (obo:COB_0000513 some (obo:COB_0000006 and (obo:COB_0000512 some obo:COB_0000119))))	has specified input some (material entity and (has characteristic some evaluant role))|has specified output some (measurement datum and (is about some (material entity and (has characteristic some evaluant role))))
-obo:COB_0000108	data transformation		obo:COB_0000035	completely executed planned process		
-obo:COB_0000109	investigation		obo:COB_0000035	completely executed planned process		
-obo:COB_0000110	material processing		obo:COB_0000035	completely executed planned process		
-obo:COB_0000111	disposition		obo:COB_0000033	realizable		
-obo:COB_0000112	function		obo:COB_0000111	disposition		
-obo:COB_0000113	plan		obo:COB_0000033|obo:COB_0000120	information representation|realizable	 inverse (obo:COB_0000087) only obo:COB_0000082|obo:COB_0000078 some obo:COB_0000079	 inverse (realizes) only planned process|concretizes some plan specification
-obo:COB_0000114	role		obo:COB_0000033	realizable		
-obo:COB_0000116	cellular membrane		obo:COB_0000020	subcellular structure		
-obo:COB_0000118	cellular organism		obo:COB_0000022	organism		
-obo:COB_0000119	evaluant role		obo:COB_0000114	role		
-obo:COB_0000120	information representation		obo:COB_0000502	characteristic		
-obo:COB_0000121	measurement datum		obo:COB_0000102	data item		
-obo:COB_0000122	physical information carrier		obo:COB_0000006	material entity		
-obo:COB_0000502	characteristic				 inverse (obo:COB_0000512) some owl:Thing|obo:COB_0000047 only obo:COB_0000502	 inverse (has characteristic) some |has part only characteristic
+COB:0000003	mass		COB:0000502	characteristic	COB:0000023 some COB:0000006	characteristic of some material entity
+COB:0000004	charge		COB:0000502	characteristic	COB:0000023 some COB:0000006	characteristic of some material entity
+COB:0000005	obsolete_elementary charge					
+COB:0000006	material entity					
+COB:0000007	subatomic particle		COB:0000006	material entity		
+COB:0000008	proton		COB:0000007	subatomic particle		
+COB:0000009	neutron		COB:0000007	subatomic particle		
+COB:0000010	electron		COB:0000007	subatomic particle	COB:0000801 value 0	has number of atomic nuclei value 0
+COB:0000011	atom	A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.	COB:0000006	material entity	COB:0000047 some COB:0000012	has part some atomic nucleus
+COB:0000012	atomic nucleus		COB:0000007	subatomic particle		
+COB:0000013	molecular entity	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	COB:0000006	material entity	COB:0000047 some COB:0000011	has part some atom
+COB:0000014	obsolete macromolecular entity	A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.				
+COB:0000015	protein		COB:0000013	molecular entity		
+COB:0000017	cell	A material entity that has a plasma membrane and results from cellular division.	COB:0000006	material entity		
+COB:0000018	native cell		COB:0000017	cell		
+COB:0000019	cell in vitro		COB:0000017	cell		
+COB:0000020	subcellular structure	A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.	COB:0000006	material entity	COB:0000047 some COB:0000013	has part some molecular entity
+COB:0000021	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	COB:0000006	material entity		
+COB:0000022	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.	COB:0000006	material entity		
+COB:0000025	organization		COB:0000006	material entity		
+COB:0000026	processed material entity	A material entity processed by human activity with an intent to produce	COB:0000006	material entity		
+COB:0000031	immaterial entity					
+COB:0000032	geographical location		COB:0000031	immaterial entity		
+COB:0000033	realizable		COB:0000502	characteristic		
+COB:0000034	process				COB:0000072 only COB:0000034	part of only process
+COB:0000035	completely executed planned process		COB:0000082	planned process	COB:0000087 some COB:0000113	realizes some plan
+COB:0000037	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	COB:0000034	process	(COB:0000070 some COB:0000022) or (COB:0000070 some (COB:0000072 some COB:0000022)) or (COB:0000071 some COB:0000022)|COB:0000047 some COB:0000038	(has participant some organism) or (has participant some (part of some organism)) or (occurs in some organism)|has part some gene product or complex activity
+COB:0000038	gene product or complex activity		COB:0000034	process	COB:0000074 some (COB:0000073 or COB:0000075)	enabled by some (gene product or protein-containing macromolecular complex)
+COB:0000042	monoatomic ion		COB:0000011	atom		
+COB:0000043	uncharged atom		COB:0000011	atom		
+COB:0000049	nucleic acid polymer		COB:0000013	molecular entity		
+COB:0000055	collection of organisms		COB:0000006	material entity		
+COB:0000056	immaterial anatomical entity		COB:0000031	immaterial entity		
+COB:0000057	site		COB:0000031	immaterial entity		
+COB:0000058	conclusion based on data		COB:0000061	information		
+COB:0000061	information				 inverse (COB:0000078) some COB:0000120|COB:0000513 some owl:Thing	 inverse (concretizes) some information representation|is about some 
+COB:0000062	disease diagnosis		COB:0000061	information		
+COB:0000063	phenotypic finding		COB:0000061	information		
+COB:0000064	disease course		COB:0000034	process		
+COB:0000065	environmental process		COB:0000034	process		
+COB:0000066	physico-chemical process		COB:0000034	process		
+COB:0000067	ecosystem		COB:0000006	material entity		
+COB:0000068	geophysical entity		COB:0000006	material entity		
+COB:0000069	directive information entity		COB:0000061	information		
+COB:0000073	gene product		COB:0000013	molecular entity		
+COB:0000075	protein-containing macromolecular complex		COB:0000080	complex of molecular entities	COB:0000047 some COB:0000073	has part some gene product
+COB:0000076	objective specification		COB:0000069	directive information entity		
+COB:0000077	action specification		COB:0000069	directive information entity	COB:0000047 some COB:0000076|COB:0000047 some COB:0000077	has part some action specification|has part some objective specification
+COB:0000079	plan specification		COB:0000069	directive information entity	COB:0000047 some COB:0000076|COB:0000047 some COB:0000077	has part some action specification|has part some objective specification
+COB:0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	COB:0000006	material entity	COB:0000047 some COB:0000013	has part some molecular entity
+COB:0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	COB:0000033|COB:0000034	process|realizable	COB:0000081 some COB:0000113|COB:0000087 some COB:0000123	intended to realize some plan|realizes some agent role
+COB:0000083	failed planned process		COB:0000082	planned process		
+COB:0000088	drug product	A processed material entity created to be administered to an individual with the intent to improve health.	COB:0000026	processed material entity		
+COB:0000101	document		COB:0000061	information		
+COB:0000102	data item		COB:0000061	information		
+COB:0000103	cell nucleus		COB:0000020	subcellular structure		
+COB:0000107	assay		COB:0000035	completely executed planned process	COB:0000039 some (COB:0000006 and (COB:0000512 some COB:0000119))|COB:0000040 some (COB:0000121 and (COB:0000513 some (COB:0000006 and (COB:0000512 some COB:0000119))))	has specified input some (material entity and (has characteristic some evaluant role))|has specified output some (measurement datum and (is about some (material entity and (has characteristic some evaluant role))))
+COB:0000108	data transformation		COB:0000035	completely executed planned process		
+COB:0000109	investigation		COB:0000035	completely executed planned process		
+COB:0000110	material processing		COB:0000035	completely executed planned process		
+COB:0000111	disposition		COB:0000033	realizable		
+COB:0000112	function		COB:0000111	disposition		
+COB:0000113	plan		COB:0000033|COB:0000120	information representation|realizable	 inverse (COB:0000087) only COB:0000082|COB:0000078 some COB:0000079	 inverse (realizes) only planned process|concretizes some plan specification
+COB:0000114	role		COB:0000033	realizable		
+COB:0000116	cellular membrane		COB:0000020	subcellular structure		
+COB:0000118	cellular organism		COB:0000022	organism		
+COB:0000119	evaluant role		COB:0000114	role		
+COB:0000120	information representation		COB:0000502	characteristic		
+COB:0000121	measurement datum		COB:0000102	data item		
+COB:0000122	physical information carrier		COB:0000006	material entity		
+COB:0000123	agent role		COB:0000114	role		
+COB:0000502	characteristic				 inverse (COB:0000512) some owl:Thing|COB:0000047 only COB:0000502	 inverse (has characteristic) some |has part only characteristic

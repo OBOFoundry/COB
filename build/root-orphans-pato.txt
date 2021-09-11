@@ -1,3 +1,0 @@
-x,xl
-http://purl.obolibrary.org/obo/CARO_0030000,biological entity
-http://purl.obolibrary.org/obo/GO_0005575,cellular_component
