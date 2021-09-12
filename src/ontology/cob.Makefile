@@ -38,13 +38,22 @@ $(TMPDIR)/robot.jar: | $(TMPDIR)
 ########################################
 
 # build main release product
-cob.owl: $(SRC)
+REWIRE_PRECEDENCE = PR CHEBI
+cob.ttl: components/cob-to-external.tsv cob-native.owl
+	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob-native.owl -o $@
+cob.owl: cob.ttl
+	robot merge --include-annotations true -i $< -i ontology-metadata.owl \
+	annotate  -O $(OBO)/$@ -o $@
+.PRECIOUS: cob.owl
+
+cob-native.owl: $(SRC)
 	$(ROBOT) remove --input $< \
 	--select imports \
 	reason --reasoner hermit \
 	annotate --ontology-iri $(OBO)/$@ \
 	$(ANNOTATE_ONTOLOGY_VERSION) \
 	--output $@
+
 
 # base file is main cob plus linking axioms
 cob-base.owl: cob.owl $(COB_TO_EXTERNAL)
@@ -90,16 +99,6 @@ $(COB_ANNOTATIONS): $(TMPDIR)/cob-annotations.ttl
 	--annotation owl:versionInfo $(TODAY) \
 	--output $@
 
-########################################
-# -- REWIRING --
-########################################
-
-# NOTE: this code currently depends on sssom code not yet on pypi: https://github.com/mapping-commons/sssom-py/pull/119
-REWIRE_PRECEDENCE = PR CHEBI
-cob-rewired.ttl: components/cob-to-external.tsv cob.owl
-	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob.owl -o $@
-cob-rewired.owl: cob-rewired.ttl
-	robot annotate -i $<  -O $(OBO)/cob/$@ -o $@
 
 ########################################
 # -- TESTING --
