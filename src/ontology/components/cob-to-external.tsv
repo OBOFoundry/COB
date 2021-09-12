@@ -92,7 +92,7 @@ COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective sp
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
 COB:0000080	complex of molecular entities	rdfs:subClassOf	owl:Thing	owl:Thing	
 COB:0000088	drug product	owl:equivalentClass	DRON:0000005	drug product	we currently use a different text definition but we believe they do not contradict
-COB:0000088	drug product	owl:equivalentClass	CHEBI:23888	drug product	we currently use a different text definition but we believe they do not contradict
+COB:0000088	drug product	owl:equivalentClass	CHEBI:23888	drug	.
 COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
 COB:0000102	data item	owl:equivalentClass	IAO:0000027	data item	.
 COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
