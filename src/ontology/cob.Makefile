@@ -42,9 +42,8 @@ cob.owl: $(SRC)
 	$(ROBOT) remove --input $< \
 	--select imports \
 	reason --reasoner hermit \
-	annotate \
-	--ontology-iri "http://purl.obolibrary.org/obo/$@" \
-	--annotation owl:versionInfo $(TODAY) \
+	annotate --ontology-iri $(OBO)/$@ \
+	$(ANNOTATE_ONTOLOGY_VERSION) \
 	--output $@
 
 # base file is main cob plus linking axioms
@@ -90,6 +89,17 @@ $(COB_ANNOTATIONS): $(TMPDIR)/cob-annotations.ttl
 	--ontology-iri "http://purl.obolibrary.org/obo/cob/$@" \
 	--annotation owl:versionInfo $(TODAY) \
 	--output $@
+
+########################################
+# -- REWIRING --
+########################################
+
+# NOTE: this code currently depends on sssom code not yet on pypi: https://github.com/mapping-commons/sssom-py/pull/119
+REWIRE_PRECEDENCE = PR CHEBI
+cob-rewired.ttl: components/cob-to-external.tsv cob.owl
+	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob.owl -o $@
+cob-rewired.owl: cob-rewired.ttl
+	robot annotate -i $<  -O $(OBO)/cob/$@ -o $@
 
 ########################################
 # -- TESTING --
