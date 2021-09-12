@@ -103,7 +103,7 @@ COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.
 COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.
 COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.
 COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.
-COB:0000114	role	owl:equivalentClass	CHEBI:50906 	role	.
+COB:0000114	role	owl:equivalentClass	CHEBI:50906	role	.
 COB:0000116	cellular membrane	rdfs:subClassOf	owl:Thing	owl:Thing	
 COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.
 COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.
