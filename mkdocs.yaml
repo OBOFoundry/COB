@@ -2,8 +2,10 @@ site_name: Core Ontology for Biology and Biomedicine
 theme: readthedocs
 nav:
   - Getting started: index.md
-  - Cite: cite.md
-  - History: history.md
+  - Tour:
+      - Exploring COB: exploring.md
+      - Placing OBO ontologies under COB: obo-bridge.md
+      - Integration Tests: integration-tests.md
   - How-to guides:
       - Standard ODK workflows:
           - Overview: odk-workflows/index.md
@@ -16,4 +18,7 @@ nav:
           - Continuous Integration: odk-workflows/ContinuousIntegration.md
           - Your ODK Repository Overview: odk-workflows/RepositoryFileStructure.md 
       - Contributing: contributing.md
+  - Other:
+      - Cite: cite.md
+      - History: history.md
 
