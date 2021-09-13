@@ -30,6 +30,9 @@ all: prepare_release prepare_cob_products
 
 ROBOT_DOWNLOAD=true
 
+products/:
+	mkdir -p $@
+
 $(TMPDIR)/robot.jar: | $(TMPDIR)
 	if [ $(ROBOT_DOWNLOAD) = true ]; then curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar; fi
 
@@ -176,14 +179,14 @@ $(TMPDIR)/incoherent-%.txt: $(TMPDIR)/reasoned-%.owl | $(TMPDIR)
 # note that for 'reasoning' we use only subClassOf and equivalentClasses;
 # this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
 # is all sub/equiv axioms
-products/orphans-%.tsv: $(TMPDIR)/merged-%.owl
+products/orphans-%.tsv: $(TMPDIR)/merged-%.owl | products/
 	robot query -f tsv -i $< -q $(SPARQLDIR)/no-cob-ancestor.rq $@.tmp && egrep -i '(^\?|/$*_)' $@.tmp | head -1000 > $@
 
 all_orphans: $(patsubst %, products/root-orphans-%.txt, $(ALL_ONTS))
-products/root-orphans-%.tsv: $(TMPDIR)/merged-%.owl
+products/root-orphans-%.tsv: $(TMPDIR)/merged-%.owl | products/
 	robot query -f tsv -i $< -q $(SPARQLDIR)/cob-orphans.rq $@
 
-products/SUMMARY.txt:
+products/SUMMARY.txt: | products/
 	(head $(TMPDIR)/status-*txt && head -1 $(TMPDIR)/incoherent-*txt) > $@
 
 ########################################
@@ -247,7 +250,7 @@ $(TMPDIR)/demo-cob-merged.owl: $(TMPDIR)/demo-cob-init.owl | $(TMPDIR)
 
 # remove redundancy
 # todo: remove danglers in fiinal release (use a SPARQL update), but produce a report
-products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl
+products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl | products/
 	$(ROBOT) reason -r ELK -s true -i $< annotate -O $(URIBASE)/cob/demo-cob.owl -o products/demo-cob-d.owl && owltools products/demo-cob-d.owl --remove-dangling -o products/demo-cob.owl
 
 $(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt | $(TMPDIR)
