@@ -293,6 +293,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000508 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000508">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000509"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:label xml:lang="en">has gene template</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000509 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000509">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:label xml:lang="en">gene template of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000512 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000512">
@@ -542,7 +561,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000073"/>
         <rdfs:label xml:lang="en">protein</rdfs:label>
     </owl:Class>
     
@@ -934,6 +953,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000508"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000501"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>gene product</rdfs:label>
     </owl:Class>
     
@@ -1322,6 +1347,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000501">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000503"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000509"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000509"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A sequence of nucleic acids that is part of a genome and is the template for one or more RNA molecules, where those molecules are either gene products or can be translated into gene products.</obo:IAO_0000115>
         <obo:IAO_0000116>Add a GCI axiom: (gene and &apos;part of&apos; some &apos;cellular organism&apos;) SubClassOf &apos;part of&apos; some DNA</obo:IAO_0000116>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
