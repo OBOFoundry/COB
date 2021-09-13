@@ -38,8 +38,8 @@ The documentation is _not_ automatically updated from the Markdown, and needs to
    If everything was successful, you will see a message similar to this one:
 
    ```
-   INFO    -  Your documentation should shortly be available at: https://OBOFoundry.github.io/False/ 
+   INFO    -  Your documentation should shortly be available at: https://OBOFoundry.github.io/COB/ 
    ```
-3. Just to double check, you can now navigate to your documentation pages (usually https://OBOFoundry.github.io/False/). 
+3. Just to double check, you can now navigate to your documentation pages (usually https://OBOFoundry.github.io/COB/). 
    Just make sure you give GitHub 2-5 minutes to build the pages!
 
