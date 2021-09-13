@@ -30,6 +30,9 @@ all: prepare_release prepare_cob_products
 
 ROBOT_DOWNLOAD=true
 
+products/:
+	mkdir -p $@
+
 $(TMPDIR)/robot.jar: | $(TMPDIR)
 	if [ $(ROBOT_DOWNLOAD) = true ]; then curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar; fi
 
@@ -84,7 +87,7 @@ sssom:
 	pip install sssom pandasql
 	pip install --upgrade --no-deps --force-reinstall sssom==0.3.2
 
-$(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | sssom
+$(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR) sssom
 	sssom convert $< -o $@
 
 $(COB_TO_EXTERNAL): $(TMPDIR)/cob-to-external.sssom.owl
@@ -125,13 +128,17 @@ COB_COMPLIANT = obi pato go cl uberon po uberon+cl ro envo ogms hp mp caro ido z
 COB_NONCOMPLIANT =  iao mondo  eco  maxo  mco  nbo peco ecto chebi
 ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 
+.PHONY: cob_test
 cob_test: main_test itest
 
 # main test: should be run via CI on every PR
 # this tests COB's internal consistency
+.PHONY: main_test
 main_test: $(REPORTDIR)/$(SRC)-obo-report.tsv cob.owl cob-base-reasoned.owl cob-examples-reasoned.owl
+test: main_test
 
 # integration tests: for now, run these on commmand line
+.PHONY: itest
 itest: itest_compliant itest_noncompliant #superclass_test
 	make products/SUMMARY.txt
 
@@ -151,11 +158,11 @@ superclass_test: orphans
 	echo TODO: currently this test always passes
 
 # merged product to be tested
-$(TMPDIR)/merged-%.owl: $(TMPDIR)/relaxed-%.owl cob.owl $(COB_TO_EXTERNAL)
+$(TMPDIR)/merged-%.owl: $(TMPDIR)/relaxed-%.owl cob.owl $(COB_TO_EXTERNAL) | $(TMPDIR)
 	$(ROBOT) merge -i $< -i cob.owl -i $(COB_TO_EXTERNAL) --collapse-import-closure true -o $@
 .PRECIOUS: $(TMPDIR)/merged-%.owl
 
-$(TMPDIR)/reasoned-%.owl $(TMPDIR)/status-%.txt: $(TMPDIR)/merged-%.owl
+$(TMPDIR)/reasoned-%.owl $(TMPDIR)/status-%.txt: $(TMPDIR)/merged-%.owl | $(TMPDIR)
 	(test -f $(TMPDIR)/debug-$*.owl && rm $(TMPDIR)/debug-$*.owl || echo) && \
 	$(ROBOT) reason --reasoner ELK -i $< -D $(TMPDIR)/debug-$*.owl -o $(TMPDIR)/reasoned-$*.owl && echo SUCCESS > $(TMPDIR)/status-$*.txt || echo FAIL > $(TMPDIR)/status-$*.txt
 .PRECIOUS: $(TMPDIR)/reasoned-%.owl
@@ -164,7 +171,7 @@ $(TMPDIR)/reasoned-%.owl $(TMPDIR)/status-%.txt: $(TMPDIR)/merged-%.owl
 # then explain all incoherencies. use owltools for now
 #$(TMPDIR)/incoherent-%.md: $(TMPDIR)/incoherent-%.owl
 #	$(ROBOT) explain --reasoner ELK -i $< -o $@
-$(TMPDIR)/incoherent-%.txt: $(TMPDIR)/reasoned-%.owl
+$(TMPDIR)/incoherent-%.txt: $(TMPDIR)/reasoned-%.owl | $(TMPDIR)
 	test -f $(TMPDIR)/debug-$*.owl && (owltools $(TMPDIR)/debug-$*.owl --run-reasoner -r elk -u -e | grep ^UNSAT | head -100 > $@) || echo COHERENT > $@
 
 # test to see if the ontology has any classes that are not inferred subclasses of a COB
@@ -172,52 +179,52 @@ $(TMPDIR)/incoherent-%.txt: $(TMPDIR)/reasoned-%.owl
 # note that for 'reasoning' we use only subClassOf and equivalentClasses;
 # this should be sufficient if input ontologies are pre-reasoned, and cob-to-external
 # is all sub/equiv axioms
-products/orphans-%.tsv: $(TMPDIR)/merged-%.owl
+products/orphans-%.tsv: $(TMPDIR)/merged-%.owl | products/
 	robot query -f tsv -i $< -q $(SPARQLDIR)/no-cob-ancestor.rq $@.tmp && egrep -i '(^\?|/$*_)' $@.tmp | head -1000 > $@
 
 all_orphans: $(patsubst %, products/root-orphans-%.txt, $(ALL_ONTS))
-products/root-orphans-%.tsv: $(TMPDIR)/merged-%.owl
+products/root-orphans-%.tsv: $(TMPDIR)/merged-%.owl | products/
 	robot query -f tsv -i $< -q $(SPARQLDIR)/cob-orphans.rq $@
 
-products/SUMMARY.txt:
+products/SUMMARY.txt: | products/
 	(head $(TMPDIR)/status-*txt && head -1 $(TMPDIR)/incoherent-*txt) > $@
 
 ########################################
 ## -- Fetch Source Ontologies --
 ########################################
 # cache ontology locally; by default we use main product...
-$(TMPDIR)/source-%.owl:
+$(TMPDIR)/source-%.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/$*.owl > $@.tmp && mv $@.tmp $@
 .PRECIOUS: $(TMPDIR)/source-%.owl
 
 # overrides for ontologies with bases
 # TODO: we should use the registry for this
 # see https://github.com/OBOFoundry/OBO-Dashboard/issues/20
-$(TMPDIR)/source-go.owl:
+$(TMPDIR)/source-go.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/go/go-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-pato.owl:
+$(TMPDIR)/source-pato.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/pato/pato-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-uberon.owl:
+$(TMPDIR)/source-uberon.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/uberon/uberon-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-cl.owl:
+$(TMPDIR)/source-cl.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/cl/cl-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-envo.owl:
+$(TMPDIR)/source-envo.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/envo/envo-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-hp.owl:
+$(TMPDIR)/source-hp.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/hp/hp-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-mp.owl:
+$(TMPDIR)/source-mp.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/mp/mp-base.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-ncbitaxon.owl:
+$(TMPDIR)/source-ncbitaxon.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/ncbitaxon/taxslim.owl > $@.tmp && mv $@.tmp $@
-$(TMPDIR)/source-obi.owl:
+$(TMPDIR)/source-obi.owl: | $(TMPDIR)
 	curl -L -s $(URIBASE)/obi/obi-base.owl > $@.tmp && mv $@.tmp $@
 
 # special cases
-$(TMPDIR)/source-uberon+cl.owl: $(TMPDIR)/source-cl.owl $(TMPDIR)/source-uberon.owl
+$(TMPDIR)/source-uberon+cl.owl: $(TMPDIR)/source-cl.owl $(TMPDIR)/source-uberon.owl | $(TMPDIR)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # See: https://github.com/OBOFoundry/COB/issues/151
-$(TMPDIR)/relaxed-%.owl: $(TMPDIR)/source-%.owl
+$(TMPDIR)/relaxed-%.owl: $(TMPDIR)/source-%.owl | $(TMPDIR)
 	$(ROBOT) relax -i $< reason -r ELK -o $@
 
 ########################################
@@ -230,7 +237,7 @@ DEMO_ONT_FILES = $(patsubst %,$(TMPDIR)/subset-%.owl,$(DEMO_ONTS))
 
 # merge subsets together with cob;
 # remove disjointness, for now we want to 'pass' ontologies for demo purposes
-$(TMPDIR)/demo-cob-init.owl: $(DEMO_ONT_FILES)
+$(TMPDIR)/demo-cob-init.owl: $(DEMO_ONT_FILES) | $(TMPDIR)
 	$(ROBOT) merge $(patsubst %, -i $(TMPDIR)/subset-%.owl,$(DEMO_ONTS)) \
               remove --axioms disjoint \
 	      -o $@
@@ -238,13 +245,13 @@ $(TMPDIR)/demo-cob-init.owl: $(DEMO_ONT_FILES)
 
 # TODO: do this with robot somehow.
 # equivalence pairs ugly for browsing; merge into COB
-$(TMPDIR)/demo-cob-merged.owl: $(TMPDIR)/demo-cob-init.owl
+$(TMPDIR)/demo-cob-merged.owl: $(TMPDIR)/demo-cob-init.owl | $(TMPDIR)
 	owltools $< --reasoner elk --merge-equivalence-sets -s COB 10 -l COB 10 -d COB 10  -o $@
 
 # remove redundancy
 # todo: remove danglers in fiinal release (use a SPARQL update), but produce a report
-products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl
+products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl | products/
 	$(ROBOT) reason -r ELK -s true -i $< annotate -O $(URIBASE)/cob/demo-cob.owl -o products/demo-cob-d.owl && owltools products/demo-cob-d.owl --remove-dangling -o products/demo-cob.owl
 
-$(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt
+$(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt | $(TMPDIR)
 	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
