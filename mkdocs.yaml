@@ -5,6 +5,7 @@ nav:
   - Tour:
       - Exploring COB: exploring.md
       - Placing OBO ontologies under COB: obo-bridge.md
+      - Using COB: using-cob.md
       - Integration Tests: integration-tests.md
   - How-to guides:
       - Standard ODK workflows:
