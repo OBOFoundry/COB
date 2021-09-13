@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-edit.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-annotations.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
@@ -71,6 +72,14 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -602,6 +611,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000118"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000507"/>
+        </owl:disjointUnionOf>
         <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.</obo:IAO_0000115>
         <rdfs:comment>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</rdfs:comment>
         <rdfs:comment>Includes virus - we will later have a class for cellular organisms.</rdfs:comment>
@@ -1309,8 +1322,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000501">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000503"/>
-        <obo:IAO_0000115>A sequence of nucleic acids that encodes gene products.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sequence of nucleic acids that is part of a genome and is the template for one or more RNA molecules, where those molecules are either gene products or can be translated into gene products.</obo:IAO_0000115>
+        <obo:IAO_0000116>Add a GCI axiom: (gene and &apos;part of&apos; some &apos;cellular organism&apos;) SubClassOf &apos;part of&apos; some DNA</obo:IAO_0000116>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:comment>Genes are part of DNA in all organisms except RNA viruses. The definition needs tuning for positive-sense RNA viruses such as SARS-CoV-2. The viruses have an RNA genome that is directly translated and then cleaved into distinct functional polyproteins.</rdfs:comment>
         <rdfs:label xml:lang="en">gene</rdfs:label>
     </owl:Class>
     
@@ -1360,10 +1375,104 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000503 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000503">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:IAO_0000115>A molecular entity that is composed of nucleic acid bases connected in a continuous sequence.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000504"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000504"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A molecular entity that is composed of nucleic acid bases connected in a continuous sequence in the 5&apos; to 3&apos; direction.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
-        <rdfs:label xml:lang="en">sequence of nucleic acids</rdfs:label>
+        <oboInOwl:hasExactSynonym>sequence of nucleic acids</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">nucleotide region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000504">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000503"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000506"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000015"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000049"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000503"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000506"/>
+        </owl:disjointUnionOf>
+        <obo:IAO_0000115>A nucleotide region or a polypeptide region.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:comment>sequence of nucleotides or amino acids</rdfs:comment>
+        <rdfs:label xml:lang="en">region of nucleic acid polymer or protein</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000504"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:comment>In MSO this is not part of a molecular entity</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000506">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000504"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000504"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <oboInOwl:hasExactSynonym>amino acid sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">polypeptide region</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/MSO_0000839"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:label xml:lang="en">virus</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

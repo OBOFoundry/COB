@@ -132,4 +132,12 @@ COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inv
 COB:0000123	agent role	owl:equivalentClass	SEPIO:0000048	agent role	
 COB:0000123	agent role	sssom:superClassOf	OBI:0000202	investigation agent role	
 COB:0000501	gene	owl:equivalentClass	SO:0000704	gene	.
-COB:0000503	sequence of nucleic acids	owl:equivalentClass	SO:0000110	sequence_feature	.
+COB:0000501	gene	owl:equivalentClass	MSO:0000704	gene	.
+COB:0000503	nucleotide region	owl:equivalentClass	MSO:3100210	nucleotide region	In MSO can be part of dsDNA molecule
+COB:0000503	nucleotide region	owl:subClassOf	SO:0000001	region	.
+COB:0000504	region of nucleic acid polymer or protein	owl:equivalentClass	SO:0000001	region	.
+COB:0000504	region of nucleic acid polymer or protein	owl:equivalentClass	MSO:0000001	sequence molecular entity region	MSO defines as two or more sequence units
+COB:0000506	polypeptide region	owl:equivalentClass	SO:0000839	polypeptide region	.
+COB:0000506	polypeptide region	owl:equivalentClass	MSO:0000839	peptide region	MSO defines as two or more sequence units
+COB:0000507	virus	owl:equivalentClass	NCBITaxon:10239	Viruses	.
+
