@@ -30,6 +30,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_based_on -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_based_on"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -41,6 +47,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -1293,6 +1305,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000503"/>
+        <obo:IAO_0000115>A sequence of nucleic acids that encodes gene products.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:label xml:lang="en">gene</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
@@ -1331,6 +1354,17 @@
         </owl:annotatedTarget>
         <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <obo:IAO_0000115>A molecular entity that is composed of nucleic acid bases connected in a continuous sequence.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:label xml:lang="en">sequence of nucleic acids</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

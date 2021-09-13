@@ -33,7 +33,6 @@ COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.
 COB:0000004	charge	owl:equivalentClass	PATO:0002193	electric	.
 COB:0000005	elementary charge	rdfs:subClassOf	owl:Thing	owl:Thing	Making ticket in PATO tracker
 COB:0000006	material entity	owl:equivalentClass	BFO:0000040	material entity	.
-COB:0000006	material entity	sssom:superClassOf	SO:0000110	sequence_feature	.
 COB:0000006	material entity	sssom:superClassOf	SO:0001060	sequence_variant	.
 COB:0000006	material entity	sssom:superClassOf	SO:0001260	sequence_collection	.
 COB:0000007	subatomic particle	owl:equivalentClass	CHEBI:36342	subatomic particle	.
@@ -132,3 +131,5 @@ COB:0000029	realized in	owl:equivalentProperty	BFO:0000054	realized in	.
 COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.
 COB:0000123	agent role	owl:equivalentClass	SEPIO:0000048	agent role	
 COB:0000123	agent role	sssom:superClassOf	OBI:0000202	investigation agent role	
+COB:0000501	gene	owl:equivalentClass	SO:0000704	gene	.
+COB:0000503	sequence of nucleic acids	owl:equivalentClass	SO:0000110	sequence_feature	.
