@@ -92,6 +92,7 @@ COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective sp
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.
 COB:0000080	complex of molecular entities	rdfs:subClassOf	owl:Thing	owl:Thing	
 COB:0000088	drug product	owl:equivalentClass	DRON:0000005	drug product	we currently use a different text definition but we believe they do not contradict
+COB:0000088	drug product	rdfs:seeAlso	CHEBI:23888	drug	These can't be equivalent because COB drug product is a material entity, and ChEBI's drug is a role. See issue #140 for more information.
 COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.
 COB:0000102	data item	owl:equivalentClass	IAO:0000027	data item	.
 COB:0000103	cell nucleus	owl:equivalentClass	GO:0005634	nucleus	.
@@ -103,6 +104,7 @@ COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.
 COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.
 COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.
 COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.
+COB:0000502	characteristic	sssom:superClassOf	CHEBI:50906	role	The ChEBI notion of a role doesn't strictly follow the BFO sense of either being a role or disposition, meaning that it's hard, if not impossible, to impose BFO order to this branch of ChEBI. See issue #173
 COB:0000116	cellular membrane	rdfs:subClassOf	owl:Thing	owl:Thing	
 COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.
 COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.
