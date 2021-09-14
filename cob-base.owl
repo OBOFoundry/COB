@@ -12,12 +12,12 @@
      xmlns:sssom="http://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2021-09-11/cob-native.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2021-09-13/cob-native.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <rdfs:comment xml:lang="en">This version of COB includes native OBO URIs, only using COB IRIs where equivalent natives could not be found. To see the edition that includes native IRIs, consult cob-edit.owl.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-11</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -504,10 +504,10 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000087">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
         <rdfs:label>realizes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1200,6 +1200,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:object_label>characteristic</sssom:object_label>
+        <sssom:subject_label>role</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
@@ -1671,6 +1686,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <sssom:object_label>root</sssom:object_label>
+        <sssom:subject_label>organism</sssom:subject_label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <sssom:object_label>organism</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
@@ -1680,13 +1702,6 @@
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <sssom:object_label>organism or virus or viroid</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
-        <sssom:object_label>root</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
     </owl:Axiom>
     
@@ -2390,7 +2405,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2441,12 +2455,20 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/DRON_0000005</obo:COB_based_on>
         <obo:IAO_0000115>A processed material entity created to be administered to an individual with the intent to improve health.</obo:IAO_0000115>
         <rdfs:label>drug product</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
         <sssom:object_label>drug product</sssom:object_label>
+        <sssom:subject_label>drug product</sssom:subject_label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <sssom:object_label>drug</sssom:object_label>
         <sssom:subject_label>drug product</sssom:subject_label>
     </owl:Axiom>
     
@@ -3916,9 +3938,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000001">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000019</obo:COB_based_on>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
         <rdfs:label>has quantity</rdfs:label>
         <rdfs:comment>The range of this property should be a user-defined unit datatype, e.g 182^:cm</rdfs:comment>

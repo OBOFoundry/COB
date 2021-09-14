@@ -879,6 +879,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:object_label>characteristic</sssom:object_label>
+        <sssom:subject_label>role</sssom:subject_label>
+    </Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
@@ -1597,12 +1612,20 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000088">
         <equivalentClass rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
         <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
         <sssom:object_label>drug product</sssom:object_label>
+        <sssom:subject_label>drug product</sssom:subject_label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <sssom:object_label>drug</sssom:object_label>
         <sssom:subject_label>drug product</sssom:subject_label>
     </Axiom>
     

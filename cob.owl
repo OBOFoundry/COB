@@ -11,12 +11,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2021-09-11/cob-native.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2021-09-13/cob-native.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <rdfs:comment xml:lang="en">This version of COB includes native OBO URIs, only using COB IRIs where equivalent natives could not be found. To see the edition that includes native IRIs, consult cob-edit.owl.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-11</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -177,8 +177,8 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000087">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:label>realizes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -727,7 +727,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000081"/>

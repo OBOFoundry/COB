@@ -28,7 +28,7 @@ COB:0000056	immaterial anatomical entity		BFO:0000041	immaterial entity
 COB:0000073	gene product		COB:0000013	molecular entity		
 COB:0000077	action specification		IAO:0000033	directive information entity	BFO:0000051 some COB:0000077|BFO:0000051 some IAO:0000005	has part some action specification|has part some objective specification
 COB:0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecular entity
-COB:0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	BFO:0000015|BFO:0000017	process|realizable	COB:0000081 some OBI:0000260|COB:0000087 some SEPIO:0000048	intended to realize some plan|realizes some agent role
+COB:0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	BFO:0000015	process	COB:0000081 some OBI:0000260|COB:0000087 some SEPIO:0000048	intended to realize some plan|realizes some agent role
 COB:0000083	failed planned process		COB:0000082	planned process		
 COB:0000116	cellular membrane		COB:0000020	subcellular structure		
 COB:0000119	evaluant role		BFO:0000023	role		
