@@ -42,7 +42,7 @@ $(TMPDIR)/robot.jar: | $(TMPDIR)
 
 # build main release product
 REWIRE_PRECEDENCE = PR CHEBI
-cob.ttl: components/cob-to-external.tsv cob-native.owl
+cob.ttl: components/cob-to-external.tsv cob-native.owl | sssom
 	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob-native.owl -o $@
 
 cob.owl: cob.ttl

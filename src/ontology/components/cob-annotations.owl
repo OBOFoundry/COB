@@ -81,8 +81,8 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001008</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001010</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0100026</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001010</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/NCBITaxon_1</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
