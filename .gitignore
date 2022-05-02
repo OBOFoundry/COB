@@ -48,3 +48,5 @@ src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 src/ontology/README-editors.md
 src/ontology/products/
+src/ontology/cob-native.owl
+src/ontology/cob.ttl

@@ -42,33 +42,37 @@ $(TMPDIR)/robot.jar: | $(TMPDIR)
 
 # build main release product
 REWIRE_PRECEDENCE = PR CHEBI
-cob.ttl: components/cob-to-external.tsv cob-native.owl
+cob.ttl: components/cob-to-external.tsv cob-native.owl | sssom
 	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob-native.owl -o $@
+
 cob.owl: cob.ttl
 	robot merge --include-annotations true -i $< -i ontology-metadata.owl \
-	annotate  -O $(OBO)/$@ -o $@
+	annotate --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: cob.owl
 
 cob-native.owl: $(SRC)
-	$(ROBOT) remove --input $< \
-	--select imports \
-	reason --reasoner hermit \
-	annotate --ontology-iri $(OBO)/$@ \
-	$(ANNOTATE_ONTOLOGY_VERSION) \
-	--output $@
-
+	$(ROBOT) remove --input $< --select imports --trim false \
+		reason -r HERMIT \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 # base file is main cob plus linking axioms
-cob-base.owl: cob.owl $(COB_TO_EXTERNAL)
-	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
+#cob-base.owl: cob.owl $(COB_TO_EXTERNAL)
+#	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 cob-base-reasoned.owl: cob-base.owl
-	$(ROBOT) reason -i $< -r HERMIT -o $@
+	$(ROBOT) remove --input $< --select imports --trim false \
+		reason -r HERMIT \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 cob-examples-reasoned.owl: cob-base.owl $(COB_EXAMPLES)
-	$(ROBOT) merge -i cob-base.owl -i $(COB_EXAMPLES) \
-	reason -r HERMIT -o $@
-
+	$(ROBOT) remove --input $< --select imports --trim false \
+		merge $(patsubst %, -i %, $^) \
+		reason -r HERMIT \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 # TSV export (may depend on dev version of robot export)
 cob.tsv: cob.owl
@@ -91,7 +95,9 @@ $(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TM
 	sssom convert $< -o $@
 
 $(COB_TO_EXTERNAL): $(TMPDIR)/cob-to-external.sssom.owl
-	$(ROBOT) convert -i $< -f owl -o $@
+	$(ROBOT) merge -i $< \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	convert -f owl -o $@
 
 $(TMPDIR)/cob-annotations.ttl: $(COB_TO_EXTERNAL) $(SPARQLDIR)/external-links.rq | $(TMPDIR)
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
