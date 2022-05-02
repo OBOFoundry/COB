@@ -120,7 +120,7 @@ COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.	HumanCurat
 COB:0000502	characteristic	owl:equivalentClass	PATO:0000001	quality	https://github.com/OBOFoundry/COB/issues/124	HumanCurated
 COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower	HumanCurated
 COB:0000502	characteristic	sssom:superClassOf	SO:0000400	sequence_attribute	.	HumanCurated
-COB:0000511	has quantity	rdfs:subPropertyOf	owl:topObjectProperty	topObjectProperty	.	HumanCurated
+COB:0000511	has quantity	rdfs:subPropertyOf	owl:topDataProperty	topDataProperty	.	HumanCurated
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.	HumanCurated
 COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.	HumanCurated
 COB:0000086	executes	owl:equivalentProperty	STATO:0000102	executes	.	HumanCurated
