@@ -12,12 +12,12 @@
      xmlns:sssom="http://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-04-29/cob-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-05-02/cob-base.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-29</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -526,22 +526,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000511 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000511"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
-        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>topObjectProperty</sssom:object_label>
-        <sssom:subject_label>has quantity</sssom:subject_label>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000512 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000512">
@@ -769,8 +753,20 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000511 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <rdfs:comment>The range of this property should be a user-defined unit datatype, e.g 182^:cm</rdfs:comment>
+        <rdfs:label>has quantity</rdfs:label>
+        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/35</rdfs:seeAlso>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000511"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:object_label>topDataProperty</sssom:object_label>
+        <sssom:subject_label>has quantity</sssom:subject_label>
+    </owl:Axiom>
     
 
 
@@ -3587,22 +3583,6 @@
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>zebrafish cell</sssom:subject_label>
     </owl:Axiom>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
-        <rdfs:label>has quantity</rdfs:label>
-        <rdfs:comment>The range of this property should be a user-defined unit datatype, e.g 182^:cm</rdfs:comment>
-        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/35</rdfs:seeAlso>
-    </rdf:Description>
 </rdf:RDF>
 
 
