@@ -33,21 +33,37 @@ AnnotationProperty: allocatedto:
 Datatype: idrange:1
 
     Annotations: 
-        allocatedto: "ONTOLOGY-CREATOR"
+        allocatedto: "COB Core Team"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
+        xsd:integer[>= 0 , <= 999]
 
     
 Datatype: idrange:2
 
     Annotations: 
-        allocatedto: "ADDITIONAL EDITOR"
+        allocatedto: "Bill Duncan"
     
     EquivalentTo: 
-        xsd:integer[>= 1000000 , <= 1999999]
+        xsd:integer[>= 1000 , <= 1099 ]
+
+Datatype: idrange:3
+
+    Annotations: 
+        allocatedto: "Nicolas Matentzoglu"
     
+    EquivalentTo: 
+        xsd:integer[>= 1100 , <= 1199 ]
+
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "James Overton"
     
+    EquivalentTo: 
+        xsd:integer[>= 1200 , <= 1299 ]
+
+
 Datatype: xsd:integer
 Datatype: rdf:PlainLiteral
 
