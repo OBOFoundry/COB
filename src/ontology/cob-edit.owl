@@ -1337,6 +1337,16 @@
         </owl:annotatedTarget>
         <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
