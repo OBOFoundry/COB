@@ -57,7 +57,8 @@ COB:0000019	cell in vitro	owl:equivalentClass	CL:0001034	cell in vitro	.	HumanCu
 COB:0000020	subcellular structure	rdfs:subClassOf	owl:Thing	owl:Thing	Chris will follow up	HumanCurated
 COB:0000021	gross anatomical part	owl:equivalentClass	CARO:0001008	gross anatomical part	.	HumanCurated
 COB:0000021	gross anatomical part	sssom:superClassOf	UBERON:0010000	multicellular anatomical structure	.	HumanCurated
-COB:0000022	organism	owl:equivalentClass	NCBITaxon:1	root	.	HumanCurated
+COB:0000022	organism	sssom:superClassOf	NCBITaxon:10239	Viruses	.	HumanCurated
+COB:0000022	organism	sssom:superClassOf	NCBITaxon:131567	cellular organisms	.	HumanCurated
 COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.	HumanCurated
 COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.	HumanCurated
 COB:0000025	organization	owl:equivalentClass	OBI:0000245	organization	.	HumanCurated
