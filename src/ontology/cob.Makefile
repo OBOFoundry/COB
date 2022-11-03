@@ -88,8 +88,9 @@ cob.tsv: cob.owl
 # this is a really hacky way to do this, replace with robot report?
 .PHONY: sssom
 sssom:
+	pip install --upgrade pip
 	pip install sssom pandasql
-	pip install --upgrade --no-deps --force-reinstall sssom==0.3.2
+	pip install --upgrade --no-deps --force-reinstall sssom==0.3.9
 
 $(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR) sssom
 	sssom convert $< -o $@

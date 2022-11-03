@@ -69,7 +69,10 @@ RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full cob-base-reasoned cob-example
 .PHONY: .FORCE
 
 .PHONY: all
-all: odkversion test all_assets
+all: all_odk
+
+.PHONY: all_odk
+all_odk: odkversion test all_assets
 
 .PHONY: test
 test: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
@@ -205,7 +208,7 @@ CLEANFILES=$(MAIN_FILES) $(SRCMERGED)
 # It will ensure that all assets/files are fresh, and will copy to release folder
 
 .PHONY: prepare_release
-prepare_release: all
+prepare_release: all_odk
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
 	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
@@ -215,6 +218,10 @@ prepare_initial_release: all_assets
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
 	rm -f $(patsubst %, ./%, $(CLEANFILES)) &&\
 	cd $(RELEASEDIR) && git add $(RELEASE_ASSETS)
+
+.PHONY: prepare_release_fast
+prepare_release_fast:
+	$(MAKE) prepare_release IMP=false PAT=false MIR=false COMP=false
 
 # ------------------------
 # Imports: Seeding system 
@@ -509,6 +516,7 @@ Usage: [IMAGE=(odklite|odkfull)] [ODK_DEBUG=yes] sh run.sh make [(IMP|MIR|IMP_LA
 
 Core commands:
 * prepare_release:	Run the entire release pipeline. Use make IMP=false prepare_release to avoid rerunning the imports
+* prepare_release_fast:	Run the entire release pipeline without refreshing imports, recreating components or recompiling patterns.
 * update_repo:		Update the ODK repository setup using the config file cob-odk.yaml
 * test:			Running all validation tests
 * odkversion:		Show the current version of the ODK Makefile and ROBOT.
