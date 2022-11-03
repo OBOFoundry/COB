@@ -12,12 +12,12 @@
      xmlns:sssom="http://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-base-reasoned.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-05-02/cob-base-reasoned.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob-base-reasoned.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1013,7 +1013,6 @@
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:Class>
     <owl:Axiom>
@@ -1669,12 +1668,10 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001010</obo:COB_based_on>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/NCBITaxon_1</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0100026</obo:COB_based_on>
         <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.</obo:IAO_0000115>
         <rdfs:comment>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</rdfs:comment>
@@ -1687,14 +1684,6 @@
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <sssom:match_type>HumanCurated</sssom:match_type>
         <sssom:object_label>organism or virus or viroid</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>root</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
     </owl:Axiom>
     <owl:Axiom>
@@ -2788,7 +2777,6 @@
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0010004</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/NCBITaxon_131567</obo:COB_based_on>
@@ -2955,6 +2943,17 @@
         </owl:annotatedTarget>
         <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
+        <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
+    </owl:Class>
     
 
 
@@ -3227,19 +3226,20 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>root</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>Viruses</sssom:subject_label>
     </owl:Axiom>
     
 
@@ -3249,7 +3249,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:Class>
     <owl:Axiom>
@@ -3259,6 +3258,14 @@
         <sssom:match_type>HumanCurated</sssom:match_type>
         <sssom:object_label>cellular organisms</sssom:object_label>
         <sssom:subject_label>cellular organism</sssom:subject_label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>cellular organisms</sssom:subject_label>
     </owl:Axiom>
     
 
