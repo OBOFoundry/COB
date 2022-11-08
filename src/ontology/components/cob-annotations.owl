@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-annotations.owl">
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -81,9 +81,8 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001008</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0100026</obo:COB_based_on>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CARO_0001010</obo:COB_based_on>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/NCBITaxon_1</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0100026</obo:COB_based_on>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
         <obo:COB_based_on>http://purl.obolibrary.org/obo/OBI_0000245</obo:COB_based_on>

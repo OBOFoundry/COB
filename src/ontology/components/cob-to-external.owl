@@ -10,10 +10,10 @@
      xmlns:sssom="http://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-05-02/components/cob-to-external.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-11-02/components/cob-to-external.owl"/>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <sssom:mapping_set_id rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv</sssom:mapping_set_id>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1252,7 +1252,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:Class>
     <owl:Axiom>
@@ -1261,14 +1260,6 @@
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <sssom:match_type>HumanCurated</sssom:match_type>
         <sssom:object_label>organism or virus or viroid</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>root</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
     </owl:Axiom>
     <owl:Axiom>
@@ -2239,23 +2230,27 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+    </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>root</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>Viruses</sssom:subject_label>
     </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+    </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
@@ -2263,6 +2258,14 @@
         <sssom:match_type>HumanCurated</sssom:match_type>
         <sssom:object_label>cellular organisms</sssom:object_label>
         <sssom:subject_label>cellular organism</sssom:subject_label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>cellular organisms</sssom:subject_label>
     </owl:Axiom>
     
 
