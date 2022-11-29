@@ -2,6 +2,7 @@ id: cob
 title: "Core Ontology for Biology and Biomedicine"
 github_org: OBOFoundry
 repo: COB
+git_main_branch: master
 report_fail_on: ERROR
 export_formats:
   - owl
@@ -10,6 +11,7 @@ release_artefacts:
   - full
   - custom-cob-base-reasoned
   - custom-cob-examples-reasoned
+  - custom-cob-native
 import_group:
   module_type: filter
   annotation_properties:
