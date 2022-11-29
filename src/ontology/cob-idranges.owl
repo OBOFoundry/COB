@@ -30,14 +30,21 @@ AnnotationProperty: idsfor:
     
 AnnotationProperty: allocatedto:
 
+Datatype: idrange:0
+
+    Annotations: 
+        allocatedto: "Rebecca Jackson"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0 , < 500]
+
 Datatype: idrange:1
 
     Annotations: 
-        allocatedto: "COB Core Team"
+        allocatedto: "Chris Mungall"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999]
-
+        xsd:integer[>= 500 , < 1000]
     
 Datatype: idrange:2
 
