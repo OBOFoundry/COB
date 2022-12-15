@@ -645,6 +645,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000111"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000114"/>
+        </owl:disjointUnionOf>
         <rdfs:label xml:lang="en">realizable</rdfs:label>
     </owl:Class>
     
