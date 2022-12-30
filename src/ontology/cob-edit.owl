@@ -259,10 +259,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000086">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000087"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000078"/>
-        </owl:propertyChainAxiom>
         <rdfs:label>executes</rdfs:label>
     </owl:ObjectProperty>
     
