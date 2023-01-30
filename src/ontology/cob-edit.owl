@@ -1366,11 +1366,8 @@
         <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
     </owl:Class>
-    
-    <!-- http://purl.obolibrary.org/obo/COB_0001002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001002">
-        <obo:IAO_0000115>A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+
 
     <!-- http://purl.obolibrary.org/obo/COB_0001100 -->
 
