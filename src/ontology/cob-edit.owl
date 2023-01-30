@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-edit.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-annotations.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
@@ -50,6 +51,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
@@ -65,6 +78,12 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     
 
 
@@ -1352,10 +1371,56 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001002">
         <obo:IAO_0000115>A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001100">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0001101"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0001102"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>This class groups the two defined classes &quot;disease&quot; and &quot;disorder&quot;. It supports use cases that conflate the two classes for pragmatic reasons.</rdfs:comment>
         <rdfs:label xml:lang="en">disease or disorder</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/OBOFoundry/COB/pull/226"/>
         <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/19</rdfs:seeAlso>
     </owl:Class>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001101">
+        <obo:IAO_0000115>A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <oboInOwl:hasRelatedSynonym>disorder</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0001101"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001102">
+        <obo:IAO_0000115>A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:label xml:lang="en">disorder</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0001102"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Axiom>
 </rdf:RDF>
 
 
