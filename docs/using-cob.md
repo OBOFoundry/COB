@@ -9,7 +9,7 @@ tracker and link to your PR
 
 ## 1. Add your roots to the OBO bridge
 
-See [Bridging COB to OBO](obo-bridge) for instructions on how to make sure your ontology's root terms are mapped to COB.
+See [Bridging COB to OBO](obo-bridge.md) for instructions on how to make sure your ontology's root terms are mapped to COB.
 
 If you are not bridged to COB, or don't understand the bridge file, then you are not ready to use it in the production releases of your ontology.
 
