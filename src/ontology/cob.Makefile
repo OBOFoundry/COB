@@ -42,7 +42,7 @@ $(TMPDIR)/robot.jar: | $(TMPDIR)
 
 # build main release product
 REWIRE_PRECEDENCE = PR CHEBI
-cob.ttl: components/cob-to-external.tsv cob-native.owl | sssom
+cob.ttl: components/cob-to-external.tsv cob-native.owl
 	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob-native.owl -o $@
 
 cob.owl: cob.ttl
@@ -85,14 +85,8 @@ cob.tsv: cob.owl
 #
 #  OWL is generated from this
 #
-# this is a really hacky way to do this, replace with robot report?
-.PHONY: sssom
-sssom:
-	pip install --upgrade pip
-	pip install sssom pandasql
-	pip install --upgrade --no-deps --force-reinstall sssom==0.3.2
 
-$(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR) sssom
+$(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR)
 	sssom convert $< -o $@
 
 $(COB_TO_EXTERNAL): $(TMPDIR)/cob-to-external.sssom.owl
