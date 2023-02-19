@@ -1347,6 +1347,14 @@
         <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
     </owl:Class>
+    
+    <!-- http://purl.obolibrary.org/obo/COB_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001001">
+        <obo:IAO_0000115>The set of observable characteristics of an individual resulting from the interaction of its genotype with the environment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">phenotype</rdfs:label>
+    </owl:Class>
+    
 </rdf:RDF>
 
 
