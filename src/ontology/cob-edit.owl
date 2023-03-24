@@ -317,27 +317,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000079 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000079">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000023"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
-        <rdfs:label xml:lang="en">function of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000085">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
-        <rdfs:label xml:lang="en">has function</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1379,7 +1358,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
             </owl:Restriction>
         </rdfs:subClassOf>
