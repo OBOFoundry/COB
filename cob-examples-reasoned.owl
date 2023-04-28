@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-examples-reasoned.owl#"
-     xml:base="http://purl.obolibrary.org/obo/cob/cob-examples-reasoned.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-edit.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/cob-edit.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,12 +12,12 @@
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples-reasoned.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-02-19/cob-examples-reasoned.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-04-28/cob-examples-reasoned.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo>2023-02-19</owl:versionInfo>
+        <owl:versionInfo>2023-04-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -787,7 +787,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000057"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
     </owl:Class>
     <owl:Axiom>
@@ -836,14 +836,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
@@ -1832,7 +1832,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000031">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000041</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000141</obo:COB_based_on>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
     
@@ -1841,7 +1841,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">geographical location</rdfs:label>
@@ -2057,7 +2057,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <rdfs:label>immaterial anatomical entity</rdfs:label>
     </owl:Class>
@@ -2067,7 +2067,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000029</obo:COB_based_on>
         <rdfs:label>site</rdfs:label>

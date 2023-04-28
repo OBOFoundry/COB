@@ -3,10 +3,10 @@ BFO:0000015	process				BFO:0000050 only BFO:0000015	part of only process
 BFO:0000016	disposition		BFO:0000017	realizable		
 BFO:0000017	realizable		PATO:0000001	characteristic		
 BFO:0000023	role		BFO:0000017	realizable		
-BFO:0000029	site		BFO:0000041	immaterial entity		
+BFO:0000029	site		BFO:0000141	immaterial entity		
 BFO:0000034	function		BFO:0000016	disposition		
 BFO:0000040	material entity					
-BFO:0000041	immaterial entity					
+BFO:0000141	immaterial entity					
 CARO:0001008	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	BFO:0000040	material entity		
 CARO:0010004	cellular organism		OBI:0100026	organism		
 CHEBI:10545	electron		CHEBI:36342|COB:0000013	molecular entity|subatomic particle	COB:0000801 value 0	has number of atomic nuclei value 0
@@ -24,8 +24,8 @@ COB:0000011	atom	A material entity consisting of exactly one atomic nucleus and 
 COB:0000013	molecular entity	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	BFO:0000040	material entity	BFO:0000051 some COB:0000011	has part some atom
 COB:0000014	obsolete macromolecular entity	A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.				
 COB:0000020	subcellular structure	A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecular entity
-COB:0000032	geographical location		BFO:0000041	immaterial entity		
-COB:0000056	immaterial anatomical entity		BFO:0000041	immaterial entity		
+COB:0000032	geographical location		BFO:0000141	immaterial entity		
+COB:0000056	immaterial anatomical entity		BFO:0000141	immaterial entity		
 COB:0000073	gene product		COB:0000013	molecular entity		
 COB:0000077	action specification		IAO:0000033	directive information entity	BFO:0000051 some COB:0000077|BFO:0000051 some IAO:0000005	has part some action specification|has part some objective specification
 COB:0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecular entity

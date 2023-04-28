@@ -1,18 +1,44 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl#"
      xml:base="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl"
+     xmlns:CL="http://purl.obolibrary.org/obo/CL_"
+     xmlns:GO="http://purl.obolibrary.org/obo/GO_"
+     xmlns:PO="http://purl.obolibrary.org/obo/PO_"
+     xmlns:PR="http://purl.obolibrary.org/obo/PR_"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:SO="http://purl.obolibrary.org/obo/SO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:COB="http://purl.obolibrary.org/obo/COB_"
+     xmlns:GEO="http://purl.obolibrary.org/obo/GEO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:MOP="http://purl.obolibrary.org/obo/MOP_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:PCO="http://purl.obolibrary.org/obo/PCO_"
+     xmlns:XAO="http://purl.obolibrary.org/obo/XAO_"
+     xmlns:ZFA="http://purl.obolibrary.org/obo/ZFA_"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CARO="http://purl.obolibrary.org/obo/CARO_"
+     xmlns:DRON="http://purl.obolibrary.org/obo/DRON_"
+     xmlns:ENVO="http://purl.obolibrary.org/obo/ENVO_"
+     xmlns:OGMS="http://purl.obolibrary.org/obo/OGMS_"
+     xmlns:PATO="http://purl.obolibrary.org/obo/PATO_"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:CHEBI="http://purl.obolibrary.org/obo/CHEBI_"
+     xmlns:SEPIO="http://purl.obolibrary.org/obo/SEPIO_"
+     xmlns:STATO="http://purl.obolibrary.org/obo/STATO_"
      xmlns:sssom="https://w3id.org/sssom/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:UBERON="http://purl.obolibrary.org/obo/UBERON_"
+     xmlns:semapv="https://w3id.org/semapv/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon_">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-02-19/components/cob-to-external.owl"/>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
-        <owl:versionInfo>2023-02-19</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-04-28/components/cob-to-external.owl"/>
+        <dcterms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</dcterms:license>
+        <owl:versionInfo>2023-04-28</owl:versionInfo>
         <sssom:mapping_set_id rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv</sssom:mapping_set_id>
     </owl:Ontology>
     
@@ -632,13 +658,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>

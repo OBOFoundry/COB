@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-full.owl#"
-     xml:base="http://purl.obolibrary.org/obo/cob/cob-full.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-edit.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/cob-edit.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,11 +11,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-02-19/cob-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-04-28/cob-full.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo>2023-02-19</owl:versionInfo>
+        <owl:versionInfo>2023-04-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -648,7 +648,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000031">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000041</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000141</obo:COB_based_on>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
     
