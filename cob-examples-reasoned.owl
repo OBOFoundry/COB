@@ -9,15 +9,15 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:sssom="http://w3id.org/sssom/"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples-reasoned.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob-examples-reasoned.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-02-19/cob-examples-reasoned.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-02</owl:versionInfo>
+        <owl:versionInfo>2023-02-19</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -67,27 +67,15 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://w3id.org/sssom/match_type -->
-
-    <owl:AnnotationProperty rdf:about="http://w3id.org/sssom/match_type"/>
-    
-
-
-    <!-- http://w3id.org/sssom/object_label -->
-
-    <owl:AnnotationProperty rdf:about="http://w3id.org/sssom/object_label"/>
-    
-
-
-    <!-- http://w3id.org/sssom/subject_label -->
-
-    <owl:AnnotationProperty rdf:about="http://w3id.org/sssom/subject_label"/>
     
 
 
@@ -100,6 +88,30 @@
     <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_set_id -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_set_id"/>
+    
+
+
+    <!-- https://w3id.org/sssom/object_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/object_label"/>
+    
+
+
+    <!-- https://w3id.org/sssom/subject_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/subject_label"/>
     
 
 
@@ -123,7 +135,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>part of</sssom:object_label>
         <sssom:subject_label>part of</sssom:subject_label>
     </owl:Axiom>
@@ -139,7 +151,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>has part</sssom:object_label>
         <sssom:subject_label>has part</sssom:subject_label>
     </owl:Axiom>
@@ -155,7 +167,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>realized in</sssom:object_label>
         <sssom:subject_label>realized in</sssom:subject_label>
     </owl:Axiom>
@@ -171,7 +183,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>occurs in</sssom:object_label>
         <sssom:subject_label>occurs in</sssom:subject_label>
     </owl:Axiom>
@@ -187,7 +199,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000036"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>contains process</sssom:object_label>
         <sssom:subject_label>contains process</sssom:subject_label>
     </owl:Axiom>
@@ -205,7 +217,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000002"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>is concretized as</sssom:object_label>
         <sssom:subject_label>is concretized as</sssom:subject_label>
     </owl:Axiom>
@@ -223,7 +235,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000016"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>topObjectProperty</sssom:object_label>
         <sssom:subject_label>executed by</sssom:subject_label>
     </owl:Axiom>
@@ -241,7 +253,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000023"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>inheres in</sssom:object_label>
         <sssom:subject_label>characteristic of</sssom:subject_label>
     </owl:Axiom>
@@ -259,7 +271,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>participates in</sssom:object_label>
         <sssom:subject_label>participates in</sssom:subject_label>
     </owl:Axiom>
@@ -278,7 +290,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000027"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>is_specified_input_of</sssom:object_label>
         <sssom:subject_label>is specified input of</sssom:subject_label>
     </owl:Axiom>
@@ -297,7 +309,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000028"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>is_specified_output_of</sssom:object_label>
         <sssom:subject_label>is specified output of</sssom:subject_label>
     </owl:Axiom>
@@ -310,14 +322,6 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
         <rdfs:label xml:lang="en">realized in</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>realized in</sssom:object_label>
-        <sssom:subject_label>realized in</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -327,14 +331,6 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
         <rdfs:label xml:lang="en">contains process</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000036"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>contains process</sssom:object_label>
-        <sssom:subject_label>contains process</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -350,7 +346,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>has_specified_input</sssom:object_label>
         <sssom:subject_label>has specified input</sssom:subject_label>
     </owl:Axiom>
@@ -369,7 +365,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>has_specified_output</sssom:object_label>
         <sssom:subject_label>has specified output</sssom:subject_label>
     </owl:Axiom>
@@ -388,14 +384,6 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
         <rdfs:label>has part</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>has part</sssom:object_label>
-        <sssom:subject_label>has part</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -410,7 +398,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>has participant</sssom:object_label>
         <sssom:subject_label>has participant</sssom:subject_label>
     </owl:Axiom>
@@ -423,14 +411,6 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
         <rdfs:label>occurs in</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000071"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>occurs in</sssom:object_label>
-        <sssom:subject_label>occurs in</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -440,14 +420,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label>part of</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000072"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>part of</sssom:object_label>
-        <sssom:subject_label>part of</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -462,7 +434,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000074"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>enabled by</sssom:object_label>
         <sssom:subject_label>enabled by</sssom:subject_label>
     </owl:Axiom>
@@ -515,7 +487,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/STATO_0000102"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>executes</sssom:object_label>
         <sssom:subject_label>executes</sssom:subject_label>
     </owl:Axiom>
@@ -546,7 +518,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>bearer of</sssom:object_label>
         <sssom:subject_label>has characteristic</sssom:subject_label>
     </owl:Axiom>
@@ -570,7 +542,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>is about</sssom:object_label>
         <sssom:subject_label>is about</sssom:subject_label>
     </owl:Axiom>
@@ -580,168 +552,72 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>is about</sssom:object_label>
-        <sssom:subject_label>is about</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>has_specified_input</sssom:object_label>
-        <sssom:subject_label>has specified input</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>is_specified_input_of</sssom:object_label>
-        <sssom:subject_label>is specified input of</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>has_specified_output</sssom:object_label>
-        <sssom:subject_label>has specified output</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000028"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>is_specified_output_of</sssom:object_label>
-        <sssom:subject_label>is specified output of</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000023"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>inheres in</sssom:object_label>
-        <sssom:subject_label>characteristic of</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>bearer of</sssom:object_label>
-        <sssom:subject_label>has characteristic</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000024"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>participates in</sssom:object_label>
-        <sssom:subject_label>participates in</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000070"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>has participant</sssom:object_label>
-        <sssom:subject_label>has participant</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>is concretized as</sssom:object_label>
-        <sssom:subject_label>is concretized as</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002333 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002333"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000074"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>enabled by</sssom:object_label>
-        <sssom:subject_label>enabled by</sssom:subject_label>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000102 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000102"/>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000086"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/STATO_0000102"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>executes</sssom:object_label>
-        <sssom:subject_label>executes</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -769,7 +645,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000511"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>topDataProperty</sssom:object_label>
         <sssom:subject_label>has quantity</sssom:subject_label>
     </owl:Axiom>
@@ -828,7 +704,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>process</sssom:object_label>
         <sssom:subject_label>process</sssom:subject_label>
     </owl:Axiom>
@@ -846,7 +722,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>disposition</sssom:object_label>
         <sssom:subject_label>disposition</sssom:subject_label>
     </owl:Axiom>
@@ -865,7 +741,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>realizable entity</sssom:object_label>
         <sssom:subject_label>realizable</sssom:subject_label>
     </owl:Axiom>
@@ -882,7 +758,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>specifically dependent continuant</sssom:object_label>
         <sssom:subject_label>characteristic</sssom:subject_label>
     </owl:Axiom>
@@ -900,7 +776,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>role</sssom:object_label>
         <sssom:subject_label>role</sssom:subject_label>
     </owl:Axiom>
@@ -918,7 +794,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000057"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>site</sssom:object_label>
         <sssom:subject_label>site</sssom:subject_label>
     </owl:Axiom>
@@ -936,7 +812,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>function</sssom:object_label>
         <sssom:subject_label>function</sssom:subject_label>
     </owl:Axiom>
@@ -953,7 +829,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>material entity</sssom:subject_label>
     </owl:Axiom>
@@ -970,7 +846,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>immaterial entity</sssom:object_label>
         <sssom:subject_label>immaterial entity</sssom:subject_label>
     </owl:Axiom>
@@ -988,7 +864,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>gross anatomical part</sssom:object_label>
         <sssom:subject_label>gross anatomical part</sssom:subject_label>
     </owl:Axiom>
@@ -1006,7 +882,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>organism or virus or viroid</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
     </owl:Axiom>
@@ -1025,7 +901,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cellular organism</sssom:object_label>
         <sssom:subject_label>cellular organism</sssom:subject_label>
     </owl:Axiom>
@@ -1045,7 +921,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000010"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>electron</sssom:object_label>
         <sssom:subject_label>electron</sssom:subject_label>
     </owl:Axiom>
@@ -1053,7 +929,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>nucleic acid</sssom:object_label>
         <sssom:subject_label>nucleic acid polymer</sssom:subject_label>
     </owl:Axiom>
@@ -1080,7 +956,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16541"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>protein polypeptide chain</sssom:object_label>
         <sssom:subject_label>protein</sssom:subject_label>
     </owl:Axiom>
@@ -1137,7 +1013,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000008"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>proton</sssom:object_label>
         <sssom:subject_label>proton</sssom:subject_label>
     </owl:Axiom>
@@ -1154,7 +1030,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24867"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000042"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>monoatomic ion</sssom:object_label>
         <sssom:subject_label>monoatomic ion</sssom:subject_label>
     </owl:Axiom>
@@ -1232,7 +1108,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000009"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>neutron</sssom:object_label>
         <sssom:subject_label>neutron</sssom:subject_label>
     </owl:Axiom>
@@ -1249,7 +1125,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>atom</sssom:object_label>
         <sssom:subject_label>uncharged atom</sssom:subject_label>
     </owl:Axiom>
@@ -1267,7 +1143,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000012"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>atomic nucleus</sssom:object_label>
         <sssom:subject_label>atomic nucleus</sssom:subject_label>
     </owl:Axiom>
@@ -1315,7 +1191,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>subatomic particle</sssom:object_label>
         <sssom:subject_label>subatomic particle</sssom:subject_label>
     </owl:Axiom>
@@ -1379,7 +1255,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>characteristic</sssom:object_label>
         <sssom:subject_label>role</sssom:subject_label>
     </owl:Axiom>
@@ -1460,7 +1336,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cell</sssom:object_label>
         <sssom:subject_label>cell</sssom:subject_label>
     </owl:Axiom>
@@ -1478,7 +1354,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>native cell</sssom:subject_label>
     </owl:Axiom>
@@ -1496,7 +1372,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001034"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000019"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cell in vitro</sssom:object_label>
         <sssom:subject_label>cell in vitro</sssom:subject_label>
     </owl:Axiom>
@@ -1578,7 +1454,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>mass</sssom:object_label>
         <sssom:subject_label>mass</sssom:subject_label>
     </owl:Axiom>
@@ -1605,7 +1481,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0002193"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>electric</sssom:object_label>
         <sssom:subject_label>charge</sssom:subject_label>
     </owl:Axiom>
@@ -1616,7 +1492,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000005">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no longer needed</obo:IAO_0000116>
+        <obo:IAO_0000116>no longer needed</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete_elementary charge</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -1624,7 +1500,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>owl:Thing</sssom:object_label>
         <sssom:subject_label>elementary charge</sssom:subject_label>
     </owl:Axiom>
@@ -1638,14 +1514,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000040</obo:COB_based_on>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>material entity</sssom:object_label>
-        <sssom:subject_label>material entity</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1657,14 +1525,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_36342</obo:COB_based_on>
         <rdfs:label xml:lang="en">subatomic particle</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36342"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>subatomic particle</sssom:object_label>
-        <sssom:subject_label>subatomic particle</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1676,14 +1536,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_24636</obo:COB_based_on>
         <rdfs:label xml:lang="en">proton</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24636"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000008"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>proton</sssom:object_label>
-        <sssom:subject_label>proton</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1695,14 +1547,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_30222</obo:COB_based_on>
         <rdfs:label xml:lang="en">neutron</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30222"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000009"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>neutron</sssom:object_label>
-        <sssom:subject_label>neutron</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1721,14 +1565,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_10545</obo:COB_based_on>
         <rdfs:label xml:lang="en">electron</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000010"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>electron</sssom:object_label>
-        <sssom:subject_label>electron</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1759,7 +1595,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>atom</sssom:object_label>
         <sssom:subject_label>atom</sssom:subject_label>
     </owl:Axiom>
@@ -1776,14 +1612,6 @@
         <rdfs:comment>This is equivalent to CHEBI:33252</rdfs:comment>
         <rdfs:label xml:lang="en">atomic nucleus</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000012"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>atomic nucleus</sssom:object_label>
-        <sssom:subject_label>atomic nucleus</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1810,7 +1638,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>molecular entity</sssom:object_label>
         <sssom:subject_label>molecular entity</sssom:subject_label>
     </owl:Axiom>
@@ -1818,7 +1646,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25367"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>molecule</sssom:object_label>
         <sssom:subject_label>molecular entity</sssom:subject_label>
     </owl:Axiom>
@@ -1847,18 +1675,10 @@
         <rdfs:label xml:lang="en">protein</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16541"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>protein polypeptide chain</sssom:object_label>
-        <sssom:subject_label>protein</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>protein</sssom:object_label>
         <sssom:subject_label>protein</sssom:subject_label>
     </owl:Axiom>
@@ -1876,14 +1696,6 @@
         <rdfs:comment>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</rdfs:comment>
         <rdfs:label xml:lang="en">cell</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>cell</sssom:object_label>
-        <sssom:subject_label>cell</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1895,14 +1707,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CL_0000003</obo:COB_based_on>
         <rdfs:label xml:lang="en">native cell</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>native cell</sssom:object_label>
-        <sssom:subject_label>native cell</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1914,14 +1718,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CL_0001034</obo:COB_based_on>
         <rdfs:label xml:lang="en">cell in vitro</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001034"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000019"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>cell in vitro</sssom:object_label>
-        <sssom:subject_label>cell in vitro</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1946,7 +1742,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000020"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>owl:Thing</sssom:object_label>
         <sssom:subject_label>subcellular structure</sssom:subject_label>
     </owl:Axiom>
@@ -1963,14 +1759,6 @@
         <rdfs:comment>Bodily fluids, such as urine, are currently defined as anatomical entities in UBERON. We should make sure there is a proper home for these here.</rdfs:comment>
         <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>gross anatomical part</sssom:object_label>
-        <sssom:subject_label>gross anatomical part</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1988,18 +1776,10 @@
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>organism or virus or viroid</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>organism</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
     </owl:Axiom>
@@ -2020,7 +1800,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000025"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>organization</sssom:object_label>
         <sssom:subject_label>organization</sssom:subject_label>
     </owl:Axiom>
@@ -2041,7 +1821,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>processed material</sssom:object_label>
         <sssom:subject_label>processed material entity</sssom:subject_label>
     </owl:Axiom>
@@ -2055,14 +1835,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000041</obo:COB_based_on>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>immaterial entity</sssom:object_label>
-        <sssom:subject_label>immaterial entity</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2078,7 +1850,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000032"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>owl:Thing</sssom:object_label>
         <sssom:subject_label>geographical location</sssom:subject_label>
     </owl:Axiom>
@@ -2094,14 +1866,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000017</obo:COB_based_on>
         <rdfs:label xml:lang="en">realizable</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>realizable entity</sssom:object_label>
-        <sssom:subject_label>realizable</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2118,14 +1882,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000015</obo:COB_based_on>
         <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>process</sssom:object_label>
-        <sssom:subject_label>process</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2148,7 +1904,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>planned process</sssom:object_label>
         <sssom:subject_label>planned process</sssom:subject_label>
     </owl:Axiom>
@@ -2202,7 +1958,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000037"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>biological process</sssom:object_label>
         <sssom:subject_label>biological process</sssom:subject_label>
     </owl:Axiom>
@@ -2238,7 +1994,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000038"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>molecular function</sssom:object_label>
         <sssom:subject_label>gene product or complex activity</sssom:subject_label>
     </owl:Axiom>
@@ -2253,14 +2009,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_24867</obo:COB_based_on>
         <rdfs:label>monoatomic ion</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24867"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000042"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>monoatomic ion</sssom:object_label>
-        <sssom:subject_label>monoatomic ion</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2271,14 +2019,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_33250</obo:COB_based_on>
         <rdfs:label>uncharged atom</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000043"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>atom</sssom:object_label>
-        <sssom:subject_label>uncharged atom</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2291,14 +2031,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/CHEBI_10545</obo:COB_based_on>
         <rdfs:label>nucleic acid polymer</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10545"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>nucleic acid</sssom:object_label>
-        <sssom:subject_label>nucleic acid polymer</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2315,7 +2047,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>collection of organisms</sssom:object_label>
         <sssom:subject_label>collection of organisms</sssom:subject_label>
     </owl:Axiom>
@@ -2340,14 +2072,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000029</obo:COB_based_on>
         <rdfs:label>site</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000057"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>site</sssom:object_label>
-        <sssom:subject_label>site</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -2364,7 +2088,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000058"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>conclusion based on data</sssom:object_label>
         <sssom:subject_label>conclusion based on data</sssom:subject_label>
     </owl:Axiom>
@@ -2400,7 +2124,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>information content entity</sssom:object_label>
         <sssom:subject_label>information</sssom:subject_label>
     </owl:Axiom>
@@ -2420,7 +2144,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>diagnosis</sssom:object_label>
         <sssom:subject_label>disease diagnosis</sssom:subject_label>
     </owl:Axiom>
@@ -2440,7 +2164,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000063"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>clinical finding</sssom:object_label>
         <sssom:subject_label>phenotypic finding</sssom:subject_label>
     </owl:Axiom>
@@ -2460,7 +2184,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000064"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>disease course</sssom:object_label>
         <sssom:subject_label>disease course</sssom:subject_label>
     </owl:Axiom>
@@ -2481,7 +2205,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000065"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>environmental system process</sssom:object_label>
         <sssom:subject_label>environmental process</sssom:subject_label>
     </owl:Axiom>
@@ -2502,7 +2226,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000066"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MOP_0000543"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>molecular process</sssom:object_label>
         <sssom:subject_label>physico-chemical process</sssom:subject_label>
     </owl:Axiom>
@@ -2522,7 +2246,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000067"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>ecosystem</sssom:object_label>
         <sssom:subject_label>ecosystem</sssom:subject_label>
     </owl:Axiom>
@@ -2542,7 +2266,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>astronomical body part</sssom:object_label>
         <sssom:subject_label>geophysical entity</sssom:subject_label>
     </owl:Axiom>
@@ -2562,7 +2286,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>directive information entity</sssom:object_label>
         <sssom:subject_label>directive information entity</sssom:subject_label>
     </owl:Axiom>
@@ -2580,7 +2304,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000073"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>owl:Thing</sssom:object_label>
         <sssom:subject_label>gene product</sssom:subject_label>
     </owl:Axiom>
@@ -2606,7 +2330,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000075"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>protein-containing complex</sssom:object_label>
         <sssom:subject_label>protein-containing macromolecular complex</sssom:subject_label>
     </owl:Axiom>
@@ -2626,7 +2350,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000076"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>objective specification</sssom:object_label>
         <sssom:subject_label>objective specification</sssom:subject_label>
     </owl:Axiom>
@@ -2680,7 +2404,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>plan specification</sssom:object_label>
         <sssom:subject_label>plan specification</sssom:subject_label>
     </owl:Axiom>
@@ -2693,49 +2417,32 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid139"/>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid139">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>owl:Thing</sssom:object_label>
         <sssom:subject_label>complex of molecular entities</sssom:subject_label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid139"/>
         <rdfs:comment>&gt;1, where the parts are not transitively covalently connected</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid139"/>
         <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
     </owl:Axiom>
     
@@ -2789,7 +2496,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>drug product</sssom:object_label>
         <sssom:subject_label>drug product</sssom:subject_label>
     </owl:Axiom>
@@ -2797,7 +2504,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>drug</sssom:object_label>
         <sssom:subject_label>drug product</sssom:subject_label>
     </owl:Axiom>
@@ -2817,7 +2524,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000101"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>document</sssom:object_label>
         <sssom:subject_label>document</sssom:subject_label>
     </owl:Axiom>
@@ -2837,7 +2544,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>data item</sssom:object_label>
         <sssom:subject_label>data item</sssom:subject_label>
     </owl:Axiom>
@@ -2856,7 +2563,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000103"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>nucleus</sssom:object_label>
         <sssom:subject_label>cell nucleus</sssom:subject_label>
     </owl:Axiom>
@@ -2918,7 +2625,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000107"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>assay</sssom:object_label>
         <sssom:subject_label>assay</sssom:subject_label>
     </owl:Axiom>
@@ -2938,7 +2645,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000108"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>data transformation</sssom:object_label>
         <sssom:subject_label>data transformation</sssom:subject_label>
     </owl:Axiom>
@@ -2958,7 +2665,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000109"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>investigation</sssom:object_label>
         <sssom:subject_label>investigation</sssom:subject_label>
     </owl:Axiom>
@@ -2978,7 +2685,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>material processing</sssom:object_label>
         <sssom:subject_label>material processing</sssom:subject_label>
     </owl:Axiom>
@@ -2993,14 +2700,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000016</obo:COB_based_on>
         <rdfs:label xml:lang="en">disposition</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000111"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>disposition</sssom:object_label>
-        <sssom:subject_label>disposition</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3012,14 +2711,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000034</obo:COB_based_on>
         <rdfs:label xml:lang="en">function</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>function</sssom:object_label>
-        <sssom:subject_label>function</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3053,7 +2744,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000113"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>plan</sssom:object_label>
         <sssom:subject_label>plan</sssom:subject_label>
     </owl:Axiom>
@@ -3068,14 +2759,6 @@
         <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000023</obo:COB_based_on>
         <rdfs:label xml:lang="en">role</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>role</sssom:object_label>
-        <sssom:subject_label>role</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3090,7 +2773,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000116"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>owl:Thing</sssom:object_label>
         <sssom:subject_label>cellular membrane</sssom:subject_label>
     </owl:Axiom>
@@ -3109,18 +2792,10 @@
         <rdfs:label xml:lang="en">cellular organism</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>cellular organism</sssom:object_label>
-        <sssom:subject_label>cellular organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cellular organisms</sssom:object_label>
         <sssom:subject_label>cellular organism</sssom:subject_label>
     </owl:Axiom>
@@ -3204,7 +2879,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>agent role</sssom:object_label>
         <sssom:subject_label>agent role</sssom:subject_label>
     </owl:Axiom>
@@ -3216,16 +2891,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid178"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
@@ -3238,35 +2904,26 @@
         <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
         <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>specifically dependent continuant</sssom:object_label>
-        <sssom:subject_label>characteristic</sssom:subject_label>
-    </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid178">
+        <owl:onProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
+            </rdf:Description>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>quality</sssom:object_label>
         <sssom:subject_label>characteristic</sssom:subject_label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid178"/>
         <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
     </owl:Axiom>
     
@@ -3289,14 +2946,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>drug product</sssom:object_label>
-        <sssom:subject_label>drug product</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3328,14 +2977,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>astronomical body part</sssom:object_label>
-        <sssom:subject_label>geophysical entity</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3345,14 +2986,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000067"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>ecosystem</sssom:object_label>
-        <sssom:subject_label>ecosystem</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3362,14 +2995,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000065"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>environmental system process</sssom:object_label>
-        <sssom:subject_label>environmental process</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3383,7 +3008,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>geophysical entity</sssom:object_label>
         <sssom:subject_label>geographical entity</sssom:subject_label>
     </owl:Axiom>
@@ -3396,14 +3021,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000038"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0003674"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>molecular function</sssom:object_label>
-        <sssom:subject_label>gene product or complex activity</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3412,14 +3029,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000020"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000103"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>nucleus</sssom:object_label>
-        <sssom:subject_label>cell nucleus</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3427,23 +3036,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005694">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid183"/>
         <rdfs:label xml:lang="en">chromosome</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid183">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005694"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000049"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid183"/>
         <rdfs:comment>min 2</rdfs:comment>
     </owl:Axiom>
     
@@ -3465,14 +3068,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000037"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>biological process</sssom:object_label>
-        <sssom:subject_label>biological process</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3481,14 +3076,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032991">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000075"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>protein-containing complex</sssom:object_label>
-        <sssom:subject_label>protein-containing macromolecular complex</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3498,14 +3085,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000076"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>objective specification</sssom:object_label>
-        <sssom:subject_label>objective specification</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3515,14 +3094,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>data item</sssom:object_label>
-        <sssom:subject_label>data item</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3531,14 +3102,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>information content entity</sssom:object_label>
-        <sssom:subject_label>information</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3548,14 +3111,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>directive information entity</sssom:object_label>
-        <sssom:subject_label>directive information entity</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3565,14 +3120,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000069"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000079"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>plan specification</sssom:object_label>
-        <sssom:subject_label>plan specification</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3582,14 +3129,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000101"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>document</sssom:object_label>
-        <sssom:subject_label>document</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3599,14 +3138,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000066"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MOP_0000543"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>molecular process</sssom:object_label>
-        <sssom:subject_label>physico-chemical process</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3621,7 +3152,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>organism</sssom:object_label>
         <sssom:subject_label>Viruses</sssom:subject_label>
     </owl:Axiom>
@@ -3636,18 +3167,10 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>cellular organisms</sssom:object_label>
-        <sssom:subject_label>cellular organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>organism</sssom:object_label>
         <sssom:subject_label>cellular organisms</sssom:subject_label>
     </owl:Axiom>
@@ -3671,14 +3194,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>planned process</sssom:object_label>
-        <sssom:subject_label>planned process</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3688,14 +3203,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>processed material</sssom:object_label>
-        <sssom:subject_label>processed material entity</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3705,14 +3212,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000109"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>investigation</sssom:object_label>
-        <sssom:subject_label>investigation</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3722,14 +3221,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000107"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>assay</sssom:object_label>
-        <sssom:subject_label>assay</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3739,14 +3230,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>material processing</sssom:object_label>
-        <sssom:subject_label>material processing</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3760,7 +3243,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>agent role</sssom:object_label>
         <sssom:subject_label>investigation agent role</sssom:subject_label>
     </owl:Axiom>
@@ -3773,14 +3256,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000025"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>organization</sssom:object_label>
-        <sssom:subject_label>organization</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3791,14 +3266,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000033"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000113"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>plan</sssom:object_label>
-        <sssom:subject_label>plan</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3841,14 +3308,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000058"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>conclusion based on data</sssom:object_label>
-        <sssom:subject_label>conclusion based on data</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3858,14 +3317,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>organism</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3875,14 +3326,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000108"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>data transformation</sssom:object_label>
-        <sssom:subject_label>data transformation</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3903,14 +3346,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000063"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>clinical finding</sssom:object_label>
-        <sssom:subject_label>phenotypic finding</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3920,14 +3355,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000064"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>disease course</sssom:object_label>
-        <sssom:subject_label>disease course</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3937,14 +3364,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000061"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000062"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>diagnosis</sssom:object_label>
-        <sssom:subject_label>disease diagnosis</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3953,14 +3372,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>quality</sssom:object_label>
-        <sssom:subject_label>characteristic</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3971,14 +3382,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>mass</sssom:object_label>
-        <sssom:subject_label>mass</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -3989,14 +3392,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0002193"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>electric</sssom:object_label>
-        <sssom:subject_label>charge</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -4006,14 +3401,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000055"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>collection of organisms</sssom:object_label>
-        <sssom:subject_label>collection of organisms</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -4028,7 +3415,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cellular organism</sssom:object_label>
         <sssom:subject_label>whole plant</sssom:subject_label>
     </owl:Axiom>
@@ -4045,7 +3432,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cell</sssom:object_label>
         <sssom:subject_label>plant cell</sssom:subject_label>
     </owl:Axiom>
@@ -4061,7 +3448,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>immaterial anatomical entity</sssom:object_label>
         <sssom:subject_label>plant anatomical space</sssom:subject_label>
     </owl:Axiom>
@@ -4078,7 +3465,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>native plant cell</sssom:subject_label>
     </owl:Axiom>
@@ -4090,14 +3477,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>protein</sssom:object_label>
-        <sssom:subject_label>protein</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -4107,14 +3486,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
-        <sssom:object_label>agent role</sssom:object_label>
-        <sssom:subject_label>agent role</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -4128,7 +3499,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>sequence_feature</sssom:subject_label>
     </owl:Axiom>
@@ -4146,7 +3517,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>characteristic</sssom:object_label>
         <sssom:subject_label>sequence_attribute</sssom:subject_label>
     </owl:Axiom>
@@ -4163,7 +3534,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001060"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>sequence_variant</sssom:subject_label>
     </owl:Axiom>
@@ -4180,7 +3551,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>sequence_collection</sssom:subject_label>
     </owl:Axiom>
@@ -4196,7 +3567,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>immaterial anatomical entity</sssom:object_label>
         <sssom:subject_label>immaterial anatomical entity</sssom:subject_label>
     </owl:Axiom>
@@ -4214,7 +3585,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>cellular organism</sssom:object_label>
         <sssom:subject_label>multicellular organism</sssom:subject_label>
     </owl:Axiom>
@@ -4242,7 +3613,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>gross anatomical part</sssom:object_label>
         <sssom:subject_label>multicellular anatomical structure</sssom:subject_label>
     </owl:Axiom>
@@ -4270,7 +3641,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003012"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>xenopus cell</sssom:subject_label>
     </owl:Axiom>
@@ -4287,7 +3658,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZFA_0009000"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:match_type>HumanCurated</sssom:match_type>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>zebrafish cell</sssom:subject_label>
     </owl:Axiom>
@@ -4350,5 +3721,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 
