@@ -1,14 +1,16 @@
 ID	ID [LABEL]	definition	subClassOf [ID NAMED]	subClassOf [LABEL NAMED]	subClassOf [ID ANON]	subClassOf [LABEL ANON]
 BFO:0000015	process				BFO:0000050 only BFO:0000015	part of only process
 BFO:0000016	disposition		BFO:0000017	realizable		
-BFO:0000017	realizable		PATO:0000001	characteristic		
+BFO:0000017	realizable		BFO:0000020	characteristic		
+BFO:0000020	characteristic				 inverse (RO:0000053) some owl:Thing|BFO:0000051 only BFO:0000020	 inverse (has characteristic) some |has part only characteristic
 BFO:0000023	role		BFO:0000017	realizable		
 BFO:0000029	site		BFO:0000141	immaterial entity		
 BFO:0000034	function		BFO:0000016	disposition		
 BFO:0000040	material entity					
 BFO:0000141	immaterial entity					
 CARO:0001008	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	BFO:0000040	material entity		
-CARO:0010004	cellular organism		OBI:0100026	organism		
+CARO:0001010	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.	BFO:0000040	material entity		
+CARO:0010004	cellular organism		CARO:0001010	organism		
 CHEBI:10545	electron		CHEBI:36342|COB:0000013	molecular entity|subatomic particle	COB:0000801 value 0	has number of atomic nuclei value 0
 CHEBI:24636	proton		CHEBI:36342	subatomic particle		
 CHEBI:24867	monoatomic ion		COB:0000011	atom		
@@ -33,17 +35,18 @@ COB:0000082	planned process	A process that is initiated by an agent who intends 
 COB:0000083	failed planned process		COB:0000082	planned process		
 COB:0000116	cellular membrane		COB:0000020	subcellular structure		
 COB:0000119	evaluant role		BFO:0000023	role		
-COB:0000120	information representation		PATO:0000001	characteristic		
+COB:0000120	information representation		BFO:0000020	characteristic		
 COB:0000121	measurement datum		IAO:0000027	data item		
 COB:0000122	physical information carrier		BFO:0000040	material entity		
 COB:0001000	exposure of organism	A process during which an organism comes into contact with another entity.	BFO:0000015	process		
+COB:0001300	device	A processed material entity which is designed to perform a function.	OBI:0000047	processed material entity	OBI:0000312 some OBI:0000094|RO:0000053 some BFO:0000034	has characteristic some function|is specified output of some material processing
 DRON:0000005	drug product	A processed material entity created to be administered to an individual with the intent to improve health.	OBI:0000047	processed material entity		
 ENVO:01000813	geophysical entity		BFO:0000040	material entity		
 ENVO:01001110	ecosystem		BFO:0000040	material entity		
 ENVO:02500000	environmental process		BFO:0000015	process		
 GO:0003674	gene product or complex activity		BFO:0000015	process	RO:0002333 some (COB:0000073 or GO:0032991)	enabled by some (gene product or protein-containing macromolecular complex)
 GO:0005634	cell nucleus		COB:0000020	subcellular structure		
-GO:0008150	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	BFO:0000015	process	(BFO:0000066 some OBI:0100026) or (RO:0000057 some OBI:0100026) or (RO:0000057 some (BFO:0000050 some OBI:0100026))|BFO:0000051 some GO:0003674	(occurs in some organism) or (has participant some organism) or (has participant some (part of some organism))|has part some gene product or complex activity
+GO:0008150	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	BFO:0000015	process	(BFO:0000066 some CARO:0001010) or (RO:0000057 some CARO:0001010) or (RO:0000057 some (BFO:0000050 some CARO:0001010))|BFO:0000051 some GO:0003674	(occurs in some organism) or (has participant some organism) or (has participant some (part of some organism))|has part some gene product or complex activity
 GO:0032991	protein-containing macromolecular complex		COB:0000080	complex of molecular entities	BFO:0000051 some COB:0000073	has part some gene product
 IAO:0000005	objective specification		IAO:0000033	directive information entity		
 IAO:0000027	data item		IAO:0000030	information		
@@ -60,14 +63,12 @@ OBI:0000094	material processing		OBI:0000011	completely executed planned process
 OBI:0000245	organization		BFO:0000040	material entity		
 OBI:0000260	plan		BFO:0000017|COB:0000120	information representation|realizable	 inverse (COB:0000087) only COB:0000082|COB:0000078 some IAO:0000104	 inverse (realizes) only planned process|concretizes some plan specification
 OBI:0001909	conclusion based on data		IAO:0000030	information		
-OBI:0100026	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.	BFO:0000040	material entity		
 OBI:0200000	data transformation		OBI:0000011	completely executed planned process		
 OGMS:0000014	phenotypic finding		IAO:0000030	information		
 OGMS:0000063	disease course		BFO:0000015	process		
 OGMS:0000073	disease diagnosis		IAO:0000030	information		
-PATO:0000001	characteristic				 inverse (RO:0000053) some owl:Thing|BFO:0000051 only PATO:0000001	 inverse (has characteristic) some |has part only characteristic
-PATO:0000125	mass		PATO:0000001	characteristic	RO:0000052 some BFO:0000040	characteristic of some material entity
-PATO:0002193	charge		PATO:0000001	characteristic	RO:0000052 some BFO:0000040	characteristic of some material entity
+PATO:0000125	mass		BFO:0000020	characteristic	RO:0000052 some BFO:0000040	characteristic of some material entity
+PATO:0002193	charge		BFO:0000020	characteristic	RO:0000052 some BFO:0000040	characteristic of some material entity
 PCO:0000000	collection of organisms		BFO:0000040	material entity		
 PR:000000001	protein		COB:0000013	molecular entity		
 SEPIO:0000048	agent role		BFO:0000023	role		
