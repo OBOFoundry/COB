@@ -12,12 +12,12 @@
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-02-19/cob-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-05-12/cob-base.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo>2023-02-19</owl:versionInfo>
+        <owl:versionInfo>2023-05-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -52,6 +52,18 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
@@ -816,13 +828,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000031"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/ManualMappingCuration"/>
@@ -1456,7 +1468,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000031">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000041</obo:COB_based_on>
+        <obo:COB_based_on>http://purl.obolibrary.org/obo/BFO_0000141</obo:COB_based_on>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
     
@@ -2506,6 +2518,37 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
         <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000028"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A processed material entity which is designed to perform a function.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-24T16:04:27Z</dc:date>
+        <rdfs:comment xml:lang="en">In this definition we assume devices are made of processed material, not natural artifacts, so we involve artifactual function rather than biological function, but align with a general BFO function sense where functions such as pumping, lifting can occur in both contexts. Thus we can compare a biological arm with a robotic arm device.
+
+We say &quot;designed&quot; to emphasize a device&apos;s primary function rather than all the other possible dispositions a device may have that may also be useful. E.g. one can use a hammer for a paper weight.
+
+Regarding usage then, we don&apos;t say a naturally formed rock is a hammering device - it wasn&apos;t designed to bear a hammering function per se. However, a given rock may still happen to have the disposition to bear a hammering function, and so we could say it is a hammering &quot;tool&quot;, which does not necessarily convey intentional design.
+
+Example of use: A whole device like an engine; a component like a bolt is also a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">device</rdfs:label>
     </owl:Class>
     
 

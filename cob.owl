@@ -11,12 +11,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-02-19/cob.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-05-12/cob.owl"/>
         <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
         <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <rdfs:comment xml:lang="en">This version of COB includes native OBO URIs, only using COB IRIs where equivalent natives could not be found. To see the edition that includes native IRIs, consult cob-edit.owl.</rdfs:comment>
-        <owl:versionInfo>2023-02-19</owl:versionInfo>
+        <owl:versionInfo>2023-05-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -49,6 +49,18 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
@@ -247,7 +259,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:label>has characteristic</rdfs:label>
         <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -321,7 +333,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000511 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:comment>The range of this property should be a user-defined unit datatype, e.g 182^:cm</rdfs:comment>
         <rdfs:label>has quantity</rdfs:label>
         <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/35</rdfs:seeAlso>
@@ -398,9 +410,41 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:label xml:lang="en">realizable</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:nodeID="genid5"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
+        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid5">
+        <owl:onProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid5"/>
+        <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -416,7 +460,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:label>site</rdfs:label>
     </owl:Class>
     
@@ -440,9 +484,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
@@ -460,10 +504,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CARO_0001010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.</obo:IAO_0000115>
+        <rdfs:comment>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</rdfs:comment>
+        <rdfs:comment>Includes virus - we will later have a class for cellular organisms.</rdfs:comment>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CARO_0010004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
         <rdfs:label xml:lang="en">cellular organism</rdfs:label>
     </owl:Class>
     
@@ -660,7 +716,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:label xml:lang="en">geographical location</rdfs:label>
     </owl:Class>
     
@@ -669,7 +725,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:label>immaterial anatomical entity</rdfs:label>
     </owl:Class>
     
@@ -709,18 +765,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:nodeID="genid12"/>
+        <rdfs:subClassOf rdf:nodeID="genid16"/>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid12">
+    <owl:Restriction rdf:nodeID="genid16">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid12"/>
+        <owl:annotatedTarget rdf:nodeID="genid16"/>
         <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
     </owl:Axiom>
     
@@ -786,7 +842,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000015</obo:COB_based_on>
         <rdfs:comment>Pier &apos;representational entity&apos;</rdfs:comment>
         <rdfs:comment>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</rdfs:comment>
@@ -831,6 +887,37 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A processed material entity which is designed to perform a function.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-24T16:04:27+00:00</dc:date>
+        <rdfs:comment xml:lang="en">In this definition we assume devices are made of processed material, not natural artifacts, so we involve artifactual function rather than biological function, but align with a general BFO function sense where functions such as pumping, lifting can occur in both contexts. Thus we can compare a biological arm with a robotic arm device.
+
+We say &quot;designed&quot; to emphasize a device&apos;s primary function rather than all the other possible dispositions a device may have that may also be useful. E.g. one can use a hammer for a paper weight.
+
+Regarding usage then, we don&apos;t say a naturally formed rock is a hammering device - it wasn&apos;t designed to bear a hammering function per se. However, a given rock may still happen to have the disposition to bear a hammering function, and so we could say it is a hammering &quot;tool&quot;, which does not necessarily convey intentional design.
+
+Example of use: A whole device like an engine; a component like a bolt is also a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">device</rdfs:label>
     </owl:Class>
     
 
@@ -919,18 +1006,18 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -1199,18 +1286,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.</obo:IAO_0000115>
-        <rdfs:comment>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</rdfs:comment>
-        <rdfs:comment>Includes virus - we will later have a class for cellular organisms.</rdfs:comment>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
@@ -1247,42 +1322,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:nodeID="genid56"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">characteristic</rdfs:label>
-        <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
-        <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
-    </owl:Class>
-    <owl:Restriction rdf:nodeID="genid56">
-        <owl:onProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-            </rdf:Description>
-        </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid56"/>
-        <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -1297,7 +1340,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002193 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002193">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
