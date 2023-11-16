@@ -72,7 +72,7 @@ COB:0000037	biological process	owl:equivalentClass	GO:0008150	biological process
 COB:0000038	gene product or complex activity	owl:equivalentClass	GO:0003674	molecular function	.	semapv:ManualMappingCuration
 COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.	semapv:ManualMappingCuration
 COB:0000043	uncharged atom	owl:equivalentClass	CHEBI:33250	atom	"we think our uncharged atom is actually chebi:atom, to be discussed with CHEBI people"	semapv:ManualMappingCuration
-COB:0000049	nucleic acid polymer	owl:equivalentClass	CHEBI:10545	nucleic acid	follow up with CHEBI on nomenclature	semapv:ManualMappingCuration
+COB:0000049	nucleic acid polymer	owl:equivalentClass	CHEBI:33696	nucleic acid	follow up with CHEBI on nomenclature	semapv:ManualMappingCuration
 COB:0000055	collection of organisms	owl:equivalentClass	PCO:0000000	collection of organisms	.	semapv:ManualMappingCuration
 COB:0000056	immaterial anatomical entity	sssom:superClassOf	UBERON:0000466	immaterial anatomical entity	.	semapv:ManualMappingCuration
 COB:0000056	immaterial anatomical entity	sssom:superClassOf	PO:0025117	plant anatomical space	.	semapv:ManualMappingCuration
