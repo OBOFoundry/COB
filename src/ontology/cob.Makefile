@@ -87,7 +87,7 @@ cob.tsv: cob.owl
 #
 
 $(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR)
-	sssom convert $< -o $@
+	sssom convert $< --output-format owl -o $@
 
 $(COB_TO_EXTERNAL): $(TMPDIR)/cob-to-external.sssom.owl
 	$(ROBOT) merge -i $< \
