@@ -18,6 +18,10 @@ The file is in [SSSOM tsv](https://github.com/mapping-commons/SSSOM) format.
 
 The following entries use the owl:equivalentClass predicate to indicate that the COB IDs are equivalent to the the corresponding OBO concept.
 
+Note: this is only a selection of entry that _may be out of date_. Please refer to 
+[the COB-to-external mapping](https://raw.githubusercontent.com/OBOFoundry/COB/master/src/ontology/components/cob-to-external.tsv)
+for an up to date mapping!
+
 |subject_id|subject_label|predicate_id|object_id|object_label|notes|
 |---|---|---|---|---|---|
 |COB:0000003|mass|owl:equivalentClass|PATO:0000125|mass|.|
@@ -26,7 +30,7 @@ The following entries use the owl:equivalentClass predicate to indicate that the
 |COB:0000008|proton|owl:equivalentClass|CHEBI:24636|proton|.|
 |COB:0000017|cell|owl:equivalentClass|CL:0000000|cell|.|
 |COB:0000026|processed material entity|owl:equivalentClass|OBI:0000047|processed material|.|
-|COB:0000031|immaterial entity|owl:equivalentClass|BFO:0000041|immaterial entity|.|
+|COB:0000031|immaterial entity|owl:equivalentClass|BFO:0000141|immaterial entity|.|
 |COB:0000033|realizable|owl:equivalentClass|BFO:0000017|realizable entity|.|
 
 ## Multiple OBO IDs for one COB ID
