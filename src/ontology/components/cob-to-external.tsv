@@ -124,6 +124,7 @@ COB:0000502	characteristic	sssom:superClassOf	SO:0000400	sequence_attribute	.	se
 COB:0000511	has quantity	rdfs:subPropertyOf	owl:topDataProperty	topDataProperty	.	semapv:ManualMappingCuration
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.	semapv:ManualMappingCuration
 COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.	semapv:ManualMappingCuration
+COB:0000078	concretizes	owl:equivalentProperty	RO:0000059	concretizes	.	semapv:ManualMappingCuration
 COB:0000086	executes	owl:equivalentProperty	STATO:0000102	executes	.	semapv:ManualMappingCuration
 COB:0000016	executed by	rdfs:subPropertyOf	owl:topObjectProperty	topObjectProperty	"There is no inverse for 'executes' STATO, only in COB."	semapv:ManualMappingCuration
 COB:0000023	characteristic of	owl:equivalentProperty	RO:0000052	inheres in	"In RO, 'inheres in' is the inverse of 'bearer of'."	semapv:ManualMappingCuration
