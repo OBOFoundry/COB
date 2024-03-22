@@ -875,7 +875,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>characteristic</sssom:object_label>
         <sssom:subject_label>role</sssom:subject_label>
     </owl:Axiom>
@@ -1754,7 +1754,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>geophysical entity</sssom:object_label>
         <sssom:subject_label>geographical entity</sssom:subject_label>
     </owl:Axiom>
@@ -1836,7 +1836,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>organism</sssom:object_label>
         <sssom:subject_label>Viruses</sssom:subject_label>
     </owl:Axiom>
@@ -1852,7 +1852,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>organism</sssom:object_label>
         <sssom:subject_label>cellular organisms</sssom:subject_label>
     </owl:Axiom>
@@ -1898,7 +1898,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>agent role</sssom:object_label>
         <sssom:subject_label>investigation agent role</sssom:subject_label>
     </owl:Axiom>
@@ -1986,7 +1986,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>cellular organism</sssom:object_label>
         <sssom:subject_label>whole plant</sssom:subject_label>
     </owl:Axiom>
@@ -2002,7 +2002,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>cell</sssom:object_label>
         <sssom:subject_label>plant cell</sssom:subject_label>
     </owl:Axiom>
@@ -2018,7 +2018,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>immaterial anatomical entity</sssom:object_label>
         <sssom:subject_label>plant anatomical space</sssom:subject_label>
     </owl:Axiom>
@@ -2034,7 +2034,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>native plant cell</sssom:subject_label>
     </owl:Axiom>
@@ -2062,7 +2062,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>sequence_feature</sssom:subject_label>
     </owl:Axiom>
@@ -2078,7 +2078,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>characteristic</sssom:object_label>
         <sssom:subject_label>sequence_attribute</sssom:subject_label>
     </owl:Axiom>
@@ -2094,7 +2094,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001060"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>sequence_variant</sssom:subject_label>
     </owl:Axiom>
@@ -2110,7 +2110,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>material entity</sssom:object_label>
         <sssom:subject_label>sequence_collection</sssom:subject_label>
     </owl:Axiom>
@@ -2126,7 +2126,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>immaterial anatomical entity</sssom:object_label>
         <sssom:subject_label>immaterial anatomical entity</sssom:subject_label>
     </owl:Axiom>
@@ -2142,7 +2142,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>cellular organism</sssom:object_label>
         <sssom:subject_label>multicellular organism</sssom:subject_label>
     </owl:Axiom>
@@ -2158,7 +2158,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>gross anatomical part</sssom:object_label>
         <sssom:subject_label>multicellular anatomical structure</sssom:subject_label>
     </owl:Axiom>
@@ -2174,7 +2174,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003012"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>xenopus cell</sssom:subject_label>
     </owl:Axiom>
@@ -2190,7 +2190,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZFA_0009000"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/MappingInversion"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>native cell</sssom:object_label>
         <sssom:subject_label>zebrafish cell</sssom:subject_label>
     </owl:Axiom>
