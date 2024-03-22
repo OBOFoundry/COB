@@ -1,18 +1,44 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl#"
      xml:base="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl"
+     xmlns:CL="http://purl.obolibrary.org/obo/CL_"
+     xmlns:GO="http://purl.obolibrary.org/obo/GO_"
+     xmlns:PO="http://purl.obolibrary.org/obo/PO_"
+     xmlns:PR="http://purl.obolibrary.org/obo/PR_"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:SO="http://purl.obolibrary.org/obo/SO_"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:COB="http://purl.obolibrary.org/obo/COB_"
+     xmlns:GEO="http://purl.obolibrary.org/obo/GEO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:MOP="http://purl.obolibrary.org/obo/MOP_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:PCO="http://purl.obolibrary.org/obo/PCO_"
+     xmlns:XAO="http://purl.obolibrary.org/obo/XAO_"
+     xmlns:ZFA="http://purl.obolibrary.org/obo/ZFA_"
+     xmlns:dc1="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CARO="http://purl.obolibrary.org/obo/CARO_"
+     xmlns:DRON="http://purl.obolibrary.org/obo/DRON_"
+     xmlns:ENVO="http://purl.obolibrary.org/obo/ENVO_"
+     xmlns:OGMS="http://purl.obolibrary.org/obo/OGMS_"
+     xmlns:PATO="http://purl.obolibrary.org/obo/PATO_"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:CHEBI="http://purl.obolibrary.org/obo/CHEBI_"
+     xmlns:SEPIO="http://purl.obolibrary.org/obo/SEPIO_"
+     xmlns:STATO="http://purl.obolibrary.org/obo/STATO_"
      xmlns:sssom="https://w3id.org/sssom/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:UBERON="http://purl.obolibrary.org/obo/UBERON_"
+     xmlns:semapv="https://w3id.org/semapv/vocab/"
+     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon_">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-03-20/components/cob-to-external.owl"/>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
-        <owl:versionInfo>2024-03-20</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-03-22/components/cob-to-external.owl"/>
+        <dc1:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</dc1:license>
+        <owl:versionInfo>2024-03-22</owl:versionInfo>
         <sssom:mapping_set_id rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv</sssom:mapping_set_id>
     </owl:Ontology>
     
@@ -62,12 +88,6 @@
     <!-- https://w3id.org/sssom/subject_label -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/subject_label"/>
-    
-
-
-    <!-- https://w3id.org/sssom/superClassOf -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/superClassOf"/>
     
 
 
@@ -868,6 +888,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>characteristic</sssom:object_label>
+        <sssom:subject_label>role</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
@@ -966,35 +1002,7 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000006">
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001060"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>sequence_feature</sssom:object_label>
-        <sssom:subject_label>material entity</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SO_0001060"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>sequence_variant</sssom:object_label>
-        <sssom:subject_label>material entity</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>sequence_collection</sssom:object_label>
-        <sssom:subject_label>material entity</sssom:subject_label>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000006"/>
     
 
 
@@ -1046,51 +1054,13 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>plant cell</sssom:object_label>
-        <sssom:subject_label>cell</sssom:subject_label>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/COB_0000018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000018">
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/XAO_0003012"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/ZFA_0009000"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>native plant cell</sssom:object_label>
-        <sssom:subject_label>native cell</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/XAO_0003012"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>xenopus cell</sssom:object_label>
-        <sssom:subject_label>native cell</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ZFA_0009000"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>zebrafish cell</sssom:object_label>
-        <sssom:subject_label>native cell</sssom:subject_label>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000018"/>
     
 
 
@@ -1118,17 +1088,7 @@
 
     <!-- http://purl.obolibrary.org/obo/COB_0000021 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000021">
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>multicellular anatomical structure</sssom:object_label>
-        <sssom:subject_label>gross anatomical part</sssom:subject_label>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000021"/>
     
 
 
@@ -1136,8 +1096,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
@@ -1145,22 +1103,6 @@
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>organism</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>Viruses</sssom:object_label>
-        <sssom:subject_label>organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>cellular organisms</sssom:object_label>
         <sssom:subject_label>organism</sssom:subject_label>
     </owl:Axiom>
     
@@ -1314,6 +1256,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000057"/>
@@ -1452,7 +1400,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000068">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
@@ -1460,14 +1407,6 @@
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>astronomical body part</sssom:object_label>
-        <sssom:subject_label>geophysical entity</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>geographical entity</sssom:object_label>
         <sssom:subject_label>geophysical entity</sssom:subject_label>
     </owl:Axiom>
     
@@ -1760,8 +1699,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000118">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
@@ -1771,22 +1708,6 @@
         <sssom:object_label>cellular organisms</sssom:object_label>
         <sssom:subject_label>cellular organism</sssom:subject_label>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>whole plant</sssom:object_label>
-        <sssom:subject_label>cellular organism</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>multicellular organism</sssom:object_label>
-        <sssom:subject_label>cellular organism</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1794,7 +1715,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000123">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
@@ -1804,14 +1724,6 @@
         <sssom:object_label>agent role</sssom:object_label>
         <sssom:subject_label>agent role</sssom:subject_label>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>investigation agent role</sssom:object_label>
-        <sssom:subject_label>agent role</sssom:subject_label>
-    </owl:Axiom>
     
 
 
@@ -1819,8 +1731,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
@@ -1828,22 +1738,6 @@
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>quality</sssom:object_label>
-        <sssom:subject_label>characteristic</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>role</sssom:object_label>
-        <sssom:subject_label>characteristic</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>sequence_attribute</sssom:object_label>
         <sssom:subject_label>characteristic</sssom:subject_label>
     </owl:Axiom>
     
@@ -1870,6 +1764,22 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000068"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>geophysical entity</sssom:object_label>
+        <sssom:subject_label>geographical entity</sssom:subject_label>
+    </owl:Axiom>
     
 
 
@@ -1939,9 +1849,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>Viruses</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>organism</sssom:object_label>
+        <sssom:subject_label>cellular organisms</sssom:subject_label>
+    </owl:Axiom>
     
 
 
@@ -1972,6 +1908,22 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000123"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>agent role</sssom:object_label>
+        <sssom:subject_label>investigation agent role</sssom:subject_label>
+    </owl:Axiom>
     
 
 
@@ -2047,6 +1999,70 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>cellular organism</sssom:object_label>
+        <sssom:subject_label>whole plant</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000017"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>cell</sssom:object_label>
+        <sssom:subject_label>plant cell</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>immaterial anatomical entity</sssom:object_label>
+        <sssom:subject_label>plant anatomical space</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>native plant cell</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
@@ -2056,6 +2072,150 @@
     <!-- http://purl.obolibrary.org/obo/SEPIO_0000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000048"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>sequence_feature</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>characteristic</sssom:object_label>
+        <sssom:subject_label>sequence_attribute</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>sequence_variant</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>material entity</sssom:object_label>
+        <sssom:subject_label>sequence_collection</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>immaterial anatomical entity</sssom:object_label>
+        <sssom:subject_label>immaterial anatomical entity</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000118"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>cellular organism</sssom:object_label>
+        <sssom:subject_label>multicellular organism</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000021"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>gross anatomical part</sssom:object_label>
+        <sssom:subject_label>multicellular anatomical structure</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XAO_0003012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/XAO_0003012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XAO_0003012"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>xenopus cell</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZFA_0009000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZFA_0009000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZFA_0009000"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000018"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>native cell</sssom:object_label>
+        <sssom:subject_label>zebrafish cell</sssom:subject_label>
+    </owl:Axiom>
     
 
 
@@ -2098,29 +2258,9 @@
         <sssom:object_label>molecule</sssom:object_label>
         <sssom:subject_label>molecular entity</sssom:subject_label>
     </owl:Axiom>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
-        <sssom:superClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>plant anatomical space</sssom:object_label>
-        <sssom:subject_label>immaterial anatomical entity</sssom:subject_label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000056"/>
-        <owl:annotatedProperty rdf:resource="https://w3id.org/sssom/superClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:object_label>immaterial anatomical entity</sssom:object_label>
-        <sssom:subject_label>immaterial anatomical entity</sssom:subject_label>
-    </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 
