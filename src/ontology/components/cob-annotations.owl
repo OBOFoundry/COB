@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-annotations.owl">
-        <owl:versionInfo>2023-11-16</owl:versionInfo>
+        <owl:versionInfo>2024-04-04</owl:versionInfo>
     </owl:Ontology>
     
 

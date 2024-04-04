@@ -23,6 +23,7 @@ import_group:
     - id: ro
       module_type: slme
       slme_individuals: exclude
+      use_base: true
     - id: omo
       module_type: mirror
 components:
