@@ -26,8 +26,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_50906>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000121>))
-Declaration(Class(<http://purl.obolibrary.org/obo/COB_0001000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005634>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
@@ -1758,16 +1756,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000000> "We
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell")
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/UBERON_0000061>)
-
-# Class: <http://purl.obolibrary.org/obo/COB_0000121> (measurement datum)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000121> "measurement datum")
-
-# Class: <http://purl.obolibrary.org/obo/COB_0001000> (exposure of organism)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0001000> "A process during which an organism comes into contact with another entity.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0001000> "exposure of organism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0001000> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0003674> (molecular_function)
 
