@@ -36,9 +36,9 @@
      xmlns:semapv="https://w3id.org/semapv/vocab/"
      xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon_">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-11-16/components/cob-to-external.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-03-22/components/cob-to-external.owl"/>
         <dc1:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</dc1:license>
-        <owl:versionInfo>2023-11-16</owl:versionInfo>
+        <owl:versionInfo>2024-03-22</owl:versionInfo>
         <sssom:mapping_set_id rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv</sssom:mapping_set_id>
     </owl:Ontology>
     
@@ -146,6 +146,22 @@
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>realized in</sssom:object_label>
         <sssom:subject_label>realized in</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>realizes</sssom:object_label>
+        <sssom:subject_label>realizes</sssom:subject_label>
     </owl:Axiom>
     
 
@@ -385,6 +401,12 @@
         <sssom:object_label>executes</sssom:object_label>
         <sssom:subject_label>executes</sssom:subject_label>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000087"/>
     
 
 
