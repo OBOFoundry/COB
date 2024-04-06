@@ -36,9 +36,9 @@
      xmlns:semapv="https://w3id.org/semapv/vocab/"
      xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon_">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-03-22/components/cob-to-external.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-04-06/components/cob-to-external.owl"/>
         <dc1:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</dc1:license>
-        <owl:versionInfo>2024-03-22</owl:versionInfo>
+        <owl:versionInfo>2024-04-06</owl:versionInfo>
         <sssom:mapping_set_id rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv</sssom:mapping_set_id>
     </owl:Ontology>
     
@@ -388,6 +388,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000078 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000078">
+        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>concretizes</sssom:object_label>
+        <sssom:subject_label>concretizes</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000086">
@@ -499,6 +515,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
     
 
 
