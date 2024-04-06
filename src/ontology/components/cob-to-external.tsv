@@ -124,6 +124,7 @@ COB:0000502	characteristic	sssom:superClassOf	SO:0000400	sequence_attribute	.	se
 COB:0000511	has quantity	rdfs:subPropertyOf	owl:topDataProperty	topDataProperty	.	semapv:ManualMappingCuration
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.	semapv:ManualMappingCuration
 COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.	semapv:ManualMappingCuration
+COB:0000078	concretizes	owl:equivalentProperty	RO:0000059	concretizes	.	semapv:ManualMappingCuration
 COB:0000086	executes	owl:equivalentProperty	STATO:0000102	executes	.	semapv:ManualMappingCuration
 COB:0000016	executed by	rdfs:subPropertyOf	owl:topObjectProperty	topObjectProperty	"There is no inverse for 'executes' STATO, only in COB."	semapv:ManualMappingCuration
 COB:0000023	characteristic of	owl:equivalentProperty	RO:0000052	inheres in	"In RO, 'inheres in' is the inverse of 'bearer of'."	semapv:ManualMappingCuration
@@ -132,6 +133,7 @@ COB:0000027	is specified input of	owl:equivalentProperty	OBI:0000295	is_specifie
 COB:0000028	is specified output of	owl:equivalentProperty	OBI:0000312	is_specified_output_of	.	semapv:ManualMappingCuration
 COB:0000039	has specified input	owl:equivalentProperty	OBI:0000293	has_specified_input	.	semapv:ManualMappingCuration
 COB:0000040	has specified output	owl:equivalentProperty	OBI:0000299	has_specified_output	.	semapv:ManualMappingCuration
+COB:0000087	realizes	owl:equivalentProperty	BFO:0000055	realizes	.	semapv:ManualMappingCuration
 COB:0000029	realized in	owl:equivalentProperty	BFO:0000054	realized in	.	semapv:ManualMappingCuration
 COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.	semapv:ManualMappingCuration
 COB:0000123	agent role	owl:equivalentClass	SEPIO:0000048	agent role		semapv:ManualMappingCuration
