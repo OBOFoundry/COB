@@ -91,7 +91,7 @@ cob.tsv: cob.owl
 #
 
 $(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR)
-	pip install sssom>=0.4.6
+	pip install -U "sssom>=0.4.6"
 	sssom convert $< --output-format owl -o $@
 
 $(COB_TO_EXTERNAL): $(TMPDIR)/cob-to-external.sssom.owl
