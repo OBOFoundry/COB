@@ -9,7 +9,7 @@ The Core Ontology for Biology and Biomedicine (COB) aims to bring together key t
 **The 2024 COB Workshop will be hosted on September 23–24, 2024 at the La Jolla Institute for Immunology in La Jolla, CA. Please see the [Workshop](workshop2024.md) page for more information.**
 
 ## Why Use COB?
-COB is designed to serve as a bridge between domain ontologies. COB ensures interoperability between the ontologies that extend from it, many of which were developed independently of each other and would otherwise be difficult to use together. COB is also designed to be small and concise in order to minimize clutter and promote ease of use by non-ontologists.
+COB is designed as a top-level ontology that provides a framework in which different domain ontologies can interoperate, many of which were developed independently of each other and would otherwise be difficult to use together. COB is also designed to be small and concise in order to promote ease of use by non-ontologists.
 
 ## What Does COB Do?
 COB is unique among upper-level ontologies because it primarily gathers existing terms from other ontologies. This feature of COB is a product of the history of development of OBO Foundry ontologies.
