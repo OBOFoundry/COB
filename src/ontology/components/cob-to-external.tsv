@@ -60,7 +60,6 @@ COB:0000021	gross anatomical part	sssom:superClassOf	UBERON:0010000	multicellula
 COB:0000022	organism	sssom:superClassOf	NCBITaxon:10239	Viruses	.	semapv:ManualMappingCuration
 COB:0000022	organism	sssom:superClassOf	NCBITaxon:131567	cellular organisms	.	semapv:ManualMappingCuration
 COB:0000022	organism	owl:equivalentClass	OBI:0100026	organism	.	semapv:ManualMappingCuration
-COB:0000022	organism	owl:equivalentClass	CARO:0001010	organism or virus or viroid	.	semapv:ManualMappingCuration
 COB:0000025	organization	owl:equivalentClass	OBI:0000245	organization	.	semapv:ManualMappingCuration
 COB:0000026	processed material entity	owl:equivalentClass	OBI:0000047	processed material	.	semapv:ManualMappingCuration
 COB:0000031	immaterial entity	owl:equivalentClass	BFO:0000141	immaterial entity	.	semapv:ManualMappingCuration
