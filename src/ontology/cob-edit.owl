@@ -630,7 +630,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <obo:IAO_0000115>A material entity processed by human activity with an intent to produce</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is created or changed during material processing.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">processed material entity</rdfs:label>
     </owl:Class>
     
