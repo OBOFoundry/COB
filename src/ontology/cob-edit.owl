@@ -829,18 +829,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000061">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Pier: &apos;data, information or knowledge&apos;. OR &apos;representation</rdfs:comment>
@@ -1003,18 +999,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <rdfs:subClassOf rdf:nodeID="genid34"/>
+        <rdfs:subClassOf rdf:nodeID="genid33"/>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid34">
+    <owl:Restriction rdf:nodeID="genid33">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid34"/>
+        <owl:annotatedTarget rdf:nodeID="genid33"/>
         <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
     </owl:Axiom>
     
