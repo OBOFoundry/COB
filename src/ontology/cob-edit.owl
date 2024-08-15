@@ -1193,11 +1193,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
-                    </rdf:Description>
-                </owl:onProperty>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
