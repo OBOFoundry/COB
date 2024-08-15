@@ -630,7 +630,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <obo:IAO_0000115>A material entity processed by human activity with an intent to produce</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is created or changed during material processing.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">processed material entity</rdfs:label>
     </owl:Class>
     
@@ -999,20 +999,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <rdfs:subClassOf rdf:nodeID="genid33"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
+        <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid33">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid33"/>
-        <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
-    </owl:Axiom>
     
 
 
