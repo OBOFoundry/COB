@@ -92,7 +92,7 @@ COB:0000075	protein-containing macromolecular complex	owl:equivalentClass	GO:003
 COB:0000076	objective specification	owl:equivalentClass	IAO:0000005	objective specification	.	semapv:ManualMappingCuration
 COB:0000079	plan specification	owl:equivalentClass	IAO:0000104	plan specification	.	semapv:ManualMappingCuration
 COB:0000080	complex of molecular entities	rdfs:subClassOf	owl:Thing	owl:Thing		semapv:ManualMappingCuration
-COB:0000088	drug product	owl:equivalentClass	DRON:0000005	drug product	we currently use a different text definition but we believe they do not contradict	semapv:ManualMappingCuration
+COB:0000088	drug product	owl:equivalentClass	DRON:00000005	drug product	we currently use a different text definition but we believe they do not contradict	semapv:ManualMappingCuration
 COB:0000088	drug product	rdfs:seeAlso	CHEBI:23888	drug	These can't be equivalent because COB drug product is a material entity, and ChEBI's drug is a role. See issue #140 for more information.	semapv:ManualMappingCuration
 COB:0000101	document	owl:equivalentClass	IAO:0000310	document	.	semapv:ManualMappingCuration
 COB:0000102	data item	owl:equivalentClass	IAO:0000027	data item	.	semapv:ManualMappingCuration
