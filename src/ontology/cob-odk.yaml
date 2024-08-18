@@ -6,6 +6,8 @@ git_main_branch: master
 report_fail_on: ERROR
 export_formats:
   - owl
+workflows:
+ - docs
 release_artefacts:
   - base
   - full
