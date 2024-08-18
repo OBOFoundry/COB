@@ -21,8 +21,17 @@ jobs:
       - name: work around permission issue
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
         
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
       - name: Update release files
         run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' GITHUB_ACTION=true IMP=false PAT=false MIR=false prepare_release
+      
+      #@matentzn believes testing should be done once per week independently of releases
+      # So we do not block releases because some ontology is not passing tests
+      #- name: Run Test suite
+      #  run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' GITHUB_ACTION=true IMP=false PAT=false MIR=false test
       
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
@@ -30,5 +39,14 @@ jobs:
           commit-message: Update release files
           title: 'Update release files'
           body: |
-            Updates all release files.
+            Updates all release files. Please: 
+              - [] Review the pull request and merge it 
+              - [] After merging, please check the [associated release draft](https://github.com/OBOFoundry/COB/releases) and publish it.
           assignees: sebastianduesing
+      
+      - name: Run release
+        uses: gaoDean/action-gh-release@6b61bb5648ddc1241deb73ea6b72c3a1e1f9e445
+        with:
+          generate_release_notes: true
+          draft: true
+          tag_name: v${{ steps.date.outputs.date }}

@@ -132,6 +132,8 @@ ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 .PHONY: cob_test
 cob_test: main_test itest
 
+test: cob_test
+
 # main test: should be run via CI on every PR
 # this tests COB's internal consistency
 .PHONY: main_test

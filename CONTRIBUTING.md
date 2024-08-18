@@ -13,6 +13,7 @@ changes to this document in a pull request.
     * [Reporting problems with the ontology](#reporting-bugs)
     * [Requesting new terms](#requesting-terms)
     * [Adding new terms by yourself](#adding-terms)
+    * [Running a release](#run-release)
 - [Best practices](#best-practices)
     * [How to write a great issue?](#great-issues)
     * [How to create a great pull/merge request?](#great-pulls)
@@ -80,6 +81,16 @@ If you have never editted this ontology before, first follow a [general tutorial
 1. Commit changes to branch
 1. Push changes upstream
 1. Create pull request
+
+<a id="run-release"></a>
+
+### How to run a release
+
+1. Go to [GitHub actions tab](https://github.com/OBOFoundry/COB/actions/workflows/build.yml)
+2. Click on _Run workflow_, make sure `master` is selected, click _Run workflow_ again.
+3. When the pipeline is finished, a new PR with an associated GitHub draft release was created
+4. Review the PR, merge it.
+5. Go to the draft release and publish it.
 
 ## Best Practices
 
