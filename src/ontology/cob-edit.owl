@@ -12,9 +12,9 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-edit.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-annotations.owl"/>
-        <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
-        <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
+        <terms:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:title xml:lang="en">Core Ontology for Biology and Biomedicine</terms:title>
     </owl:Ontology>
     
 
@@ -74,9 +74,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -1343,7 +1361,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A processed material entity which is designed to perform a function.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-24T16:04:27Z</dc:date>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-24T16:04:27Z</terms:date>
         <rdfs:comment xml:lang="en">In this definition we assume devices are made of processed material, not natural artifacts, so we involve artifactual function rather than biological function, but align with a general BFO function sense where functions such as pumping, lifting can occur in both contexts. Thus we can compare a biological arm with a robotic arm device.
 
 We say &quot;designed&quot; to emphasize a device&apos;s primary function rather than all the other possible dispositions a device may have that may also be useful. E.g. one can use a hammer for a paper weight.
