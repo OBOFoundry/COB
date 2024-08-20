@@ -1,0 +1,52 @@
+# Basic ODK workflow
+
+name: QC COB Compliance suite
+
+on:
+  # Runs once per month
+  schedule:
+    - cron: "0 0 1 * *"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "ontology_qc"
+  ontology_qc:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.5.2
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Run COB Integration test suite
+        env:
+          DEFAULT_BRANCH: master
+        run: cd src/ontology && mkdir -p reports tmp && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' cob_test IMP=false PAT=false -B
+      
+      - name: Read and crop the contents of SUMMARY.txt
+        id: read_summary
+        run: |
+          summary_content=$(cat products/SUMMARY.txt)
+          max_length=65500  # Slightly less than the max limit to account for metadata or other content
+          if [ ${#summary_content} -gt $max_length ]; then
+            summary_content="${summary_content:0:$max_length}"
+            summary_content="${summary_content}\n\n...Content cropped due to length limits."
+          fi
+          
+          # Wrap the content in a collapsible details block
+          wrapped_content="<details><summary>Latest integration report</summary>\n\n${summary_content}\n\n</details>"
+          
+          echo "::set-output name=summary::${wrapped_content}"
+        shell: bash
+
+      - name: Post summary to the issue
+        run: gh issue comment <issue_number> --body "$SUMMARY_CONTENT"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY_CONTENT: ${{ steps.read_summary.outputs.summary }}
+
