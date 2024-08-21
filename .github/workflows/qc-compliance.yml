@@ -45,7 +45,7 @@ jobs:
         shell: bash
 
       - name: Post summary to the issue
-        run: gh issue comment <issue_number> --body "$SUMMARY_CONTENT"
+        run: gh issue comment 278 --body "$SUMMARY_CONTENT"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SUMMARY_CONTENT: ${{ steps.read_summary.outputs.summary }}
