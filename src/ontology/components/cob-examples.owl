@@ -11,7 +11,6 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-examples.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cob/cob-edit.owl"/>
     </owl:Ontology>
     
 

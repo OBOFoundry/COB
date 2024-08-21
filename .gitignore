@@ -50,3 +50,5 @@ src/ontology/README-editors.md
 src/ontology/products/
 src/ontology/cob-native.owl
 src/ontology/cob.ttl
+src/ontology/cob-base-reasoned.owl
+src/ontology/cob-examples-reasoned.owl
