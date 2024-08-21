@@ -16,7 +16,7 @@ These are the current imports in COB
 
 | Import | URL | Type |
 | ------ | --- | ---- |
-| ro | http://purl.obolibrary.org/obo/ro.owl | slme |
+| ro | http://purl.obolibrary.org/obo/ro.owl | custom |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 
 ## Components

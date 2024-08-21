@@ -23,7 +23,7 @@ import_group:
     - IAO:0000111
   products:
     - id: ro
-      module_type: slme
+      module_type: custom
       slme_individuals: exclude
     - id: omo
       module_type: mirror
