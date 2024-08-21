@@ -61,6 +61,13 @@ cob-native.owl: $(SRC)
 #cob-base.owl: cob.owl $(COB_TO_EXTERNAL)
 #	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
+	$(ROBOT_RELEASE_IMPORT_MODE_BASE) \
+	$(SHARED_ROBOT_COMMANDS) \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
 cob-base-reasoned.owl: cob-base.owl
 	$(ROBOT) remove --input $< --select imports --trim false \
 		reason -r HERMIT \
