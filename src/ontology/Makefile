@@ -19,7 +19,7 @@
 # 6. [Run everything (COB products and release pipeline)](all)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ee0faa650404ebb7b2d591feab04561dbd60f347a990a5e1c925bb6cb0ef0904
+CONFIG_HASH=                5daef41d99e802417bd9ad0f378f72168e2d30f0488f5b2423330cbc561ec834
 
 
 # ----------------------------------------
@@ -377,12 +377,8 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 ## Module for ontology: ro
 
-$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/ro_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		$(ANNOTATE_CONVERT_FILE); fi
-
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in cob.Makefile!" && false
 ## Module for ontology: omo
 
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combined.txt

@@ -61,6 +61,13 @@ cob-native.owl: $(SRC)
 #cob-base.owl: cob.owl $(COB_TO_EXTERNAL)
 #	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
+	$(ROBOT_RELEASE_IMPORT_MODE_BASE) \
+	$(SHARED_ROBOT_COMMANDS) \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
 cob-base-reasoned.owl: cob-base.owl
 	$(ROBOT) remove --input $< --select imports --trim false \
 		reason -r HERMIT \
@@ -103,6 +110,14 @@ $(COB_ANNOTATIONS): $(TMPDIR)/cob-annotations.ttl
 	--annotation owl:versionInfo $(TODAY) \
 	--output $@
 
+# This is the custom import: removing all COB related axioms from RO, but otherwise pulling in logical dependencies.
+
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/ro_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method BOT \
+		remove --base-iri http://purl.obolibrary.org/obo/COB_ --axioms internal --preserve-structure false --trim false \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
 
 ########################################
 # -- TESTING --
