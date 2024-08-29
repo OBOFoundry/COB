@@ -30,12 +30,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_based_on -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_based_on"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -329,7 +323,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000513 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000513">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000136</obo:COB_based_on>
         <rdfs:label>is about</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1065,7 +1058,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <obo:COB_based_on rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
         <obo:IAO_0000115>A processed material entity created to be administered to an individual with the intent to improve health.</obo:IAO_0000115>
         <rdfs:label>drug product</rdfs:label>
     </owl:Class>
@@ -1247,7 +1239,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
-        <obo:COB_based_on>OBI:0000067</obo:COB_based_on>
         <rdfs:label>evaluant role</rdfs:label>
     </owl:Class>
     
@@ -1263,7 +1254,6 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000015</obo:COB_based_on>
         <rdfs:comment>Pier &apos;representational entity&apos;</rdfs:comment>
         <rdfs:comment>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</rdfs:comment>
         <rdfs:label>information representation</rdfs:label>
@@ -1275,7 +1265,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000109</obo:COB_based_on>
         <rdfs:label>measurement datum</rdfs:label>
     </owl:Class>
     
