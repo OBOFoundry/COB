@@ -1248,6 +1248,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
         <obo:COB_based_on>OBI:0000067</obo:COB_based_on>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role.</obo:IAO_0000115>
         <rdfs:label>evaluant role</rdfs:label>
     </owl:Class>
     
@@ -1264,6 +1265,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000015</obo:COB_based_on>
+        <obo:IAO_0000115 xml:lang="en">A characteristic of an information bearer that imparts the information content.</obo:IAO_0000115>
         <rdfs:comment>Pier &apos;representational entity&apos;</rdfs:comment>
         <rdfs:comment>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</rdfs:comment>
         <rdfs:label>information representation</rdfs:label>
@@ -1276,6 +1278,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
         <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000109</obo:COB_based_on>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
         <rdfs:label>measurement datum</rdfs:label>
     </owl:Class>
     
@@ -1305,7 +1308,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
-        <obo:IAO_0000116>A role realized by a participant in a process such that the participant causes the process.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A role realized by a participant in a process such that the participant causes the process.</obo:IAO_0000115>
         <rdfs:label>agent role</rdfs:label>
     </owl:Class>
     
