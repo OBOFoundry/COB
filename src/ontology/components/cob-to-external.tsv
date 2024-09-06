@@ -1,37 +1,37 @@
-#license: "https://creativecommons.org/publicdomain/zero/1.0/"
-#mapping_set_id: "http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv"
-#curie_map:
-#  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
-#  skos: "http://www.w3.org/2004/02/skos/core#"
-#  owl: "http://www.w3.org/2002/07/owl#"
-#  BFO: "http://purl.obolibrary.org/obo/BFO_"
-#  CARO: "http://purl.obolibrary.org/obo/CARO_"
-#  CHEBI: "http://purl.obolibrary.org/obo/CHEBI_"
-#  CL: "http://purl.obolibrary.org/obo/CL_"
-#  COB: "http://purl.obolibrary.org/obo/COB_"
-#  ENVO: "http://purl.obolibrary.org/obo/ENVO_"
-#  GEO: "http://purl.obolibrary.org/obo/GEO_"
-#  GO: "http://purl.obolibrary.org/obo/GO_"
-#  IAO: "http://purl.obolibrary.org/obo/IAO_"
-#  MOP: "http://purl.obolibrary.org/obo/MOP_"
-#  NCBITaxon: "http://purl.obolibrary.org/obo/NCBITaxon_"
-#  OBI: "http://purl.obolibrary.org/obo/OBI_"
-#  OGMS: "http://purl.obolibrary.org/obo/OGMS_"
-#  PATO: "http://purl.obolibrary.org/obo/PATO_"
-#  PCO: "http://purl.obolibrary.org/obo/PCO_"
-#  PO: "http://purl.obolibrary.org/obo/PO_"
-#  PR: "http://purl.obolibrary.org/obo/PR_"
-#  SO: "http://purl.obolibrary.org/obo/SO_"
-#  RO: "http://purl.obolibrary.org/obo/RO_"
-#  UBERON: "http://purl.obolibrary.org/obo/UBERON_"
-#  XAO: "http://purl.obolibrary.org/obo/XAO_"
-#  ZFA: "http://purl.obolibrary.org/obo/ZFA_"
-#  SEPIO: "http://purl.obolibrary.org/obo/SEPIO_"
-#  STATO: "http://purl.obolibrary.org/obo/STATO_"
-#  DRON: "http://purl.obolibrary.org/obo/DRON_"
+#license: "https://creativecommons.org/publicdomain/zero/1.0/"						
+#mapping_set_id: "http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv"						
+#curie_map:						
+#  rdfs: "http://www.w3.org/2000/01/rdf-schema#"						
+#  owl: "http://www.w3.org/2002/07/owl#"						
+#  skos: "http://www.w3.org/2004/02/skos/core#"						
+#  BFO: "http://purl.obolibrary.org/obo/BFO_"						
+#  CARO: "http://purl.obolibrary.org/obo/CARO_"						
+#  CL: "http://purl.obolibrary.org/obo/CL_"						
+#  CHEBI: "http://purl.obolibrary.org/obo/CHEBI_"						
+#  COB: "http://purl.obolibrary.org/obo/COB_"						
+#  ENVO: "http://purl.obolibrary.org/obo/ENVO_"						
+#  GO: "http://purl.obolibrary.org/obo/GO_"						
+#  GEO: "http://purl.obolibrary.org/obo/GEO_"						
+#  IAO: "http://purl.obolibrary.org/obo/IAO_"						
+#  MOP: "http://purl.obolibrary.org/obo/MOP_"						
+#  OBI: "http://purl.obolibrary.org/obo/OBI_"						
+#  NCBITaxon: "http://purl.obolibrary.org/obo/NCBITaxon_"						
+#  OGMS: "http://purl.obolibrary.org/obo/OGMS_"						
+#  PATO: "http://purl.obolibrary.org/obo/PATO_"						
+#  PO: "http://purl.obolibrary.org/obo/PO_"						
+#  PCO: "http://purl.obolibrary.org/obo/PCO_"						
+#  PR: "http://purl.obolibrary.org/obo/PR_"						
+#  SO: "http://purl.obolibrary.org/obo/SO_"						
+#  UBERON: "http://purl.obolibrary.org/obo/UBERON_"						
+#  RO: "http://purl.obolibrary.org/obo/RO_"						
+#  XAO: "http://purl.obolibrary.org/obo/XAO_"						
+#  ZFA: "http://purl.obolibrary.org/obo/ZFA_"						
+#  STATO: "http://purl.obolibrary.org/obo/STATO_"						
+#  SEPIO: "http://purl.obolibrary.org/obo/SEPIO_"						
+#  DRON: "http://purl.obolibrary.org/obo/DRON_"						
 subject_id	subject_label	predicate_id	object_id	object_label	notes	mapping_justification
-COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.	semapv:ManualMappingCuration
 COB:0000004	charge	owl:equivalentClass	PATO:0002193	electric	.	semapv:ManualMappingCuration
+COB:0000003	mass	owl:equivalentClass	PATO:0000125	mass	.	semapv:ManualMappingCuration
 COB:0000005	elementary charge	rdfs:subClassOf	owl:Thing	owl:Thing	Making ticket in PATO tracker	semapv:ManualMappingCuration
 COB:0000006	material entity	owl:equivalentClass	BFO:0000040	material entity	.	semapv:ManualMappingCuration
 COB:0000006	material entity	sssom:superClassOf	SO:0000110	sequence_feature	.	semapv:ManualMappingCuration
@@ -103,37 +103,40 @@ COB:0000109	investigation	owl:equivalentClass	OBI:0000066	investigation	.	semapv
 COB:0000110	material processing	owl:equivalentClass	OBI:0000094	material processing	.	semapv:ManualMappingCuration
 COB:0000111	disposition	owl:equivalentClass	BFO:0000016	disposition	.	semapv:ManualMappingCuration
 COB:0000112	function	owl:equivalentClass	BFO:0000034	function	.	semapv:ManualMappingCuration
-COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.	semapv:ManualMappingCuration
 COB:0000114	role	owl:equivalentClass	BFO:0000023	role	.	semapv:ManualMappingCuration
+COB:0000113	plan	owl:equivalentClass	OBI:0000260	plan	.	semapv:ManualMappingCuration
 COB:0000502	characteristic	sssom:superClassOf	CHEBI:50906	role	The ChEBI notion of a role doesn't strictly follow the BFO sense of either being a role or disposition, meaning that it's hard, if not impossible, to impose BFO order to this branch of ChEBI. See issue #173	semapv:ManualMappingCuration
 COB:0000116	cellular membrane	rdfs:subClassOf	owl:Thing	owl:Thing		semapv:ManualMappingCuration
-COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.	semapv:ManualMappingCuration
 COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.	semapv:ManualMappingCuration
+COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular organisms	.	semapv:ManualMappingCuration
 COB:0000118	cellular organism	sssom:superClassOf	UBERON:0000468	multicellular organism	.	semapv:ManualMappingCuration
 COB:0000118	cellular organism	sssom:superClassOf	PO:0000003	whole plant	.	semapv:ManualMappingCuration
+COB:0000120	information representation	owl:equivalentClass	IAO:0000015	information carrier		semapv:ManualMappingCuration
+COB:0000119	evaluant role	owl:equivalentClass	OBI:0000067	evaluant role		semapv:ManualMappingCuration
+COB:0000121	measurement datum	owl:equivalentClass	IAO:0000109	measurement datum		semapv:ManualMappingCuration
 COB:0000036	contains process	owl:equivalentProperty	BFO:0000067	contains process	.	semapv:ManualMappingCuration
+COB:0000071	occurs in	owl:equivalentProperty	BFO:0000066	occurs in	.	semapv:ManualMappingCuration
 COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.	semapv:ManualMappingCuration
 COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.	semapv:ManualMappingCuration
-COB:0000071	occurs in	owl:equivalentProperty	BFO:0000066	occurs in	.	semapv:ManualMappingCuration
 COB:0000072	part of	owl:equivalentProperty	BFO:0000050	part of	.	semapv:ManualMappingCuration
+COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower	semapv:ManualMappingCuration
 COB:0000074	enabled by	owl:equivalentProperty	RO:0002333	enabled by	.	semapv:ManualMappingCuration
 COB:0000502	characteristic	owl:equivalentClass	PATO:0000001	quality	https://github.com/OBOFoundry/COB/issues/124	semapv:ManualMappingCuration
-COB:0000502	characteristic	owl:equivalentClass	BFO:0000020	specifically dependent continuant	may be revised to be narrower	semapv:ManualMappingCuration
 COB:0000502	characteristic	sssom:superClassOf	SO:0000400	sequence_attribute	.	semapv:ManualMappingCuration
+COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.	semapv:ManualMappingCuration
 COB:0000511	has quantity	rdfs:subPropertyOf	owl:topDataProperty	topDataProperty	.	semapv:ManualMappingCuration
 COB:0000512	has characteristic	owl:equivalentProperty	RO:0000053	bearer of	.	semapv:ManualMappingCuration
-COB:0000002	is concretized as	owl:equivalentProperty	RO:0000058	is concretized as	.	semapv:ManualMappingCuration
 COB:0000078	concretizes	owl:equivalentProperty	RO:0000059	concretizes	.	semapv:ManualMappingCuration
+COB:0000023	characteristic of	owl:equivalentProperty	RO:0000052	inheres in	"In RO, 'inheres in' is the inverse of 'bearer of'."	semapv:ManualMappingCuration
 COB:0000086	executes	owl:equivalentProperty	STATO:0000102	executes	.	semapv:ManualMappingCuration
 COB:0000016	executed by	rdfs:subPropertyOf	owl:topObjectProperty	topObjectProperty	"There is no inverse for 'executes' STATO, only in COB."	semapv:ManualMappingCuration
-COB:0000023	characteristic of	owl:equivalentProperty	RO:0000052	inheres in	"In RO, 'inheres in' is the inverse of 'bearer of'."	semapv:ManualMappingCuration
 COB:0000024	participates in	owl:equivalentProperty	RO:0000056	participates in	.	semapv:ManualMappingCuration
+COB:0000039	has specified input	owl:equivalentProperty	OBI:0000293	has_specified_input	.	semapv:ManualMappingCuration
 COB:0000027	is specified input of	owl:equivalentProperty	OBI:0000295	is_specified_input_of	.	semapv:ManualMappingCuration
 COB:0000028	is specified output of	owl:equivalentProperty	OBI:0000312	is_specified_output_of	.	semapv:ManualMappingCuration
-COB:0000039	has specified input	owl:equivalentProperty	OBI:0000293	has_specified_input	.	semapv:ManualMappingCuration
 COB:0000040	has specified output	owl:equivalentProperty	OBI:0000299	has_specified_output	.	semapv:ManualMappingCuration
+COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.	semapv:ManualMappingCuration
 COB:0000087	realizes	owl:equivalentProperty	BFO:0000055	realizes	.	semapv:ManualMappingCuration
 COB:0000029	realized in	owl:equivalentProperty	BFO:0000054	realized in	.	semapv:ManualMappingCuration
-COB:0000513	is about	owl:equivalentProperty	IAO:0000136	is about	There is no inverse for 'is about' in IAO.	semapv:ManualMappingCuration
 COB:0000123	agent role	owl:equivalentClass	SEPIO:0000048	agent role		semapv:ManualMappingCuration
 COB:0000123	agent role	sssom:superClassOf	OBI:0000202	investigation agent role		semapv:ManualMappingCuration
