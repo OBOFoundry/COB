@@ -111,6 +111,9 @@ COB:0000118	cellular organism	owl:equivalentClass	NCBITaxon:131567	cellular orga
 COB:0000118	cellular organism	owl:equivalentClass	CARO:0010004	cellular organism	.	semapv:ManualMappingCuration
 COB:0000118	cellular organism	sssom:superClassOf	UBERON:0000468	multicellular organism	.	semapv:ManualMappingCuration
 COB:0000118	cellular organism	sssom:superClassOf	PO:0000003	whole plant	.	semapv:ManualMappingCuration
+COB:0000119	evaluant role	owl:equivalentClass	OBI:0000067	evaluant role	.	semapv:ManualMappingCuration
+COB:0000120	information representation	owl:equivalentClass	IAO:0000015	information carrier	.	semapv:ManualMappingCuration
+COB:0000121	measurement datum	owl:equivalentClass	IAO:0000109	measurement datum	.	semapv:ManualMappingCuration
 COB:0000036	contains process	owl:equivalentProperty	BFO:0000067	contains process	.	semapv:ManualMappingCuration
 COB:0000047	has part	owl:equivalentProperty	BFO:0000051	has part	.	semapv:ManualMappingCuration
 COB:0000070	has participant	owl:equivalentProperty	RO:0000057	has participant	.	semapv:ManualMappingCuration
