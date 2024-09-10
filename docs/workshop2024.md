@@ -8,7 +8,7 @@ If you are interested in attending the 2024 COB Workshop either in person or rem
 
 ## Agenda
 
-More information on the workshop agenda will be forthcoming.
+[The agenda for the 2024 COB Workshop can be found in this document.](https://docs.google.com/document/d/1pUMZ4HZxitj_ksd2nrc6MZn22V2p8tOusO46I8qcCFk/edit?usp=sharing)
 
 ## Hotel Recommendations
 
