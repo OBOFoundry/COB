@@ -36,9 +36,9 @@
      xmlns:semapv="https://w3id.org/semapv/vocab/"
      xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon_">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/components/cob-to-external.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-08-20/components/cob-to-external.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-09-18/components/cob-to-external.owl"/>
         <dc1:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/publicdomain/zero/1.0/</dc1:license>
-        <owl:versionInfo>2024-08-20</owl:versionInfo>
+        <owl:versionInfo>2024-09-18</owl:versionInfo>
         <sssom:mapping_set_id rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cob/components/cob-to-external.tsv</sssom:mapping_set_id>
     </owl:Ontology>
     
@@ -1191,7 +1191,7 @@
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>planned process</sssom:object_label>
-        <sssom:subject_label>planned process</sssom:subject_label>
+        <sssom:subject_label>completely executed planned process</sssom:subject_label>
     </owl:Axiom>
     
 
@@ -1517,13 +1517,13 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000088">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000088"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/DRON_0000005"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>drug product</sssom:object_label>
         <sssom:subject_label>drug product</sssom:subject_label>
@@ -1717,6 +1717,54 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000119">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000119"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>evaluant role</sssom:object_label>
+        <sssom:subject_label>evaluant role</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000120">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000015"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000015"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>information carrier</sssom:object_label>
+        <sssom:subject_label>information representation</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000121">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000121"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>measurement datum</sssom:object_label>
+        <sssom:subject_label>measurement datum</sssom:subject_label>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000123 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000123">
@@ -1749,9 +1797,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DRON_0000005 -->
+    <!-- http://purl.obolibrary.org/obo/DRON_00000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_0000005"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00000005"/>
     
 
 
@@ -1819,6 +1867,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000015"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1840,6 +1894,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
     
 
 
@@ -1902,6 +1962,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
     
 
 
