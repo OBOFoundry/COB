@@ -66,7 +66,7 @@ COB:0000031	immaterial entity	owl:equivalentClass	BFO:0000141	immaterial entity	
 COB:0000032	geographical location	rdfs:subClassOf	owl:Thing	owl:Thing		semapv:ManualMappingCuration
 COB:0000033	realizable	owl:equivalentClass	BFO:0000017	realizable entity	.	semapv:ManualMappingCuration
 COB:0000034	process	owl:equivalentClass	BFO:0000015	process	.	semapv:ManualMappingCuration
-COB:0000035	planned process	owl:equivalentClass	OBI:0000011	planned process	.	semapv:ManualMappingCuration
+COB:0000035	completely executed planned process	owl:equivalentClass	OBI:0000011	planned process	.	semapv:ManualMappingCuration
 COB:0000037	biological process	owl:equivalentClass	GO:0008150	biological process	.	semapv:ManualMappingCuration
 COB:0000038	gene product or complex activity	owl:equivalentClass	GO:0003674	molecular function	.	semapv:ManualMappingCuration
 COB:0000042	monoatomic ion	owl:equivalentClass	CHEBI:24867	monoatomic ion	.	semapv:ManualMappingCuration
