@@ -11,11 +11,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-native.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2023-11-16/cob-native.owl"/>
-        <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
-        <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-09-20/cob-native.owl"/>
+        <terms:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo>2023-11-16</owl:versionInfo>
+        <terms:title xml:lang="en">Core Ontology for Biology and Biomedicine</terms:title>
+        <owl:versionInfo>2024-09-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -28,12 +28,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_based_on -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_based_on"/>
     
 
 
@@ -75,9 +69,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -304,7 +316,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>Anything can have a characteristic</rdfs:comment>
+        <obo:IAO_0000116>Anything can have a characteristic</obo:IAO_0000116>
     </owl:Axiom>
     
 
@@ -312,7 +324,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000513 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000513">
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000136</obo:COB_based_on>
         <rdfs:label>is about</rdfs:label>
     </owl:ObjectProperty>
     
@@ -333,7 +344,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <rdfs:comment>The range of this property should be a user-defined unit datatype, e.g 182^:cm</rdfs:comment>
+        <obo:IAO_0000116>The range of this property should be a user-defined unit datatype, e.g 182^:cm</obo:IAO_0000116>
         <rdfs:label>has quantity</rdfs:label>
         <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/35</rdfs:seeAlso>
     </owl:DatatypeProperty>
@@ -346,7 +357,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <obo:IAO_0000115>Number of protons in an atomic nucleus</obo:IAO_0000115>
-        <rdfs:comment>We are undecided as to whether to ultimately model this as a data property of object property + cardinality, but for now we are using DPs as these are faster for reasoning</rdfs:comment>
+        <obo:IAO_0000116>We are undecided as to whether to ultimately model this as a data property of object property + cardinality, but for now we are using DPs as these are faster for reasoning</obo:IAO_0000116>
         <rdfs:label xml:lang="en">has atomic number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -492,7 +503,7 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
         <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
-        <rdfs:comment>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</rdfs:comment>
+        <obo:IAO_0000116>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">atom</rdfs:label>
     </owl:Class>
     
@@ -502,8 +513,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000007"/>
-        <rdfs:comment>Some people may be uncomfortable calling every proton an atomic nucleus</rdfs:comment>
-        <rdfs:comment>This is equivalent to CHEBI:33252</rdfs:comment>
+        <obo:IAO_0000116>Some people may be uncomfortable calling every proton an atomic nucleus</obo:IAO_0000116>
+        <obo:IAO_0000116>This is equivalent to CHEBI:33252</obo:IAO_0000116>
         <rdfs:label xml:lang="en">atomic nucleus</rdfs:label>
     </owl:Class>
     
@@ -521,8 +532,8 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
         <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
-        <rdfs:comment>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</rdfs:comment>
-        <rdfs:comment>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</rdfs:comment>
+        <obo:IAO_0000116>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">molecular entity</rdfs:label>
     </owl:Class>
     
@@ -533,7 +544,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000014">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.</obo:IAO_0000115>
-        <rdfs:comment>Terms moved to &apos;molecular entity&apos;, see https://github.com/OBOFoundry/Experimental-OBO-Core/issues/33</rdfs:comment>
+        <obo:IAO_0000116>Terms moved to &apos;molecular entity&apos;, see https://github.com/OBOFoundry/Experimental-OBO-Core/issues/33</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete macromolecular entity</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -554,8 +565,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <obo:IAO_0000115>A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
-        <rdfs:comment>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</rdfs:comment>
-        <rdfs:comment>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</rdfs:comment>
+        <obo:IAO_0000116>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">cell</rdfs:label>
     </owl:Class>
     
@@ -590,8 +601,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.</obo:IAO_0000115>
-        <rdfs:comment>Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome. We would like to exclude most protein complexes.</rdfs:comment>
-        <rdfs:comment>Overlaps with some cellular components from GO</rdfs:comment>
+        <obo:IAO_0000116>Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome. We would like to exclude most protein complexes.</obo:IAO_0000116>
+        <obo:IAO_0000116>Overlaps with some cellular components from GO</obo:IAO_0000116>
         <rdfs:label xml:lang="en">subcellular structure</rdfs:label>
     </owl:Class>
     
@@ -602,7 +613,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <obo:IAO_0000115>A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.</obo:IAO_0000115>
-        <rdfs:comment>Bodily fluids, such as urine, are currently defined as anatomical entities in UBERON. We should make sure there is a proper home for these here.</rdfs:comment>
+        <obo:IAO_0000116>Bodily fluids, such as urine, are currently defined as anatomical entities in UBERON. We should make sure there is a proper home for these here.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
     </owl:Class>
     
@@ -613,8 +624,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.</obo:IAO_0000115>
-        <rdfs:comment>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</rdfs:comment>
-        <rdfs:comment>Includes virus - we will later have a class for cellular organisms.</rdfs:comment>
+        <obo:IAO_0000116>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116>Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
@@ -624,7 +635,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <rdfs:comment>Should revisit if we can place outside of material entity - a collection of roles.</rdfs:comment>
+        <obo:IAO_0000116>Should revisit if we can place outside of material entity - a collection of roles.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -634,7 +645,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <obo:IAO_0000115>A material entity processed by human activity with an intent to produce</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is created or changed during material processing.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">processed material entity</rdfs:label>
     </owl:Class>
     
@@ -735,7 +746,7 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000065"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000066"/>
         <obo:IAO_0000115>A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.</obo:IAO_0000115>
-        <rdfs:comment>A biological process is an evolved process</rdfs:comment>
+        <obo:IAO_0000116>A biological process is an evolved process</obo:IAO_0000116>
         <rdfs:label xml:lang="en">biological process</rdfs:label>
     </owl:Class>
     
@@ -760,7 +771,7 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000065"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000066"/>
-        <rdfs:comment>This is the same as GO molecular function</rdfs:comment>
+        <obo:IAO_0000116>This is the same as GO molecular function</obo:IAO_0000116>
         <rdfs:label xml:lang="en">gene product or complex activity</rdfs:label>
     </owl:Class>
     
@@ -836,21 +847,17 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000078"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000120"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000513"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Pier: &apos;data, information or knowledge&apos;. OR &apos;representation</rdfs:comment>
+        <obo:IAO_0000116>Pier: &apos;data, information or knowledge&apos;. OR &apos;representation</obo:IAO_0000116>
         <rdfs:label>information</rdfs:label>
     </owl:Class>
     
@@ -897,7 +904,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000034"/>
-        <rdfs:comment>This is meant to capture processes that are more fundamental than macromolecular activities</rdfs:comment>
+        <obo:IAO_0000116>This is meant to capture processes that are more fundamental than macromolecular activities</obo:IAO_0000116>
         <rdfs:label>physico-chemical process</rdfs:label>
     </owl:Class>
     
@@ -949,7 +956,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>This is not covalently bonded, which conflicts with changes to the parent definition.</rdfs:comment>
+        <obo:IAO_0000116>This is not covalently bonded, which conflicts with changes to the parent definition.</obo:IAO_0000116>
         <rdfs:label>protein-containing macromolecular complex</rdfs:label>
     </owl:Class>
     
@@ -1010,20 +1017,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
-        <rdfs:subClassOf rdf:nodeID="genid34"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
+        <obo:IAO_0000116>&gt;=2 parts (not we cannot use cardinality with transitive properties)</obo:IAO_0000116>
         <rdfs:label>complex of molecular entities</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid34">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000080"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid34"/>
-        <rdfs:comment>&gt;=2 parts (not we cannot use cardinality with transitive properties)</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1062,7 +1065,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <obo:COB_based_on rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
         <obo:IAO_0000115>A processed material entity created to be administered to an individual with the intent to improve health.</obo:IAO_0000115>
         <rdfs:label>drug product</rdfs:label>
     </owl:Class>
@@ -1205,11 +1207,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000087"/>
-                    </rdf:Description>
-                </owl:onProperty>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000029"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1249,7 +1247,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000114"/>
-        <obo:COB_based_on>OBI:0000067</obo:COB_based_on>
         <rdfs:label>evaluant role</rdfs:label>
     </owl:Class>
     
@@ -1265,9 +1262,8 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000015</obo:COB_based_on>
-        <rdfs:comment>Pier &apos;representational entity&apos;</rdfs:comment>
-        <rdfs:comment>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</rdfs:comment>
+        <obo:IAO_0000116>Pier &apos;representational entity&apos;</obo:IAO_0000116>
+        <obo:IAO_0000116>This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc</obo:IAO_0000116>
         <rdfs:label>information representation</rdfs:label>
     </owl:Class>
     
@@ -1277,7 +1273,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000102"/>
-        <obo:COB_based_on>http://purl.obolibrary.org/obo/IAO_0000109</obo:COB_based_on>
         <rdfs:label>measurement datum</rdfs:label>
     </owl:Class>
     
@@ -1317,7 +1312,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf rdf:nodeID="genid58"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000023"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000047"/>
@@ -1328,20 +1328,6 @@
         <rdfs:seeAlso>https://github.com/OBOFoundry/COB/issues/65</rdfs:seeAlso>
         <rdfs:seeAlso>https://github.com/oborel/obo-relations/pull/284</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid58">
-        <owl:onProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000512"/>
-            </rdf:Description>
-        </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid58"/>
-        <rdfs:comment>We should name the inverse in COB and avoid the confusing inverse(..) construct</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1372,20 +1358,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A processed material entity which is designed to perform a function.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-24T16:04:27Z</dc:date>
-        <rdfs:comment xml:lang="en">In this definition we assume devices are made of processed material, not natural artifacts, so we involve artifactual function rather than biological function, but align with a general BFO function sense where functions such as pumping, lifting can occur in both contexts. Thus we can compare a biological arm with a robotic arm device.
+        <obo:IAO_0000116 xml:lang="en">In this definition we assume devices are made of processed material, not natural artifacts, so we involve artifactual function rather than biological function, but align with a general BFO function sense where functions such as pumping, lifting can occur in both contexts. Thus we can compare a biological arm with a robotic arm device.
 
 We say &quot;designed&quot; to emphasize a device&apos;s primary function rather than all the other possible dispositions a device may have that may also be useful. E.g. one can use a hammer for a paper weight.
 
 Regarding usage then, we don&apos;t say a naturally formed rock is a hammering device - it wasn&apos;t designed to bear a hammering function per se. However, a given rock may still happen to have the disposition to bear a hammering function, and so we could say it is a hammering &quot;tool&quot;, which does not necessarily convey intentional design.
 
-Example of use: A whole device like an engine; a component like a bolt is also a device.</rdfs:comment>
+Example of use: A whole device like an engine; a component like a bolt is also a device.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-24T16:04:27Z</terms:date>
         <rdfs:label xml:lang="en">device</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
