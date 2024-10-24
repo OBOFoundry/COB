@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob.owl#"
-     xml:base="http://purl.obolibrary.org/obo/cob/cob.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cob/cob-root.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cob/cob-root.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-10-24/cob.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-root.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-10-24/cob-root.owl"/>
         <owl:versionInfo>2024-10-24</owl:versionInfo>
     </owl:Ontology>
     
@@ -451,6 +451,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0001034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of Cell Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>A cell that is maintained or propagated in a controlled artificial environment for use in an investigation.</obo:IAO_0000115>
+        <rdfs:label>cell in vitro</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
@@ -667,6 +679,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DRON_00000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of the Drug Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>a material entity (1) containing at least one scattered molecular aggregate as part that is the bearer of an active ingredient role and (2) that is itself the bearer of a clinical drug role</obo:IAO_0000115>
+        <rdfs:label>drug product</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000813 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
@@ -699,6 +723,18 @@
         <obo:COB_module-reason>unmodified &amp; in scope</obo:COB_module-reason>
         <obo:IAO_0000115>A process in which includes the components of an environmental system as participants.</obo:IAO_0000115>
         <rdfs:label>environmental process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of the Food Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>Any substance that can be consumed by an organism to satisfy nutritional or other health needs, or to provide a social or organoleptic food experience</obo:IAO_0000115>
+        <rdfs:label>food material</rdfs:label>
     </owl:Class>
     
 
@@ -960,6 +996,66 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>unmodified &amp; in scope</obo:COB_module-reason>
+        <obo:IAO_0000115>A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
+        <rdfs:label>specimen collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:IAO_0000115>A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <rdfs:label>specimen from organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:IAO_0000115>A material entity that has the specimen role.</obo:IAO_0000115>
+        <rdfs:label>specimen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
@@ -1004,6 +1100,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0009002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of Plant Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>A cell which is a plant structure (PO:0009011).</obo:IAO_0000115>
+        <rdfs:label>plant cell</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0025131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025131">
@@ -1035,6 +1143,42 @@
         <obo:COB_module-reason>included for contrast with &apos;protein&apos;</obo:COB_module-reason>
         <obo:IAO_0000115>An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</obo:IAO_0000115>
         <rdfs:label>amino acid chain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of Sequence Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>Any extent of continuous biological sequence.</obo:IAO_0000115>
+        <rdfs:label>sequence_feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of Sequence Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration.</obo:IAO_0000115>
+        <rdfs:label>sequence_variant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of Sequence Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>A collection of discontinuous sequences.</obo:IAO_0000115>
+        <rdfs:label>sequence_collection</rdfs:label>
     </owl:Class>
     
 
@@ -1089,6 +1233,18 @@
         <obo:COB_module>ROOT GROUP</obo:COB_module>
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <rdfs:label>anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <obo:COB_module>ROOT</obo:COB_module>
+        <obo:COB_module-reason>root of the Vaccine Ontology</obo:COB_module-reason>
+        <obo:IAO_0000115>Material entity that is manufactured to realize the vaccine function.</obo:IAO_0000115>
+        <rdfs:label>vaccine</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
