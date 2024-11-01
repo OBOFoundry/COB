@@ -21,15 +21,14 @@ def initialize_tsv(output_dir, filename, fieldnames, robot_row):
 
 def split(input_path, output_dir):
     '''Split the COB term template into base, full, and root templates.'''
-    fieldnames = None
+    header_row = None
     robot_row, terms, replacements = {}, {}, {}
 
     with open(input_path) as f:
         rows = csv.DictReader(f, delimiter='\t')
         for row in rows:
-            if not fieldnames:
-                # Ignore the last three columns
-                fieldnames = list(row.keys())[0:-3]
+            if not header_row:
+                header_row = list(row.keys())
             id = row['Ontology ID'].strip()
             if id == '':
                 continue
@@ -51,6 +50,13 @@ def split(input_path, output_dir):
             # Otherwise just add this row to 'terms'.
             else:
                 terms[id] = row
+
+    ignore = [
+        'COB Module', 'COB Module Reason',
+        'Replacement ID', 'Replacement Label',
+        'Comment'
+    ]
+    fieldnames = [x for x in header_row if x not in ignore]
 
     # Apply replacements to the axioms in all the logical columns
     axiom_cols = [
