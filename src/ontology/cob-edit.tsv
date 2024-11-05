@@ -69,6 +69,7 @@ UBERON:0000466	immaterial anatomical entity	owl:Class	Anatomical entity that has
 UBERON:0001062	anatomical entity	owl:Class	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.		ROOT GROUP				'material anatomical entity' or 'immaterial anatomical entity'								
 COB:has-material-boundary	has material boundary	owl:ObjectProperty			REPLACED							immaterial entity	material entity		RO:0002219	surrounded by	like RO has 2D boundary? RO surrounded by?
 COB:material-boundary-of	material boundary of	owl:ObjectProperty			REPLACED							material entity	immaterial entity	has material boundary	RO:0002221	surrounds	
+BFO:0000029	site	owl:Class			FULL	TO DISCUSS: in previous COB release	immaterial entity										
 	Characteristics specifically depend on other entities. Characteristics of characteristics are not allowed.																characteristics of information? length, size?
 COB:0000502	characteristic	owl:Class			BASE												replace by SDC?
 COB:has-characteristic	has characteristic	owl:ObjectProperty			REPLACED								characteristic		RO:0000053	has characteristic	domain: not characteristic ?
@@ -100,6 +101,8 @@ ENVO:02500000	environmental process	owl:Class	A process in which includes the co
 BFO:0000017	realizable entity	owl:Class			FULL	unmodified & in scope	characteristic										
 COB:realizes	realizes	owl:ObjectProperty			REPLACED							process	realizable entity		BFO:0000055	realizes	
 BFO:0000023	role	owl:Class			FULL	unmodified & in scope	realizable entity										
+BFO:0000016	disposition	owl:Class			FULL	TO DISCUSS: in previous COB release	realizable entity										
+BFO:0000034	function	owl:Class			FULL	TO DISCUSS: in previous COB release	realizable entity										
 	A plan specification is information about how a plan can be realized; a plan concretizes a plan specification; a plan is a characteristic of an agent; a completely executed planned process realizes a plan, and has specified inputs and outputs																
 OBI:0000260	plan	owl:Class	A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.		FULL	used to define planned process	realizable entity	'concretizes' some 'plan specification'									
 IAO:0000033	directive information entity	owl:Class	An information content entity whose concretizations indicate to their bearer how to realize them in a process.		FULL	unmodified & in scope	information content entity										
@@ -132,3 +135,12 @@ OBI:0000659	specimen collection	owl:Class	A planned process with the objective o
 OBI:0100051	specimen	owl:Class	A material entity that has the specimen role.		ROOT		material entity	'specified material output of' some 'specimen collection'									
 COB:derives-from	derives from	owl:ObjectProperty			REPLACED							material entity	material entity		RO:0001000	derives from	
 OBI:0001479	specimen from organism	owl:Class	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).		ROOT		specimen	'derives from' some 'material anatomical entity'									
+	Previous COB properties: These still need discussion																
+COB:0000016	executed by	owl:ObjectProperty			BASE	TO DISCUSS: in previous COB release											
+COB:0000081	intended to realize	owl:ObjectProperty			BASE	TO DISCUSS: in previous COB release											
+COB:0000084	has plan	owl:ObjectProperty			BASE	TO DISCUSS: in previous COB release											
+COB:0000085	intended plan process type	owl:ObjectProperty			BASE	TO DISCUSS: in previous COB release											
+COB:0000511	has quantity	owl:DataProperty			BASE	TO DISCUSS: in previous COB release											
+COB:0000800	has atomic number	owl:DataProperty	Number of protons in an atomic nucleus		BASE	TO DISCUSS: in previous COB release						atom					
+COB:0000801	has number of atomic nuclei	owl:DataProperty			BASE	TO DISCUSS: in previous COB release						material entity					
+COB:0000803	has inchi string	owl:DataProperty			BASE	TO DISCUSS: in previous COB release											
