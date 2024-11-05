@@ -10,6 +10,12 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+ANNOTATE_ONTOLOGY_METADATA := \
+  --prefix "dc: http://purl.org/dc/elements/1.1/" \
+  --language-annotation dc:title "Core Ontology for Biology and Biomedicine" en \
+  --language-annotation dc:description "COB brings together key terms from a wide range of OBO projects to improve interoperability." en \
+  --link-annotation dc:license https://creativecommons.org/publicdomain/zero/1.0/
+
 .PHONY: prepare_release
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
@@ -49,6 +55,7 @@ $(ONT)-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	reason -r HERMIT \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 # COB "Full"
@@ -56,7 +63,8 @@ $(ONT).owl: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
 	$(ROBOT) template \
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	reason -r HERMIT \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	annotate --ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(ONT)-base.owl: $(ONT).owl $(TMPDIR)/cob-base.tsv $(COMPONENTSDIR)/obsolete.tsv
@@ -64,13 +72,15 @@ $(ONT)-base.owl: $(ONT).owl $(TMPDIR)/cob-base.tsv $(COMPONENTSDIR)/obsolete.tsv
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
 	--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(ONT)-root.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
 	$(ROBOT) template \
-	$(foreach X,$^,--template $(X)) \
+	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	reason -r HERMIT \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 
