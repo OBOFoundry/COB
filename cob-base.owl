@@ -9,9 +9,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-10-24/cob-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-11-05/cob-base.owl"/>
+        <dc:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</dc:description>
+        <dc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <dc:title xml:lang="en">Core Ontology for Biology and Biomedicine</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <owl:versionInfo>2024-10-24</owl:versionInfo>
+        <owl:versionInfo>2024-11-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,23 +30,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_module -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_module"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_module-reason -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_module-reason"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000015 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000015">
-        <obo:COB_module>BASE</obo:COB_module>
-        <obo:COB_module-reason>required annotations</obo:COB_module-reason>
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -58,10 +47,34 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <obo:COB_module>BASE</obo:COB_module>
-        <obo:COB_module-reason>required annotations</obo:COB_module-reason>
         <rdfs:label>editor note</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <rdfs:label>term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -94,6 +107,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000016">
+        <rdfs:label>executed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000081">
+        <rdfs:label>intended to realize</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000084 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000084">
+        <rdfs:label>has plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000085 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000085">
+        <rdfs:label>intended plan process type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -121,6 +166,52 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000511 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
+        <rdfs:label>has quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000800 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000800">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
+        <obo:IAO_0000115>Number of protons in an atomic nucleus</obo:IAO_0000115>
+        <rdfs:label>has atomic number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000801 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000801">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>has number of atomic nuclei</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000803 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000803">
+        <rdfs:label>has inchi string</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -161,6 +252,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000005">
+        <rdfs:label>obsolete elementary charge</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000011">
@@ -172,7 +272,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
         <obo:IAO_0000116>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</obo:IAO_0000116>
         <rdfs:label>atom</rdfs:label>
@@ -190,7 +289,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
         <obo:IAO_0000116>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
         <obo:IAO_0000116>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
@@ -199,11 +297,29 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000014">
+        <rdfs:label>obsolete macromolecular entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000020">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0110165"/>
+        <rdfs:label>obsolete subcellular structure</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
         <obo:IAO_0000116>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
         <obo:IAO_0000116>Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
@@ -222,10 +338,18 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A material entity processed by human activity with an intent to produce it.</obo:IAO_0000115>
         <obo:IAO_0000116>In the COB 2024 workshop there was much disagreement about this label. Suggestions &quot;artifact&quot;, &quot;processed or constructed material entity&quot;.</obo:IAO_0000116>
         <rdfs:label>processed material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000032">
+        <rdfs:label>obsolete geographical location</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -241,7 +365,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000083"/>
-        <obo:COB_module>BASE</obo:COB_module>
         <rdfs:label>completely executed planned process</rdfs:label>
     </owl:Class>
     
@@ -251,9 +374,37 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A molecule that consists of nucleotides (unmodified nucleotide residues and/or modified nucleotide residues) linked by phosphodiester bonds or derivatives of such bonds.</obo:IAO_0000115>
         <rdfs:label>nucleic acid chain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <rdfs:label>obsolete immaterial anatomical entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000073">
+        <rdfs:label>obsolete gene product</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000077">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <rdfs:label>obsolete action specification</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -268,7 +419,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
         <rdfs:label>complex of molecules</rdfs:label>
     </owl:Class>
@@ -279,7 +429,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
         <rdfs:label>planned process</rdfs:label>
     </owl:Class>
@@ -290,7 +439,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <obo:COB_module>BASE</obo:COB_module>
         <rdfs:label>failed planned process</rdfs:label>
     </owl:Class>
     
@@ -314,9 +462,26 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A planned process that intends to output material entities from input material entities</obo:IAO_0000115>
         <rdfs:label>material processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000116">
+        <rdfs:label>obsolete cellular membrane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000122">
+        <rdfs:label>obsolete physical information carrier</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -324,7 +489,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
-        <obo:COB_module>BASE</obo:COB_module>
         <rdfs:label>characteristic</rdfs:label>
     </owl:Class>
     
@@ -340,7 +504,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
         <rdfs:label>exposure of organism</rdfs:label>
     </owl:Class>
@@ -357,7 +520,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:COB_module>BASE</obo:COB_module>
         <obo:IAO_0000115>A processed material entity which is designed to be capable of a process.</obo:IAO_0000115>
         <rdfs:label>device</rdfs:label>
     </owl:Class>
