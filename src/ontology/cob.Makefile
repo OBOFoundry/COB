@@ -44,27 +44,31 @@ $(TMPDIR)/cob-%.tsv: $(SCRIPTSDIR)/split-cob-edit.py cob-edit.tsv
 # -- MAIN RELEASE PRODUCTS --
 ########################################
 
-$(ONT)-edit.owl: $(TMPDIR)/cob-root.tsv
-	$(ROBOT) template --template $< \
+$(ONT)-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
+	$(ROBOT) template \
+	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	reason -r HERMIT \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 # COB "Full"
-$(ONT).owl: $(TMPDIR)/cob-full.tsv
-	$(ROBOT) template --template $< \
+$(ONT).owl: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
+	$(ROBOT) template \
+	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	reason -r HERMIT \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT)-base.owl: $(ONT).owl $(TMPDIR)/cob-base.tsv
-	$(ROBOT) template --input $< --template $(word 2,$^) \
+$(ONT)-base.owl: $(ONT).owl $(TMPDIR)/cob-base.tsv $(COMPONENTSDIR)/obsolete.tsv
+	$(ROBOT) template --input $< \
+	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
-		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
+	--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT)-root.owl: $(TMPDIR)/cob-root.tsv
-	$(ROBOT) template --template $< \
+$(ONT)-root.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
+	$(ROBOT) template \
+	$(foreach X,$^,--template $(X)) \
 	reason -r HERMIT \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@

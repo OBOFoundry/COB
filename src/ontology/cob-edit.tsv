@@ -3,6 +3,7 @@ ID	LABEL	TYPE	A IAO:0000115	A IAO:0000116 SPLIT=|	A COB:module	A COB:module-reas
 	We use some basic annotation properties.																
 IAO:0000015	definition	owl:AnnotationProperty			BASE	required annotations											
 IAO:0000116	editor note	owl:AnnotationProperty			BASE	required annotations											
+IAO:0100001	term replaced by	owl:AnnotationProperty			BASE	required annotations											
 	Existing object properties listed in the Replacement columns will be used in place of more specific COB object properties in this sheet.																
 BFO:0000050	part of	owl:ObjectProperty	a core relation that holds between a part and its whole		REPLACEMENT												
 BFO:0000051	has part	owl:ObjectProperty	a core relation that holds between a whole and its part		REPLACEMENT												
