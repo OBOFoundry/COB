@@ -11,10 +11,10 @@ SHELL := bash
 .SECONDARY:
 
 ANNOTATE_ONTOLOGY_METADATA := \
-  --prefix "dc: http://purl.org/dc/elements/1.1/" \
-  --language-annotation dc:title "Core Ontology for Biology and Biomedicine" en \
-  --language-annotation dc:description "COB brings together key terms from a wide range of OBO projects to improve interoperability." en \
-  --link-annotation dc:license https://creativecommons.org/publicdomain/zero/1.0/
+  --prefix "dcterms: http://purl.org/dc/terms/" \
+  --language-annotation dcterms:title "Core Ontology for Biology and Biomedicine" en \
+  --language-annotation dcterms:description "COB brings together key terms from a wide range of OBO projects to improve interoperability." en \
+  --link-annotation dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
 
 .PHONY: prepare_release
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
