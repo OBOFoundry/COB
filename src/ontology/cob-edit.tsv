@@ -102,7 +102,7 @@ BFO:0000017	realizable entity	owl:Class			FULL	unmodified & in scope	characteris
 COB:realizes	realizes	owl:ObjectProperty			REPLACED							process	realizable entity		BFO:0000055	realizes	
 BFO:0000023	role	owl:Class			FULL	unmodified & in scope	realizable entity										
 BFO:0000016	disposition	owl:Class			FULL	TO DISCUSS: in previous COB release	realizable entity										
-BFO:0000034	function	owl:Class			FULL	TO DISCUSS: in previous COB release	realizable entity										
+BFO:0000034	function	owl:Class			FULL	TO DISCUSS: in previous COB release	disposition										
 	A plan specification is information about how a plan can be realized; a plan concretizes a plan specification; a plan is a characteristic of an agent; a completely executed planned process realizes a plan, and has specified inputs and outputs																
 OBI:0000260	plan	owl:Class	A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.		FULL	used to define planned process	realizable entity	'concretizes' some 'plan specification'									
 IAO:0000033	directive information entity	owl:Class	An information content entity whose concretizations indicate to their bearer how to realize them in a process.		FULL	unmodified & in scope	information content entity										
