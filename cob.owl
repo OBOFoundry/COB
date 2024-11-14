@@ -9,11 +9,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-11-06/cob.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2024-11-14/cob.owl"/>
         <terms:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title xml:lang="en">Core Ontology for Biology and Biomedicine</terms:title>
-        <owl:versionInfo>2024-11-06</owl:versionInfo>
+        <owl:versionInfo>2024-11-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -424,7 +424,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:label>function</rdfs:label>
     </owl:Class>
     
@@ -602,7 +602,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
-        <obo:IAO_0000116>&quot;Maximal functionally integrated unit&quot; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116>&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
         <obo:IAO_0000116>Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
         <rdfs:label>organism</rdfs:label>
     </owl:Class>
@@ -620,7 +620,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity processed by human activity with an intent to produce it.</obo:IAO_0000115>
-        <obo:IAO_0000116>In the COB 2024 workshop there was much disagreement about this label. Suggestions &quot;artifact&quot;, &quot;processed or constructed material entity&quot;.</obo:IAO_0000116>
+        <obo:IAO_0000116>In the COB 2024 workshop there was much disagreement about this label.</obo:IAO_0000116>
         <rdfs:label>processed material entity</rdfs:label>
     </owl:Class>
     
