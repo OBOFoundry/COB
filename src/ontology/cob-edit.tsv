@@ -9,8 +9,9 @@ BFO:0000050	part of	owl:ObjectProperty	a core relation that holds between a part
 BFO:0000051	has part	owl:ObjectProperty	a core relation that holds between a whole and its part		REPLACEMENT												
 BFO:0000055	realizes	owl:ObjectProperty	Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process		REPLACEMENT							process	realizable entity				
 OBI:0000293	has specified input	owl:ObjectProperty	The inverse property of is_specified_input_of		REPLACEMENT							planned process					
+OBI:0000295	is specified input of	owl:ObjectProperty	A relation between a planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.		REPLACEMENT								planned process				
 OBI:0000299	has specified output	owl:ObjectProperty	The inverse property of is_specified_output_of		REPLACEMENT							planned process					
-OBI:0000312	specified output of	owl:ObjectProperty	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.		REPLACEMENT								planned process				
+OBI:0000312	is specified output of	owl:ObjectProperty	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.		REPLACEMENT								planned process				
 RO:0000052	characteristic of	owl:ObjectProperty	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.		REPLACEMENT												
 RO:0000053	has characteristic	owl:ObjectProperty	Inverse of characteristic_of		REPLACEMENT												
 RO:0000056	participates in	owl:ObjectProperty	a relation between a continuant and a process, in which the continuant is somehow involved in the process		REPLACEMENT												
@@ -74,6 +75,8 @@ BFO:0000029	site	owl:Class			FULL	TO DISCUSS: in previous COB release	immaterial
 COB:0000502	characteristic	owl:Class			BASE												replace by SDC?
 COB:has-characteristic	has characteristic	owl:ObjectProperty			REPLACED								characteristic		RO:0000053	has characteristic	domain: not characteristic ?
 COB:characteristic-of	characteristic of	owl:ObjectProperty			REPLACED							characteristic		has characteristic	RO:0000052	characteristic of	range: not characteristic ?
+PATO:0000125	mass	owl:Class	A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.		FULL	in previous COB	characteristic										
+PATO:0002193	electric charge	owl:Class	A molecular quality that inheres in a molecular entity by virtue of the overall electric charge of the molecule, which is due to a comparison between the total number of electrons and the total number of protons.		FULL	in previous COB	characteristic										
 	Information entities generically depends on other entities. Information can be copied. Information is about some other thing.																
 IAO:0000030	information content entity	owl:Class	A generically dependent continuant that is about some thing.	Pier: 'data, information or knowledge'. OR 'representation'	FULL	unmodified & in scope											
 IAO:0000136	is about	owl:ObjectProperty			FULL							information content entity					
@@ -114,7 +117,7 @@ COB:0000083	failed planned process	owl:Class			BASE		planned process
 COB:0000035	completely executed planned process	owl:Class			BASE		planned process	'realizes' some 'plan'		failed planned process							
 COB:has-specified-material-input	has specified material input	owl:ObjectProperty			REPLACED						has material input	completely executed planned process	material entity		OBI:0000293	has specified input	
 COB:has-specified-material-output	has specified material output	owl:ObjectProperty			REPLACED						has material output	completely executed planned process	material entity		OBI:0000299	has specified output	
-COB:specified-material-output-of	specified material output of	owl:ObjectProperty			REPLACED									has specified material output	OBI:0000312	specified output of	
+COB:specified-material-output-of	specified material output of	owl:ObjectProperty			REPLACED									has specified material output	OBI:0000312	is specified output of	
 COB:has-specified-information-input	has specified information input	owl:ObjectProperty			REPLACED						has information input	completely executed planned process	information content entity		OBI:0000293	has specified input	
 COB:has-specified-information-output	has specified information output	owl:ObjectProperty			REPLACED						has information output	completely executed planned process	information content entity		OBI:0000299	has specified output	
 COB:specified-information-output-of	specified information output of	owl:ObjectProperty			REPLACED									has specified information output	OBI:0000312	specified output of	
@@ -129,6 +132,7 @@ FOODON:00002403	food material	owl:Class	Any substance that can be consumed by an
 OBI:0000066	investigation	owl:Class	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).		FULL	unmodified & in scope	completely executed planned process										
 OBI:0000070	assay	owl:Class	A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.		FULL	unmodified & in scope	completely executed planned process	'has specified material input' some 'material entity' and 'has specified information output' some 'data item'									
 IAO:0000027	data item	owl:Class	An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.		FULL	unmodified & in scope	information content entity										
+IAO:0000109	measurement datum	owl:Class	A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.		FULL	in previous COB	data item										
 OBI:0200000	data transformation	owl:Class	A planned process that produces output data from input data.		FULL	unmodified & in scope	planned process	'has specified information input' some 'data item' and 'has specified information output' some 'data item'									
 	Specimens from OBI																
 OBI:0000659	specimen collection	owl:Class	A planned process with the objective of collecting a specimen.		ROOT	unmodified & in scope	process	'has specified material input' some 'material entity' and 'has specified material output' some 'specimen'									
