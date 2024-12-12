@@ -17,8 +17,8 @@ ANNOTATE_ONTOLOGY_METADATA := \
   --link-annotation dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
 
 .PHONY: prepare_release
-prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
-	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
+prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES) cob.tsv
+	rsync -R $(RELEASE_ASSETS) cob.tsv $(RELEASEDIR) &&\
 	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
@@ -44,6 +44,10 @@ $(TMPDIR)/robot.jar: | $(TMPDIR)
 
 $(TMPDIR)/cob-%.tsv: $(SCRIPTSDIR)/split-cob-edit.py cob-edit.tsv
 	$^ $(TMPDIR)
+
+# TSV export (may depend on dev version of robot export)
+cob.tsv: cob.owl
+	$(ROBOT) export -i $< -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
 
 
 ########################################
