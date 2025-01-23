@@ -11,6 +11,7 @@ import re
 
 def initialize_tsv(output_dir, filename, fieldnames, robot_row):
     '''Initialize and return a DictWriter for a ROBOT template.'''
+    os.makedirs(output_dir, exist_ok=True)
     path = os.path.join(output_dir, filename)
     path_fh = open(path, 'w')
     writer = csv.DictWriter(path_fh, fieldnames, delimiter='\t', lineterminator='\n', extrasaction='ignore')
