@@ -10,10 +10,7 @@ workflows:
  - docs
 release_artefacts:
   - base
-  - full
-  - custom-cob-base-reasoned
-  - custom-cob-examples-reasoned
-  - custom-cob-native
+  - root
 import_group:
   module_type: filter
   annotation_properties:
@@ -21,16 +18,6 @@ import_group:
     - IAO:0000115
     - IAO:0000116
     - IAO:0000111
-  products:
-    - id: ro
-      module_type: custom
-      slme_individuals: exclude
-    - id: omo
-      module_type: mirror
-components:
-  products:
-    - filename: cob-annotations.owl
-    - filename: cob-to-external.owl
 robot_java_args: '-Xmx8G'
 custom_makefile_header: |
   ### Workflow

@@ -1,75 +1,69 @@
 ID	ID [LABEL]	definition	subClassOf [ID NAMED]	subClassOf [LABEL NAMED]	subClassOf [ID ANON]	subClassOf [LABEL ANON]
-BFO:0000015	process				BFO:0000050 only BFO:0000015	part of only process
-BFO:0000016	disposition		BFO:0000017	realizable		
-BFO:0000017	realizable		BFO:0000020	characteristic		
-BFO:0000020	characteristic				BFO:0000051 only BFO:0000020|RO:0000052 some owl:Thing	characteristic of some |has part only characteristic
-BFO:0000023	role		BFO:0000017	realizable		
+BFO:0000015	process					
+BFO:0000016	disposition		BFO:0000017	realizable entity		
+BFO:0000017	realizable entity		COB:0000502	characteristic		
+BFO:0000023	role		BFO:0000017	realizable entity		
 BFO:0000029	site		BFO:0000141	immaterial entity		
 BFO:0000034	function		BFO:0000016	disposition		
 BFO:0000040	material entity					
 BFO:0000141	immaterial entity					
-CARO:0001008	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	BFO:0000040	material entity		
-CARO:0010004	cellular organism		OBI:0100026	organism		
-CHEBI:10545	electron		CHEBI:36342	subatomic particle	COB:0000801 value 0	has number of atomic nuclei value 0
-CHEBI:24636	proton		CHEBI:36342	subatomic particle		
-CHEBI:24867	monoatomic ion		COB:0000011	atom		
-CHEBI:30222	neutron		CHEBI:36342	subatomic particle		
-CHEBI:33250	uncharged atom		COB:0000011	atom		
-CHEBI:33252	atomic nucleus		CHEBI:36342	subatomic particle		
-CHEBI:33696	nucleic acid polymer		COB:0000013	molecular entity		
-CHEBI:36342	subatomic particle		BFO:0000040	material entity		
-CL:0000000	cell	A material entity that has a plasma membrane and results from cellular division.	BFO:0000040	material entity		
-CL:0000003	native cell		CL:0000000	cell		
-CL:0001034	cell in vitro		CL:0000000	cell		
-COB:0000005	obsolete_elementary charge					
+CHEBI:10545	electron	Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV.	CHEBI:36342	subatomic particle		
+CHEBI:24636	proton	Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.	CHEBI:36342	subatomic particle		
+CHEBI:30222	neutron	Nuclear particle of zero charge, spin 1/2 and rest mass of 1.008664904(14) u.	CHEBI:36342	subatomic particle		
+CHEBI:33252	atomic nucleus	A nucleus is the positively charged central portion of an atom, excluding the orbital electrons.	CHEBI:36342	subatomic particle	BFO:0000051 some CHEBI:24636	has part some proton
+CHEBI:36342	subatomic particle	A particle smaller than an atom.	BFO:0000040	material entity		
+CL:0000000	cell	A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.	UBERON:0000465	material anatomical entity		
+COB:0000005	obsolete elementary charge					
 COB:0000011	atom	A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.	BFO:0000040	material entity	BFO:0000051 some CHEBI:33252	has part some atomic nucleus
-COB:0000013	molecular entity	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	BFO:0000040	material entity	BFO:0000051 some COB:0000011	has part some atom
-COB:0000014	obsolete macromolecular entity	A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.				
-COB:0000020	subcellular structure	A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecular entity
-COB:0000032	geographical location		BFO:0000141	immaterial entity		
-COB:0000056	immaterial anatomical entity		BFO:0000141	immaterial entity		
-COB:0000073	gene product		COB:0000013	molecular entity		
-COB:0000077	action specification		IAO:0000033	directive information entity	BFO:0000051 some COB:0000077|BFO:0000051 some IAO:0000005	has part some action specification|has part some objective specification
-COB:0000080	complex of molecular entities	A complex of two or more molecular entities that are not covalently bound.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecular entity
-COB:0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	BFO:0000015	process	BFO:0000055 some SEPIO:0000048|COB:0000081 some OBI:0000260	intended to realize some plan|realizes some agent role
+COB:0000013	molecule	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.	BFO:0000040	material entity	BFO:0000051 some COB:0000011	has part some atom
+COB:0000014	obsolete macromolecular entity					
+COB:0000020	obsolete subcellular structure					
+COB:0000021	gross anatomical part	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.	UBERON:0000465	material anatomical entity		
+COB:0000022	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome	UBERON:0000465	material anatomical entity		
+COB:0000026	processed material entity	A material entity processed by human activity with an intent to produce it.	BFO:0000040	material entity	OBI:0000312 some COB:0000110	is specified output of some material processing
+COB:0000032	obsolete geographical location					
+COB:0000035	completely executed planned process		COB:0000082	planned process	BFO:0000055 some OBI:0000260	realizes some plan
+COB:0000049	nucleic acid chain	A molecule that consists of nucleotides (unmodified nucleotide residues and/or modified nucleotide residues) linked by phosphodiester bonds or derivatives of such bonds.	COB:0000013	molecule		
+COB:0000056	obsolete immaterial anatomical entity					
+COB:0000073	obsolete gene product					
+COB:0000077	obsolete action specification					
+COB:0000080	complex of molecules	A complex of two or more molecular entities that are not covalently bound.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecule
+COB:0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	BFO:0000015	process		
 COB:0000083	failed planned process		COB:0000082	planned process		
-COB:0000116	cellular membrane		COB:0000020	subcellular structure		
-COB:0000122	physical information carrier		BFO:0000040	material entity		
-COB:0001000	exposure of organism	A process during which an organism comes into contact with another entity.	BFO:0000015	process		
-COB:0001300	device	A processed material entity which is designed to perform a function.	OBI:0000047	processed material entity	OBI:0000312 some OBI:0000094|RO:0000053 some BFO:0000034	has characteristic some function|is specified output of some material processing
-DRON:00000005	drug product	A processed material entity created to be administered to an individual with the intent to improve health.	OBI:0000047	processed material entity		
-ENVO:01000813	geophysical entity		BFO:0000040	material entity		
-ENVO:01001110	ecosystem		BFO:0000040	material entity		
-ENVO:02500000	environmental process		BFO:0000015	process		
-GO:0003674	gene product or complex activity		BFO:0000015	process	RO:0002333 some (COB:0000073 or GO:0032991)	enabled by some (gene product or protein-containing macromolecular complex)
-GO:0005634	cell nucleus		COB:0000020	subcellular structure		
-GO:0008150	biological process	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.	BFO:0000015	process	(BFO:0000066 some OBI:0100026) or (RO:0000057 some OBI:0100026) or (RO:0000057 some (BFO:0000050 some OBI:0100026))|BFO:0000051 some GO:0003674	(occurs in some organism) or (has participant some organism) or (has participant some (part of some organism))|has part some gene product or complex activity
-GO:0032991	protein-containing macromolecular complex		COB:0000080	complex of molecular entities	BFO:0000051 some COB:0000073	has part some gene product
-IAO:0000005	objective specification		IAO:0000033	directive information entity		
-IAO:0000015	information representation		BFO:0000020	characteristic		
-IAO:0000027	data item		IAO:0000030	information		
-IAO:0000030	information				IAO:0000136 some owl:Thing|RO:0000058 some IAO:0000015	is about some |is concretized as some information representation
-IAO:0000033	directive information entity		IAO:0000030	information		
-IAO:0000104	plan specification		IAO:0000033	directive information entity	BFO:0000051 some COB:0000077|BFO:0000051 some IAO:0000005	has part some action specification|has part some objective specification
-IAO:0000109	measurement datum		IAO:0000027	data item		
-IAO:0000310	document		IAO:0000030	information		
-MOP:0000543	physico-chemical process		BFO:0000015	process		
-OBI:0000011	completely executed planned process		COB:0000082	planned process	BFO:0000055 some OBI:0000260	realizes some plan
-OBI:0000047	processed material entity	A material entity that is created or changed during material processing.	BFO:0000040	material entity		
-OBI:0000066	investigation		OBI:0000011	completely executed planned process		
-OBI:0000067	evaluant role		BFO:0000023	role		
-OBI:0000070	assay		OBI:0000011	completely executed planned process	OBI:0000293 some (BFO:0000040 and (RO:0000053 some OBI:0000067))|OBI:0000299 some (IAO:0000109 and (IAO:0000136 some (BFO:0000040 and (RO:0000053 some OBI:0000067))))	has specified input some (material entity and (has characteristic some evaluant role))|has specified output some (measurement datum and (is about some (material entity and (has characteristic some evaluant role))))
-OBI:0000094	material processing		OBI:0000011	completely executed planned process		
-OBI:0000245	organization		BFO:0000040	material entity		
-OBI:0000260	plan		BFO:0000017|IAO:0000015	information representation|realizable	BFO:0000054 only COB:0000082|RO:0000059 some IAO:0000104	concretizes some plan specification|realized in only planned process
-OBI:0001909	conclusion based on data		IAO:0000030	information		
-OBI:0100026	organism	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.	BFO:0000040	material entity		
-OBI:0200000	data transformation		OBI:0000011	completely executed planned process		
-OGMS:0000014	phenotypic finding		IAO:0000030	information		
-OGMS:0000063	disease course		BFO:0000015	process		
-OGMS:0000073	disease diagnosis		IAO:0000030	information		
-PATO:0000125	mass		BFO:0000020	characteristic	RO:0000052 some BFO:0000040	characteristic of some material entity
-PATO:0002193	charge		BFO:0000020	characteristic	RO:0000052 some BFO:0000040	characteristic of some material entity
-PCO:0000000	collection of organisms		BFO:0000040	material entity		
-PR:000000001	protein		COB:0000013	molecular entity		
-SEPIO:0000048	agent role		BFO:0000023	role		
+COB:0000110	material processing	A planned process that intends to output material entities from input material entities	COB:0000035	completely executed planned process	(OBI:0000293 some BFO:0000040) and (OBI:0000299 some BFO:0000040)	(has specified input some material entity) and (has specified output some material entity)
+COB:0000116	obsolete cellular membrane					
+COB:0000122	obsolete physical information carrier					
+COB:0000502	characteristic					
+COB:0001000	exposure of organism	A process during which an organism comes into contact with another entity.	BFO:0000015	process	RO:0000057 some COB:0000022	has participant some organism
+COB:0001300	device	A processed material entity which is designed to be capable of a process.	COB:0000026	processed material entity	RO:0002215 some BFO:0000015	capable of some process
+ENVO:01000813	geophysical entity	A material part of an astronomical body.	BFO:0000040	material entity		
+ENVO:01001110	ecosystem	An environmental system which includes both living and non-living components.	BFO:0000040	material entity		
+ENVO:02500000	environmental process	A process in which includes the components of an environmental system as participants.	BFO:0000015	process		
+GO:0003674	gene product or complex activity	A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.	BFO:0000015	process		
+GO:0005575	cellular_component	A location, relative to cellular compartments and structures, occupied by a macromolecular machine. There are three types of cellular components described in the gene ontology: (1) the cellular anatomical entity where a gene product carries out a molecular function (e.g., plasma membrane, cytoskeleton) or membrane-enclosed compartments (e.g., mitochondrion); (2) virion components, where viral proteins act, and (3) the stable macromolecular complexes of which gene product are parts (e.g., the clathrin complex).	BFO:0000040	material entity		
+GO:0008150	biological process	A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.	BFO:0000015	process	BFO:0000051 some GO:0003674	has part some gene product or complex activity
+GO:0032991	protein-containing complex	A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together.	COB:0000080|GO:0005575	cellular_component|complex of molecules	BFO:0000051 some PR:000000001	has part some protein
+GO:0044423	virion component	Any constituent part of a virion, a complete fully infectious extracellular virus particle.	GO:0005575	cellular_component		
+GO:0110165	cellular anatomical entity	A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.	GO:0005575|UBERON:0000465	cellular_component|material anatomical entity	BFO:0000051 some COB:0000013	has part some molecule
+IAO:0000005	objective specification	A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.	IAO:0000033	directive information entity		
+IAO:0000007	action specification	A directive information entity that describes an action the bearer will take.	IAO:0000033	directive information entity		
+IAO:0000027	data item	An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.	IAO:0000030	information content entity		
+IAO:0000030	information content entity	A generically dependent continuant that is about some thing.				
+IAO:0000033	directive information entity	An information content entity whose concretizations indicate to their bearer how to realize them in a process.	IAO:0000030	information content entity		
+IAO:0000104	plan specification	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.	IAO:0000033	directive information entity		
+IAO:0000109	measurement datum	A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.	IAO:0000027	data item		
+MOP:0000543	physico-chemical process	A process in which at least one of the participants is a molecule.	BFO:0000015	process		
+NCBITaxon:131567	cellular organism		COB:0000022	organism		
+OBI:0000066	investigation	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).	COB:0000035	completely executed planned process		
+OBI:0000070	assay	A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.	COB:0000035	completely executed planned process	(OBI:0000293 some BFO:0000040) and (OBI:0000299 some IAO:0000027)	(has specified input some material entity) and (has specified output some data item)
+OBI:0000260	plan	A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.	BFO:0000017	realizable entity	RO:0000059 some IAO:0000104	concretizes some plan specification
+OBI:0200000	data transformation	A planned process that produces output data from input data.	COB:0000082	planned process	(OBI:0000293 some IAO:0000027) and (OBI:0000299 some IAO:0000027)	(has specified input some data item) and (has specified output some data item)
+PATO:0000125	mass	A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.	COB:0000502	characteristic		
+PATO:0002193	electric charge	A molecular quality that inheres in a molecular entity by virtue of the overall electric charge of the molecule, which is due to a comparison between the total number of electrons and the total number of protons.	COB:0000502	characteristic		
+PCO:0000000	collection of organisms	A material entity that consists of two or more organisms, viruses, or viroids.	BFO:0000040	material entity	BFO:0000051 some COB:0000022	has part some organism
+PO:0025131	plant anatomical entity	An anatomical entity that is or was part of a plant.	UBERON:0000465	material anatomical entity		
+PR:000000001	protein	An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.	PR:000018263	amino acid chain		
+PR:000018263	amino acid chain	An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.	COB:0000013	molecule		
+UBERON:0000465	material anatomical entity	Anatomical entity that has mass.	BFO:0000040|UBERON:0001062	anatomical entity|material entity		
+UBERON:0000466	immaterial anatomical entity	Anatomical entity that has no mass.	BFO:0000141|UBERON:0001062	anatomical entity|immaterial entity		
+UBERON:0001062	anatomical entity	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.				
