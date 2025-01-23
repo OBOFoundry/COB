@@ -22,8 +22,10 @@ src/ontology/reports/*
 src/ontology/cob.owl
 src/ontology/cob.obo
 src/ontology/cob.json
+src/ontology/cob.tsv
 src/ontology/cob-base.*
 src/ontology/cob-basic.*
+src/ontology/cob-edit.owl
 src/ontology/cob-full.*
 src/ontology/cob-simple.*
 src/ontology/cob-simple-non-classified.*
