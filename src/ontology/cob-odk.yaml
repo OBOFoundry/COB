@@ -18,6 +18,9 @@ import_group:
     - IAO:0000115
     - IAO:0000116
     - IAO:0000111
+  products:
+    - id: obi
+      module_type: custom
 robot_java_args: '-Xmx8G'
 custom_makefile_header: |
   ### Workflow

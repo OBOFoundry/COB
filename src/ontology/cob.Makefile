@@ -241,3 +241,16 @@ products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl | products/
 
 $(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt | $(TMPDIR)
 	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
+
+########################################
+# -- IMPORTS --
+########################################
+
+# Customised to only import the very most minimal subset
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    filter -T $(IMPORTDIR)/obi_terms_combined.txt --axioms "annotation" --trim false \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
+		remove --base-iri $(OBOBASE)/OBI --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/obi_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
+		$(ANNOTATE_CONVERT_FILE); fi
