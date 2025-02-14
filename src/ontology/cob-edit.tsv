@@ -1,5 +1,5 @@
 Ontology ID	Label	Type	Definition	Editor Note	COB Module	COB Module Reason	Parent Class	Subclass Axiom	Equivalent Class Axiom	Disjoint Class	Parent Property	Domain	Range	Inverse Property	Replacement ID	Replacement Label	Comment
-ID	LABEL	TYPE	A IAO:0000115	A IAO:0000116 SPLIT=|	A COB:module	A COB:module-reason	C %	SC % SPLIT=|	EC % SPLIT=|	DC %	SP %	DOMAIN	RANGE	IP %			
+ID	AL rdfs:label@en	TYPE	AL IAO:0000115@en	AL IAO:0000116@en SPLIT=|	A COB:module	AL COB:module-reason@en	C %	SC % SPLIT=|	EC % SPLIT=|	DC %	SP %	DOMAIN	RANGE	IP %			
 	We use some basic annotation properties.																
 IAO:0000115	definition	owl:AnnotationProperty			BASE	required annotations											
 IAO:0000116	editor note	owl:AnnotationProperty			BASE	required annotations											
@@ -99,7 +99,7 @@ MOP:0000543	physico-chemical process	owl:Class	A process in which at least one o
 GO:0003674	gene product or complex activity	owl:Class	A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.	This is the same as GO molecular function	FULL	unmodified & in scope	process							physico-chemical process			GO's 'molecular function'; this subClassOf axioms requires a 'gene product' term: 'enabled by' some ('gene product' or 'protein-containing complex')
 GO:0008150	biological process	owl:Class	A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.		FULL	unmodified & in scope	process	'has process part' some 'gene product or complex activity'						gene product or complex activity			
 COB:0001000	exposure of organism	owl:Class	A process during which an organism comes into contact with another entity.		BASE		process	'has material participant' some organism									
-ENVO:02500000	environmental process	owl:Class	A process in which includes the components of an environmental system as participants.		FULL	unmodified & in scope	process										
+ENVO:02500000	environmental system process	owl:Class	A process in which includes the components of an environmental system as participants.		FULL	unmodified & in scope	process										
 	A realizable is a special characteristic that is realized by a processes; a role is a realizable that depends on a physical, social, or institutional context; a disposition does not depend on context; a function is a designed (intended) disposition																
 BFO:0000017	realizable entity	owl:Class			FULL	unmodified & in scope	characteristic										
 COB:realizes	realizes	owl:ObjectProperty			REPLACED							process	realizable entity		BFO:0000055	realizes	
@@ -135,8 +135,8 @@ IAO:0000027	data item	owl:Class	An information content entity that is intended t
 IAO:0000109	measurement datum	owl:Class	A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.		FULL	in previous COB	data item										
 OBI:0200000	data transformation	owl:Class	A planned process that produces output data from input data.		FULL	unmodified & in scope	planned process	'has specified information input' some 'data item' and 'has specified information output' some 'data item'									
 	Specimens from OBI																
-OBI:0000659	specimen collection	owl:Class	A planned process with the objective of collecting a specimen.		ROOT	unmodified & in scope	process	'has specified material input' some 'material entity' and 'has specified material output' some 'specimen'									
-OBI:0100051	specimen	owl:Class	A material entity that has the specimen role.		ROOT		material entity	'specified material output of' some 'specimen collection'									
+OBI:0000659	specimen collection process	owl:Class	A planned process with the objective of collecting a specimen.		ROOT	unmodified & in scope	process	'has specified material input' some 'material entity' and 'has specified material output' some 'specimen'									
+OBI:0100051	specimen	owl:Class	A material entity that has the specimen role.		ROOT		material entity	'specified material output of' some 'specimen collection process'									
 COB:derives-from	derives from	owl:ObjectProperty			REPLACED							material entity	material entity		RO:0001000	derives from	
 OBI:0001479	specimen from organism	owl:Class	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).		ROOT		specimen	'derives from' some 'material anatomical entity'									
 	Previous COB properties: These still need discussion																

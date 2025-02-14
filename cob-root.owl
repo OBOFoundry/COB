@@ -40,7 +40,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <rdfs:label>editor note</rdfs:label>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -48,7 +48,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
-        <rdfs:label>term replaced by</rdfs:label>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -85,8 +85,8 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <obo:IAO_0000115>a core relation that holds between a part and its whole</obo:IAO_0000115>
-        <rdfs:label>part of</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -94,8 +94,8 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <obo:IAO_0000115>a core relation that holds between a whole and its part</obo:IAO_0000115>
-        <rdfs:label>has part</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -105,8 +105,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:IAO_0000115>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
-        <rdfs:label>realizes</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -114,7 +114,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000016 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000016">
-        <rdfs:label>executed by</rdfs:label>
+        <rdfs:label xml:lang="en">executed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -122,7 +122,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000081 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000081">
-        <rdfs:label>intended to realize</rdfs:label>
+        <rdfs:label xml:lang="en">intended to realize</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -130,7 +130,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000084 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000084">
-        <rdfs:label>has plan</rdfs:label>
+        <rdfs:label xml:lang="en">has plan</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -138,7 +138,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000085">
-        <rdfs:label>intended plan process type</rdfs:label>
+        <rdfs:label xml:lang="en">intended plan process type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -147,7 +147,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:label>is about</rdfs:label>
+        <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -157,7 +157,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>The inverse property of is_specified_input_of</obo:IAO_0000115>
-        <rdfs:label>has specified input</rdfs:label>
+        <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -167,7 +167,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>A relation between a planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <rdfs:label>is specified input of</rdfs:label>
+        <rdfs:label xml:lang="en">is specified input of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -177,7 +177,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>The inverse property of is_specified_output_of</obo:IAO_0000115>
-        <rdfs:label>has specified output</rdfs:label>
+        <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -186,8 +186,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <obo:IAO_0000115>A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <rdfs:label>is specified output of</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">is specified output of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -195,8 +195,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
-        <obo:IAO_0000115>a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
-        <rdfs:label>characteristic of</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">characteristic of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -204,8 +204,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
-        <obo:IAO_0000115>Inverse of characteristic_of</obo:IAO_0000115>
-        <rdfs:label>has characteristic</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -213,8 +213,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
-        <obo:IAO_0000115>a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
-        <rdfs:label>participates in</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -222,8 +222,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
-        <obo:IAO_0000115>a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
-        <rdfs:label>has participant</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -231,8 +231,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
-        <obo:IAO_0000115>A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
-        <rdfs:label>is concretized as</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -240,8 +240,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
-        <obo:IAO_0000115>A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
-        <rdfs:label>concretizes</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">concretizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -249,8 +249,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0001000 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
-        <obo:IAO_0000115>a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity</obo:IAO_0000115>
-        <rdfs:label>derives from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">derives from</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -258,8 +258,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
-        <obo:IAO_0000115>a relation between two independent continuants, the location and the target, in which the target is entirely within the location</obo:IAO_0000115>
-        <rdfs:label>location of</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the location and the target, in which the target is entirely within the location</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">location of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -267,8 +267,8 @@
     <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
-        <obo:IAO_0000115>a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
-        <rdfs:label>located in</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -278,7 +278,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.</obo:IAO_0000115>
-        <rdfs:label>capable of</rdfs:label>
+        <rdfs:label xml:lang="en">capable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -287,7 +287,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002219">
         <obo:IAO_0000115>x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x</obo:IAO_0000115>
-        <rdfs:label>surrounded by</rdfs:label>
+        <rdfs:label xml:lang="en">surrounded by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -296,7 +296,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002221">
         <obo:IAO_0000115>inverse of surrounded by</obo:IAO_0000115>
-        <rdfs:label>surrounds</rdfs:label>
+        <rdfs:label xml:lang="en">surrounds</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -306,7 +306,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
-        <rdfs:label>has input</rdfs:label>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -315,7 +315,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
         <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
-        <rdfs:label>has output</rdfs:label>
+        <rdfs:label xml:lang="en">has output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -324,7 +324,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002333">
         <obo:IAO_0000115>inverse of enables</obo:IAO_0000115>
-        <rdfs:label>enabled by</rdfs:label>
+        <rdfs:label xml:lang="en">enabled by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -343,7 +343,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000511 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
-        <rdfs:label>has quantity</rdfs:label>
+        <rdfs:label xml:lang="en">has quantity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -352,8 +352,8 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000800">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
-        <obo:IAO_0000115>Number of protons in an atomic nucleus</obo:IAO_0000115>
-        <rdfs:label>has atomic number</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Number of protons in an atomic nucleus</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has atomic number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -362,7 +362,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000801">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label>has number of atomic nuclei</rdfs:label>
+        <rdfs:label xml:lang="en">has number of atomic nuclei</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -370,7 +370,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000803 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000803">
-        <rdfs:label>has inchi string</rdfs:label>
+        <rdfs:label xml:lang="en">has inchi string</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -390,7 +390,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>process</rdfs:label>
+        <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
     
 
@@ -399,7 +399,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:label>disposition</rdfs:label>
+        <rdfs:label xml:lang="en">disposition</rdfs:label>
     </owl:Class>
     
 
@@ -408,7 +408,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
-        <rdfs:label>realizable entity</rdfs:label>
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
     </owl:Class>
     
 
@@ -417,7 +417,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:label>role</rdfs:label>
+        <rdfs:label xml:lang="en">role</rdfs:label>
     </owl:Class>
     
 
@@ -426,7 +426,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-        <rdfs:label>site</rdfs:label>
+        <rdfs:label xml:lang="en">site</rdfs:label>
     </owl:Class>
     
 
@@ -435,7 +435,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:label>function</rdfs:label>
+        <rdfs:label xml:lang="en">function</rdfs:label>
     </owl:Class>
     
 
@@ -444,8 +444,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000116>Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
-        <rdfs:label>material entity</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
     
 
@@ -454,7 +454,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>immaterial entity</rdfs:label>
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
     
 
@@ -500,8 +500,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A nucleus is the positively charged central portion of an atom, excluding the orbital electrons.</obo:IAO_0000115>
-        <obo:IAO_0000116>Some people may be uncomfortable calling every proton an atomic nucleus</obo:IAO_0000116>
-        <obo:IAO_0000116>This is equivalent to CHEBI:33252</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Some people may be uncomfortable calling every proton an atomic nucleus</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is equivalent to CHEBI:33252</obo:IAO_0000116>
         <rdfs:label>atomic nucleus</rdfs:label>
     </owl:Class>
     
@@ -523,8 +523,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <obo:IAO_0000115>A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
-        <obo:IAO_0000116>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</obo:IAO_0000116>
-        <obo:IAO_0000116>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</obo:IAO_0000116>
         <rdfs:label>cell</rdfs:label>
     </owl:Class>
     
@@ -561,9 +561,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
-        <obo:IAO_0000116>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</obo:IAO_0000116>
-        <rdfs:label>atom</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">atom</rdfs:label>
     </owl:Class>
     
 
@@ -578,10 +578,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
-        <obo:IAO_0000116>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000116>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
-        <rdfs:label>molecule</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">molecule</rdfs:label>
     </owl:Class>
     
 
@@ -611,8 +611,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000115>A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.</obo:IAO_0000115>
-        <rdfs:label>gross anatomical part</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
     </owl:Class>
     
 
@@ -621,10 +621,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
-        <obo:IAO_0000116>&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000116>Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
-        <rdfs:label>organism</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -639,9 +639,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity processed by human activity with an intent to produce it.</obo:IAO_0000115>
-        <obo:IAO_0000116>In the COB 2024 workshop there was much disagreement about this label.</obo:IAO_0000116>
-        <rdfs:label>processed material entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity processed by human activity with an intent to produce it.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">In the COB 2024 workshop there was much disagreement about this label.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">processed material entity</rdfs:label>
     </owl:Class>
     
 
@@ -667,7 +667,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000083"/>
-        <rdfs:label>completely executed planned process</rdfs:label>
+        <rdfs:label xml:lang="en">completely executed planned process</rdfs:label>
     </owl:Class>
     
 
@@ -676,8 +676,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:IAO_0000115>A molecule that consists of nucleotides (unmodified nucleotide residues and/or modified nucleotide residues) linked by phosphodiester bonds or derivatives of such bonds.</obo:IAO_0000115>
-        <rdfs:label>nucleic acid chain</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A molecule that consists of nucleotides (unmodified nucleotide residues and/or modified nucleotide residues) linked by phosphodiester bonds or derivatives of such bonds.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nucleic acid chain</rdfs:label>
     </owl:Class>
     
 
@@ -724,8 +724,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
-        <rdfs:label>complex of molecules</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">complex of molecules</rdfs:label>
     </owl:Class>
     
 
@@ -734,8 +734,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
-        <rdfs:label>planned process</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -744,7 +744,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <rdfs:label>failed planned process</rdfs:label>
+        <rdfs:label xml:lang="en">failed planned process</rdfs:label>
     </owl:Class>
     
 
@@ -767,8 +767,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A planned process that intends to output material entities from input material entities</obo:IAO_0000115>
-        <rdfs:label>material processing</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A planned process that intends to output material entities from input material entities</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
 
@@ -797,7 +797,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>characteristic</rdfs:label>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
     </owl:Class>
     
 
@@ -812,8 +812,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
-        <rdfs:label>exposure of organism</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
     </owl:Class>
     
 
@@ -828,8 +828,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A processed material entity which is designed to be capable of a process.</obo:IAO_0000115>
-        <rdfs:label>device</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A processed material entity which is designed to be capable of a process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">device</rdfs:label>
     </owl:Class>
     
 
@@ -838,8 +838,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <obo:IAO_0000115>a material entity (1) containing at least one scattered molecular aggregate as part that is the bearer of an active ingredient role and (2) that is itself the bearer of a clinical drug role</obo:IAO_0000115>
-        <rdfs:label>drug product</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a material entity (1) containing at least one scattered molecular aggregate as part that is the bearer of an active ingredient role and (2) that is itself the bearer of a clinical drug role</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">drug product</rdfs:label>
     </owl:Class>
     
 
@@ -849,7 +849,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>A material part of an astronomical body.</obo:IAO_0000115>
-        <rdfs:label>geophysical entity</rdfs:label>
+        <rdfs:label xml:lang="en">geophysical entity</rdfs:label>
     </owl:Class>
     
 
@@ -859,7 +859,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>An environmental system which includes both living and non-living components.</obo:IAO_0000115>
-        <rdfs:label>ecosystem</rdfs:label>
+        <rdfs:label xml:lang="en">ecosystem</rdfs:label>
     </owl:Class>
     
 
@@ -869,7 +869,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A process in which includes the components of an environmental system as participants.</obo:IAO_0000115>
-        <rdfs:label>environmental process</rdfs:label>
+        <rdfs:label xml:lang="en">environmental system process</rdfs:label>
     </owl:Class>
     
 
@@ -878,8 +878,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002403">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>Any substance that can be consumed by an organism to satisfy nutritional or other health needs, or to provide a social or organoleptic food experience</obo:IAO_0000115>
-        <rdfs:label>food material</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Any substance that can be consumed by an organism to satisfy nutritional or other health needs, or to provide a social or organoleptic food experience</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">food material</rdfs:label>
     </owl:Class>
     
 
@@ -889,8 +889,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003674">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.</obo:IAO_0000115>
-        <obo:IAO_0000116>This is the same as GO molecular function</obo:IAO_0000116>
-        <rdfs:label>gene product or complex activity</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">This is the same as GO molecular function</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">gene product or complex activity</rdfs:label>
     </owl:Class>
     
 
@@ -925,7 +925,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
-        <rdfs:label>biological process</rdfs:label>
+        <rdfs:label xml:lang="en">biological process</rdfs:label>
     </owl:Class>
     
 
@@ -942,7 +942,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together.</obo:IAO_0000115>
-        <obo:IAO_0000116>This is not covalently bonded, which conflicts with changes to the parent definition.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is not covalently bonded, which conflicts with changes to the parent definition.</obo:IAO_0000116>
         <rdfs:label>protein-containing complex</rdfs:label>
     </owl:Class>
     
@@ -970,8 +970,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</obo:IAO_0000115>
-        <obo:IAO_0000116>Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome. We would like to exclude most protein complexes.</obo:IAO_0000116>
-        <obo:IAO_0000116>Overlaps with some cellular components from GO</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Components are larger than individual macromolecular entities. It is tricky to define distinction between &apos;cell component&apos; and &apos;macromolecular entity&apos;, e.g. ribosome. We would like to exclude most protein complexes.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Overlaps with some cellular components from GO</obo:IAO_0000116>
         <rdfs:label>cellular anatomical entity</rdfs:label>
     </owl:Class>
     
@@ -981,8 +981,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
-        <rdfs:label>objective specification</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">objective specification</rdfs:label>
     </owl:Class>
     
 
@@ -991,8 +991,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
-        <rdfs:label>action specification</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">action specification</rdfs:label>
     </owl:Class>
     
 
@@ -1001,8 +1001,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
-        <rdfs:label>data item</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
 
@@ -1011,9 +1011,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000115>A generically dependent continuant that is about some thing.</obo:IAO_0000115>
-        <obo:IAO_0000116>Pier: &apos;data, information or knowledge&apos;. OR &apos;representation&apos;</obo:IAO_0000116>
-        <rdfs:label>information content entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Pier: &apos;data, information or knowledge&apos;. OR &apos;representation&apos;</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
 
@@ -1022,8 +1022,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
-        <rdfs:label>directive information entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
     </owl:Class>
     
 
@@ -1032,8 +1032,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
-        <rdfs:label>plan specification</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plan specification</rdfs:label>
     </owl:Class>
     
 
@@ -1042,8 +1042,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
-        <rdfs:label>measurement datum</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -1053,7 +1053,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOP_0000543">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A process in which at least one of the participants is a molecule.</obo:IAO_0000115>
-        <obo:IAO_0000116>This is meant to capture processes that are more fundamental than macromolecular activities</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is meant to capture processes that are more fundamental than macromolecular activities</obo:IAO_0000116>
         <rdfs:label>physico-chemical process</rdfs:label>
     </owl:Class>
     
@@ -1072,8 +1072,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <obo:IAO_0000115>a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
-        <rdfs:label>investigation</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">investigation</rdfs:label>
     </owl:Class>
     
 
@@ -1096,8 +1096,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.</obo:IAO_0000115>
-        <rdfs:label>assay</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">assay</rdfs:label>
     </owl:Class>
     
 
@@ -1112,8 +1112,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
-        <rdfs:label>plan</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plan</rdfs:label>
     </owl:Class>
     
 
@@ -1137,7 +1137,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
-        <rdfs:label>specimen collection</rdfs:label>
+        <rdfs:label>specimen collection process</rdfs:label>
     </owl:Class>
     
 
@@ -1152,7 +1152,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
         <rdfs:label>specimen from organism</rdfs:label>
     </owl:Class>
     
@@ -1169,7 +1169,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that has the specimen role.</obo:IAO_0000115>
-        <rdfs:label>specimen</rdfs:label>
+        <rdfs:label xml:lang="en">specimen</rdfs:label>
     </owl:Class>
     
 
@@ -1192,8 +1192,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A planned process that produces output data from input data.</obo:IAO_0000115>
-        <rdfs:label>data transformation</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A planned process that produces output data from input data.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
     </owl:Class>
     
 
@@ -1228,8 +1228,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that consists of two or more organisms, viruses, or viroids.</obo:IAO_0000115>
-        <rdfs:label>collection of organisms</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more organisms, viruses, or viroids.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
     </owl:Class>
     
 

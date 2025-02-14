@@ -1,0 +1,16 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/cob/dev/import/CHEBI_import.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_36342
+http://purl.obolibrary.org/obo/CHEBI_10545
+http://purl.obolibrary.org/obo/CHEBI_24636
+http://purl.obolibrary.org/obo/CHEBI_30222
+http://purl.obolibrary.org/obo/CHEBI_33252
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115

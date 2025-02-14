@@ -55,9 +55,11 @@ cob.tsv: cob.owl
 ########################################
 
 # Include all terms
-cob-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
+cob-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv patch-labels.ru patch-definitions.ru
 	$(ROBOT) template \
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
+	query \
+	$(foreach X,$(filter %.ru,$^),--update $(X)) \
 	reason -r HERMIT \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
@@ -246,3 +248,45 @@ products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl | products/
 
 $(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt | $(TMPDIR)
 	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
+
+# Crosscheck against upstream ontologies
+
+X_IMPORTS := BFO CHEBI CL DRON ENVO FOODON GO IAO MOP NCBITaxon OBI PATO PCO PO PR RO SO UBERON VO
+X_IMPORT_OWL_FILES := $(foreach n,$(X_IMPORTS), $(IMPORTDIR)/$(n)_import.owl)
+
+$(IMPORTDIR)/%_ontofox.txt: cob-edit.tsv
+	echo "[URI of the OWL(RDF/XML) output file]" > $@
+	echo "http://purl.obolibrary.org/obo/cob/dev/import/$*_import.owl" >> $@
+	echo "" >> $@
+	echo "[Source ontology]" >> $@
+	echo "$*" >> $@
+	echo "" >> $@
+	echo "[Low level source term URIs]" >> $@
+	grep "^$*:" $< | cut -f1 | sed "s!$*:!http://purl.obolibrary.org/obo/$*_!" >> $@
+	echo "" >> $@
+	echo "[Source annotation URIs]" >> $@
+	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
+	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
+
+$(IMPORTDIR)/%_import.owl: $(IMPORTDIR)/%_ontofox.txt
+	curl -s -F file=@$< -o $@ https://ontofox.hegroup.org/service.php
+
+$(TMPDIR)/merged_imports.owl: $(X_IMPORT_OWL_FILES)
+	$(ROBOT) merge \
+	$(foreach X,$^,--input $(X)) \
+	remove --term IAO:0000115 \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@
+
+$(TMPDIR)/merged.owl: cob-edit.owl $(TMPDIR)/merged_imports.owl
+	$(ROBOT) merge \
+	$(foreach X,$^,--input $(X)) \
+	--output $@
+
+.PRECIOUS: $(TMPDIR)/report.tsv
+$(TMPDIR)/report.tsv: $(TMPDIR)/merged.owl
+	$(ROBOT) report --input $< --output $@
+
+.PHONY: crosscheck
+crosscheck: $(TMPDIR)/report.tsv

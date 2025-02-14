@@ -99,7 +99,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000016 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000016">
-        <rdfs:label>executed by</rdfs:label>
+        <rdfs:label xml:lang="en">executed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -107,7 +107,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000081 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000081">
-        <rdfs:label>intended to realize</rdfs:label>
+        <rdfs:label xml:lang="en">intended to realize</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -115,7 +115,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000084 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000084">
-        <rdfs:label>has plan</rdfs:label>
+        <rdfs:label xml:lang="en">has plan</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -123,7 +123,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000085">
-        <rdfs:label>intended plan process type</rdfs:label>
+        <rdfs:label xml:lang="en">intended plan process type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -172,7 +172,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000511 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000511">
-        <rdfs:label>has quantity</rdfs:label>
+        <rdfs:label xml:lang="en">has quantity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -181,8 +181,8 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000800">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
-        <obo:IAO_0000115>Number of protons in an atomic nucleus</obo:IAO_0000115>
-        <rdfs:label>has atomic number</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Number of protons in an atomic nucleus</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has atomic number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -191,7 +191,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000801">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label>has number of atomic nuclei</rdfs:label>
+        <rdfs:label xml:lang="en">has number of atomic nuclei</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -199,7 +199,7 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000803 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000803">
-        <rdfs:label>has inchi string</rdfs:label>
+        <rdfs:label xml:lang="en">has inchi string</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -262,9 +262,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:IAO_0000115>A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
-        <obo:IAO_0000116>This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</obo:IAO_0000116>
-        <rdfs:label>atom</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This atom is closely related to ChEBI&apos;s atom, but not exactly equivalent to.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">atom</rdfs:label>
     </owl:Class>
     
 
@@ -279,10 +279,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
-        <obo:IAO_0000116>This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000116>We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
-        <rdfs:label>molecule</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">molecule</rdfs:label>
     </owl:Class>
     
 
@@ -312,8 +312,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000115>A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.</obo:IAO_0000115>
-        <rdfs:label>gross anatomical part</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
     </owl:Class>
     
 
@@ -322,10 +322,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
-        <obo:IAO_0000116>&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000116>Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
-        <rdfs:label>organism</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -340,9 +340,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity processed by human activity with an intent to produce it.</obo:IAO_0000115>
-        <obo:IAO_0000116>In the COB 2024 workshop there was much disagreement about this label.</obo:IAO_0000116>
-        <rdfs:label>processed material entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A material entity processed by human activity with an intent to produce it.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">In the COB 2024 workshop there was much disagreement about this label.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">processed material entity</rdfs:label>
     </owl:Class>
     
 
@@ -368,7 +368,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/COB_0000083"/>
-        <rdfs:label>completely executed planned process</rdfs:label>
+        <rdfs:label xml:lang="en">completely executed planned process</rdfs:label>
     </owl:Class>
     
 
@@ -377,8 +377,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
-        <obo:IAO_0000115>A molecule that consists of nucleotides (unmodified nucleotide residues and/or modified nucleotide residues) linked by phosphodiester bonds or derivatives of such bonds.</obo:IAO_0000115>
-        <rdfs:label>nucleic acid chain</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A molecule that consists of nucleotides (unmodified nucleotide residues and/or modified nucleotide residues) linked by phosphodiester bonds or derivatives of such bonds.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nucleic acid chain</rdfs:label>
     </owl:Class>
     
 
@@ -425,8 +425,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
-        <rdfs:label>complex of molecules</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A complex of two or more molecular entities that are not covalently bound.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">complex of molecules</rdfs:label>
     </owl:Class>
     
 
@@ -435,8 +435,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
-        <rdfs:label>planned process</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -445,7 +445,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <rdfs:label>failed planned process</rdfs:label>
+        <rdfs:label xml:lang="en">failed planned process</rdfs:label>
     </owl:Class>
     
 
@@ -468,8 +468,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A planned process that intends to output material entities from input material entities</obo:IAO_0000115>
-        <rdfs:label>material processing</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A planned process that intends to output material entities from input material entities</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
 
@@ -498,7 +498,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>characteristic</rdfs:label>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
     </owl:Class>
     
 
@@ -513,8 +513,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
-        <rdfs:label>exposure of organism</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A process during which an organism comes into contact with another entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">exposure of organism</rdfs:label>
     </owl:Class>
     
 
@@ -529,8 +529,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A processed material entity which is designed to be capable of a process.</obo:IAO_0000115>
-        <rdfs:label>device</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A processed material entity which is designed to be capable of a process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">device</rdfs:label>
     </owl:Class>
     
 

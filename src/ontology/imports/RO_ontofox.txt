@@ -1,0 +1,26 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/cob/dev/import/RO_import.owl
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0000052
+http://purl.obolibrary.org/obo/RO_0000053
+http://purl.obolibrary.org/obo/RO_0000056
+http://purl.obolibrary.org/obo/RO_0000057
+http://purl.obolibrary.org/obo/RO_0000058
+http://purl.obolibrary.org/obo/RO_0000059
+http://purl.obolibrary.org/obo/RO_0001000
+http://purl.obolibrary.org/obo/RO_0001015
+http://purl.obolibrary.org/obo/RO_0001025
+http://purl.obolibrary.org/obo/RO_0002215
+http://purl.obolibrary.org/obo/RO_0002219
+http://purl.obolibrary.org/obo/RO_0002221
+http://purl.obolibrary.org/obo/RO_0002233
+http://purl.obolibrary.org/obo/RO_0002234
+http://purl.obolibrary.org/obo/RO_0002333
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
