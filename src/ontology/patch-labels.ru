@@ -5,15 +5,15 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 
 DELETE {
-	?subject rdfs:label ?object .
+    ?subject rdfs:label ?object .
 }
 
 INSERT {
-	?subject rdfs:label ?object_str .
+    ?subject rdfs:label ?object_str .
 }
 
 WHERE {
-	VALUES ?subject {
+    VALUES ?subject {
 		# These terms use xsd:string literals not @en
 		obo:CHEBI_10545
 		obo:CHEBI_24636
@@ -44,7 +44,7 @@ WHERE {
 		obo:UBERON_0000466
 		obo:UBERON_0001062
 		obo:VO_0000001
-	}
-	?subject rdfs:label ?object	.
-	BIND(STR(?object) AS ?object_str)
+    }
+    ?subject rdfs:label ?object .
+    BIND(STR(?object) AS ?object_str)
 }
