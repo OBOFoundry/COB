@@ -5,6 +5,9 @@ http://purl.obolibrary.org/obo/cob/dev/import/RO_import.owl
 RO
 
 [Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0000050
+http://purl.obolibrary.org/obo/RO_0000051
+http://purl.obolibrary.org/obo/RO_0000055
 http://purl.obolibrary.org/obo/RO_0000052
 http://purl.obolibrary.org/obo/RO_0000053
 http://purl.obolibrary.org/obo/RO_0000056

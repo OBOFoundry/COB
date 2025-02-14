@@ -268,6 +268,21 @@ $(IMPORTDIR)/%_ontofox.txt: cob-edit.tsv
 	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
 	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
 
+$(IMPORTDIR)/RO_ontofox.txt: cob-edit.tsv
+	echo "[URI of the OWL(RDF/XML) output file]" > $@
+	echo "http://purl.obolibrary.org/obo/cob/dev/import/RO_import.owl" >> $@
+	echo "" >> $@
+	echo "[Source ontology]" >> $@
+	echo "RO" >> $@
+	echo "" >> $@
+	echo "[Low level source term URIs]" >> $@
+	grep "^BFO:" $< | grep "owl:ObjectProperty" | cut -f1 | sed "s!BFO:!http://purl.obolibrary.org/obo/RO_!" >> $@
+	grep "^RO:" $< | cut -f1 | sed "s!RO:!http://purl.obolibrary.org/obo/RO_!" >> $@
+	echo "" >> $@
+	echo "[Source annotation URIs]" >> $@
+	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
+	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
+
 $(IMPORTDIR)/%_import.owl: $(IMPORTDIR)/%_ontofox.txt
 	curl -s -F file=@$< -o $@ https://ontofox.hegroup.org/service.php
 
