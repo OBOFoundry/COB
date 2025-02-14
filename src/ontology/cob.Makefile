@@ -54,7 +54,8 @@ cob.tsv: cob.owl
 # -- MAIN RELEASE PRODUCTS --
 ########################################
 
-$(ONT)-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
+# Include all terms
+cob-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
 	$(ROBOT) template \
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	reason -r HERMIT \
@@ -62,28 +63,32 @@ $(ONT)-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-# COB "Full"
-$(ONT).owl: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
-	$(ROBOT) template \
-	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
-	reason -r HERMIT \
+$(TMPDIR)/cob-full.txt: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
+	echo "rdfs:label" > $@
+	echo "owl:deprecated" >> $@
+	cut -f1 $< | tail -n+3 >> $@
+	cut -f1 $(word 2,$^) | tail -n+3 >> $@
+
+# COB "Full": just COB terms and the terms used to define them
+cob.owl: cob-edit.owl $(TMPDIR)/cob-full.txt
+	$(ROBOT) filter --input $< \
+	--term-file $(word 2,$^) --signature true \
 	annotate --ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT)-base.owl: $(ONT).owl $(TMPDIR)/cob-base.tsv $(COMPONENTSDIR)/obsolete.tsv
-	$(ROBOT) template --input $< \
-	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
+# Just COB terms
+cob-base.owl: cob-edit.owl
+	$(ROBOT) filter --input $< \
+	--base-iri COB --axioms internal \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
 	--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT)-root.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
-	$(ROBOT) template \
-	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
-	reason -r HERMIT \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+cob-root.owl: cob-edit.owl
+	$(ROBOT) annotate --input $< \
+	--ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
