@@ -19,7 +19,7 @@ ANNOTATE_ONTOLOGY_METADATA := \
 .PHONY: prepare_release
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES) cob.tsv
 	rsync -R $(RELEASE_ASSETS) cob.tsv $(RELEASEDIR) &&\
-	rm -f $(CLEANFILES) &&\
+	rm -f $(CLEANFILES) tmp/merge*.owl &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 .PHONY: prepare_cob_products
@@ -60,7 +60,7 @@ cob-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv patch-labels.
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
 	query \
 	$(foreach X,$(filter %.ru,$^),--update $(X)) \
-	reason -r HERMIT \
+	reason -r HERMIT --exclude-tautologies all \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
@@ -289,7 +289,6 @@ $(IMPORTDIR)/%_import.owl: $(IMPORTDIR)/%_ontofox.txt
 $(TMPDIR)/merged_imports.owl: $(X_IMPORT_OWL_FILES)
 	$(ROBOT) merge \
 	$(foreach X,$^,--input $(X)) \
-	remove --term IAO:0000115 \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@

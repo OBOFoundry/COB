@@ -9,11 +9,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2025-02-14/cob.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2025-02-18/cob.owl"/>
         <terms:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title xml:lang="en">Core Ontology for Biology and Biomedicine</terms:title>
-        <owl:versionInfo>2025-02-14</owl:versionInfo>
+        <owl:versionInfo>2025-02-18</owl:versionInfo>
     </owl:Ontology>
     
 

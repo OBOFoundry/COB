@@ -9,11 +9,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2025-02-14/cob-root.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2025-02-18/cob-root.owl"/>
         <terms:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title xml:lang="en">Core Ontology for Biology and Biomedicine</terms:title>
-        <owl:versionInfo>2025-02-14</owl:versionInfo>
+        <owl:versionInfo>2025-02-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -389,7 +389,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">process</rdfs:label>
     </owl:Class>
     
@@ -443,7 +442,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000116 xml:lang="en">Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
@@ -453,7 +451,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
     
@@ -543,7 +540,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000005">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>obsolete elementary charge</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -589,7 +585,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000014">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>obsolete macromolecular entity</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -599,7 +594,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000020">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/GO_0110165"/>
         <rdfs:label>obsolete subcellular structure</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -649,7 +643,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000032">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>obsolete geographical location</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -685,7 +678,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
         <rdfs:label>obsolete immaterial anatomical entity</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -696,7 +688,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000073">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>obsolete gene product</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -706,7 +697,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000077">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:label>obsolete action specification</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -776,7 +766,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000116 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000116">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>obsolete cellular membrane</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -786,7 +775,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000122">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label>obsolete physical information carrier</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -796,7 +784,6 @@
     <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">characteristic</rdfs:label>
     </owl:Class>
     
@@ -1010,7 +997,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Pier: &apos;data, information or knowledge&apos;. OR &apos;representation&apos;</obo:IAO_0000116>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
@@ -1347,7 +1333,6 @@
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <rdfs:label>anatomical entity</rdfs:label>
     </owl:Class>
