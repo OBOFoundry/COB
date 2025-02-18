@@ -8,9 +8,9 @@ IAO:0100001	term replaced by	owl:AnnotationProperty			BASE	required annotations
 BFO:0000050	part of	owl:ObjectProperty	a core relation that holds between a part and its whole		REPLACEMENT												
 BFO:0000051	has part	owl:ObjectProperty	a core relation that holds between a whole and its part		REPLACEMENT												
 BFO:0000055	realizes	owl:ObjectProperty	Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process		REPLACEMENT							process	realizable entity				
-OBI:0000293	has specified input	owl:ObjectProperty	The inverse property of is_specified_input_of		REPLACEMENT							planned process					
+OBI:0000293	has specified input	owl:ObjectProperty	The inverse property of is specified input of		REPLACEMENT							planned process					
 OBI:0000295	is specified input of	owl:ObjectProperty	A relation between a planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.		REPLACEMENT								planned process				
-OBI:0000299	has specified output	owl:ObjectProperty	The inverse property of is_specified_output_of		REPLACEMENT							planned process					
+OBI:0000299	has specified output	owl:ObjectProperty	The inverse property of is specified output of		REPLACEMENT							planned process					
 OBI:0000312	is specified output of	owl:ObjectProperty	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.		REPLACEMENT								planned process				
 RO:0000052	characteristic of	owl:ObjectProperty	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.		REPLACEMENT												
 RO:0000053	has characteristic	owl:ObjectProperty	Inverse of characteristic_of		REPLACEMENT												
