@@ -14,39 +14,39 @@ INSERT {
 
 WHERE {
     VALUES ?subject {
-	    # These terms use xsd:string literals not @en
-	    obo:CHEBI_10545
-	    obo:CHEBI_24636
-	    obo:CHEBI_30222
-	    obo:CHEBI_33252
-	    obo:CHEBI_36342
-	    obo:CL_0000000
-	    obo:CL_0001034
-	    obo:ENVO_01000813
-	    obo:ENVO_01001110
-	    obo:ENVO_02500000
-	    obo:GO_0003674
-	    obo:GO_0005575
-	    obo:GO_0008150
-	    obo:GO_0032991
-	    obo:GO_0044423
-	    obo:GO_0110165
-	    obo:IAO_0000115
-	    obo:MOP_0000543
-	    obo:NCBITaxon_131567
-	    obo:PATO_0000125
-	    obo:PATO_0002193
-	    obo:PO_0009002
-	    obo:PO_0025131
-	    obo:PR_000000001
-	    obo:PR_000018263
-	    obo:SO_0000110
-	    obo:SO_0001060
-	    obo:SO_0001260
-	    obo:UBERON_0000465
-	    obo:UBERON_0000466
-	    obo:UBERON_0001062
-	    obo:VO_0000001
+        # These terms use xsd:string literals not @en
+        obo:CHEBI_10545
+        obo:CHEBI_24636
+        obo:CHEBI_30222
+        obo:CHEBI_33252
+        obo:CHEBI_36342
+        obo:CL_0000000
+        obo:CL_0001034
+        obo:ENVO_01000813
+        obo:ENVO_01001110
+        obo:ENVO_02500000
+        obo:GO_0003674
+        obo:GO_0005575
+        obo:GO_0008150
+        obo:GO_0032991
+        obo:GO_0044423
+        obo:GO_0110165
+        obo:IAO_0000115
+        obo:MOP_0000543
+        obo:NCBITaxon_131567
+        obo:PATO_0000125
+        obo:PATO_0002193
+        obo:PO_0009002
+        obo:PO_0025131
+        obo:PR_000000001
+        obo:PR_000018263
+        obo:SO_0000110
+        obo:SO_0001060
+        obo:SO_0001260
+        obo:UBERON_0000465
+        obo:UBERON_0000466
+        obo:UBERON_0001062
+        obo:VO_0000001
         obo:GO_0110165
         obo:IAO_0000115
         obo:OBI_0000293
