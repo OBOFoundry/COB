@@ -19,7 +19,7 @@ ANNOTATE_ONTOLOGY_METADATA := \
 .PHONY: prepare_release
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES) cob.tsv
 	rsync -R $(RELEASE_ASSETS) cob.tsv $(RELEASEDIR) &&\
-	rm -f $(CLEANFILES) &&\
+	rm -f $(CLEANFILES) tmp/merge*.owl &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 .PHONY: prepare_cob_products
@@ -54,36 +54,43 @@ cob.tsv: cob.owl
 # -- MAIN RELEASE PRODUCTS --
 ########################################
 
-$(ONT)-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
+# Include all terms
+cob-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv patch-labels.ru patch-definitions.ru
 	$(ROBOT) template \
 	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
-	reason -r HERMIT \
+	query \
+	$(foreach X,$(filter %.ru,$^),--update $(X)) \
+	reason -r HERMIT --exclude-tautologies all \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-# COB "Full"
-$(ONT).owl: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
-	$(ROBOT) template \
-	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
-	reason -r HERMIT \
+$(TMPDIR)/cob-full.txt: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
+	echo "rdfs:label" > $@
+	echo "owl:deprecated" >> $@
+	cut -f1 $< | tail -n+3 >> $@
+	cut -f1 $(word 2,$^) | tail -n+3 >> $@
+
+# COB "Full": just COB terms and the terms used to define them
+cob.owl: cob-edit.owl $(TMPDIR)/cob-full.txt
+	$(ROBOT) filter --input $< \
+	--term-file $(word 2,$^) --signature true \
 	annotate --ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT)-base.owl: $(ONT).owl $(TMPDIR)/cob-base.tsv $(COMPONENTSDIR)/obsolete.tsv
-	$(ROBOT) template --input $< \
-	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
+# Just COB terms
+cob-base.owl: cob-edit.owl
+	$(ROBOT) filter --input $< \
+	--base-iri COB --axioms internal \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
 	--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT)-root.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv
-	$(ROBOT) template \
-	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
-	reason -r HERMIT \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+cob-root.owl: cob-edit.owl
+	$(ROBOT) annotate --input $< \
+	--ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -241,3 +248,59 @@ products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl | products/
 
 $(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt | $(TMPDIR)
 	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
+
+# Crosscheck against upstream ontologies
+
+X_IMPORTS := BFO CHEBI CL DRON ENVO FOODON GO IAO MOP NCBITaxon OBI PATO PCO PO PR RO SO UBERON VO
+X_IMPORT_OWL_FILES := $(foreach n,$(X_IMPORTS), $(IMPORTDIR)/$(n)_import.owl)
+
+$(IMPORTDIR)/%_ontofox.txt: cob-edit.tsv
+	echo "[URI of the OWL(RDF/XML) output file]" > $@
+	echo "http://purl.obolibrary.org/obo/cob/dev/import/$*_import.owl" >> $@
+	echo "" >> $@
+	echo "[Source ontology]" >> $@
+	echo "$*" >> $@
+	echo "" >> $@
+	echo "[Low level source term URIs]" >> $@
+	grep "^$*:" $< | cut -f1 | sed "s!$*:!http://purl.obolibrary.org/obo/$*_!" >> $@
+	echo "" >> $@
+	echo "[Source annotation URIs]" >> $@
+	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
+	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
+
+$(IMPORTDIR)/RO_ontofox.txt: cob-edit.tsv
+	echo "[URI of the OWL(RDF/XML) output file]" > $@
+	echo "http://purl.obolibrary.org/obo/cob/dev/import/RO_import.owl" >> $@
+	echo "" >> $@
+	echo "[Source ontology]" >> $@
+	echo "RO" >> $@
+	echo "" >> $@
+	echo "[Low level source term URIs]" >> $@
+	grep "^BFO:" $< | grep "owl:ObjectProperty" | cut -f1 | sed "s!BFO:!http://purl.obolibrary.org/obo/RO_!" >> $@
+	grep "^RO:" $< | cut -f1 | sed "s!RO:!http://purl.obolibrary.org/obo/RO_!" >> $@
+	echo "" >> $@
+	echo "[Source annotation URIs]" >> $@
+	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
+	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
+
+$(IMPORTDIR)/%_import.owl: $(IMPORTDIR)/%_ontofox.txt
+	curl -s -F file=@$< -o $@ https://ontofox.hegroup.org/service.php
+
+$(TMPDIR)/merged_imports.owl: $(X_IMPORT_OWL_FILES)
+	$(ROBOT) merge \
+	$(foreach X,$^,--input $(X)) \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@
+
+$(TMPDIR)/merged.owl: cob-edit.owl $(TMPDIR)/merged_imports.owl
+	$(ROBOT) merge \
+	$(foreach X,$^,--input $(X)) \
+	--output $@
+
+.PRECIOUS: $(TMPDIR)/report.tsv
+$(TMPDIR)/report.tsv: $(TMPDIR)/merged.owl
+	$(ROBOT) report --input $< --output $@
+
+.PHONY: crosscheck
+crosscheck: $(TMPDIR)/report.tsv

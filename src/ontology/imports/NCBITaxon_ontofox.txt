@@ -1,0 +1,12 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/cob/dev/import/NCBITaxon_import.owl
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_131567
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
