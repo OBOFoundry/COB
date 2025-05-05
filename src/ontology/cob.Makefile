@@ -10,11 +10,32 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+# Darren Natale, Jim Balhoff, Alan Ruttenberg, Lynn Schriml, Bill Duncan, Jie Zhang, Chris Mungall, Nico Matentzoglu
+# James Overton, Sebastian Duesing, Chris Hoyt, Becky Jackson, Bjoern Peters
+# Damion Dooley, Jonathan Bisson
+CONTRIBUTORS = \
+	https://orcid.org/0000-0001-5809-9523 \
+	https://orcid.org/0000-0002-8688-6599 \
+	https://orcid.org/0000-0002-1604-3078 \
+	https://orcid.org/0000-0001-8910-9851 \
+	https://orcid.org/0000-0001-9625-1899 \
+	https://orcid.org/0000-0002-2999-0103 \
+	https://orcid.org/0000-0002-6601-2165 \
+	https://orcid.org/0000-0002-7356-1779 \
+	https://orcid.org/0000-0001-5139-5557 \
+	https://orcid.org/0009-0009-4008-3801 \
+	https://orcid.org/0000-0003-4423-4370 \
+	https://orcid.org/0000-0003-4871-5569 \
+	https://orcid.org/0000-0002-8457-6693 \
+	https://orcid.org/0000-0002-8844-9165 \
+	https://orcid.org/0000-0003-1640-9989
+ 
 ANNOTATE_ONTOLOGY_METADATA := \
   --prefix "dcterms: http://purl.org/dc/terms/" \
   --language-annotation dcterms:title "Core Ontology for Biology and Biomedicine" en \
   --language-annotation dcterms:description "COB brings together key terms from a wide range of OBO projects to improve interoperability." en \
-  --link-annotation dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
+  --link-annotation dcterms:license https://creativecommons.org/publicdomain/zero/1.0/ \
+  $(foreach X,$(CONTRIBUTORS), --link-annotation dcterms:contributor $(X) ) \
 
 .PHONY: prepare_release
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES) cob.tsv
