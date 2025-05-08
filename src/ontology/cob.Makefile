@@ -11,7 +11,7 @@ SHELL := bash
 .SECONDARY:
 
 # Darren Natale, Jim Balhoff, Alan Ruttenberg, Lynn Schriml, Bill Duncan, Jie Zhang, Chris Mungall, Nico Matentzoglu
-# James Overton, Sebastian Duesing, Chris Hoyt, Becky Jackson, Bjoern Peters
+# James Overton, Sebastian Duesing, Charles Tapley Hoyt, Becky Jackson, Bjoern Peters
 # Damion Dooley, Jonathan Bisson
 CONTRIBUTORS = \
 	https://orcid.org/0000-0001-5809-9523 \
