@@ -12,7 +12,7 @@ SHELL := bash
 
 # Darren Natale, Jim Balhoff, Alan Ruttenberg, Lynn Schriml, Bill Duncan, Jie Zheng, Chris Mungall, Nico Matentzoglu
 # James Overton, Sebastian Duesing, Charles Tapley Hoyt, Becky Jackson, Bjoern Peters
-# Damion Dooley, Jonathan Bisson
+# Damion Dooley, Oliver He, Jonathan Bisson
 CONTRIBUTORS = \
 	https://orcid.org/0000-0001-5809-9523 \
 	https://orcid.org/0000-0002-8688-6599 \
