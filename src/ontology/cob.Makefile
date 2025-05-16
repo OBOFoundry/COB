@@ -29,6 +29,7 @@ CONTRIBUTORS = \
 	https://orcid.org/0000-0002-8457-6693 \
 	https://orcid.org/0000-0001-9990-8331 \
 	https://orcid.org/0000-0002-8844-9165 \
+	https://orcid.org/0000-0001-9189-9661 \
 	https://orcid.org/0000-0003-1640-9989
  
 ANNOTATE_ONTOLOGY_METADATA := \
