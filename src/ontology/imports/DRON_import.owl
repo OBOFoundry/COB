@@ -57,8 +57,8 @@
     <!-- http://purl.obolibrary.org/obo/DRON_00000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00000005">
-        <rdfs:label xml:lang="en">drug product</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">a material entity (1) containing at least one scattered molecular aggregate as part that is the bearer of an active ingredient role and (2) that is itself the bearer of a clinical drug role</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">clinical drug product</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A drug product that is bearer of a clinical drug role.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/dron.owl"/>
     </owl:Class>
 </rdf:RDF>
