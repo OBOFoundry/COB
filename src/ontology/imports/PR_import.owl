@@ -54,7 +54,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
     </owl:Class>
     
@@ -64,7 +64,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000018263">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid chain</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
     </owl:Class>
 </rdf:RDF>
