@@ -30,7 +30,7 @@ COB:0000077	obsolete action specification
 COB:0000080	complex of molecules	A complex of two or more molecules that are not covalently bound.	BFO:0000040	material entity	BFO:0000051 some COB:0000013	has part some molecule
 COB:0000082	planned process	A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.	BFO:0000015	process		
 COB:0000083	failed planned process		COB:0000082	planned process		
-COB:0000110	material processing	A planned process that intends to output material entities from input material entities	COB:0000035	completely executed planned process	(OBI:0000293 some BFO:0000040) and (OBI:0000299 some BFO:0000040)	(has specified input some material entity) and (has specified output some material entity)
+COB:0000110	material processing	A completely executed planned process that intends to output material entities from input material entities	COB:0000035	completely executed planned process	(OBI:0000293 some BFO:0000040) and (OBI:0000299 some BFO:0000040)	(has specified input some material entity) and (has specified output some material entity)
 COB:0000116	obsolete cellular membrane					
 COB:0000122	obsolete physical information carrier					
 COB:0000502	characteristic					
@@ -56,8 +56,8 @@ MOP:0000543	physico-chemical process	A process in which at least one of the part
 NCBITaxon:131567	cellular organism		COB:0000022	organism		
 OBI:0000066	investigation	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).	COB:0000035	completely executed planned process		
 OBI:0000070	assay	A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.	COB:0000035	completely executed planned process	(OBI:0000293 some BFO:0000040) and (OBI:0000299 some IAO:0000027)	(has specified input some material entity) and (has specified output some data item)
-OBI:0000260	plan	A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.	BFO:0000017	realizable entity	RO:0000059 some IAO:0000104	concretizes some plan specification
-OBI:0200000	data transformation	A planned process that produces output data from input data.	COB:0000082	planned process	(OBI:0000293 some IAO:0000027) and (OBI:0000299 some IAO:0000027)	(has specified input some data item) and (has specified output some data item)
+OBI:0000260	plan	A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process.	BFO:0000017	realizable entity	RO:0000059 some IAO:0000104	concretizes some plan specification
+OBI:0200000	data transformation	A completely executed planned process that produces output data from input data.	COB:0000035	completely executed planned process	(OBI:0000293 some IAO:0000027) and (OBI:0000299 some IAO:0000027)	(has specified input some data item) and (has specified output some data item)
 PATO:0000125	mass	A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.	COB:0000502	characteristic		
 PATO:0002193	electric charge	A molecular quality that inheres in a molecular entity by virtue of the overall electric charge of the molecule, which is due to a comparison between the total number of electrons and the total number of protons.	COB:0000502	characteristic		
 PCO:0000000	collection of organisms	A material entity that consists of two or more organisms, viruses, or viroids.	BFO:0000040	material entity	BFO:0000051 some COB:0000022	has part some organism
