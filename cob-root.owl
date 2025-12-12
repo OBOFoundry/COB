@@ -538,6 +538,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CLO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cell line cell</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
@@ -546,6 +556,26 @@
         <obo:IAO_0000116 xml:lang="en">CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</obo:IAO_0000116>
         <rdfs:label>cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000578"/>
+        <obo:IAO_0000115 xml:lang="en">A cell in vitro that is or has been maintained or propagated as part of a cell culture.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cultured cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001034"/>
+        <obo:IAO_0000115 xml:lang="en">A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">experimentally modified cell in vitro</rdfs:label>
     </owl:Class>
     
 
