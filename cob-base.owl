@@ -10,12 +10,29 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cob/cob-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2025-06-30/cob-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2025-12-12/cob-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5139-5557"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5809-9523"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-8910-9851"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1604-3078"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2999-0103"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8457-6693"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8688-6599"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1640-9989"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4871-5569"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0009-4008-3801"/>
         <terms:description xml:lang="en">COB brings together key terms from a wide range of OBO projects to improve interoperability.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title xml:lang="en">Core Ontology for Biology and Biomedicine</terms:title>
-        <owl:versionInfo>2025-06-30</owl:versionInfo>
+        <owl:versionInfo>2025-12-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -52,6 +69,12 @@
     <!-- http://purl.org/dc/elements/1.1/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -461,7 +484,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A planned process that intends to output material entities from input material entities</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A completely executed planned process that intends to output material entities from input material entities</obo:IAO_0000115>
         <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
