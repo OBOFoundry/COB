@@ -57,6 +57,7 @@ UBERON:0000465	material anatomical entity	owl:Class	Anatomical entity that has m
 PO:0025131	plant anatomical entity	owl:Class	An anatomical entity that is or was part of a plant.		ROOT GROUP: CHILD		material anatomical entity										
 COB:0000022	organism	owl:Class	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome	Includes virus - we will later have a class for cellular organisms.|'Maximal functionally integrated unit' is intended to express unity, which Barry considers synonymous with BFO 'object'.	BASE		material entity										
 NCBITaxon:131567	cellular organism	owl:Class			FULL	unmodified & in scope	organism										
+NCBITaxon:10239	virus	owl:Class			FULL	in scope & only label modified	organism										
 PCO:0000000	collection of organisms	owl:Class	A material entity that consists of two or more organisms, viruses, or viroids.		FULL	unmodified & in scope	material entity	'has material part' some organism									
 ENVO:01000813	geophysical entity	owl:Class	A material part of an astronomical body.		FULL	in scope & only label modified	material entity										ENVO calls this 'astronomical body part'
 ENVO:01001110	ecosystem	owl:Class	An environmental system which includes both living and non-living components.		FULL	unmodified & in scope	material entity										
