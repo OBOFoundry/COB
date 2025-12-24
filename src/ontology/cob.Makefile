@@ -117,6 +117,25 @@ cob-root.owl: cob-edit.owl
 	$(ANNOTATE_ONTOLOGY_METADATA) \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
+########################################
+# -- USAGES --
+########################################
+
+# USAGE_SOURCES = ontobee ubergraph bioportal
+USAGE_SOURCES = ontobee ubergraph
+
+all_usages: $(patsubst %, reports/summary-cob-usages-%.tsv, $(USAGE_SOURCES))
+
+reports/cob-direct-subclass-counts-ontobee.tsv:
+	python3 ../scripts/generate_usage_sparql.py > $@
+
+reports/cob-usages-%.tsv: 
+	runoak -i $*: usages .idfile cob.tsv -o $@
+.PRECIOUS: reports/cob-usages-%.tsv
+
+reports/summary-cob-usages-%.tsv: reports/cob-usages-%.tsv
+	awk '{count[$$1]++} END {for (key in count) print key "\t" count[key]}' $< | sort -k2 -nr > $@
+
 
 ########################################
 # -- TESTING --

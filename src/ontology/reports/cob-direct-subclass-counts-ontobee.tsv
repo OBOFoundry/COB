@@ -1,0 +1,75 @@
+Class	Label	Subclass Count
+http://purl.obolibrary.org/obo/PR_000000001	protein	36130
+http://purl.obolibrary.org/obo/OBI_0000047	processed material entity	3935
+http://purl.obolibrary.org/obo/GO_0005634	cell nucleus	2782
+http://purl.obolibrary.org/obo/BFO_0000015	process	2721
+http://purl.obolibrary.org/obo/BFO_0000040	material entity	670
+http://purl.obolibrary.org/obo/GO_0032991	protein-containing macromolecular complex	540
+http://purl.obolibrary.org/obo/IAO_0000030	information	472
+http://purl.obolibrary.org/obo/IAO_0000027	data item	433
+http://purl.obolibrary.org/obo/BFO_0000023	role	395
+http://purl.obolibrary.org/obo/OBI_0000011	completely executed planned process	347
+http://purl.obolibrary.org/obo/GO_0008150	biological process	293
+http://purl.obolibrary.org/obo/IAO_0000310	document	211
+http://purl.obolibrary.org/obo/OBI_0200000	data transformation	210
+http://purl.obolibrary.org/obo/OBI_0000070	assay	209
+http://purl.obolibrary.org/obo/OBI_0100026	organism	172
+http://purl.obolibrary.org/obo/CL_0000000	cell	167
+http://purl.obolibrary.org/obo/BFO_0000016	disposition	156
+http://purl.obolibrary.org/obo/OBI_0000094	material processing	133
+http://purl.obolibrary.org/obo/ENVO_01000813	geophysical entity	91
+http://purl.obolibrary.org/obo/OBI_0000245	organization	87
+http://purl.obolibrary.org/obo/GO_0003674	gene product or complex activity	85
+http://purl.obolibrary.org/obo/BFO_0000034	function	83
+http://purl.obolibrary.org/obo/IAO_0000033	directive information entity	79
+http://purl.obolibrary.org/obo/IAO_0000104	plan specification	77
+http://purl.obolibrary.org/obo/CL_0000003	native cell	72
+http://purl.obolibrary.org/obo/IAO_0000005	objective specification	68
+http://purl.obolibrary.org/obo/OGMS_0000014	phenotypic finding	66
+http://purl.obolibrary.org/obo/ENVO_02500000	environmental process	61
+http://purl.obolibrary.org/obo/BFO_0000141	immaterial entity	61
+http://purl.obolibrary.org/obo/BFO_0000029	site	58
+http://purl.obolibrary.org/obo/MOP_0000543	physico-chemical process	49
+http://purl.obolibrary.org/obo/BFO_0000020	characteristic	49
+http://purl.obolibrary.org/obo/CHEBI_33250	uncharged atom	49
+http://purl.obolibrary.org/obo/OGMS_0000073	disease diagnosis	42
+http://purl.obolibrary.org/obo/ENVO_01001110	ecosystem	37
+http://purl.obolibrary.org/obo/BFO_0000017	realizable	36
+http://purl.obolibrary.org/obo/PATO_0000125	mass	33
+http://purl.obolibrary.org/obo/OBI_0000066	investigation	32
+http://purl.obolibrary.org/obo/PCO_0000000	collection of organisms	18
+http://purl.obolibrary.org/obo/OGMS_0000063	disease course	14
+http://purl.obolibrary.org/obo/CARO_0001008	gross anatomical part	13
+http://purl.obolibrary.org/obo/CHEBI_36342	subatomic particle	11
+http://purl.obolibrary.org/obo/CHEBI_33696	nucleic acid polymer	11
+http://purl.obolibrary.org/obo/COB_0000032	geographical location	10
+http://purl.obolibrary.org/obo/OBI_0001909	conclusion based on data	7
+http://purl.obolibrary.org/obo/CHEBI_33252	atomic nucleus	5
+http://purl.obolibrary.org/obo/COB_0000082	planned process	5
+http://purl.obolibrary.org/obo/CHEBI_24867	monoatomic ion	5
+http://purl.obolibrary.org/obo/COB_0000013	molecular entity	4
+http://purl.obolibrary.org/obo/COB_0000080	complex of molecular entities	4
+http://purl.obolibrary.org/obo/SEPIO_0000048	agent role	3
+http://purl.obolibrary.org/obo/PATO_0002193	charge	3
+http://purl.obolibrary.org/obo/CARO_0010004	cellular organism	3
+http://purl.obolibrary.org/obo/COB_0000011	atom	2
+http://purl.obolibrary.org/obo/COB_0000020	subcellular structure	2
+http://purl.obolibrary.org/obo/CL_0001034	cell in vitro	2
+http://purl.obolibrary.org/obo/OBI_0000260	plan	2
+http://purl.obolibrary.org/obo/CHEBI_10545	electron	1
+http://purl.obolibrary.org/obo/COB_0000120	information representation	1
+http://purl.obolibrary.org/obo/CHEBI_24636	proton	0
+http://purl.obolibrary.org/obo/CHEBI_30222	neutron	0
+http://purl.obolibrary.org/obo/COB_0000005	obsolete_elementary charge	0
+http://purl.obolibrary.org/obo/COB_0000014	obsolete macromolecular entity	0
+http://purl.obolibrary.org/obo/COB_0000056	immaterial anatomical entity	0
+http://purl.obolibrary.org/obo/COB_0000073	gene product	0
+http://purl.obolibrary.org/obo/COB_0000077	action specification	0
+http://purl.obolibrary.org/obo/COB_0000083	failed planned process	0
+http://purl.obolibrary.org/obo/COB_0000116	cellular membrane	0
+http://purl.obolibrary.org/obo/COB_0000119	evaluant role	0
+http://purl.obolibrary.org/obo/COB_0000121	measurement datum	0
+http://purl.obolibrary.org/obo/COB_0000122	physical information carrier	0
+http://purl.obolibrary.org/obo/COB_0001000	exposure of organism	0
+http://purl.obolibrary.org/obo/COB_0001300	device	0
+http://purl.obolibrary.org/obo/DRON_0000005	drug product	0
