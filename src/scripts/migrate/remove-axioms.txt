@@ -1,0 +1,55 @@
+BFO:0000001 # entity
+BFO:0000002 # continuant
+BFO:0000004 # independent continuant
+BFO:0000030 # object
+BFO:0000027 # object aggregate
+BFO:0000024 # fiat object part
+BFO:0000140 # continuant fiat boundary
+BFO:0000147 # zero-dimensional continuant fiat boundary
+BFO:0000142 # one-dimensional continuant fiat boundary
+BFO:0000146 # two-dimensional continuant fiat boundary
+BFO:0000006 # spatial region
+BFO:0000018 # zero-dimensional spatial region
+BFO:0000026 # one-dimensional spatial region
+BFO:0000009 # two-dimensional spatial region
+BFO:0000028 # three-dimensional spatial region
+BFO:0000020 # specifically dependent continuant
+BFO:0000019 # quality
+BFO:0000145 # relational quality
+BFO:0000031 # generically dependent continant
+BFO:0000003 # occurrent
+BFO:0000182 # history
+BFO:0000035 # process boundary
+BFO:0000008 # temporal region
+BFO:0000148 # zero-dimensional temporal region
+BFO:0000038 # one-dimensional temporal region
+BFO:0000144 # process profile
+CHEBI:23367 # molecular entity
+CHEBI:33250 # atom
+CHEBI:33696 # nucleic acid
+OBI:0000011 # planned process
+OBI:0000047 # processed material
+OBI:0000094 # material processing
+OBI:0000968 # device
+OBI:0100026 # organism
+OBI:0000047
+NCBITaxon:2157
+BFO:0000055
+OBI:0000094
+NCBITaxon:2
+BFO:0000040
+NCBITaxon:10239
+NCBITaxon:2759
+OBI:0000299
+BFO:0000015
+OBI:0600010
+IAO_000104
+OBI:0000086
+RO:0000085
+OBI:0000417
+OBI:0000312
+OBI:0000293
+RO:0000087
+OBI:0000456
+RO:0000059
+BFO:0000034
