@@ -86,7 +86,7 @@ robot remove \
   --preserve-structure false \
   remove \
   --term-file remove-axioms.txt \
-  --axioms "subclass equivalent" \
+  --axioms "subclass equivalent disjoint" \
   --signature true \
   --trim false \
   --preserve-structure false \
