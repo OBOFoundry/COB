@@ -1,0 +1,13 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/cob/dev/import/PR_import.owl
+
+[Source ontology]
+PR
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PR_000018263
+http://purl.obolibrary.org/obo/PR_000000001
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115

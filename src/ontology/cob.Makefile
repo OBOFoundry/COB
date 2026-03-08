@@ -10,16 +10,40 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-COB_TO_EXTERNAL = $(COMPONENTSDIR)/cob-to-external.owl
-COB_ANNOTATIONS = $(COMPONENTSDIR)/cob-annotations.owl
-COB_EXAMPLES = $(COMPONENTSDIR)/cob-examples.owl
+# Darren Natale, Jim Balhoff, Alan Ruttenberg, Lynn Schriml, Bill Duncan, Jie Zheng, Chris Mungall, Nico Matentzoglu
+# James Overton, Sebastian Duesing, Charles Tapley Hoyt, Becky Jackson, Bjoern Peters
+# Damion Dooley, Oliver He, Jonathan Bisson
+CONTRIBUTORS = \
+	https://orcid.org/0000-0001-5809-9523 \
+	https://orcid.org/0000-0002-8688-6599 \
+	https://orcid.org/0000-0002-1604-3078 \
+	https://orcid.org/0000-0001-8910-9851 \
+	https://orcid.org/0000-0001-9625-1899 \
+	https://orcid.org/0000-0002-2999-0103 \
+	https://orcid.org/0000-0002-6601-2165 \
+	https://orcid.org/0000-0002-7356-1779 \
+	https://orcid.org/0000-0001-5139-5557 \
+	https://orcid.org/0009-0009-4008-3801 \
+	https://orcid.org/0000-0003-4423-4370 \
+	https://orcid.org/0000-0003-4871-5569 \
+	https://orcid.org/0000-0002-8457-6693 \
+	https://orcid.org/0000-0001-9990-8331 \
+	https://orcid.org/0000-0002-8844-9165 \
+	https://orcid.org/0000-0001-9189-9661 \
+	https://orcid.org/0000-0003-1640-9989
+ 
+ANNOTATE_ONTOLOGY_METADATA := \
+  --prefix "dcterms: http://purl.org/dc/terms/" \
+  --language-annotation dcterms:title "Core Ontology for Biology and Biomedicine" en \
+  --language-annotation dcterms:description "COB brings together key terms from a wide range of OBO projects to improve interoperability." en \
+  --link-annotation dcterms:license https://creativecommons.org/publicdomain/zero/1.0/ \
+  $(foreach X,$(CONTRIBUTORS), --link-annotation dcterms:contributor $(X) ) \
 
 .PHONY: prepare_release
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES) cob.tsv
 	rsync -R $(RELEASE_ASSETS) cob.tsv $(RELEASEDIR) &&\
-  rm -f $(CLEANFILES) &&\
-	rm -f cob.tsv &&\
-  echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+	rm -f $(CLEANFILES) tmp/merge*.owl &&\
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 .PHONY: prepare_cob_products
 prepare_cob_products: test
@@ -36,78 +60,62 @@ products/:
 $(TMPDIR)/robot.jar: | $(TMPDIR)
 	if [ $(ROBOT_DOWNLOAD) = true ]; then curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar; fi
 
+
+########################################
+# -- TEMPLATES --
+########################################
+
+$(TMPDIR)/cob-%.tsv: $(SCRIPTSDIR)/split-cob-edit.py cob-edit.tsv
+	$^ $(TMPDIR)
+
+# TSV export (may depend on dev version of robot export)
+cob.tsv: cob.owl
+	$(ROBOT) export -i $< -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
+
+
 ########################################
 # -- MAIN RELEASE PRODUCTS --
 ########################################
 
-# build main release product
-REWIRE_PRECEDENCE = PR CHEBI
-cob.ttl: components/cob-to-external.tsv cob-native.owl | sssom
-	sssom rewire -I xml  -m $< $(patsubst %,--precedence %,$(REWIRE_PRECEDENCE)) cob-native.owl -o $@
-
-cob.owl: cob.ttl
-	robot merge --include-annotations true -i $< -i ontology-metadata.owl \
-	annotate --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	--output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: cob.owl
-
-cob-native.owl: $(SRC)
-	$(ROBOT) remove --input $< --select imports --trim false \
-		reason -r HERMIT \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
-
-# base file is main cob plus linking axioms
-#cob-base.owl: cob.owl $(COB_TO_EXTERNAL)
-#	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
-
-cob-base-reasoned.owl: cob-base.owl
-	$(ROBOT) remove --input $< --select imports --trim false \
-		reason -r HERMIT \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
-
-cob-examples-reasoned.owl: cob-base.owl $(COB_EXAMPLES)
-	$(ROBOT) remove --input $< --select imports --trim false \
-		merge $(patsubst %, -i %, $^) \
-		reason -r HERMIT \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
-
-# TSV export (may depend on dev version of robot export)
-cob.tsv: cob.owl
-	$(ROBOT) export -i $<  -c "ID|ID [LABEL]|definition|subClassOf [ID NAMED]|subClassOf [LABEL NAMED]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
-#	$(ROBOT) export -i $< --entity-select NAMED -c "ID|ID [LABEL]|definition|subClassOf [ID]|subClassOf [LABEL]|subClassOf [ID ANON]|subClassOf [LABEL ANON]" -e $@
-
-# -- BRIDGING AXIOMS TO OBO ROOTS --
-#
-#  the source file is cob-to-external.tsv
-#
-#  OWL is generated from this
-#
-# this is a really hacky way to do this, replace with robot report?
-.PHONY: sssom
-sssom:
-	pip install --upgrade pip
-	pip install sssom pandasql
-	pip install --upgrade --no-deps --force-reinstall sssom==0.3.2
-
-$(TMPDIR)/cob-to-external.sssom.owl: $(COMPONENTSDIR)/cob-to-external.tsv | $(TMPDIR) sssom
-	sssom convert $< -o $@
-
-$(COB_TO_EXTERNAL): $(TMPDIR)/cob-to-external.sssom.owl
-	$(ROBOT) merge -i $< \
+# Include all terms
+cob-edit.owl: $(TMPDIR)/cob-root.tsv $(COMPONENTSDIR)/obsolete.tsv patch-labels.ru patch-definitions.ru
+	$(ROBOT) template \
+	$(foreach X,$(filter %.tsv,$^),--template $(X)) \
+	query \
+	$(foreach X,$(filter %.ru,$^),--update $(X)) \
+	reason -r HERMIT --exclude-tautologies all \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	convert -f owl -o $@
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-$(TMPDIR)/cob-annotations.ttl: $(COB_TO_EXTERNAL) $(SPARQLDIR)/external-links.rq | $(TMPDIR)
-	$(ROBOT) query --input $< --query $(word 2,$^) $@
+$(TMPDIR)/cob-full.txt: $(TMPDIR)/cob-full.tsv $(COMPONENTSDIR)/obsolete.tsv
+	echo "rdfs:label" > $@
+	echo "owl:deprecated" >> $@
+	cut -f1 $< | tail -n+3 >> $@
+	cut -f1 $(word 2,$^) | tail -n+3 >> $@
 
-$(COB_ANNOTATIONS): $(TMPDIR)/cob-annotations.ttl
+# COB "Full": just COB terms and the terms used to define them
+cob.owl: cob-edit.owl $(TMPDIR)/cob-full.txt
+	$(ROBOT) filter --input $< \
+	--term-file $(word 2,$^) --signature true \
+	annotate --ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
+
+# Just COB terms
+cob-base.owl: cob-edit.owl
+	$(ROBOT) filter --input $< \
+	--base-iri COB --axioms internal \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+	--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
+
+cob-root.owl: cob-edit.owl
 	$(ROBOT) annotate --input $< \
-	--ontology-iri "http://purl.obolibrary.org/obo/cob/$@" \
-	--annotation owl:versionInfo $(TODAY) \
-	--output $@
+	--ontology-iri $(ONTBASE).owl $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@.tmp.owl && mv $@.tmp.owl $@
 
 
 ########################################
@@ -138,10 +146,11 @@ ALL_ONTS = $(COB_COMPLIANT) $(COB_NONCOMPLIANT)
 .PHONY: cob_test
 cob_test: main_test itest
 
+
 # main test: should be run via CI on every PR
 # this tests COB's internal consistency
 .PHONY: main_test
-main_test: $(REPORTDIR)/$(SRC)-obo-report.tsv cob.owl cob-base-reasoned.owl cob-examples-reasoned.owl
+main_test: $(REPORTDIR)/$(SRC)-obo-report.tsv $(RELEASEDIR)/cob-root.owl
 test: main_test
 
 # integration tests: for now, run these on commmand line
@@ -262,3 +271,59 @@ products/demo-cob.owl: $(TMPDIR)/demo-cob-merged.owl | products/
 
 $(TMPDIR)/subset-%.owl: $(TMPDIR)/merged-%.owl subsets/terms_%.txt | $(TMPDIR)
 	$(ROBOT) extract -m BOT -i $< -T subsets/terms_$*.txt -o $@
+
+# Crosscheck against upstream ontologies
+
+X_IMPORTS := BFO CHEBI CL DRON ENVO FOODON GO IAO MOP NCBITaxon OBI PATO PCO PO PR RO SO UBERON VO
+X_IMPORT_OWL_FILES := $(foreach n,$(X_IMPORTS), $(IMPORTDIR)/$(n)_import.owl)
+
+$(IMPORTDIR)/%_ontofox.txt: cob-edit.tsv
+	echo "[URI of the OWL(RDF/XML) output file]" > $@
+	echo "http://purl.obolibrary.org/obo/cob/dev/import/$*_import.owl" >> $@
+	echo "" >> $@
+	echo "[Source ontology]" >> $@
+	echo "$*" >> $@
+	echo "" >> $@
+	echo "[Low level source term URIs]" >> $@
+	grep "^$*:" $< | cut -f1 | sed "s!$*:!http://purl.obolibrary.org/obo/$*_!" >> $@
+	echo "" >> $@
+	echo "[Source annotation URIs]" >> $@
+	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
+	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
+
+$(IMPORTDIR)/RO_ontofox.txt: cob-edit.tsv
+	echo "[URI of the OWL(RDF/XML) output file]" > $@
+	echo "http://purl.obolibrary.org/obo/cob/dev/import/RO_import.owl" >> $@
+	echo "" >> $@
+	echo "[Source ontology]" >> $@
+	echo "RO" >> $@
+	echo "" >> $@
+	echo "[Low level source term URIs]" >> $@
+	grep "^BFO:" $< | grep "owl:ObjectProperty" | cut -f1 | sed "s!BFO:!http://purl.obolibrary.org/obo/RO_!" >> $@
+	grep "^RO:" $< | cut -f1 | sed "s!RO:!http://purl.obolibrary.org/obo/RO_!" >> $@
+	echo "" >> $@
+	echo "[Source annotation URIs]" >> $@
+	echo "http://www.w3.org/2000/01/rdf-schema#label" >> $@
+	echo "http://purl.obolibrary.org/obo/IAO_0000115" >> $@
+
+$(IMPORTDIR)/%_import.owl: $(IMPORTDIR)/%_ontofox.txt
+	curl -s -F file=@$< -o $@ https://ontofox.hegroup.org/service.php
+
+$(TMPDIR)/merged_imports.owl: $(X_IMPORT_OWL_FILES)
+	$(ROBOT) merge \
+	$(foreach X,$^,--input $(X)) \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+	$(ANNOTATE_ONTOLOGY_METADATA) \
+	--output $@
+
+$(TMPDIR)/merged.owl: cob-edit.owl $(TMPDIR)/merged_imports.owl
+	$(ROBOT) merge \
+	$(foreach X,$^,--input $(X)) \
+	--output $@
+
+.PRECIOUS: $(TMPDIR)/report.tsv
+$(TMPDIR)/report.tsv: $(TMPDIR)/merged.owl
+	$(ROBOT) report --input $< --output $@
+
+.PHONY: crosscheck
+crosscheck: $(TMPDIR)/report.tsv

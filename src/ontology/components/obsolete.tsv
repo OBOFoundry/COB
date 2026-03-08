@@ -1,0 +1,11 @@
+Ontology ID	Label	Type	Definition	Deprecated	Term Replaced By
+ID	LABEL	TYPE	A IAO:0000115	AT owl:deprecated^^xsd:boolean	AI IAO:0100001
+COB:0000005	obsolete elementary charge	owl:Class		true	
+COB:0000014	obsolete macromolecular entity	owl:Class		true	
+COB:0000020	obsolete subcellular structure	owl:Class		true	GO:0110165
+COB:0000032	obsolete geographical location	owl:Class		true	
+COB:0000056	obsolete immaterial anatomical entity	owl:Class		true	UBERON:0000466
+COB:0000073	obsolete gene product	owl:Class		true	
+COB:0000077	obsolete action specification	owl:Class		true	IAO:0000007
+COB:0000116	obsolete cellular membrane	owl:Class		true	
+COB:0000122	obsolete physical information carrier	owl:Class		true	
