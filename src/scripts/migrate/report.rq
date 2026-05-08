@@ -1,0 +1,48 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX BFO: <http://purl.obolibrary.org/obo/BFO_>
+PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX OBI: <http://purl.obolibrary.org/obo/OBI_>
+
+SELECT DISTINCT ?curie ?label ?comment ?replacement ?replacement_label ?suggestion ?suggestion_label
+WHERE {
+  VALUES (?iri ?curie ?label ?comment ?replacement ?replacement_label ?suggestion ?suggestion_label) {
+    (BFO:0000001 "BFO:0000001" "entity" "does no work: remove or use owl:Thing" "owl:Thing" "" "" "")
+    (BFO:0000002 "BFO:0000002" "continuant" "use something more specific, or a disjunction (X or Y)" "owl:Thing" "" "owl:Thing" "")
+    (BFO:0000004 "BFO:0000004" "independent continuant" "generalized to owl:Thing, or constrain to 'material entity'" "owl:Thing" "" "BFO:0000040" "material entity")
+    (BFO:0000030 "BFO:0000030" "object" "generalize to 'material entity'" "BFO:0000040" "material entity" "" "")
+    (BFO:0000027 "BFO:0000027" "object aggregate" "generalize to 'material entity'" "BFO:0000040" "material entity" "" "")
+    (BFO:0000024 "BFO:0000024" "fiat object part" "generalize to 'material entity'" "BFO:0000040" "material entity" "" "")
+    (BFO:0000140 "BFO:0000140" "continuant fiat boundary" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000147 "BFO:0000147" "zero-dimensional continuant fiat boundary" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000142 "BFO:0000142" "one-dimensional continuant fiat boundary" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000146 "BFO:0000146" "two-dimensional continuant fiat boundary" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000006 "BFO:0000006" "spatial region" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000018 "BFO:0000018" "zero-dimensional spatial region" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000026 "BFO:0000026" "one-dimensional spatial region" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000009 "BFO:0000009" "two-dimensional spatial region" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000028 "BFO:0000028" "three-dimensional spatial region" "generalize to 'immaterial entity'" "BFO:0000141" "immaterial entity" "" "")
+    (BFO:0000020 "BFO:0000020" "specifically dependent continuant" "use 'characteristic'" "owl:Thing" "" "COB:0000502" "characteristic")
+    (BFO:0000019 "BFO:0000019" "quality" "use 'characteristic'" "COB:0000502" "characteristic" "" "")
+    (BFO:0000145 "BFO:0000145" "relational quality" "use 'characteristic'" "COB:0000502" "characteristic" "" "")
+    (BFO:0000031 "BFO:0000031" "generically dependent continant" "constrain to 'information entity'" "owl:Thing" "" "IAO:0000030" "information content entity")
+    (BFO:0000003 "BFO:0000003" "occurrent" "constrain to 'process'" "owl:Thing" "" "BFO:0000015" "process")
+    (BFO:0000182 "BFO:0000182" "history" "generalize to 'process'" "BFO:0000015" "process" "" "")
+    (BFO:0000035 "BFO:0000035" "process boundary" "better to just use the start and end of a process" "owl:Thing" "" "" "")
+    (BFO:0000008 "BFO:0000008" "temporal region" "you probably want a process instead" "owl:Thing" "" "" "")
+    (BFO:0000148 "BFO:0000148" "zero-dimensional temporal region" "you probably want a process instead" "owl:Thing" "" "" "")
+    (BFO:0000038 "BFO:0000038" "one-dimensional temporal region" "you probably want a process instead" "owl:Thing" "" "" "")
+    (BFO:0000144 "BFO:0000144" "process profile" "use 'characteristic'" "COB:0000502" "characteristic" "" "")
+    (CHEBI:23367 "CHEBI:23367" "molecular entity" "replace with COB term" "COB:0000013" "molecule" "" "")
+    (CHEBI:33250 "CHEBI:33250" "atom" "replace with COB term" "COB:0000011" "atom" "" "")
+    (CHEBI:33696 "CHEBI:33696" "nucleic acid" "replace with COB term" "COB:0000049" "nucleic acid chain" "" "")
+    (OBI:0000011 "OBI:0000011" "planned process" "replace with COB term" "COB:0000035" "completely executed planned process" "" "")
+    (OBI:0000047 "OBI:0000047" "processed material" "replace with COB term" "COB:0000026" "processed material entity" "" "")
+    (OBI:0000094 "OBI:0000094" "material processing" "replace with COB term" "COB:0000110" "material processing" "" "")
+    (OBI:0000968 "OBI:0000968" "device" "replace with COB term" "COB:0001300" "device" "" "")
+    (OBI:0100026 "OBI:0100026" "organism" "replace with COB term" "COB:0000022" "organism" "" "")
+  }
+  ?iri ?p ?o
+  FILTER NOT EXISTS {
+    ?iri owl:deprecated ?deprecated
+  }
+}
