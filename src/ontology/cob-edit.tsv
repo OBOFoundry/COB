@@ -75,9 +75,8 @@ UBERON:0001062	anatomical entity	owl:Class	Biological entity that is either an i
 COB:has-material-boundary	has material boundary	owl:ObjectProperty			REPLACED							immaterial entity	material entity		RO:0002219	surrounded by	like RO has 2D boundary? RO surrounded by?
 COB:material-boundary-of	material boundary of	owl:ObjectProperty			REPLACED							material entity	immaterial entity	has material boundary	RO:0002221	surrounds	
 BFO:0000029	site	owl:Class			FULL	TO DISCUSS: in previous COB release	immaterial entity										
-COB:0000502	characteristic	owl:Class			BASE												Characteristics specifically depend on other entities. Characteristics of characteristics are not allowed.
-PATO:0000001	quality	owl:Class	A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.		ROOT		characteristic										
-OBA:0000001	biological attribute	owl:Class	A characteristic that is a phenotypic manifestation of an organism.		ROOT		quality										
+PATO:0000001	characteristic	owl:Class	The properties, attributes, or modifiers used to describe an entity or process or some aspect of an entity or process.		FULL	was COB:0000502 (see #315)											Characteristics specifically depend on other entities. Characteristics of characteristics are not allowed.
+OBA:0000001	biological attribute	owl:Class	A characteristic that is a phenotypic manifestation of an organism.		ROOT		characteristic										
 UPHENO:0001001	phenotype	owl:Class	A characteristic that is a phenotypic manifestation of an organism.		ROOT		biological attribute										
 COB:has-characteristic	has characteristic	owl:ObjectProperty			REPLACED								characteristic		RO:0000053	has characteristic	domain: not characteristic ?
 COB:characteristic-of	characteristic of	owl:ObjectProperty			REPLACED							characteristic		has characteristic	RO:0000052	characteristic of	range: not characteristic ?
