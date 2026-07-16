@@ -76,8 +76,7 @@ COB:has-material-boundary	has material boundary	owl:ObjectProperty			REPLACED			
 COB:material-boundary-of	material boundary of	owl:ObjectProperty			REPLACED							material entity	immaterial entity	has material boundary	RO:0002221	surrounds	
 BFO:0000029	site	owl:Class			FULL	TO DISCUSS: in previous COB release	immaterial entity										
 PATO:0000001	characteristic	owl:Class	The properties, attributes, or modifiers used to describe an entity or process or some aspect of an entity or process.		FULL	was COB:0000502 (see #315)											Characteristics specifically depend on other entities. Characteristics of characteristics are not allowed.
-OBA:0000001	biological attribute	owl:Class	A characteristic that is a phenotypic manifestation of an organism.		ROOT		characteristic										
-UPHENO:0001001	phenotypic feature	owl:Class	A characteristic that is a phenotypic manifestation of an organism.		ROOT		biological attribute										
+UPHENO:0001001	phenotypic feature	owl:Class	An observable characteristic of an organism expressed as a deviation, alteration, or qualified state relative to a reference condition, resulting from genetic, environmental, or gene-environment influences.		ROOT		characteristic										
 COB:has-characteristic	has characteristic	owl:ObjectProperty			REPLACED								characteristic		RO:0000053	has characteristic	domain: not characteristic ?
 COB:characteristic-of	characteristic of	owl:ObjectProperty			REPLACED							characteristic		has characteristic	RO:0000052	characteristic of	range: not characteristic ?
 PATO:0000125	mass	owl:Class	A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.		FULL	in previous COB	characteristic										
