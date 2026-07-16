@@ -9,3 +9,4 @@ COB:0000073	obsolete gene product	owl:Class		true
 COB:0000077	obsolete action specification	owl:Class		true	IAO:0000007
 COB:0000116	obsolete cellular membrane	owl:Class		true	
 COB:0000122	obsolete physical information carrier	owl:Class		true	
+COB:0000502	obsolete characteristic	owl:Class		true	PATO:0000001
